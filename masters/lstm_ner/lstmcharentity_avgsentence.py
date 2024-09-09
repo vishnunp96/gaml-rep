@@ -1,4 +1,5 @@
 import numpy
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.utils.rnn as rnn
@@ -9,13 +10,19 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.utils.class_weight import compute_class_weight
 from transformers import BertTokenizer, BertConfig, BertForMaskedLM
 
-from annotations.datasets import AnnotationDataset
+from annotations.datasets import EntityIndexesCharsDataset, AnnotationDataset
 
 from annotations.models.base import BaseANNEntityModule
 from masters.berts.checkpointing import load_checkpoint
 
+'''
+- Using BERT embeddings for training an LSTM char entity model.
+- Each words character embedding added to all tokens from that word. 
+- Attempting whether BERT embeddings averaged across sentence splitting is actually worth it.
+    - Worse than LSTM character entity with sentence splitting.
+'''
 
-class SentenceEmbedCharDataset(AnnotationDataset):
+class AvgdSentenceEmbedCharDataset(AnnotationDataset):
     def __init__(self, tokenizer, tokenizer_max_length,
                  char_embedding_dim,
                  char_indexes,
@@ -27,7 +34,7 @@ class SentenceEmbedCharDataset(AnnotationDataset):
                  outside_class="outside",
                  begin_class="begin",
                  inside_class="inside"):
-        super(SentenceEmbedCharDataset, self).__init__(ann_list, cuda)
+        super(AvgdSentenceEmbedCharDataset, self).__init__(ann_list, cuda)
         self.tokenizer = tokenizer
         self.tokenizer_max_length = tokenizer_max_length
         self.class_template = {"O": outside_class, "B": begin_class,
@@ -37,137 +44,144 @@ class SentenceEmbedCharDataset(AnnotationDataset):
         self.char_indexes = char_indexes
         self.bert_model = bert_model
 
+        self.beg_token_char = numpy.array([self.char_indexes.get(c, self.char_indexes[None])
+                                      for c in self.tokenizer.cls_token])
+        self.end_token_char = numpy.array([self.char_indexes.get(c, self.char_indexes[None])
+                                      for c in self.tokenizer.sep_token])
         self.sentence_split_length, self.sentence_overlap = sentence_split_params
 
-        words, annotations, self.classes = self.load_annotations(
+        (self.abstracts,
+         self.abstract_anns,
+         self.abstract_char_indexes,
+         self.classes) = self.load_annotations(
             ann_list)
+        # abstracts = num_abstract * (num_tokens * 768)
+        # abstract_anns = num_abstract * (num_tokens) [0-NUM_CLASSES]
+        # abstract_char_indexes = num_abstract * (num_tokens * num_chars)
+
+
         print(f"Finished reading annotations. Classes: {self.classes}")
-        # sentence_tensor = num_sentences * (['input_ids', 'token_type_ids', 'attention_mask'] X 1 * tokenizer_max_length)
-        self.sentence_tensors, self.sentence_char_indices, self.labels = self.tokenize_annotations(
-            words,
-            annotations)
-        if self.cuda:
-            print("Moving vars to GPU", flush=True)
-            self.sentence_tensors = [t.to('cuda') for t in
-                                     self.sentence_tensors]
-        print(
-            f"Now to get embeddings.. Found sentences: {len(self.sentence_tensors)}",
-            flush=True)
-        # num_sentences * num_tokens * 768
-        self.embeddings = self.get_embeddings()
-        # self.embeddings = []
-        print(f"Finished making tokens and labels. Length: {self.__len__()}",
-              flush=True)
 
     def __len__(self):
-        return len(self.embeddings)
+        return len(self.abstracts)
 
     def __getitem__(self, idx):
         if torch.is_tensor(idx):
             idx = idx.tolist()
-        sentence_embeds, char_indices, labels = self.embeddings[idx], \
-            self.sentence_char_indices[idx], self.labels[idx]
+        abstract_embeds, char_indices, labels = self.abstracts[idx], \
+            self.abstract_char_indexes[idx], self.abstract_anns[idx]
         # return ((sentence_embeds.float(), char_indices.long()), torch.from_numpy(labels).long())
-        return ((sentence_embeds.float(), rnn.pack_sequence([torch.from_numpy(i).long() for i in char_indices],False)), torch.from_numpy(labels).long())
+        return ((abstract_embeds.float(), rnn.pack_sequence([torch.from_numpy(i).long() for i in char_indices],False)), torch.from_numpy(labels).long())
 
 
     def collate_fn(self, sequences):
         xs, labels = zip(*sequences)
-        sent_embeds, char_indexes = tuple(zip(*xs))
+        abstract_embeds, char_indexes = tuple(zip(*xs))
         if self.cuda:
-            return (rnn.pack_sequence(sent_embeds, False).cuda(),
+            return (rnn.pack_sequence(abstract_embeds, False).cuda(),
                     [i.cuda() for i in char_indexes]), rnn.pack_sequence(labels, False).cuda()
         else:
             return (
-            rnn.pack_sequence(sent_embeds, False), [i for i in char_indexes]), rnn.pack_sequence(labels,
+            rnn.pack_sequence(abstract_embeds, False), [i for i in char_indexes]), rnn.pack_sequence(labels,
                                                                               False)
 
 
     def load_annotations(self, standoff_list):
         # need to use standoffs instead of directory.
         # need to split appropriately as well.
-        words = []
-        annotations = []
+        abstracts = []
+        abstract_char_indexes = []
+        abstract_anns = []
         classes = set()
 
         for standoff in standoff_list:
+            standoff_embed = torch.empty(0, self.bert_model.config.hidden_size)
+            if self.cuda:
+                standoff_embed = standoff_embed.to('cuda')
+            standoff_anns = []
+            standoff_char_indexes = []
+            prev_embed_overlap = None
             for i in range(0, len(standoff.tokens),
                            self.sentence_split_length - self.sentence_overlap):
-                words.append(standoff.tokens[i:i + self.sentence_split_length])
-                annotations.append(
-                    standoff.labels[i:i + self.sentence_split_length])
-                classes.update(annotations[-1])
+                word_array = standoff.tokens[i:i + self.sentence_split_length]
+                # abstracts[-1].append(cur_sentence)
+                label_array = standoff.labels[i:i + self.sentence_split_length]
+                # annotations[-1].append(cur_labels)
+                classes.update(label_array)
+                sentence_tensor, token_aligned_labels, char_embeds, overlap_index = self.tokenize_sentence_and_labels(
+                    word_array, label_array)
+                if self.cuda:
+                    sentence_tensor = sentence_tensor.to('cuda')
+                sentence_embed = self.get_sentence_embedding(sentence_tensor)
+                if prev_embed_overlap is not None:
+                    # need to average embeddings
+                    overlap_length = len(prev_embed_overlap)
+                    overlap_embed = (sentence_embed[:overlap_length] + prev_embed_overlap) / 2
+                    sentence_embed = torch.cat((overlap_embed, sentence_embed[overlap_length:]))
+                    # trimming existing standoff to replace with averaged
+                    # trimming labels too, no need to average though.
+                    standoff_embed = standoff_embed[:-overlap_length]
+                    standoff_anns = standoff_anns[:-overlap_length]
+                    standoff_char_indexes = standoff_char_indexes[:-overlap_length]
+                standoff_embed = torch.cat((standoff_embed, sentence_embed), dim=0)
+                standoff_anns.extend(token_aligned_labels)
+                standoff_char_indexes.extend(char_embeds)
+                # (n-16)*768 + ~128*768
+                prev_embed_overlap = sentence_embed[overlap_index:]
+            abstracts.append(standoff_embed)
+            abstract_anns.append(np.array(standoff_anns))
+            abstract_char_indexes.append(standoff_char_indexes)
 
-        return words, annotations, classes
+        return abstracts, abstract_anns, abstract_char_indexes, classes
 
-    def tokenize_annotations(self, words, annotations):
-        sentence_tensors = []
-        label_list = []
-        sentence_char_indexes = []
-        beg_token_char = numpy.array([self.char_indexes.get(c, self.char_indexes[None])
-                                      for c in self.tokenizer.cls_token])
-        end_token_char = numpy.array([self.char_indexes.get(c, self.char_indexes[None])
-                                      for c in self.tokenizer.sep_token])
-        for word_line, ann_line in zip(words, annotations):
-            # get tokens
-            sentence = " ".join(word_line)
-            tokenized_tensor = self.tokenizer(sentence, return_tensors='pt',
-                                              max_length=self.tokenizer_max_length,
-                                              padding='max_length',
-                                              truncation=True)
-            labels = ([self.class_template["O"]] *
-                      torch.sum(tokenized_tensor['attention_mask'],
-                                dim=1).item())
+    def tokenize_sentence_and_labels(self, word_array, ann_array):
+        tokenized = self.tokenizer(' '.join(word_array), return_tensors='pt',
+                                   max_length=self.tokenizer_max_length,
+                                   padding='max_length',
+                                   truncation=True)
+        token_labels = ([self.class_template["O"]] *
+                  torch.sum(tokenized['attention_mask'],
+                            dim=1).item())
 
-            label_index = 0
-            sent_char_index = [beg_token_char]
-            # adding character embeddings for each word after tokenizing
-            # adding along with label
-            for word, ann in zip(word_line, ann_line):
-                word_char_index = numpy.array([self.char_indexes.get(c, self.char_indexes[None]) for c in word])
-                tokens = self.tokenizer.tokenize(word)
-                for i, token in enumerate(tokens):
-                    # token_char_index = numpy.array(
-                    #     [self.char_indexes.get(c, self.char_indexes[None]) for c
-                    #      in token])
-                    token_id = self.tokenizer.convert_tokens_to_ids(token)
-                    if label_index >= len(labels):
-                        print(
-                            "Warning: Labels are not fitting when mapping to tokenized versions of sentences.")
-                        break
-                    while tokenized_tensor['input_ids'][0][
-                        label_index] != token_id:
-                        label_index += 1
-                    if i == 0:
-                        labels[label_index] = ann
-                    else:
-                        labels[label_index] = ann.replace(
-                            self.class_template["B"], self.class_template["I"])
-                    # labels[label_index] = ann.replace("begin", "inside")
-                    sent_char_index.append(word_char_index)
-                    # token wise character embedding did worse in all classes
-                    # sent_char_index.append(token_char_index)
+        label_index = 0
+        overlap_index = 0
+        sent_char_embeds = [self.end_token_char] * len(token_labels)
+        sent_char_embeds[0] = self.beg_token_char
+        for word_index, (word, ann) in enumerate(zip(word_array, ann_array)):
+            if word_index == self.sentence_split_length - self.sentence_overlap:
+                overlap_index = label_index
+            word_char_index = numpy.array(
+                [self.char_indexes.get(c, self.char_indexes[None]) for c in
+                 word])
+            tokens = self.tokenizer.tokenize(word)
+            for i, token in enumerate(tokens):
+                token_id = self.tokenizer.convert_tokens_to_ids(token)
+                if label_index >= len(token_labels):
+                    print(
+                        "Warning: Labels are not fitting when mapping to tokenized versions of sentences.")
+                    break
+                while tokenized['input_ids'][0][label_index] != token_id:
                     label_index += 1
-            while len(sent_char_index) < len(labels):
-                sent_char_index.append(end_token_char)
-            sentence_char_indexes.append(sent_char_index)
-            sentence_tensors.append(tokenized_tensor)
-            label_list.append(self.label_encoder.transform(labels))
+                if i == 0:
+                    token_labels[label_index] = ann
+                else:
+                    token_labels[label_index] = ann.replace(
+                        self.class_template["B"], self.class_template["I"])
+                sent_char_embeds[label_index] = word_char_index
+                label_index += 1
+        # label_list.append(self.label_encoder.transform(labels))
+        transformed_labels = self.label_encoder.transform(token_labels)
 
-        return sentence_tensors, sentence_char_indexes, label_list
+        return tokenized, transformed_labels, sent_char_embeds, overlap_index
 
-    def get_embeddings(self):
-        embeddings = []
-        for sentence_tensor in self.sentence_tensors:
-            with torch.no_grad():
-                output = self.bert_model(sentence_tensor['input_ids'],
-                                         sentence_tensor['attention_mask'])
-            # final hidden state = 1 * tokenizer_max_length * 768
-            # labels = flat( num_sentences * tokenizer_max_length )
-            length = torch.sum(sentence_tensor['attention_mask'], dim=1).item()
-            embeddings.append(output.hidden_states[-1][0][:length].float())
-        return embeddings
-
+    def get_sentence_embedding(self, sentence_tensor):
+        with torch.no_grad():
+            output = self.bert_model(sentence_tensor['input_ids'],
+                                     sentence_tensor['attention_mask'])
+        # final hidden state = 1 * tokenizer_max_length * 768
+        # labels = flat( num_sentences * tokenizer_max_length )
+        length = torch.sum(sentence_tensor['attention_mask'], dim=1).item()
+        return output.hidden_states[-1][0][:length].float()
 
 class CharacterEncoder(nn.Module):
     def __init__(self, embedding_dim, bidirectional=False):
@@ -293,15 +307,15 @@ class LSTMCharsEntityBertEmbedModel(BaseANNEntityModule):
         return x
 
     def make_dataset(self, ann_list):
-        return SentenceEmbedCharDataset(self.tokenizer, self.tokenizer_max_length,
-                                        self.char_encoder.embedding_dim,
-                                        self.char_encoder.char_indexes,
-                                        ann_list,
-                                        self.embed_model,
-                                        self.labels,
-                                        self.sentence_split_params,
-                                        cuda=next(self.output_dense.parameters()).is_cuda
-                                        )
+        return AvgdSentenceEmbedCharDataset(self.tokenizer, self.tokenizer_max_length,
+                                            self.char_encoder.embedding_dim,
+                                            self.char_encoder.char_indexes,
+                                            ann_list,
+                                            self.embed_model,
+                                            self.labels,
+                                            self.sentence_split_params,
+                                            cuda=next(self.output_dense.parameters()).is_cuda
+                                            )
     def compute_class_weight(self, class_weight, dataset):
         return compute_class_weight(class_weight, classes=self.labels.classes_,
                                     y=[tag for a in dataset.anns for tag in
@@ -339,7 +353,6 @@ if __name__ == '__main__':
     parser.add_argument('ann',action=IterFilesAction,recursive=True,suffix='.ann',help='Annotation file or directory containing files (searched recursively).')
     parser.add_argument('bertmodel',action=FileAction, mustexist=True,help='Bert fine-tuned model.')
     parser.add_argument('modeldir',action=DirectoryAction,mustexist=False,mkdirs=True,help='Directory to use when saving outputs.')
-    parser.add_argument('-M','--modelbase',default='bert-base-cased',help='Base model to train from. Defaults to \'bert-base-cased\'.')
     parser.add_argument('-w','--class-weight',action='store_const',const='balanced',help='Flag to indicate that the loss function should be class-balanced for training.')
     parser.add_argument('--train-fractions',action='store_true',help='Flag to indicate that training should be conducted with different fractions of the training dataset.')
     parser.add_argument('--eval',action='store_true',help='Flag to indicate that the model in modeldir should be loaded and evaluated, rather than a new model be trained.')
@@ -367,7 +380,7 @@ if __name__ == '__main__':
     output_labels = list(set(l for a in anns for t, l in a))
 
     stopwatch.tick('Opened all files',report=True)    # Open up BERT stuff
-    bert_model_name = args.modelbase
+    bert_model_name = 'bert-base-cased'
     config = BertConfig.from_pretrained(bert_model_name, output_hidden_states=True)
     bert_model = BertForMaskedLM.from_pretrained(bert_model_name, config=config)
     _, _, _, loaded_model_base = load_checkpoint(args.bertmodel, bert_model)
