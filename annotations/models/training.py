@@ -89,7 +89,7 @@ def perform_training(make_model, data, modeldir, make_metrics, make_opt, make_lo
 
 	return model, opt, history
 
-
+#todo: mla_cnn_training
 def evaluate_entities(model, ann_test, batch_size=1):
 	with model.evaluation():
 
@@ -151,6 +151,7 @@ def evaluate_entities(model, ann_test, batch_size=1):
 
 		return class_metrics,overall_metrics
 
+#todo: evaluate entities bert
 def evaluate_relations_old(model, ann_test, batch_size=1):
 	with model.evaluation():
 
@@ -267,3 +268,5 @@ def evaluate_attributes(model, ann_test, batch_size=1):
 
 		return class_metrics,overall_metrics
 
+#todo: evaluate cnn relations
+#todo: evaluate relations simple

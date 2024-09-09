@@ -205,14 +205,14 @@ def makecollection(*args, concatenate=False, iterate_str=False, type=list):
 		if concatenate:
 			result = []
 			for i in args:
-				if isinstance(i,collections.Iterable) and (iterate_str or not isinstance(i,str)): result += list(i)
+				if isinstance(i,collections.abc.Iterable) and (iterate_str or not isinstance(i,str)): result += list(i)
 				else: result.append(i)
 			return type(result)
 		else:
 			return type(args)
 	elif args[0] is None:
 		return type()
-	elif isinstance(args[0], collections.Iterable) and (iterate_str or not isinstance(args[0],str)):
+	elif isinstance(args[0], collections.abc.Iterable) and (iterate_str or not isinstance(args[0],str)):
 		return type(args[0])
 	else:
 		return type([args[0]])

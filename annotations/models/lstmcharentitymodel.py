@@ -167,6 +167,7 @@ if __name__ == '__main__':
 	def parse_tuple(s):
 		return tuple(int(i) for i in s.split('-'))
 
+	# todo: need to change optimum hyperparameters here, add batch
 	parser = ArgumentParser(description='Train Keras ANN to predict entities in astrophysical text.')
 	parser.add_argument('ann',action=IterFilesAction,recursive=True,suffix='.ann',help='Annotation file or directory containing files (searched recursively).')
 	parser.add_argument('embeddings',action=FileAction, mustexist=True,help='Word embeddings file.')
