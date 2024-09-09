@@ -6,7 +6,6 @@ import torch.nn.utils.rnn as rnn
 
 from annotations.brattowindow import StandoffLabels
 
-# todo: correct token_labels
 class AnnotationDataset(torch.utils.data.Dataset):
 	def __init__(self, anns, cuda=False):
 		super(AnnotationDataset,self).__init__()
@@ -155,7 +154,8 @@ class RelationSplitSpansDirectedLabelledIndexesDataset(AnnotationDataset):
 
 		outside_label = entity_labels.transform([StandoffLabels.outside_label])
 		for a in self.anns:
-			tokens,elabels = a.tokens, entity_labels.transform(a.labels)
+			stripped_labels = [l.split('_')[0] for l in a.labels]
+			tokens,elabels = a.tokens, entity_labels.transform(stripped_labels)
 			idxs = numpy.array(([0]*window_pad) + [token_indexes.get(t,fallback_index) for t in tokens] + ([0]*window_pad))
 			label_padding = entity_labels.transform([StandoffLabels.outside_label]*window_pad)
 			elabels = numpy.concatenate((label_padding, elabels, label_padding))
