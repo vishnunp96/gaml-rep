@@ -2,7 +2,7 @@ import sys,os
 import re
 import contextlib
 
-import gaml.utilities.pathutilities as pathutilities
+import utilities.pathutilities as pathutilities
 from .extracollections import makecollection
 
 @contextlib.contextmanager

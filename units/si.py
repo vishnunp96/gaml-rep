@@ -1,7 +1,7 @@
 """SI units can take PREFIXES which imply a multiplier. The si module
 encodes logic to handle these PREFIXES and create SI units."""
 
-from gaml.units.registry import REGISTRY
+from units.registry import REGISTRY
 
 PREFIXES = {
     'Y' : 10 ** 24,

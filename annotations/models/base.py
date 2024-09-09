@@ -8,10 +8,10 @@ import numpy
 from contextlib import contextmanager
 from copy import deepcopy
 
-from gaml.utilities.torchutils import unpack_sequence
-from gaml.annotations.brattowindow import StandoffLabels
-from gaml.annotations.models.predictionutils import token_labels_to_entities
-from gaml.utilities.torchutils import predict_from_dataloader
+from utilities.torchutils import unpack_sequence
+from annotations.brattowindow import StandoffLabels
+from annotations.models.predictionutils import token_labels_to_entities
+from utilities.torchutils import predict_from_dataloader
 
 # Define model base class
 class BaseANNModule(nn.Module):

@@ -19,7 +19,7 @@ if __name__ == '__main__':
 	import numpy
 	from sklearn.model_selection import train_test_split
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.argparseactions import ArgumentParser,FileAction
 	import os
 
 	parser = ArgumentParser()

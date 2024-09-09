@@ -13,13 +13,13 @@ if __name__ == "__main__":
 	import matplotlib.lines as mlines
 	import pandas
 
-	from gaml.units.dimensionless import DimensionlessUnit
-	from gaml.parsing import parse_measurement,parse_unit
+	from units.dimensionless import DimensionlessUnit
+	from parsing import parse_measurement,parse_unit
 
-	from gaml.utilities.argparseactions import ArgumentParser,DirectoryAction
-	from gaml.utilities.dateutilities import getdatetime
-	from gaml.utilities.fileutilities import listdir
-	from gaml.utilities.jsonutils import load_json
+	from utilities.argparseactions import ArgumentParser,DirectoryAction
+	from utilities.dateutilities import getdatetime
+	from utilities.fileutilities import listdir
+	from utilities.jsonutils import load_json
 
 	from astroML.density_estimation import XDGMM
 

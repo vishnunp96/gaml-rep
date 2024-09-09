@@ -402,7 +402,7 @@ class StandoffConfigAction(argparse.Action):
 
 if __name__ == '__main__':
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.argparseactions import ArgumentParser,FileAction
 
 	parser = ArgumentParser(description='Test brat utilities.')
 	parser.add_argument('ann',action=FileAction,mustexist=True,help='Annotation file.')

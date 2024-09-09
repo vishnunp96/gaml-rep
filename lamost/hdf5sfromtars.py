@@ -48,14 +48,14 @@ def process_tar(tarpath,results,targetpath):
 
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=False)
 
 	import sys
 	print(' '.join(sys.argv))
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,DirectoryAction
-	from gaml.utilities.parallel import parallel_results
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,DirectoryAction
+	from utilities.parallel import parallel_results
 	from pprint import pprint
 
 	parser = ArgumentParser()

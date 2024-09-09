@@ -1,10 +1,10 @@
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=True)
 
 	from tensorflow.keras.models import load_model
-	from gaml.utilities.kerasutils import Projection
+	from utilities.kerasutils import Projection
 	from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 	import matplotlib.pyplot as plt
@@ -13,25 +13,25 @@ if __name__ == '__main__':
 	import numpy
 	import pandas
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
-	from gaml.preprocessing.manifest import Manifest
-	from gaml.metadata.oaipmh import arXivID_from_path
-	from gaml.utilities.fileutilities import iter_files
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
+	from preprocessing.manifest import Manifest
+	from metadata.oaipmh import arXivID_from_path
+	from utilities.fileutilities import iter_files
 	import os
 	import re
 	import itertools
 	#from lxml import etree as let
-	from gaml.utilities.gxml import fastxmliter
+	from utilities.gxml import fastxmliter
 
 	from sklearn.externals import joblib
 
-	from gaml.annotations.bratutils import Standoff
-	from gaml.annotations.wordembeddings import WordEmbeddings
-	from gaml.preprocessing import latexmlpy as latexml
-	from gaml.metadata.oaipmh import MetadataAction
+	from annotations.bratutils import Standoff
+	from annotations.wordembeddings import WordEmbeddings
+	from preprocessing import latexmlpy as latexml
+	from metadata.oaipmh import MetadataAction
 
 	import sqlite3
-	import gaml.annotations.database as database
+	import annotations.database as database
 
 	parser = ArgumentParser(description='Train Keras ANN to predict entities in astrophysical text.')
 	parser.add_argument('source',action=DirectoryAction, help='Source directory for XML documents, which will either be searched recursively, or must contain a manifest file if --idlist is specified.')

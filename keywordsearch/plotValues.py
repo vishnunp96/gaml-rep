@@ -82,15 +82,15 @@ if __name__ == "__main__":
 	import matplotlib.pyplot as plt
 	import pandas
 
-	from gaml.parsing import parse_measurement,parse_unit
+	from parsing import parse_measurement,parse_unit
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
-	from gaml.utilities.dateutilities import getdatetime
-	from gaml.utilities.jsonutils import load_json,dump_json
+	from utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.dateutilities import getdatetime
+	from utilities.jsonutils import load_json,dump_json
 
 	from collections import defaultdict
 
-	from gaml.units.exception import IncompatibleUnitsError
+	from units.exception import IncompatibleUnitsError
 
 	parser = ArgumentParser(description="Plot histogram of values in file.")
 	parser.add_argument('sourcepath',action=FileAction, mustexist=True, help='Values to plot.')

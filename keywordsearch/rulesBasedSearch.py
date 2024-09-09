@@ -2,16 +2,16 @@ import re
 import sys
 import itertools
 
-import gaml.preprocessing.latexmlpy as latexml
-import gaml.metadata.oaipmh as oaipmh
+import preprocessing.latexmlpy as latexml
+import metadata.oaipmh as oaipmh
 
 from collections import defaultdict
 
-import gaml.utilities.parallel as parallel
-from gaml.utilities.iterutilities import iterator_slice
-from gaml.keywordsearch.filters import cullMatch
-from gaml.utilities.numberutils import str_to_float
-from gaml.preprocessing.mathtokenise import regularize_math
+import utilities.parallel as parallel
+from utilities.iterutilities import iterator_slice
+from keywordsearch.filters import cullMatch
+from utilities.numberutils import str_to_float
+from preprocessing.mathtokenise import regularize_math
 
 numberre = re.compile('(?<![\^_{] )(?<![\-0-9\.{])-?\d+(?:\.\d+)?(?:\ [0]+)*(?![\.\-}0-9])(?!\ \})') ## Include features for new regularise_math text
 #numberre = re.compile('(?<![\^_{\-0-9\.])-?\d+(?:\.\d+)?(?:\ [0]+)*') ## Includes trailing zeroes
@@ -357,9 +357,9 @@ class Search:
 
 if __name__ == "__main__":
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,IterFilesAction
-	from gaml.utilities.jsonutils import dump_json
-	from gaml.utilities import StopWatch
+	from utilities.argparseactions import ArgumentParser,FileAction,IterFilesAction
+	from utilities.jsonutils import dump_json
+	from utilities import StopWatch
 
 	stopwatch = StopWatch()
 

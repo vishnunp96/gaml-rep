@@ -8,8 +8,8 @@ if __name__ == '__main__':
 	import numpy
 	import pandas
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
-	from gaml.preprocessing.manifest import ManifestAction
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
+	from preprocessing.manifest import ManifestAction
 	import os
 	import re
 	import itertools
@@ -17,14 +17,14 @@ if __name__ == '__main__':
 
 	from sklearn.externals import joblib
 
-	from gaml.annotations.bratutils import Standoff
-	from gaml.annotations.brattowindow import StandoffLabels
-	from gaml.annotations.wordembeddings import WordEmbeddings
-	from gaml.preprocessing import latexmlpy as latexml
-	from gaml.metadata.oaipmh import MetadataAction
+	from annotations.bratutils import Standoff
+	from annotations.brattowindow import StandoffLabels
+	from annotations.wordembeddings import WordEmbeddings
+	from preprocessing import latexmlpy as latexml
+	from metadata.oaipmh import MetadataAction
 
 	import sqlite3
-	import gaml.annotations.database as database
+	import annotations.database as database
 
 	parser = ArgumentParser(description='Train Keras ANN to predict entities in astrophysical text.')
 	parser.add_argument('source',action=ManifestAction, help='Source directory for XML documents, with manifest file.')

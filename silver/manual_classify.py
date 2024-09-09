@@ -3,13 +3,13 @@ if __name__ == "__main__":
 	import pandas
 	import re
 	import sys
-	from gaml.preprocessing.manifest import ManifestAction
-	import gaml.preprocessing.latexmlpy as latexml
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
-	from gaml.utilities import StopWatch
-	from gaml.utilities.gxml import fastxmliter
-	from gaml.utilities.terminalutils import printacross,printwrapped,color_text,ColorCode
-	#from gaml.keywordsearch.rulesBasedSearch import measurementre
+	from preprocessing.manifest import ManifestAction
+	import preprocessing.latexmlpy as latexml
+	from utilities.argparseactions import ArgumentParser,FileAction
+	from utilities import StopWatch
+	from utilities.gxml import fastxmliter
+	from utilities.terminalutils import printacross,printwrapped,color_text,ColorCode
+	#from keywordsearch.rulesBasedSearch import measurementre
 
 	stopwatch = StopWatch()
 

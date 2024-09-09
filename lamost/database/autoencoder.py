@@ -344,14 +344,14 @@ def makePlot(data):
 
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=True)
 
 	import os
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
-	from gaml.utilities.sqliteutils import register_numpy_array_type, query_db
-	from gaml.utilities.jsonutils import dump_json
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
+	from utilities.sqliteutils import register_numpy_array_type, query_db
+	from utilities.jsonutils import dump_json
 
 	parser = ArgumentParser(description='Train name autoencoder.')
 	parser.add_argument('database', action=FileAction, mustexist=True, help='Database file.')

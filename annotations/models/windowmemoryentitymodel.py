@@ -6,9 +6,9 @@ import torch.optim as optim
 
 from sklearn.preprocessing import LabelEncoder
 
-from gaml.annotations.datasets import EntityIndexesDataset
+from annotations.datasets import EntityIndexesDataset
 
-from gaml.annotations.models.base import BaseANNEntityModule
+from annotations.models.base import BaseANNEntityModule
 
 # Define model
 class WindowMemoryEntityModel(BaseANNEntityModule):
@@ -147,10 +147,10 @@ class IndexWindowMemoryEntityModel(nn.Module):
 
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=True)
 
-	from gaml.utilities.torchutils import unpack_sequence,train,save_figs # predict_from_dataloader
+	from utilities.torchutils import unpack_sequence,train,save_figs # predict_from_dataloader
 
 	import matplotlib.pyplot as plt
 	plt.switch_backend('agg')
@@ -159,12 +159,12 @@ if __name__ == '__main__':
 	import pandas
 	from sklearn.model_selection import train_test_split
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction,DirectoryAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction,DirectoryAction
 	import os
 
-	from gaml.annotations.wordembeddings import WordEmbeddings
-	from gaml.annotations.annmlutils import open_anns
-	from gaml.annotations.datasets import EntityEmbeddingsDataset
+	from annotations.wordembeddings import WordEmbeddings
+	from annotations.annmlutils import open_anns
+	from annotations.datasets import EntityEmbeddingsDataset
 
 	import sklearn.metrics
 	from sklearn.metrics import confusion_matrix,precision_recall_fscore_support

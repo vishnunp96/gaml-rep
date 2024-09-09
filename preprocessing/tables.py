@@ -1,8 +1,8 @@
 import pandas
-import gaml.preprocessing.latexmlpy as latexml
+import preprocessing.latexmlpy as latexml
 import numpy
 import copy
-from gaml.utilities.extracollections import List2D
+from utilities.extracollections import List2D
 
 class Table(pandas.DataFrame):
 	def __init__(self, data=None, index=None, columns=None, dtype=None, caption=None, copy=False):
@@ -343,8 +343,8 @@ def normalise_borders(borders): # borders should be List2D
 
 if __name__ == '__main__':
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction
-	from gaml.metadata.oaipmh import arXivID_from_path
+	from utilities.argparseactions import ArgumentParser,IterFilesAction
+	from metadata.oaipmh import arXivID_from_path
 	from collections import defaultdict
 
 	parser = ArgumentParser(description="Run through tables.")

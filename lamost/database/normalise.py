@@ -1,6 +1,6 @@
 import numpy
 from scipy import interpolate
-from gaml.utilities.sqliteutils import register_numpy_array_type
+from utilities.sqliteutils import register_numpy_array_type
 
 # lambda_range = (start=3905,stop=9000)
 wavelengths = numpy.arange(3905,9000+1,1)
@@ -123,13 +123,13 @@ def init_norm_database(cursor):
 
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=False)
 
 	import os
 	import sqlite3
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
-	from gaml.utilities.parallel import parallel_results_batches
+	from utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.parallel import parallel_results_batches
 	#from pprint import pprint
 
 	register_numpy_array_type()

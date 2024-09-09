@@ -4,8 +4,8 @@ import numpy as np
 import json
 
 import argparse
-from gaml.utilities.argparseactions import FileAction
-from gaml.utilities.dateutilities import getdatetime
+from utilities.argparseactions import FileAction
+from utilities.dateutilities import getdatetime
 
 parser = argparse.ArgumentParser(description="Plot histogram of values in file.")
 parser.add_argument('sourcepath',action=FileAction, mustexist=True, help='Values to plot.')

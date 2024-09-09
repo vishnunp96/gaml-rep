@@ -1,10 +1,10 @@
 import re,os
 from lark.exceptions import UnexpectedCharacters,UnexpectedToken,VisitError
 from lark import Lark,Transformer,Tree,Discard
-from gaml.preprocessing.mathtokenise import regularize_math
-from gaml.utilities.filehandler import readFile
+from preprocessing.mathtokenise import regularize_math
+from utilities.filehandler import readFile
 
-import gaml.parsing.symbols
+import parsing.symbols
 
 __grammar_file = os.path.join(os.path.dirname(os.path.realpath(__file__)),'symbolgrammar.lark')
 
@@ -65,18 +65,18 @@ class SymbolTransformer(Transformer):
 		if symbol.type == 'LATEX' and symbol in latex_expressions_ignore:
 			raise Discard
 		else:
-			return gaml.parsing.symbols.LeafSymbol(str(symbol))
+			return parsing.symbols.LeafSymbol(str(symbol))
 	def number_expression(self, children):
-		return gaml.parsing.symbols.LeafNumber(str(children[0]))
+		return parsing.symbols.LeafNumber(str(children[0]))
 
 	def latex_function(self, children):
 		if children[0] in latex_functions_ignore:
 			return children[1]
 		else:
-			return gaml.parsing.symbols.LatexFunction(str(children[0]), children[1])
+			return parsing.symbols.LatexFunction(str(children[0]), children[1])
 
 	def function_expression(self, children):
-		return gaml.parsing.symbols.FunctionSymbol(children[0], children[1])
+		return parsing.symbols.FunctionSymbol(children[0], children[1])
 
 	def raised_expression(self, children):
 		return children[0].superscript(children[1])
@@ -85,41 +85,41 @@ class SymbolTransformer(Transformer):
 
 	def subtraction_expression(self, children):
 		if len(children)==1:
-			return gaml.parsing.symbols.NegativeSymbol(children[0])
+			return parsing.symbols.NegativeSymbol(children[0])
 		else:
-			return gaml.parsing.symbols.BinaryOperatorExpression('-',children[0],children[1])
+			return parsing.symbols.BinaryOperatorExpression('-',children[0],children[1])
 	def addition_expression(self, children):
 		if len(children)==1:
 			return Tree('positive_expression',children)
 		else:
-			return gaml.parsing.symbols.BinaryOperatorExpression('+',children[0],children[1])
+			return parsing.symbols.BinaryOperatorExpression('+',children[0],children[1])
 	def direct_fraction_expression(self, children):
-		return gaml.parsing.symbols.BinaryOperatorExpression('/',children[0],children[1])
+		return parsing.symbols.BinaryOperatorExpression('/',children[0],children[1])
 	def latex_frac_expression(self, children):
-		return gaml.parsing.symbols.BinaryOperatorExpression('/',children[0],children[1])
+		return parsing.symbols.BinaryOperatorExpression('/',children[0],children[1])
 
 	def equality_expression(self, children):
-		return gaml.parsing.symbols.EqualityExpression(children[0], children[1])
+		return parsing.symbols.EqualityExpression(children[0], children[1])
 
 	def sequential_expressions(self, children):
-		return gaml.parsing.symbols.SymbolSequence([i for i in children])
+		return parsing.symbols.SymbolSequence([i for i in children])
 
 	def comma_separated_expression(self, children):
-		return gaml.parsing.symbols.SeparatedExpressions(',', [i for i in children])
+		return parsing.symbols.SeparatedExpressions(',', [i for i in children])
 
 	def roundbracketed_expression(self, children):
-		return gaml.parsing.symbols.BracketedExpression('()', children[0])
+		return parsing.symbols.BracketedExpression('()', children[0])
 	def squarebracketed_expression(self, children):
-		return gaml.parsing.symbols.BracketedExpression('[]', children[0])
+		return parsing.symbols.BracketedExpression('[]', children[0])
 	def anglebracketed_expression(self, children):
-		return gaml.parsing.symbols.BracketedExpression(('\\langle','\\rangle'), children[0])
+		return parsing.symbols.BracketedExpression(('\\langle','\\rangle'), children[0])
 	def piped_expression(self, children):
-		return gaml.parsing.symbols.BracketedExpression('||', children[0])
+		return parsing.symbols.BracketedExpression('||', children[0])
 
 	def symbol(self, children):
 		if len(children) == 0:
 			return None
-		elif isinstance(children[0], gaml.parsing.symbols.BracketedExpression) and children[0].left == '(':
+		elif isinstance(children[0], parsing.symbols.BracketedExpression) and children[0].left == '(':
 			return children[0].value
 		else:
 			return children[0]
@@ -184,7 +184,7 @@ def balance_brackets2(text):
 
 if __name__ == "__main__":
 
-	from gaml.utilities.terminalutils import printacross
+	from utilities.terminalutils import printacross
 
 	rawsymbolparser = Lark(get_lark_grammar(), parser="lalr", lexer="contextual", start='symbol')
 

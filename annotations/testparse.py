@@ -1,10 +1,10 @@
 import sqlite3
 import pandas
-from gaml.annotations.database import query
-from gaml.parsing import parse_measurement,parse_unit,parse_symbol
+from annotations.database import query
+from parsing import parse_measurement,parse_unit,parse_symbol
 
-from gaml.units.compatibility import compatible
-#from gaml.units.dimensionless import DimensionlessUnit
+from units.compatibility import compatible
+#from units.dimensionless import DimensionlessUnit
 
 #conn = sqlite3.connect('file:/mnt/databases/database4simpleentrulerel.db?mode=ro',uri=True)
 #conn = sqlite3.connect('file:/mnt/databases/database5charentrulerelwindowattr.db?mode=ro',uri=True)
@@ -48,7 +48,7 @@ collected_names = pandas.merge(names,value_names,on=['name','symbol'])[['name','
 
 
 
-from gaml.utilities.jsonutils import load_json
+from utilities.jsonutils import load_json
 
 valuesDict = load_json('/mnt/searches/arXivNeat_latest_withspans.json')
 hubbleUnit = parse_unit('km/s/Mpc')

@@ -6,13 +6,13 @@ if __name__ == '__main__':
 
 	import matplotlib.pyplot as plt
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
-	from gaml.metadata.oaipmh import MetadataAction
+	from utilities.argparseactions import ArgumentParser,FileAction
+	from metadata.oaipmh import MetadataAction
 
-	from gaml.annotations.database import query
-	from gaml.parsing import parse_measurement,parse_unit
-	from gaml.units.compatibility import compatible
-	from gaml.utilities.dateutilities import getdatetime
+	from annotations.database import query
+	from parsing import parse_measurement,parse_unit
+	from units.compatibility import compatible
+	from utilities.dateutilities import getdatetime
 
 	parser = ArgumentParser(description='Access data in database and plot, based on name and symbol queries.')
 	parser.add_argument('database', action=FileAction, mustexist=True, help='Path to database.')

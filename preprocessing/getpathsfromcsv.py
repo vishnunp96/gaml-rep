@@ -1,8 +1,8 @@
 import pandas
 
-from gaml.preprocessing.manifest import Manifest
+from preprocessing.manifest import Manifest
 
-from gaml.utilities.argparseactions import ArgumentParser,FileAction
+from utilities.argparseactions import ArgumentParser,FileAction
 
 parser = ArgumentParser(description='Get filepaths from manifest using csv.')
 parser.add_argument('manifest',action=FileAction, mustexist=True, help='Path to manifest file.')

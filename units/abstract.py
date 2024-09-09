@@ -1,6 +1,6 @@
 """An abstract base class to define the interface for all units."""
 
-from gaml.units.quantity import Quantity
+from units.quantity import Quantity
 
 import numbers
 

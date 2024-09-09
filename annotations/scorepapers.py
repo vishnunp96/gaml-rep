@@ -1,11 +1,11 @@
-from gaml.metadata.oaipmh import arXivID_from_path
-from gaml.utilities.parallel import parallel_results
-from gaml.preprocessing import latexmlpy as latexml
-from gaml.utilities.gxml import fastxmliter
+from metadata.oaipmh import arXivID_from_path
+from utilities.parallel import parallel_results
+from preprocessing import latexmlpy as latexml
+from utilities.gxml import fastxmliter
 import re
 
-from gaml.parsing import parse_measurement
-from gaml.keywordsearch.rulesBasedSearch import measurementre
+from parsing import parse_measurement
+from keywordsearch.rulesBasedSearch import measurementre
 
 def score_paper_abstract(path, metadata, title_regexps, text_regexps):
 	arXiv = arXivID_from_path(path)
@@ -74,10 +74,10 @@ if __name__ == '__main__':
 
 	import pandas
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
-	from gaml.metadata.oaipmh import MetadataAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
+	from metadata.oaipmh import MetadataAction
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch()
 
 	parser = ArgumentParser(description='Score papers based on word inclusion.')

@@ -4,7 +4,7 @@ if __name__ == "__main__":
 	import matplotlib.pyplot as plt
 	#from matplotlib import style
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.argparseactions import ArgumentParser,FileAction
 
 	parser = ArgumentParser()
 	parser.add_argument('results',action=FileAction, mustexist=True,help="Year-scale arXiv statistics.")

@@ -1,11 +1,11 @@
-from gaml.metadata.oaipmh import arXivID_from_path
-from gaml.utilities.parallel import parallel_results
-from gaml.preprocessing import latexmlpy as latexml
+from metadata.oaipmh import arXivID_from_path
+from utilities.parallel import parallel_results
+from preprocessing import latexmlpy as latexml
 import re
-from gaml.parsing import parse_measurement
-from gaml.keywordsearch.rulesBasedSearch import measurementre
-from gaml.units import unit
-from gaml.units.dimensionless import DimensionlessUnit
+from parsing import parse_measurement
+from keywordsearch.rulesBasedSearch import measurementre
+from units import unit
+from units.dimensionless import DimensionlessUnit
 
 # "Conclusion" here includes results section
 conclusionre = re.compile('conclusions?|summary|results?',flags=re.IGNORECASE)
@@ -87,10 +87,10 @@ if __name__ == '__main__':
 
 	import pandas
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
-	from gaml.metadata.oaipmh import MetadataAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
+	from metadata.oaipmh import MetadataAction
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch()
 
 	parser = ArgumentParser(description='Create silver data labels for papers containing new measurements.')

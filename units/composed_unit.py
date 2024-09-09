@@ -2,14 +2,14 @@
 (but not other composed units.)
 Utility methods here for working with abstract fractions."""
 
-from gaml.units.abstract import AbstractUnit
-from gaml.units.compatibility import compatible
+from units.abstract import AbstractUnit
+from units.compatibility import compatible
 import numbers
 import cgi
 from collections import Counter
 
 #import units.dimensionless
-from gaml.units.dimensionless import DimensionlessUnit
+from units.dimensionless import DimensionlessUnit
 
 def unbox(numer, denom, multiplier):
 	"""Attempts to convert the fractional unit represented by the parameters

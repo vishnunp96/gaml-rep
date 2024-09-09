@@ -1,7 +1,7 @@
 from sklearn.preprocessing import LabelEncoder
 import statistics
 
-from gaml.annotations.brattowindow import StandoffLabels
+from annotations.brattowindow import StandoffLabels
 
 def get_type(s):
 	if s == 'outside':

@@ -2,6 +2,7 @@ if __name__ == "__main__":
 
 	import os
 	from random import shuffle
+	#todo: fix statistics
 	from statistics import mean
 
 	import pandas
@@ -9,14 +10,14 @@ if __name__ == "__main__":
 	from lxml import etree as let
 	import json
 
-	from gaml.preprocessing import latexmlpy as latexml
-	from gaml.preprocessing.manifest import ManifestAction
+	from preprocessing import latexmlpy as latexml
+	from preprocessing.manifest import ManifestAction
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
-	from gaml.utilities.filehandler import readFile
-	from gaml.utilities.fileutilities import changeext
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
+	from utilities.filehandler import readFile
+	from utilities.fileutilities import changeext
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch()
 
 	parser = ArgumentParser(description='Divide articles up amongst annotators, with redundancy.')

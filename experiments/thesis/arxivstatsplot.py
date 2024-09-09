@@ -1,5 +1,5 @@
-from gaml.utilities.argparseactions import ArgumentParser,FileAction
-from gaml.metadata import MetadataAction
+from utilities.argparseactions import ArgumentParser,FileAction
+from metadata import MetadataAction
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 import numpy

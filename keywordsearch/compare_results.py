@@ -1,8 +1,8 @@
 if __name__ == '__main__':
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
-	from gaml.utilities.fileutilities import changeext
-	from gaml.utilities.bratutils import read_ann
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
+	from utilities.fileutilities import changeext
+	from utilities.bratutils import read_ann
 	import json
 	import re
 	import itertools
@@ -12,9 +12,9 @@ if __name__ == '__main__':
 
 	from pprint import pprint
 
-	from gaml.metadata.oaipmh import arXivID_from_path
+	from metadata.oaipmh import arXivID_from_path
 
-	from gaml.preprocessing.latexmlpy import get_local_overlap_from_multiple
+	from preprocessing.latexmlpy import get_local_overlap_from_multiple
 
 	parser = ArgumentParser(description='Description.')
 	parser.add_argument('source',action=IterFilesAction,mustexist=True,suffix='.ann',help='Source file or directory.')

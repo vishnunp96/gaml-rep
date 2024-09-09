@@ -1,6 +1,6 @@
-from gaml.annotations.bratnormalisation import open_clean,add_implied_relations
-#from gaml.annotations.bratutils import Standoff
-from gaml.annotations.brattowindow import StandoffLabels
+from annotations.bratnormalisation import open_clean,add_implied_relations
+#from annotations.bratutils import Standoff
+from annotations.brattowindow import StandoffLabels
 
 def open_anns(paths,types=None,use_labelled=False):
 	''' Read in data from iterable of paths. Number of Standoff(Labels) objects may not equal number of paths. '''

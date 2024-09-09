@@ -1,5 +1,5 @@
 import tarfile
-import gaml.utilities.mygzip as gzip
+import utilities.mygzip as gzip
 import os
 import re
 
@@ -113,8 +113,8 @@ if __name__ == '__main__':
 	from orbitapy.utilities import StopWatch
 	stopwatch = StopWatch(memory=False)
 
-	from gaml.utilities.argparseactions import ArgumentParser,PathAction
-	from gaml.metadata import MetadataAction
+	from utilities.argparseactions import ArgumentParser,PathAction
+	from metadata import MetadataAction
 
 	from collections import defaultdict
 

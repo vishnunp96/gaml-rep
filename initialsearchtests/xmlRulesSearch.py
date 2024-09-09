@@ -1,10 +1,10 @@
 import re
 import sys
 import os
-import gaml.preprocessing.latexmlpy as latexml
+import preprocessing.latexmlpy as latexml
 import xml.etree.ElementTree as et
 
-import gaml.metadata.oaipmh as oaipmh
+import metadata.oaipmh as oaipmh
 
 global number
 number = '(?<![_{])' + '(?<!\.)-?\d+(?:\.\d+)?' ## First part just makes sure it's not inside a tex math struct - not ideal solution
@@ -91,7 +91,7 @@ if __name__ == "__main__":
 	from collections import defaultdict
 
 	import argparse
-	from gaml.utilities.argparseactions import FileAction,DirectoryAction,RegexListAction
+	from utilities.argparseactions import FileAction,DirectoryAction,RegexListAction
 
 	import pprint
 

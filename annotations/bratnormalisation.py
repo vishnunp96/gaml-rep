@@ -5,8 +5,8 @@ from copy import copy,deepcopy
 import itertools
 from collections import defaultdict,Counter
 
-from gaml.annotations.bratutils import Standoff,overlap,is_overlapping,find_overlap_span
-from gaml.parsing import parse_measurement
+from annotations.bratutils import Standoff,overlap,is_overlapping,find_overlap_span
+from parsing import parse_measurement
 
 ## Load custom stopwords
 with open(os.path.join(os.path.dirname(os.path.realpath(__file__)),'stopwords.txt'),'r') as f:
@@ -531,7 +531,7 @@ def combine(ann1,ann2):
 
 if __name__ == '__main__':
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction
 
 	parser = ArgumentParser(description='Test brat normalisation.')
 	parser.add_argument('ann',action=IterFilesAction,recursive=True,suffix='.ann',help='Annotation file or directory containing files (searched recursively).')
@@ -611,7 +611,7 @@ if __name__ == '__main__':
 
 if __name__ == '!__main__':
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.argparseactions import ArgumentParser,FileAction
 
 	parser = ArgumentParser(description='Test brat normalisation.')
 	parser.add_argument('ann',action=FileAction,mustexist=True,help='Annotation file.')

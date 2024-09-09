@@ -3,7 +3,7 @@ if __name__ == '__main__':
 	import tarfile
 	import os.path as path
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
 
 	parser = ArgumentParser()
 	parser.add_argument('source',action=FileAction, mustexist=True)

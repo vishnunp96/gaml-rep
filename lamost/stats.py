@@ -5,7 +5,7 @@ if __name__ == '__main__':
 
 	from astropy.io import fits
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.argparseactions import ArgumentParser,FileAction
 
 	parser = ArgumentParser()
 	parser.add_argument('source',action=FileAction, mustexist=True)

@@ -1,6 +1,6 @@
 if __name__ == '__main__':
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.argparseactions import ArgumentParser,FileAction
 
 	import dominate
 	from dominate.tags import div,link,h1,h2,table,thead,tbody,tr,th,td,a

@@ -12,14 +12,14 @@ if __name__ == '__main__':
 	import numpy
 	from sklearn.model_selection import train_test_split
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
 	import os
 	import itertools
 	from collections import Counter
 
-	#from gaml.annotations.bratutils import Standoff
-	from gaml.annotations.brattowindow import StandoffLabels
-	from gaml.annotations.wordembeddings import WordEmbeddings
+	#from annotations.bratutils import Standoff
+	from annotations.brattowindow import StandoffLabels
+	from annotations.wordembeddings import WordEmbeddings
 
 	from sklearn.preprocessing import LabelBinarizer
 	from sklearn.metrics import confusion_matrix

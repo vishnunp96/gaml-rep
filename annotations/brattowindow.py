@@ -3,7 +3,7 @@ import re
 
 from collections import defaultdict
 
-from gaml.annotations.bratutils import Standoff
+from annotations.bratutils import Standoff
 
 def token_iter(text):
 	current_index = 0
@@ -142,9 +142,9 @@ class StandoffLabels:
 
 if __name__ == '__main__':
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.argparseactions import ArgumentParser,FileAction
 
-	#from gaml.annotations.word2vec import WordEmbeddings
+	#from annotations.word2vec import WordEmbeddings
 
 	parser = ArgumentParser(description='Test standoff embedding code.')
 	parser.add_argument('ann',action=FileAction,mustexist=True,help='Annotation file.')

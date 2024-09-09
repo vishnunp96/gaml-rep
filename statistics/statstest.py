@@ -1,11 +1,11 @@
-from gaml.utilities.bratutils import read_ann
+from utilities.bratutils import read_ann
 
 if __name__ == '__main__':
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction
-	from gaml.metadata import MetadataAction
-	from gaml.utilities.fileutilities import changeext
-	from gaml.utilities.jsonutils import load_json
+	from utilities.argparseactions import ArgumentParser,IterFilesAction
+	from metadata import MetadataAction
+	from utilities.fileutilities import changeext
+	from utilities.jsonutils import load_json
 	import re
 	import lxml.etree as let
 
@@ -13,9 +13,9 @@ if __name__ == '__main__':
 
 	from pprint import pprint
 
-	from gaml.metadata.oaipmh import arXivID_from_path
+	from metadata.oaipmh import arXivID_from_path
 
-	from gaml.preprocessing.latexmlpy import get_local_overlap_from_multiple
+	from preprocessing.latexmlpy import get_local_overlap_from_multiple
 
 	parser = ArgumentParser(description='Description.')
 	parser.add_argument('source',action=IterFilesAction,mustexist=True,suffix='.ann',help='Source file or directory.')

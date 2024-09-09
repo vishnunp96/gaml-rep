@@ -1,8 +1,8 @@
 if __name__ == '__main__':
 
-	from gaml.units import unit,named_unit
-	from gaml.units.predefined import define_units
-	#from gaml.units.compatibility import compatible
+	from units import unit,named_unit
+	from units.predefined import define_units
+	#from units.compatibility import compatible
 	define_units()
 	named_unit('sec',['s'],[])
 

@@ -4,13 +4,13 @@ if __name__ == "__main__":
 	import pandas
 	pandas.options.mode.chained_assignment = None  # default='warn'
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
-	from gaml.utilities import StopWatch
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
+	from utilities import StopWatch
 
 	#import sqlite3
-	from gaml.parsing import parse_measurement,parse_unit
+	from parsing import parse_measurement,parse_unit
 
-	from gaml.units.compatibility import compatible
+	from units.compatibility import compatible
 
 	import numpy
 	import matplotlib
@@ -18,10 +18,10 @@ if __name__ == "__main__":
 	import matplotlib.pyplot as plt
 	from matplotlib.ticker import NullFormatter
 
-	from gaml.units.dimensionless import DimensionlessUnit
-	from gaml.units.measurement import Measurement,Uncertainty
+	from units.dimensionless import DimensionlessUnit
+	from units.measurement import Measurement,Uncertainty
 
-	from gaml.utilities.dateutilities import getdatetime
+	from utilities.dateutilities import getdatetime
 
 	stopwatch = StopWatch()
 

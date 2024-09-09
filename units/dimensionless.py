@@ -1,4 +1,4 @@
-from gaml.units.abstract import AbstractUnit
+from units.abstract import AbstractUnit
 import numbers
 
 class DimensionlessUnit(AbstractUnit):

@@ -1,4 +1,4 @@
-from gaml.utilities.argparseactions import ArgumentParser,FileAction
+from utilities.argparseactions import ArgumentParser,FileAction
 
 def make_pair(l,type=None):
 	if type:

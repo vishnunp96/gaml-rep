@@ -1,8 +1,8 @@
 if __name__ == '__main__':
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction
 
-	from gaml.annotations.bratutils import Standoff
+	from annotations.bratutils import Standoff
 
 	from collections import Counter,defaultdict
 	import itertools

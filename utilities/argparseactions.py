@@ -3,7 +3,7 @@ import os
 import re
 from collections import OrderedDict
 
-import gaml.utilities.pathutilities as pathutilities
+import utilities.pathutilities as pathutilities
 from .fileutilities import get_available_filename,iter_files
 
 class ArgumentParser(argparse.ArgumentParser):

@@ -1,8 +1,8 @@
 """Assign arbitrary new symbols to composed units."""
 
-from gaml.units.abstract import AbstractUnit
-from gaml.units.composed_unit import ComposedUnit,simplify
-from gaml.units.registry import REGISTRY
+from units.abstract import AbstractUnit
+from units.composed_unit import ComposedUnit,simplify
+from units.registry import REGISTRY
 
 import numbers
 import cgi

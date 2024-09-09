@@ -1,11 +1,11 @@
-from gaml.utilities.systemutilities import console
-from gaml.utilities.terminalutils import eprint
-import gaml.utilities.stringhandler as stringhandler
-from gaml.preprocessing.texthandler import normalise, isEmpty
-from gaml.preprocessing.mathtokenise import regularize_math
+from utilities.systemutilities import console
+from utilities.terminalutils import eprint
+import utilities.stringhandler as stringhandler
+from preprocessing.texthandler import normalise, isEmpty
+from preprocessing.mathtokenise import regularize_math
 import re
 from lxml import etree as let
-from gaml.utilities.gxml import fastxmliter
+from utilities.gxml import fastxmliter
 
 global latexmlignoretags
 global latexmlremovetags
@@ -335,8 +335,8 @@ latexmlprettifyspecial = {'bibblock': prettify_single_line, 'Math': prettify_mat
 
 if __name__ == "__main__":
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
-	from gaml.utilities.fileutilities import changeext
+	from utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.fileutilities import changeext
 
 	parser = ArgumentParser(description='Convert a .tex file into an ElementTree structure, saving and/or displaying the result in various formats.')
 	parser.add_argument('texfile',action=FileAction, mustexist=True, help='Path to tex file to parse.')

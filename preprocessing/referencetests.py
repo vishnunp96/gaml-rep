@@ -1,9 +1,9 @@
 if __name__ == '__main__':
 
-	from gaml.metadata.oaipmh import arXivID_from_path
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction
+	from metadata.oaipmh import arXivID_from_path
+	from utilities.argparseactions import ArgumentParser,IterFilesAction
 
-	import gaml.preprocessing.latexmlpy as latexml
+	import preprocessing.latexmlpy as latexml
 
 	parser = ArgumentParser(description="Find occurances of tags.")
 	parser.add_argument("sources",action=IterFilesAction, recursive=True, suffix='.xml', help='Path to xml source(s).')

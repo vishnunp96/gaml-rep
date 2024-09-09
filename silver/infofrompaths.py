@@ -2,10 +2,10 @@ if __name__ == '__main__':
 
 	import re
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
-	from gaml.metadata.oaipmh import MetadataAction,arXivID_from_path
+	from utilities.argparseactions import ArgumentParser,FileAction
+	from metadata.oaipmh import MetadataAction,arXivID_from_path
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch()
 
 	parser = ArgumentParser(description='Print titles of arXiv papers from file of filepaths.')

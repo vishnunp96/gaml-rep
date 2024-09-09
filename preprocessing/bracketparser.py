@@ -1,5 +1,5 @@
 from lark import Lark,Transformer,Tree
-from gaml.utilities.filehandler import readFile
+from utilities.filehandler import readFile
 import os,re
 
 __grammar_file = os.path.join(os.path.dirname(os.path.realpath(__file__)),'bracketgrammar.lark')

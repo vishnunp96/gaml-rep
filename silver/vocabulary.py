@@ -1,6 +1,6 @@
-from gaml.utilities.gxml import fastxmliter
-import gaml.preprocessing.latexmlpy as latexml
-from gaml.utilities.parallel import parallel_results
+from utilities.gxml import fastxmliter
+import preprocessing.latexmlpy as latexml
+from utilities.parallel import parallel_results
 
 import re
 import operator
@@ -45,12 +45,12 @@ def token_vector(path,vocabulary):
 
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=False)
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
 
-	from gaml.utilities.jsonutils import dump_json
+	from utilities.jsonutils import dump_json
 
 	parser = ArgumentParser()
 	parser.add_argument('source',action=IterFilesAction, recursive=True, suffix='.xml')

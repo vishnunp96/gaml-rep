@@ -118,7 +118,7 @@ class MetadataAction(argparse.Action):
 ##########
 if __name__ == "__main__":
 
-	from gaml.utilities.argparseactions import FileAction,RegexListAction
+	from utilities.argparseactions import FileAction,RegexListAction
 
 	parser = argparse.ArgumentParser(description="Module containing methods and classes for arXiv metadata handling.")
 	parser.add_argument('metadatapath',action=FileAction, mustexist=True, help='Path to metadata.')

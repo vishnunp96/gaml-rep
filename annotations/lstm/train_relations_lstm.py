@@ -8,7 +8,7 @@ if __name__ == '__main__':
 	from tensorflow.keras.regularizers import l2
 	from tensorflow.keras.utils import Sequence
 
-	from gaml.utilities.kerasutils import Projection
+	from utilities.kerasutils import Projection
 
 	import matplotlib.pyplot as plt
 	plt.switch_backend('agg')
@@ -18,14 +18,14 @@ if __name__ == '__main__':
 	from sklearn.model_selection import train_test_split
 	from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
 	import os
 	import itertools
 
-	from gaml.annotations.bratnormalisation import open_clean
-	#from gaml.annotations.bratutils import Standoff
-	#from gaml.annotations.brattowindow import StandoffLabels
-	from gaml.annotations.wordembeddings import WordEmbeddings
+	from annotations.bratnormalisation import open_clean
+	#from annotations.bratutils import Standoff
+	#from annotations.brattowindow import StandoffLabels
+	from annotations.wordembeddings import WordEmbeddings
 
 	from sklearn.preprocessing import LabelBinarizer
 	from sklearn.metrics import confusion_matrix,precision_recall_fscore_support

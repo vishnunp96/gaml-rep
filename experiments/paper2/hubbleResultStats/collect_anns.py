@@ -3,17 +3,17 @@ if __name__ == "__main__":
 	import os
 	import re
 	import pandas
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction,IterFilesAction
-	from gaml.utilities import StopWatch
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction,IterFilesAction
+	from utilities import StopWatch
 
 	#import sqlite3
-	from gaml.annotations.database import query,loadconnect
-	from gaml.annotations.database import get as get_ann
-	from gaml.parsing import parse_measurement,parse_unit
+	from annotations.database import query,loadconnect
+	from annotations.database import get as get_ann
+	from parsing import parse_measurement,parse_unit
 
-	from gaml.units.compatibility import compatible
-	from gaml.utilities.jsonutils import load_json
-	from gaml.metadata.oaipmh import arXivID_from_path
+	from units.compatibility import compatible
+	from utilities.jsonutils import load_json
+	from metadata.oaipmh import arXivID_from_path
 
 	stopwatch = StopWatch()
 

@@ -1,6 +1,6 @@
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=True)
 
 	import torch
@@ -9,7 +9,7 @@ if __name__ == '__main__':
 	import torch.optim as optim
 	import torch.nn.utils.rnn as rnn
 
-	from gaml.utilities.torchutils import unpack_sequence,train # predict_from_dataloader
+	from utilities.torchutils import unpack_sequence,train # predict_from_dataloader
 
 	import matplotlib.pyplot as plt
 	plt.switch_backend('agg')
@@ -19,13 +19,13 @@ if __name__ == '__main__':
 	from sklearn.model_selection import train_test_split
 	from collections import defaultdict
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
 	import os
 
-	#from gaml.annotations.bratnormalisation import open_clean
-	#from gaml.annotations.brattowindow import StandoffLabels
-	from gaml.annotations.wordembeddings import WordEmbeddings
-	from gaml.annotations.annmlutils import open_anns
+	#from annotations.bratnormalisation import open_clean
+	#from annotations.brattowindow import StandoffLabels
+	from annotations.wordembeddings import WordEmbeddings
+	from annotations.annmlutils import open_anns
 
 	from sklearn.preprocessing import LabelEncoder
 	import sklearn.metrics

@@ -5,8 +5,8 @@ import re
 import numpy
 from scipy.special import erfinv
 
-from gaml.parsing import parse_symbol,parse_measurement
-from gaml.annotations.bratutils import Standoff
+from parsing import parse_symbol,parse_measurement
+from annotations.bratutils import Standoff
 
 ### Need code to create tables
 def init(cursor):
@@ -714,8 +714,8 @@ if __name__ == '__main__':
 
 	import os
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,IterFilesAction
-	from gaml.metadata.oaipmh import MetadataAction,arXivID_from_path
+	from utilities.argparseactions import ArgumentParser,FileAction,IterFilesAction
+	from metadata.oaipmh import MetadataAction,arXivID_from_path
 
 	def run_init(args):
 
@@ -781,7 +781,7 @@ if __name__ == '__main__':
 		for arXivID,ann in anns:
 			add(ann,arXivID,args.metadata.get(arXivID,'date').date(),cursor)
 
-		#from gaml.annotations.bratnormalisation import similarity_include,sort
+		#from annotations.bratnormalisation import similarity_include,sort
 		#failcount = 0
 		#for arXivID,ann in anns:
 		#	recovered = get(arXivID,cursor)

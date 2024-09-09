@@ -1,14 +1,14 @@
 import re
 import os
 import tarfile
-import gaml.utilities.mygzip as gzip
-from gaml.metadata.oaipmh import arXivID_from_path
+import utilities.mygzip as gzip
+from metadata.oaipmh import arXivID_from_path
 import tempfile
-from gaml.utilities.fileutilities import listdir
-import gaml.utilities.filehandler as filehandler
-from gaml.utilities.utils import timeout
+from utilities.fileutilities import listdir
+import utilities.filehandler as filehandler
+from utilities.utils import timeout
 import regex
-import gaml.preprocessing.latexmlpy as latexml
+import preprocessing.latexmlpy as latexml
 
 def make_ext_regex(exts):
 	return re.compile('(' + '|'.join(['('+re.escape(ext)+')' for ext in exts]) + ')'+'$',re.IGNORECASE)
@@ -116,16 +116,16 @@ def get_xml(dirpath,arXivID,metadata):
 
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=False)
 
 	import sys
 	print(' '.join(sys.argv))
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,DirectoryAction
-	from gaml.metadata import MetadataAction
-	from gaml.preprocessing.manifest import make_manifest
-	from gaml.utilities.parallel import parallel_results
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,DirectoryAction
+	from metadata import MetadataAction
+	from preprocessing.manifest import make_manifest
+	from utilities.parallel import parallel_results
 	from pprint import pprint
 
 	import random

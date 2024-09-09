@@ -1,11 +1,11 @@
 if __name__ == "__main__":
 
 	import re
-	from gaml.utilities.argparseactions import ArgumentParser,PathAction
-	from gaml.utilities import StopWatch
-	from gaml.utilities.gxml import fastxmliter
-	from gaml.utilities.fileutilities import iter_files
-	import gaml.preprocessing.latexmlpy as latexml
+	from utilities.argparseactions import ArgumentParser,PathAction
+	from utilities import StopWatch
+	from utilities.gxml import fastxmliter
+	from utilities.fileutilities import iter_files
+	import preprocessing.latexmlpy as latexml
 
 	stopwatch = StopWatch()
 

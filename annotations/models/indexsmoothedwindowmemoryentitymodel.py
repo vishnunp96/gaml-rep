@@ -7,10 +7,10 @@ import torch.optim as optim
 from sklearn.preprocessing import LabelEncoder
 from sklearn.utils.class_weight import compute_class_weight
 
-from gaml.utilities.torchutils import unpack_sequence
-from gaml.annotations.datasets import EntityIndexesDataset
+from utilities.torchutils import unpack_sequence
+from annotations.datasets import EntityIndexesDataset
 
-from gaml.annotations.models.base import BaseANNEntityModule
+from annotations.models.base import BaseANNEntityModule
 
 # Define model
 class IndexSmoothedWindowMemoryEntityModel(BaseANNEntityModule):
@@ -131,26 +131,26 @@ class IndexSmoothedWindowMemoryEntityModel(BaseANNEntityModule):
 
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=True)
 
-	from gaml.utilities.torchutils import save_figs # predict_from_dataloader
+	from utilities.torchutils import save_figs # predict_from_dataloader
 
 	import matplotlib.pyplot as plt
 	plt.switch_backend('agg')
 
 	import numpy
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction,DirectoryAction,ListAction
-	from gaml.utilities.mlutils import split_data
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction,DirectoryAction,ListAction
+	from utilities.mlutils import split_data
 	import os
 
-	from gaml.annotations.wordembeddings import WordEmbeddings
-	from gaml.annotations.annmlutils import open_anns
+	from annotations.wordembeddings import WordEmbeddings
+	from annotations.annmlutils import open_anns
 
 	import sklearn.metrics
 
-	from gaml.annotations.models.training import perform_training,evaluate_entities
+	from annotations.models.training import perform_training,evaluate_entities
 
 	def parse_tuple(s):
 		return tuple(int(i) for i in s.split('-'))

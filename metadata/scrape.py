@@ -110,7 +110,7 @@ if __name__ == "__main__":
 
 	import argparse
 	import pickle
-	from gaml.utilities.argparseactions import FileAction
+	from utilities.argparseactions import FileAction
 
 	parser = argparse.ArgumentParser(description="Download all arXiv metadata and store in a Whoosh index.")
 	parser.add_argument("metadatapath",action=FileAction, mustexist=False, findavailable=True, help='Path in which to store metadata file).')

@@ -2,9 +2,9 @@
 The combination of quantities is dependent on the compatibilities
 of their units."""
 
-import gaml.units
-from gaml.units.compatibility import compatible
-from gaml.units.exception import IncompatibleUnitsError
+import units
+from units.compatibility import compatible
+from units.exception import IncompatibleUnitsError
 
 class Quantity(object):
 	"""A number with a unit attached."""
@@ -16,9 +16,9 @@ class Quantity(object):
 			return num * unit
 
 	def __init__(self, num, unit):
-		if isinstance(unit,gaml.units.dimensionless.DimensionlessUnit):
+		if isinstance(unit,units.dimensionless.DimensionlessUnit):
 			self._num = num*unit.factor
-			self._unit = gaml.units.dimensionless.DimensionlessUnit(1)
+			self._unit = units.dimensionless.DimensionlessUnit(1)
 		else:
 			self._num, self._unit = num, unit
 

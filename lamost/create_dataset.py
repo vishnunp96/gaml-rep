@@ -3,13 +3,13 @@ if __name__ == '__main__':
 	import h5py
 	import pandas
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=False)
 
 	import sys
 	print(' '.join(sys.argv))
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
 
 	parser = ArgumentParser()
 	parser.add_argument('source',action=IterFilesAction, suffix='.hdf5',help='HDF5 source file(s).')

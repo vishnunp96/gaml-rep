@@ -5,10 +5,10 @@ if __name__ == '__main__':
 
 	from sklearn.model_selection import train_test_split
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction
-	from gaml.annotations.bratutils import StandoffConfigAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction
+	from annotations.bratutils import StandoffConfigAction
 
-	from gaml.annotations.annmlutils import open_anns
+	from annotations.annmlutils import open_anns
 
 	parser = ArgumentParser(description='Run tests on relations in training set.')
 	parser.add_argument('ann',action=IterFilesAction,recursive=True,suffix='.ann',help='Annotation file or directory containing files (searched recursively).')

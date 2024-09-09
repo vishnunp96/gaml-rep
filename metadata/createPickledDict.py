@@ -6,7 +6,7 @@ import argparse
 import pickle
 
 
-from gaml.utilities.directoryactions import DirectoryAction
+from utilities.directoryactions import DirectoryAction
 
 parser = argparse.ArgumentParser(description="Some queries for arXiv data stored in a Whoosh index.")
 parser.add_argument("indexdirpath",action=DirectoryAction, mustexist=True, help='Path to directory where metadata index is stored.')

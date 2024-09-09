@@ -1,4 +1,4 @@
-from gaml.metadata.oaipmh import arXivID_from_path
+from metadata.oaipmh import arXivID_from_path
 
 def process_paper(path, results, metadata):
 	text = ''
@@ -39,17 +39,17 @@ if __name__ == '__main__':
 	import re
 	from pprint import pprint
 
-	from gaml.utilities.parallel import parallel_results
-	from gaml.utilities.iterutilities import randomly
+	from utilities.parallel import parallel_results
+	from utilities.iterutilities import randomly
 
-	from gaml.preprocessing import latexmlpy as latexml
-	from gaml.utilities.gxml import fastxmliter
+	from preprocessing import latexmlpy as latexml
+	from utilities.gxml import fastxmliter
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
-	from gaml.metadata.oaipmh import MetadataAction
-	from gaml.utilities.fileutilities import addsuffix
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
+	from metadata.oaipmh import MetadataAction
+	from utilities.fileutilities import addsuffix
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch()
 
 	parser = ArgumentParser(description='Create silver data labels for papers containing new measurements.')

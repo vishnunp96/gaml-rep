@@ -10,11 +10,11 @@ from contextlib import contextmanager
 
 from sklearn.preprocessing import LabelEncoder,LabelBinarizer
 
-from gaml.annotations.bratutils import Standoff
-from gaml.annotations.bratnormalisation import add_implied_relations
+from annotations.bratutils import Standoff
+from annotations.bratnormalisation import add_implied_relations
 
-from gaml.annotations.models.base import BaseANNRelationModule
-from gaml.annotations.datasets import AnnotationDataset
+from annotations.models.base import BaseANNRelationModule
+from annotations.datasets import AnnotationDataset
 
 def pairwise(iterable):
 	''' s -> (s0,s1), (s1,s2), (s2, s3), ... '''
@@ -271,7 +271,7 @@ class RulesRelationDirectedPredictionDataset(AnnotationDataset):
 
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=True)
 
 	import warnings
@@ -280,12 +280,12 @@ if __name__ == '__main__':
 
 	import os
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,DirectoryAction,ListAction
-	from gaml.annotations.bratutils import StandoffConfigAction
-	from gaml.utilities.mlutils import split_data
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,DirectoryAction,ListAction
+	from annotations.bratutils import StandoffConfigAction
+	from utilities.mlutils import split_data
 
-	from gaml.annotations.annmlutils import open_anns
-	from gaml.annotations.models.training import evaluate_relations
+	from annotations.annmlutils import open_anns
+	from annotations.models.training import evaluate_relations
 
 	def parse_tuple(s):
 		return tuple(int(i) for i in s.split('-'))

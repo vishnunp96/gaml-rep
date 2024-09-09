@@ -174,12 +174,12 @@ __copyright__ = '2010'
 __license__ = 'Python Software Foundation License'
 __contact__ = 'aran@arandonohue.com'
 
-import gaml.units.si
-from gaml.units.composed_unit import ComposedUnit
-from gaml.units.leaf_unit import LeafUnit
-from gaml.units.named_composed_unit import NamedComposedUnit
-from gaml.units.alias import AliasedUnit
-from gaml.units.registry import REGISTRY
+import units.si
+from units.composed_unit import ComposedUnit
+from units.leaf_unit import LeafUnit
+from units.named_composed_unit import NamedComposedUnit
+from units.alias import AliasedUnit
+from units.registry import REGISTRY
 
 def unit(specifier):
     """Main factory for units.
@@ -191,7 +191,7 @@ def unit(specifier):
     """
     if specifier in REGISTRY:
         return REGISTRY[specifier]
-    if gaml.units.si.can_make(specifier):
+    if units.si.can_make(specifier):
         return si_prefixed_unit(specifier)
     else:
         return LeafUnit(specifier, is_si=False)
@@ -223,7 +223,7 @@ def alias_unit(new_symbol, base_symbol, is_si=False):
 
 def si_prefixed_unit(unit_str):
     """Create a unit object from the given SI-unit string."""
-    assert gaml.units.si.can_make(unit_str)
+    assert units.si.can_make(unit_str)
     return scaled_unit(unit_str,
-                       gaml.units.si.without_prefix(unit_str),
-                       gaml.units.si.multiplier(unit_str))
+                       units.si.without_prefix(unit_str),
+                       units.si.multiplier(unit_str))

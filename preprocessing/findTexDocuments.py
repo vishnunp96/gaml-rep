@@ -1,13 +1,13 @@
 import os, re
 import regex
-import gaml.utilities.filehandler as filehandler
-from gaml.utilities.systemutilities import eprint
-from gaml.utilities.utils import timeout
-from gaml.utilities.fileutilities import listdir
+import utilities.filehandler as filehandler
+from utilities.systemutilities import eprint
+from utilities.utils import timeout
+from utilities.fileutilities import listdir
 
-import gaml.metadata.oaipmh as oaipmh
+import metadata.oaipmh as oaipmh
 
-import gaml.preprocessing.latexmlpy as latexml
+import preprocessing.latexmlpy as latexml
 
 ## Global variables
 global sourcepath
@@ -117,7 +117,7 @@ def processFile(filepath):
 if __name__ == "__main__":
 
 	import argparse
-	from gaml.utilities.argparseactions import FileAction,DirectoryAction,RegexListAction
+	from utilities.argparseactions import FileAction,DirectoryAction,RegexListAction
 
 	parser = argparse.ArgumentParser(description="Recursively process directories containing .tex files into .xml (preserving source directory structure in target).")
 	parser.add_argument("sourcepath",action=DirectoryAction, mustexist=True, help='Path to source directory.')

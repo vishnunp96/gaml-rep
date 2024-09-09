@@ -2,28 +2,28 @@ if __name__ == '__main__':
 
 	import torch
 
-	from gaml.annotations.models import load_ann_model
+	from annotations.models import load_ann_model
 	#from . import IndexWindowMemoryEntityModel, IndexSplitSpansRelationModel
-	#from gaml.annotations.models.indexwindowmemoryentitymodel import IndexWindowMemoryEntityModel
-	#from gaml.annotations.models.testcharentitymodel import IndexCharsWindowMemoryEntityModel
-	#from gaml.annotations.models.windowattributemodel import WindowAttributeModel
-	#from gaml.annotations.models.indexsplitspansrelationmodel import IndexSplitSpansRelationModel
-	#from gaml.annotations.models.rulesrelationmodel import RulesRelationModel
+	#from annotations.models.indexwindowmemoryentitymodel import IndexWindowMemoryEntityModel
+	#from annotations.models.testcharentitymodel import IndexCharsWindowMemoryEntityModel
+	#from annotations.models.windowattributemodel import WindowAttributeModel
+	#from annotations.models.indexsplitspansrelationmodel import IndexSplitSpansRelationModel
+	#from annotations.models.rulesrelationmodel import RulesRelationModel
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
 	import os
 	import re
 	import itertools
 	from lxml import etree as let
 
-	from gaml.annotations.bratutils import Standoff
-	from gaml.preprocessing import latexmlpy as latexml
-	from gaml.metadata.oaipmh import MetadataAction,arXivID_from_path
-	from gaml.utilities.fileutilities import changeext,iter_files
-	from gaml.annotations.bratnormalisation import find_repititions,add_implied_relations,remove_stopwords
+	from annotations.bratutils import Standoff
+	from preprocessing import latexmlpy as latexml
+	from metadata.oaipmh import MetadataAction,arXivID_from_path
+	from utilities.fileutilities import changeext,iter_files
+	from annotations.bratnormalisation import find_repititions,add_implied_relations,remove_stopwords
 
 	import sqlite3
-	import gaml.annotations.database as database
+	import annotations.database as database
 
 	parser = ArgumentParser(description='Train Keras ANN to predict entities in astrophysical text.')
 	parser.add_argument('source',action=DirectoryAction, help='Directory to search (recursively) for XML files to process.')

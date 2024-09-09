@@ -5,13 +5,13 @@ if __name__ == '__main__':
 
 	import os
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=False)
 
 	import sys
 	print(' '.join(sys.argv))
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
 
 	parser = ArgumentParser()
 	parser.add_argument('data',action=FileAction,mustexist=True,help='CSV file containing data to be added to HDF5 files in \'source\'.')

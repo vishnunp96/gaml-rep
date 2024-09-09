@@ -2,7 +2,7 @@ import sqlite3
 import gzip
 from astropy.io import fits
 import tarfile
-from gaml.utilities.sqliteutils import register_numpy_array_type
+from utilities.sqliteutils import register_numpy_array_type
 
 def init_database(cursor):
 
@@ -217,8 +217,8 @@ def process_tar(tarpath, results, databasepath, verbose=False):
 if __name__ == '__main__':
 
 	import os
-	import gaml.utilities.parallel as parallel
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,IterFilesAction
+	import utilities.parallel as parallel
+	from utilities.argparseactions import ArgumentParser,FileAction,IterFilesAction
 
 	register_numpy_array_type()
 

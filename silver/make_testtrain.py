@@ -1,21 +1,21 @@
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=True)
 
-	from gaml.utilities.argparseactions import ArgumentParser,PathAction,DirectoryAction
-	from gaml.metadata.oaipmh import MetadataAction
-	from gaml.preprocessing.manifest import ManifestAction,Manifest
+	from utilities.argparseactions import ArgumentParser,PathAction,DirectoryAction
+	from metadata.oaipmh import MetadataAction
+	from preprocessing.manifest import ManifestAction,Manifest
 
 	import random,os
 	from sklearn.model_selection import train_test_split
 
-	from gaml.silver.scorenewmeasurements import get_scores
-	from gaml.silver.vocabulary import find_vocab,token_vector
-	from gaml.utilities.fileutilities import iter_files
-	from gaml.utilities.jsonutils import dump_json
-	from gaml.utilities.bsonutils import dump_bson
-	from gaml.utilities.parallel import Pool
+	from silver.scorenewmeasurements import get_scores
+	from silver.vocabulary import find_vocab,token_vector
+	from utilities.fileutilities import iter_files
+	from utilities.jsonutils import dump_json
+	from utilities.bsonutils import dump_bson
+	from utilities.parallel import Pool
 
 	parser = ArgumentParser()
 	parser.add_argument('source',action=PathAction)

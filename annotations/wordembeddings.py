@@ -1,6 +1,6 @@
 import numpy
 
-from gaml.utilities.stringhandler import decode
+from utilities.stringhandler import decode
 
 class WordEmbeddings:
 	'''
@@ -116,10 +116,10 @@ class WordEmbeddings:
 
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch()
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.argparseactions import ArgumentParser,FileAction
 
 	parser = ArgumentParser(description='Test word2vec utilities.')
 	parser.add_argument('embeddings',action=FileAction,mustexist=True,help='Embeddings file.')

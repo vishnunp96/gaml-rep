@@ -1,13 +1,13 @@
-from gaml.utilities.bratutils import read_ann
+from utilities.bratutils import read_ann
 
 if __name__ == '__main__':
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
-	from gaml.utilities.fileutilities import addsuffix
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
+	from utilities.fileutilities import addsuffix
 
 	from pprint import pprint
 
-	from gaml.metadata.oaipmh import arXivID_from_path
+	from metadata.oaipmh import arXivID_from_path
 	import pandas
 
 	parser = ArgumentParser(description='Description.')

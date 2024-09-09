@@ -1,9 +1,9 @@
 """Leaf units stand alone.
 They are not compatible with any other kind of unit."""
 
-from gaml.units.abstract import AbstractUnit
-from gaml.units.registry import REGISTRY
-from gaml.units.composed_unit import ComposedUnit
+from units.abstract import AbstractUnit
+from units.registry import REGISTRY
+from units.composed_unit import ComposedUnit
 
 import numbers
 import cgi

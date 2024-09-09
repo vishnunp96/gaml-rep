@@ -1,15 +1,15 @@
 if __name__ == "__main__":
 
 	import argparse
-	from gaml.utilities.argparseactions import FileAction,DirectoryAction,RegexListAction
+	from utilities.argparseactions import FileAction,DirectoryAction,RegexListAction
 
 	parser = argparse.ArgumentParser()
 	parser.add_argument('filepath',action=FileAction, mustexist=True)
 	args = parser.parse_args()
 
 	from lxml import etree as et
-	from gaml.keywordsearch.rulesBasedSearch import fastxmliter
-	import gaml.preprocessing.latexmlpy as latexml
+	from keywordsearch.rulesBasedSearch import fastxmliter
+	import preprocessing.latexmlpy as latexml
 
 	def describe(element):
 

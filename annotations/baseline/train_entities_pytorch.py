@@ -1,6 +1,6 @@
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=True)
 
 	import torch
@@ -14,15 +14,15 @@ if __name__ == '__main__':
 	import numpy
 	from sklearn.model_selection import train_test_split
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction
 	import os
 	import itertools
 	from collections import defaultdict
 
-	from gaml.annotations.bratnormalisation import open_clean
-	#from gaml.annotations.bratutils import Standoff
-	from gaml.annotations.brattowindow import StandoffLabels
-	from gaml.annotations.wordembeddings import WordEmbeddings
+	from annotations.bratnormalisation import open_clean
+	#from annotations.bratutils import Standoff
+	from annotations.brattowindow import StandoffLabels
+	from annotations.wordembeddings import WordEmbeddings
 
 	from sklearn.preprocessing import LabelBinarizer,LabelEncoder
 	from sklearn.metrics import confusion_matrix,precision_recall_fscore_support

@@ -1,7 +1,7 @@
 if __name__ == "__main__":
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction
-	from gaml.utilities.fileutilities import iter_files
+	from utilities.argparseactions import ArgumentParser,IterFilesAction
+	from utilities.fileutilities import iter_files
 
 	parser = ArgumentParser()
 	parser.add_argument('-s','--source',action=IterFilesAction,suffix='.ann',default=iter_files('.',suffix='.ann'),help="File or directory to reset. Defaults to current directory.")

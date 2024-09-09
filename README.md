@@ -3,7 +3,7 @@ This library requires that LaTeXML be installed and accessible on the system pat
 A .tex file may be opened with the following:
 
 ```
-import gaml.preprocessing.latexmlpy as latexml
+import preprocessing.latexmlpy as latexml
 texfile = 'path/to/tex/file.tex'
 doc = latexml.opentex(texfile, timeout=300)
 ```
@@ -20,7 +20,7 @@ doc.findall('.//tag')
 Tables may be extracted using the following:
 
 ```
-from gaml.preprocessing.tables import process_table
+from preprocessing.tables import process_table
 for elem in doc.findall('.//table'):
 	table,borders = process_table(elem)
 	print(table)

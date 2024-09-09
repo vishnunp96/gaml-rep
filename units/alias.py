@@ -5,8 +5,8 @@
 	whether they are SI-prefix compatible separately
 	to their base."""
 
-from gaml.units.abstract import AbstractUnit
-from gaml.units.registry import REGISTRY
+from units.abstract import AbstractUnit
+from units.registry import REGISTRY
 
 class AliasedUnit(AbstractUnit):
 	"""Holder for another unit, that can specify

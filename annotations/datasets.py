@@ -4,8 +4,9 @@ import numpy
 import torch
 import torch.nn.utils.rnn as rnn
 
-from gaml.annotations.brattowindow import StandoffLabels
+from annotations.brattowindow import StandoffLabels
 
+# todo: correct token_labels
 class AnnotationDataset(torch.utils.data.Dataset):
 	def __init__(self, anns, cuda=False):
 		super(AnnotationDataset,self).__init__()

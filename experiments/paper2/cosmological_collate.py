@@ -5,19 +5,19 @@ if __name__ == "__main__":
 	matplotlib.use('Agg')
 	import pandas
 
-	from gaml.units.abstract import AbstractUnit
-	from gaml.units.measurement import Measurement
-	from gaml.units.compatibility import compatible
-	from gaml.units.dimensionless import DimensionlessUnit
-	from gaml.parsing import parse_measurement,parse_unit,parse_symbol
+	from units.abstract import AbstractUnit
+	from units.measurement import Measurement
+	from units.compatibility import compatible
+	from units.dimensionless import DimensionlessUnit
+	from parsing import parse_measurement,parse_unit,parse_symbol
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
-	from gaml.utilities.dateutilities import getdatetime
-	from gaml.utilities.jsonutils import dump_json
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
+	from utilities.dateutilities import getdatetime
+	from utilities.jsonutils import dump_json
 	from json import JSONEncoder
 	import datetime
 
-	from gaml.annotations.database import query,loadconnect
+	from annotations.database import query,loadconnect
 
 	parser = ArgumentParser(description="Plot histogram of values in file.")
 	parser.add_argument('database',action=FileAction, mustexist=True, help='Database to take values from.')

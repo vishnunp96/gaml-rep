@@ -1,6 +1,6 @@
 import os,argparse
-from gaml.utilities.fileutilities import walk
-from gaml.utilities.jsonutils import load_json,dump_json
+from utilities.fileutilities import walk
+from utilities.jsonutils import load_json,dump_json
 
 def make_manifest(dirpath,indexer,extensions=tuple(),errors=None,name='manifest.json'):
 
@@ -62,10 +62,10 @@ class ManifestAction(argparse.Action):
 
 if __name__ == "__main__":
 
-	from gaml.utilities.argparseactions import ArgumentParser,DirectoryAction
-	from gaml.metadata import MetadataAction
+	from utilities.argparseactions import ArgumentParser,DirectoryAction
+	from metadata import MetadataAction
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch()
 
 	parser = ArgumentParser(description="Construct arXiv file manifest.")

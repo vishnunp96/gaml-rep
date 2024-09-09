@@ -1,12 +1,12 @@
 if __name__ == "__main__":
 
 	import pandas
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
-	from gaml.utilities import StopWatch
+	from utilities.argparseactions import ArgumentParser,FileAction
+	from utilities import StopWatch
 
-	from gaml.parsing import parse_measurement
+	from parsing import parse_measurement
 
-	from gaml.utilities.jsonutils import load_json
+	from utilities.jsonutils import load_json
 
 	stopwatch = StopWatch()
 

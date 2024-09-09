@@ -2,15 +2,15 @@ import re,os
 import itertools
 from lark.exceptions import UnexpectedCharacters,UnexpectedToken,VisitError
 from lark import Lark,Transformer,Tree
-from gaml.preprocessing.mathtokenise import regularize_math
-from gaml.utilities.filehandler import readFile
+from preprocessing.mathtokenise import regularize_math
+from utilities.filehandler import readFile
 from functools import reduce
 
-from gaml.units import unit, named_unit, scaled_unit, alias_unit
-from gaml.units.leaf_unit import LeafUnit
-from gaml.units.registry import REGISTRY
-from gaml.units.measurement import Measurement,Uncertainty
-from gaml.units.dimensionless import DimensionlessUnit
+from units import unit, named_unit, scaled_unit, alias_unit
+from units.leaf_unit import LeafUnit
+from units.registry import REGISTRY
+from units.measurement import Measurement,Uncertainty
+from units.dimensionless import DimensionlessUnit
 
 def regularize_unit(unit_text):
 	text = regularize_math(unit_text)
@@ -234,7 +234,7 @@ def balance_brackets(text):
 
 if __name__ == "__main__":
 
-	from gaml.utilities.terminalutils import printacross
+	from utilities.terminalutils import printacross
 
 	cases = [
 			'10',

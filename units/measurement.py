@@ -1,5 +1,5 @@
-from gaml.units.compatibility import compatible
-from gaml.units.exception import IncompatibleUnitsError
+from units.compatibility import compatible
+from units.exception import IncompatibleUnitsError
 
 import cgi
 

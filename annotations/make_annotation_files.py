@@ -1,13 +1,13 @@
 if __name__ == "__main__":
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction
-	from gaml.preprocessing import latexmlpy as latexml
-	from gaml.utilities.fileutilities import changeext
+	from utilities.argparseactions import ArgumentParser,IterFilesAction
+	from preprocessing import latexmlpy as latexml
+	from utilities.fileutilities import changeext
 
 	from lxml import etree as let
 
 	import json
-	from gaml.utilities.systemutilities import printacross
+	from utilities.systemutilities import printacross
 
 	parser = ArgumentParser(description='Create .txt and .spans files for LateXML documents.')
 	parser.add_argument('xmlpath',action=IterFilesAction, mustexist=True, suffix='.xml', help='Path to xml file or directory to parse.')

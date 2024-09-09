@@ -1,4 +1,4 @@
-from gaml.utilities.torchutils import train # predict_from_dataloader
+from utilities.torchutils import train # predict_from_dataloader
 
 import matplotlib.pyplot as plt
 
@@ -6,11 +6,11 @@ import numpy
 import pandas
 from sklearn.metrics import confusion_matrix,precision_recall_fscore_support,f1_score,precision_score,recall_score
 
-from gaml.annotations.bratutils import Standoff
-from gaml.annotations.metrics import ann_entity_overlap_score
+from annotations.bratutils import Standoff
+from annotations.metrics import ann_entity_overlap_score
 
-from gaml.utilities.mlutils import split_data
-from gaml.utilities.torchutils import unpack_sequence, cat_packed_sequences, predict_from_dataloader
+from utilities.mlutils import split_data
+from utilities.torchutils import unpack_sequence, cat_packed_sequences, predict_from_dataloader
 import os
 import itertools
 

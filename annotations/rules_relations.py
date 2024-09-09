@@ -10,10 +10,10 @@ if __name__ == '__main__':
 	from sklearn.exceptions import UndefinedMetricWarning
 	warnings.filterwarnings(action='ignore', category=UndefinedMetricWarning)
 
-	from gaml.utilities.argparseactions import ArgumentParser,DirectoryAction,IterFilesAction
+	from utilities.argparseactions import ArgumentParser,DirectoryAction,IterFilesAction
 
-	from gaml.annotations.bratnormalisation import open_clean
-	from gaml.annotations.bratutils import Standoff
+	from annotations.bratnormalisation import open_clean
+	from annotations.bratutils import Standoff
 
 	from sklearn.metrics import confusion_matrix,precision_recall_fscore_support,f1_score
 

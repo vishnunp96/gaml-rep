@@ -1,6 +1,6 @@
 if __name__ == "__main__":
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.argparseactions import ArgumentParser,FileAction
 	import pandas
 	import matplotlib.pyplot as plt
 

@@ -1,7 +1,7 @@
 import re
 
-from gaml.utilities.argparseactions import ArgumentParser,RegexListAction,FileAction
-from gaml.utilities.filehandler import readFile
+from utilities.argparseactions import ArgumentParser,RegexListAction,FileAction
+from utilities.filehandler import readFile
 
 parser = ArgumentParser()
 parser.add_argument("source", action=FileAction)

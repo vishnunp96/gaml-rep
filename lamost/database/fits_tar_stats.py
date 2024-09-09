@@ -37,8 +37,8 @@ def process_tar(tarpath, results):
 
 if __name__ == '__main__':
 
-	import gaml.utilities.parallel as parallel
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction
+	import utilities.parallel as parallel
+	from utilities.argparseactions import ArgumentParser,IterFilesAction
 
 	parser = ArgumentParser(description='Collect stats from LAMOST FITS files.')
 	parser.add_argument('source',action=IterFilesAction, recursive=True, suffix='.tar', help='Source directory for LAMOST .tar files, searched recursively.')

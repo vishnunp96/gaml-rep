@@ -3,16 +3,16 @@ if __name__ == '__main__':
 	from tensorflow.keras.models import load_model
 	from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-	from gaml.utilities.kerasutils import Projection,MinMaxMeanPool
+	from utilities.kerasutils import Projection,MinMaxMeanPool
 
 	import pandas
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.argparseactions import ArgumentParser,FileAction
 
-	from gaml.preprocessing.manifest import ManifestAction
-	from gaml.annotations.wordembeddings import WordEmbeddings
+	from preprocessing.manifest import ManifestAction
+	from annotations.wordembeddings import WordEmbeddings
 
-	from gaml.silver.word2vecNNTrainKeras import make_dataset
+	from silver.word2vecNNTrainKeras import make_dataset
 
 	parser = ArgumentParser(description='Make predictions from a list of arXIV identifiers in CSV. Results will be appended to DataFrame and saved in specified location.')
 	parser.add_argument('data',action=FileAction, mustexist=True,help='CSV file with column of arXiv ids to make predictions for.')

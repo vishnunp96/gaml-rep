@@ -1,5 +1,5 @@
 import tarfile
-import gaml.utilities.mygzip as gzip
+import utilities.mygzip as gzip
 import os
 import re
 import pandas
@@ -73,12 +73,12 @@ def collect_from_tar(tarpath):
 
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=False)
 
-	from gaml.utilities.argparseactions import ArgumentParser,PathAction,DirectoryAction
-	from gaml.metadata import MetadataAction
-	from gaml.utilities import parallel
+	from utilities.argparseactions import ArgumentParser,PathAction,DirectoryAction
+	from metadata import MetadataAction
+	from utilities import parallel
 
 	from collections import defaultdict
 	import random

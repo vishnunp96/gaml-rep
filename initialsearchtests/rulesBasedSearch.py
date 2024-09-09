@@ -88,7 +88,7 @@ if __name__ == "__main__":
 
 	from collections import defaultdict
 	import argparse
-	from gaml.utilities.argparseactions import FileAction,DirectoryAction,RegexListAction
+	from utilities.argparseactions import FileAction,DirectoryAction,RegexListAction
 
 	parser = argparse.ArgumentParser(description="Use keyword search to find values of provided keywords in a corpus")
 	parser.add_argument("sourcepath",action=DirectoryAction, mustexist=True, help='Path to source directory.')

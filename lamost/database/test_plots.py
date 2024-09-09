@@ -39,12 +39,12 @@ def normalise(flux, continuum):
 
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=False)
 
 	import os
 	import sqlite3
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
 	#from pprint import pprint
 
 	import matplotlib.pyplot as plt

@@ -5,10 +5,10 @@ if __name__ == '__main__':
 	from datetime import datetime
 	from statistics import mean
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction,IterFilesAction
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction,IterFilesAction
 
-	from gaml.annotations.bratnormalisation import open_clean, similarity, compare_annotations
-	from gaml.metadata.oaipmh import arXivID
+	from annotations.bratnormalisation import open_clean, similarity, compare_annotations
+	from metadata.oaipmh import arXivID
 
 	import dominate
 	from dominate.tags import div,link,h1,h2,table,thead,tbody,tr,th,td,a

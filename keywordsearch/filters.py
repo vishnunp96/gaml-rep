@@ -1,5 +1,5 @@
 import re
-from gaml.utilities.numberutils import str_to_float
+from utilities.numberutils import str_to_float
 
 datere = re.compile('\([^\)]+\d{4}[^\)]+\)') #('\((?:[^\)0-9]+\d+[^\)0-9]+)+\)') #\(\s*[^\)]*\s*[A-Z][A-Za-z]+\s*\d+\s*[^,\)\d]*\s*\) ## Requires spaces inside brackets, but oh well
 datednamere = re.compile('\d{4}\s+[A-Z][a-z]+') # e.g. '2013 Planck'

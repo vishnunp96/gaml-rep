@@ -8,11 +8,11 @@ from sklearn.preprocessing import LabelEncoder,LabelBinarizer
 from sklearn.utils.class_weight import compute_class_weight
 from copy import deepcopy
 
-from gaml.annotations.brattowindow import StandoffLabels
-from gaml.annotations.datasets import AttributeSplitSpansIndexesEncodingsDataset
-from gaml.utilities.torchutils import predict_from_dataloader
+from annotations.brattowindow import StandoffLabels
+from annotations.datasets import AttributeSplitSpansIndexesEncodingsDataset
+from utilities.torchutils import predict_from_dataloader
 
-from gaml.annotations.models.base import BaseANNModule
+from annotations.models.base import BaseANNModule
 
 # Define model
 class WindowAttributeModel(BaseANNModule):
@@ -148,24 +148,24 @@ class WindowAttributeModel(BaseANNModule):
 
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=True)
 
-	from gaml.utilities.torchutils import save_figs # predict_from_dataloader
+	from utilities.torchutils import save_figs # predict_from_dataloader
 
 	import matplotlib.pyplot as plt
 	plt.switch_backend('agg')
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction,DirectoryAction,ListAction
-	from gaml.utilities.mlutils import split_data
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction,DirectoryAction,ListAction
+	from utilities.mlutils import split_data
 	import os
 
-	from gaml.annotations.wordembeddings import WordEmbeddings
-	from gaml.annotations.annmlutils import open_anns
+	from annotations.wordembeddings import WordEmbeddings
+	from annotations.annmlutils import open_anns
 
 	import sklearn.metrics
 
-	from gaml.annotations.models.training import perform_training,evaluate_attributes
+	from annotations.models.training import perform_training,evaluate_attributes
 
 	def parse_tuple(s):
 		return tuple(int(i) for i in s.split('-'))

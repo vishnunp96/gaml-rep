@@ -1,13 +1,13 @@
 import re
 from lark.exceptions import UnexpectedCharacters,UnexpectedToken
 from lark import Lark,Transformer,Tree
-from gaml.preprocessing.mathtokenise import regularize_math
-from gaml.utilities.filehandler import readFile
+from preprocessing.mathtokenise import regularize_math
+from utilities.filehandler import readFile
 from functools import reduce
 
-from gaml.units import unit,named_unit
-from gaml.units.predefined import define_units
-from gaml.units.compatibility import compatible
+from units import unit,named_unit
+from units.predefined import define_units
+from units.compatibility import compatible
 define_units()
 named_unit('sec',['s'],[])
 
@@ -50,8 +50,8 @@ class MyTransformer(Transformer):
 
 if __name__ == "__main__":
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
-	from gaml.utilities import StopWatch
+	from utilities.argparseactions import ArgumentParser,FileAction
+	from utilities import StopWatch
 
 	stopwatch = StopWatch()
 

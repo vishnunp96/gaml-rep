@@ -3,17 +3,17 @@ if __name__ == "__main__":
 	import numpy
 	import pandas
 	import re
-	from gaml.preprocessing.manifest import ManifestAction
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
-	from gaml.utilities import StopWatch
-	from gaml.utilities.terminalutils import printacross,printwrapped,color_text,ColorCode
+	from preprocessing.manifest import ManifestAction
+	from utilities.argparseactions import ArgumentParser,FileAction
+	from utilities import StopWatch
+	from utilities.terminalutils import printacross,printwrapped,color_text,ColorCode
 
 	import sqlite3
-	from gaml.annotations.database import query
-	from gaml.parsing import parse_measurement,parse_unit
+	from annotations.database import query
+	from parsing import parse_measurement,parse_unit
 
-	from gaml.units.compatibility import compatible
-	from gaml.utilities.jsonutils import load_json,dump_json
+	from units.compatibility import compatible
+	from utilities.jsonutils import load_json,dump_json
 
 	stopwatch = StopWatch()
 

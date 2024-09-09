@@ -2,7 +2,7 @@ if __name__ == '__main__':
 
 	import pandas
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction
 	import os
 
 	parser = ArgumentParser(description='Collect results of hyperparameter gridsearch for paper 2 into individual dataframes.')

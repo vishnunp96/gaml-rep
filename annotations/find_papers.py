@@ -1,7 +1,7 @@
-import gaml.metadata.oaipmh as oaipmh
-#import gaml.preprocessing.latexmlpy as latexml
-from gaml.utilities.parallel import parallel_results
-#from gaml.utilities.gxml import fastxmliter
+import metadata.oaipmh as oaipmh
+#import preprocessing.latexmlpy as latexml
+from utilities.parallel import parallel_results
+#from utilities.gxml import fastxmliter
 
 def search_file(filepath, results, keywords, metadata):
 
@@ -16,8 +16,8 @@ def search_file(filepath, results, keywords, metadata):
 
 if __name__ == '__main__':
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction
-	from gaml.utilities import StopWatch
+	from utilities.argparseactions import ArgumentParser,IterFilesAction
+	from utilities import StopWatch
 
 	stopwatch = StopWatch()
 

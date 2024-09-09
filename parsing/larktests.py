@@ -1,14 +1,14 @@
 import re
 from lark import Lark,Transformer,Tree
-from gaml.preprocessing.mathtokenise import regularize_math
-from gaml.utilities.filehandler import readFile
+from preprocessing.mathtokenise import regularize_math
+from utilities.filehandler import readFile
 from functools import reduce
 
-from gaml.units import unit
-from gaml.units.predefined import define_units
+from units import unit
+from units.predefined import define_units
 define_units()
 
-from gaml.units.measurement import Measurement,Uncertainty
+from units.measurement import Measurement,Uncertainty
 
 parser = Lark(readFile('measurementgrammar.lark'), parser="lalr", lexer="contextual", start='measurement')
 #parser = Lark(readFile('measurementgrammar.ebnf'), start='measurement')

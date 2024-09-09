@@ -1,9 +1,9 @@
 if __name__ == "__main__":
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
-	from gaml.preprocessing import latexmlpy as latexml
-	from gaml.preprocessing.manifest import ManifestAction
-	from gaml.utilities.fileutilities import changeext
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
+	from preprocessing import latexmlpy as latexml
+	from preprocessing.manifest import ManifestAction
+	from utilities.fileutilities import changeext
 
 	from lxml import etree as let
 	import pandas

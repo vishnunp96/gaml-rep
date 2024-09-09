@@ -12,14 +12,14 @@ if __name__ == "__main__":
 	from matplotlib.ticker import NullFormatter
 	import pandas
 
-	from gaml.units.compatibility import compatible
-	from gaml.units.dimensionless import DimensionlessUnit
-	from gaml.parsing import parse_measurement,parse_unit,parse_symbol
+	from units.compatibility import compatible
+	from units.dimensionless import DimensionlessUnit
+	from parsing import parse_measurement,parse_unit,parse_symbol
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
-	from gaml.utilities.dateutilities import getdatetime
+	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction
+	from utilities.dateutilities import getdatetime
 
-	from gaml.annotations.database import query,loadconnect
+	from annotations.database import query,loadconnect
 
 	parser = ArgumentParser(description="Plot histogram of values in file.")
 	parser.add_argument('database',action=FileAction, mustexist=True, help='Values to plot.')

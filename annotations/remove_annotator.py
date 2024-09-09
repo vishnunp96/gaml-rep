@@ -5,9 +5,9 @@ if __name__ == "__main__":
 
 	import pandas
 
-	from gaml.utilities.argparseactions import ArgumentParser,DirectoryAction,ListAction
+	from utilities.argparseactions import ArgumentParser,DirectoryAction,ListAction
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch()
 
 	parser = ArgumentParser(description='Redistribute annotator abstracts amongst other annotators. Note, this does not remove the annotators files. This should be done manually.')

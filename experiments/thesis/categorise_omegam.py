@@ -3,9 +3,9 @@ if __name__ == "__main__":
 	import os
 	import re
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
-	from gaml.preprocessing import latexmlpy as latexml
-	from gaml.preprocessing.manifest import ManifestAction
+	from utilities.argparseactions import ArgumentParser,FileAction
+	from preprocessing import latexmlpy as latexml
+	from preprocessing.manifest import ManifestAction
 
 	from lxml import etree as let
 

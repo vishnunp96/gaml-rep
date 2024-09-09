@@ -1,6 +1,6 @@
 import re
-import gaml.preprocessing.latexmlpy as latexml
-from gaml.utilities.terminalutils import printacross
+import preprocessing.latexmlpy as latexml
+from utilities.terminalutils import printacross
 
 def conclusion_title(s):
 	return bool(re.search('conclusions?|summary',s,flags=re.IGNORECASE))
@@ -26,8 +26,8 @@ def print_conclusion(filepath):
 
 if __name__ == "__main__":
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
-	from gaml.utilities import StopWatch
+	from utilities.argparseactions import ArgumentParser,FileAction
+	from utilities import StopWatch
 
 	stopwatch = StopWatch()
 

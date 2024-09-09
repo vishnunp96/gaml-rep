@@ -7,9 +7,9 @@ import torch.optim as optim
 from sklearn.preprocessing import LabelEncoder,LabelBinarizer
 from sklearn.utils.class_weight import compute_class_weight
 
-from gaml.annotations.datasets import RelationSplitSpansDirectedLabelledIndexesDataset
+from annotations.datasets import RelationSplitSpansDirectedLabelledIndexesDataset
 
-from gaml.annotations.models.base import BaseANNRelationModule
+from annotations.models.base import BaseANNRelationModule
 
 # Define model
 class IndexSplitSpansDirectedLabelledRelationModel(BaseANNRelationModule):
@@ -125,25 +125,25 @@ class IndexSplitSpansDirectedLabelledRelationModel(BaseANNRelationModule):
 
 if __name__ == '__main__':
 
-	from gaml.utilities import StopWatch
+	from utilities import StopWatch
 	stopwatch = StopWatch(memory=True)
 
-	from gaml.utilities.torchutils import save_figs # predict_from_dataloader
+	from utilities.torchutils import save_figs # predict_from_dataloader
 
 	import matplotlib.pyplot as plt
 	plt.switch_backend('agg')
 
-	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction,DirectoryAction,ListAction
-	from gaml.annotations.bratutils import StandoffConfigAction
-	from gaml.utilities.mlutils import split_data
+	from utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction,DirectoryAction,ListAction
+	from annotations.bratutils import StandoffConfigAction
+	from utilities.mlutils import split_data
 	import os
 
-	from gaml.annotations.wordembeddings import WordEmbeddings
-	from gaml.annotations.annmlutils import open_anns
+	from annotations.wordembeddings import WordEmbeddings
+	from annotations.annmlutils import open_anns
 
 	import sklearn.metrics
 
-	from gaml.annotations.models.training import perform_training,evaluate_relations
+	from annotations.models.training import perform_training,evaluate_relations
 
 	def parse_tuple(s):
 		return tuple(int(i) for i in s.split('-'))

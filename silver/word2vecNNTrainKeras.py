@@ -1,6 +1,6 @@
 from lxml import etree as let
-from gaml.preprocessing import latexmlpy as latexml
-#from gaml.utilities.gxml import fastxmliter
+from preprocessing import latexmlpy as latexml
+#from utilities.gxml import fastxmliter
 import numpy
 
 def make_dataset(manifest, arXiv_ids, label, embeddings, force=False):
@@ -35,7 +35,7 @@ if __name__ == '__main__':
 	from tensorflow.keras.preprocessing.sequence import pad_sequences
 	from tensorflow.keras.utils import Sequence
 
-	from gaml.utilities.kerasutils import Projection,MinMaxMeanPool#,PretrainedEmbedding
+	from utilities.kerasutils import Projection,MinMaxMeanPool#,PretrainedEmbedding
 
 	import matplotlib.pyplot as plt
 	plt.switch_backend('agg')
@@ -43,11 +43,11 @@ if __name__ == '__main__':
 	import pandas
 	from sklearn.model_selection import train_test_split
 
-	from gaml.utilities.argparseactions import ArgumentParser,FileAction
+	from utilities.argparseactions import ArgumentParser,FileAction
 	import os
 
-	from gaml.preprocessing.manifest import ManifestAction
-	from gaml.annotations.wordembeddings import WordEmbeddings
+	from preprocessing.manifest import ManifestAction
+	from annotations.wordembeddings import WordEmbeddings
 
 	parser = ArgumentParser(description='Train Keras ANN to predict probability of new measurement being reported in text.')
 	parser.add_argument('scores',action=FileAction, mustexist=True,help='Location of scores to use when selecting training data.')
