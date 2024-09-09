@@ -140,3 +140,39 @@ class BaseANNRelationModule(BaseANNModule):
 
 		return anns
 
+
+class BaseCNNRelationModule(BaseANNModule):
+	''' A Module which produces a tensor of relation predictions when called (shape: (batch_size, relation_embed_dim)). '''
+
+	def make_metric(self, func):
+		def metric(output, target):
+			output = output.cpu()
+			if output.requires_grad:
+				output = output.detach()
+			output = output.numpy()
+			target = target.cpu()
+			if torch.is_tensor(target) and target.requires_grad:
+				target = target.detach()
+			if isinstance(target, rnn.PackedSequence):
+				target, _ = rnn.pad_packed_sequence(target, batch_first=True)
+			target = target.numpy()
+			return func(output, target)
+		return metric
+
+	def predict(self, anns, batch_size=2, inplace=True):
+		relation_dataset = self.make_dataset(anns)
+		# relation_dataset = self.make_dataset([StandoffLabels(a) for p,i,a in anns])
+		predicted_vectors = predict_from_dataloader(
+				self,
+				relation_dataset.dataloader(batch_size=batch_size, shuffle=False)
+			).cpu().detach().numpy()
+		predicted_classes = []
+		for vector in predicted_vectors:
+			predicted_classes.append(self.relation_embedding.closest_class(vector))
+
+		actual_classes = []
+		for vector in relation_dataset.ys:
+			actual_classes.append(self.relation_embedding.closest_class(vector))
+
+		return predicted_vectors, predicted_classes, relation_dataset.ys, actual_classes
+
