@@ -2,8 +2,7 @@ if __name__ == "__main__":
 
 	import os
 	from random import shuffle
-	#todo: fix statistics
-	from statistics import mean
+	from localstats import mean
 
 	import pandas
 	from itertools import combinations

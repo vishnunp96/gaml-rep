@@ -3,8 +3,7 @@ if __name__ == "__main__":
 	import os
 	import numpy
 	import math
-	# todo: fix this import
-	from statistics import mean
+	from localstats import mean
 	from datetime import datetime,timedelta
 	import matplotlib
 	matplotlib.use('Agg')

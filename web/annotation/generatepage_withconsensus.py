@@ -3,7 +3,7 @@ if __name__ == '__main__':
 	import os
 	from collections import defaultdict
 	from datetime import datetime
-	from statistics import mean
+	from localstats import mean
 
 	from utilities.argparseactions import ArgumentParser,FileAction,DirectoryAction,IterFilesAction
 
