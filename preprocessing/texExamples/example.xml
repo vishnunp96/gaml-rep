@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?latexml class="article" options="english"?>
+<?latexml package="fontenc" options="T1"?>
+<?latexml package="a4"?>
+<?latexml package="amsmath"?>
+<?latexml package="babel"?>
+<?latexml package="color"?>
+<?latexml package="graphics"?>
+<?latexml package="setspace"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML" class="ltx_authors_1line">
+  <resource src="LaTeXML.css" type="text/css" class="ltx_centering"/>
+  <resource src="ltx-article.css" type="text/css" class="ltx_centering"/>
+  <title class="ltx_centering" xml:lang="en">Emission time scale of light particles in the system Xe+Sn at 50 AMeV. A probe
+for dynamical emission ?</title>
+  <abstract name="Abstract" class="ltx_centering" xml:lang="en">
+    <p>Proton and deuteron correlation functions have been investigated with both impact
+parameter and emission source selections. The correlations of the system <Math mode="inline" xml:id="m1" tex="{}^{129}Xe+^{Nat}Sn"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="129" role="NUMBER">129</XMTok></XMArg></XMApp><XMTok role="UNKNOWN" font="italic">X</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok meaning="plus" role="ADDOP">+</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok role="UNKNOWN" font="italic">N</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok></XMArg></XMApp><XMTok role="UNKNOWN" font="italic">S</XMTok><XMTok role="UNKNOWN" font="italic">n</XMTok></XMath></Math>
+at 50 AMeV have been measured with the 4<Math mode="inline" xml:id="m2" tex="\pi"><XMath><XMTok name="pi" role="UNKNOWN" font="italic">&#960;</XMTok></XMath></Math> INDRA which provides a complete
+kinematical description of each event. The emission time scale analyzed with
+a quantum model reveals the time sequence of the light particles emitted by
+the projectile-like fragment. The short and constant emission time of the proton,
+independent of the impact parameter, can be attributed to a preequilibrium process.</p>
+  </abstract>
+  <para xml:id="p1" class="ltx_centering">
+    <p>
+      <text xml:lang="en">D. Gourio<Math mode="inline" xml:id="p1.m1" tex="{}^{1}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="1" role="NUMBER">1</XMTok></XMArg></XMApp></XMath></Math>, D. Ardouin<Math mode="inline" xml:id="p1.m2" tex="{}^{2}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="2" role="NUMBER">2</XMTok></XMArg></XMApp></XMath></Math>, M. Assenard<Math mode="inline" xml:id="p1.m3" tex="{}^{2}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="2" role="NUMBER">2</XMTok></XMArg></XMApp></XMath></Math>,
+G. Auger<Math mode="inline" xml:id="p1.m4" tex="{}^{3}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="3" role="NUMBER">3</XMTok></XMArg></XMApp></XMath></Math>, Ch.O. Bacri<Math mode="inline" xml:id="p1.m5" tex="{}^{4}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="4" role="NUMBER">4</XMTok></XMArg></XMApp></XMath></Math>, N. Bellaize<Math mode="inline" xml:id="p1.m6" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>, A. Benkirane<Math mode="inline" xml:id="p1.m7" tex="{}^{3}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="3" role="NUMBER">3</XMTok></XMArg></XMApp></XMath></Math>,
+J. Benlliure<Math mode="inline" xml:id="p1.m8" tex="{}^{3}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="3" role="NUMBER">3</XMTok></XMArg></XMApp></XMath></Math>, B. Berthier<Math mode="inline" xml:id="p1.m9" tex="{}^{6}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="6" role="NUMBER">6</XMTok></XMArg></XMApp></XMath></Math>, E. Bisquer<Math mode="inline" xml:id="p1.m10" tex="{}^{7}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="7" role="NUMBER">7</XMTok></XMArg></XMApp></XMath></Math>, B. Borderie<Math mode="inline" xml:id="p1.m11" tex="{}^{4}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="4" role="NUMBER">4</XMTok></XMArg></XMApp></XMath></Math>,
+R. Bougault<Math mode="inline" xml:id="p1.m12" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>, P. Box<Math mode="inline" xml:id="p1.m13" tex="{}^{4}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="4" role="NUMBER">4</XMTok></XMArg></XMApp></XMath></Math>, R. Brou<Math mode="inline" xml:id="p1.m14" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>, J.L. Charvet<Math mode="inline" xml:id="p1.m15" tex="{}^{6}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="6" role="NUMBER">6</XMTok></XMArg></XMApp></XMath></Math>,
+A. Chbihi<Math mode="inline" xml:id="p1.m16" tex="{}^{3}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="3" role="NUMBER">3</XMTok></XMArg></XMApp></XMath></Math>, J. Colin<Math mode="inline" xml:id="p1.m17" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>, D. Cussol<Math mode="inline" xml:id="p1.m18" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>, R. Dayras<Math mode="inline" xml:id="p1.m19" tex="{}^{6}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="6" role="NUMBER">6</XMTok></XMArg></XMApp></XMath></Math>,
+E. De Filippo<Math mode="inline" xml:id="p1.m20" tex="{}^{6}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="6" role="NUMBER">6</XMTok></XMArg></XMApp></XMath></Math>, A. Demeyer<Math mode="inline" xml:id="p1.m21" tex="{}^{7}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="7" role="NUMBER">7</XMTok></XMArg></XMApp></XMath></Math>, C. Donnet<Math mode="inline" xml:id="p1.m22" tex="{}^{7}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="7" role="NUMBER">7</XMTok></XMArg></XMApp></XMath></Math>, D. Durand<Math mode="inline" xml:id="p1.m23" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>,
+P. Ecomard<Math mode="inline" xml:id="p1.m24" tex="{}^{3}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="3" role="NUMBER">3</XMTok></XMArg></XMApp></XMath></Math>, P. Eudes<Math mode="inline" xml:id="p1.m25" tex="{}^{2}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="2" role="NUMBER">2</XMTok></XMArg></XMApp></XMath></Math>, M. Germain<Math mode="inline" xml:id="p1.m26" tex="{}^{2}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="2" role="NUMBER">2</XMTok></XMArg></XMApp></XMath></Math>, D. Guinet<Math mode="inline" xml:id="p1.m27" tex="{}^{7}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="7" role="NUMBER">7</XMTok></XMArg></XMApp></XMath></Math>,
+L. Lakehal-Ayat<Math mode="inline" xml:id="p1.m28" tex="{}^{4}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="4" role="NUMBER">4</XMTok></XMArg></XMApp></XMath></Math>, P. Lautesse<Math mode="inline" xml:id="p1.m29" tex="{}^{7}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="7" role="NUMBER">7</XMTok></XMArg></XMApp></XMath></Math>, J.L. Laville<Math mode="inline" xml:id="p1.m30" tex="{}^{3}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="3" role="NUMBER">3</XMTok></XMArg></XMApp></XMath></Math>,
+L. Lebreton<Math mode="inline" xml:id="p1.m31" tex="{}^{7}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="7" role="NUMBER">7</XMTok></XMArg></XMApp></XMath></Math>, C. Le Brun<Math mode="inline" xml:id="p1.m32" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>, J.F. Lecolley<Math mode="inline" xml:id="p1.m33" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>, T. Lefort<Math mode="inline" xml:id="p1.m34" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>,
+A. Lefèvre<Math mode="inline" xml:id="p1.m35" tex="{}^{3}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="3" role="NUMBER">3</XMTok></XMArg></XMApp></XMath></Math>, R. Legrain<Math mode="inline" xml:id="p1.m36" tex="{}^{6}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="6" role="NUMBER">6</XMTok></XMArg></XMApp></XMath></Math>, N. Le Neindre<Math mode="inline" xml:id="p1.m37" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>, O. Lopez<Math mode="inline" xml:id="p1.m38" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>,
+M. Louvel<Math mode="inline" xml:id="p1.m39" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>, N. Marie<Math mode="inline" xml:id="p1.m40" tex="{}^{3}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="3" role="NUMBER">3</XMTok></XMArg></XMApp></XMath></Math>, V. Métivier<Math mode="inline" xml:id="p1.m41" tex="{}^{2}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="2" role="NUMBER">2</XMTok></XMArg></XMApp></XMath></Math>, L. Nalpas<Math mode="inline" xml:id="p1.m42" tex="{}^{6}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="6" role="NUMBER">6</XMTok></XMArg></XMApp></XMath></Math>,
+A. Ouatizerga<Math mode="inline" xml:id="p1.m43" tex="{}^{4}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="4" role="NUMBER">4</XMTok></XMArg></XMApp></XMath></Math>, M. Parlog<Math mode="inline" xml:id="p1.m44" tex="{}^{8}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="8" role="NUMBER">8</XMTok></XMArg></XMApp></XMath></Math>, J. Péter<Math mode="inline" xml:id="p1.m45" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>, E. Plagnol<Math mode="inline" xml:id="p1.m46" tex="{}^{4}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="4" role="NUMBER">4</XMTok></XMArg></XMApp></XMath></Math>,
+E. Pollaco<Math mode="inline" xml:id="p1.m47" tex="{}^{6}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="6" role="NUMBER">6</XMTok></XMArg></XMApp></XMath></Math>, A. Rahmani<Math mode="inline" xml:id="p1.m48" tex="{}^{2}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="2" role="NUMBER">2</XMTok></XMArg></XMApp></XMath></Math>, R.Régimbart<Math mode="inline" xml:id="p1.m49" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>, T. Reposeur<Math mode="inline" xml:id="p1.m50" tex="{}^{2}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="2" role="NUMBER">2</XMTok></XMArg></XMApp></XMath></Math>,
+M.F. Rivet<Math mode="inline" xml:id="p1.m51" tex="{}^{4}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="4" role="NUMBER">4</XMTok></XMArg></XMApp></XMath></Math>, E. Rosato<Math mode="inline" xml:id="p1.m52" tex="{}^{9}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="9" role="NUMBER">9</XMTok></XMArg></XMApp></XMath></Math>, F. Saint-Laurent<Math mode="inline" xml:id="p1.m53" tex="{}^{3}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="3" role="NUMBER">3</XMTok></XMArg></XMApp></XMath></Math>, S. Salou<Math mode="inline" xml:id="p1.m54" tex="{}^{3}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="3" role="NUMBER">3</XMTok></XMArg></XMApp></XMath></Math>,
+M. Squalli<Math mode="inline" xml:id="p1.m55" tex="{}^{4}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="4" role="NUMBER">4</XMTok></XMArg></XMApp></XMath></Math>, J.C. Steckmeyer<Math mode="inline" xml:id="p1.m56" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>, G. Tabacaru<Math mode="inline" xml:id="p1.m57" tex="{}^{8}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="8" role="NUMBER">8</XMTok></XMArg></XMApp></XMath></Math>, B. Tamain<Math mode="inline" xml:id="p1.m58" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>,
+L. Tassan-Got<Math mode="inline" xml:id="p1.m59" tex="{}^{4}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="4" role="NUMBER">4</XMTok></XMArg></XMApp></XMath></Math>, E. Vient<Math mode="inline" xml:id="p1.m60" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>, C. Volant<Math mode="inline" xml:id="p1.m61" tex="{}^{6}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="6" role="NUMBER">6</XMTok></XMArg></XMApp></XMath></Math> J.P. Wieleczko<Math mode="inline" xml:id="p1.m62" tex="{}^{3}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="3" role="NUMBER">3</XMTok></XMArg></XMApp></XMath></Math>,
+A. Wieloch<Math mode="inline" xml:id="p1.m63" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math> and K. Yuasa-Nakagawa<Math mode="inline" xml:id="p1.m64" tex="{}^{5}"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="5" role="NUMBER">5</XMTok></XMArg></XMApp></XMath></Math>.</text>
+    </p>
+  </para>
+  <para xml:id="p2">
+    <break/>
+  </para>
+  <para xml:id="p3">
+    <p>
+      <Math mode="inline" xml:id="p3.m1" tex="{}^{1}">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMArg rule="Superscript">
+              <XMTok meaning="1" role="NUMBER">1</XMTok>
+            </XMArg>
+          </XMApp>
+        </XMath>
+      </Math>
+      <text fontsize="90%" xml:lang="en">GSI mbH, D-64291 Darmstadt, Germany.</text>
+    </p>
+  </para>
+  <para xml:id="p4">
+    <p>
+      <Math mode="inline" xml:id="p4.m1" tex="{}^{2}">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMArg rule="Superscript">
+              <XMTok meaning="2" role="NUMBER">2</XMTok>
+            </XMArg>
+          </XMApp>
+        </XMath>
+      </Math>
+      <text fontsize="90%" xml:lang="en">SUBATECH, IN2P3-CNRS et Université, F-44070 Nantes Cedex,
+France.</text>
+    </p>
+  </para>
+  <para xml:id="p5">
+    <p>
+      <Math mode="inline" xml:id="p5.m1" tex="{}^{3}">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMArg rule="Superscript">
+              <XMTok meaning="3" role="NUMBER">3</XMTok>
+            </XMArg>
+          </XMApp>
+        </XMath>
+      </Math>
+      <text fontsize="90%" xml:lang="en">GANIL, CEA et IN2P3-CNRS, B.P. 5027, F-14076 Caen Cedex,
+France.</text>
+    </p>
+  </para>
+  <para xml:id="p6">
+    <p>
+      <Math mode="inline" xml:id="p6.m1" tex="{}^{4}">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMArg rule="Superscript">
+              <XMTok meaning="4" role="NUMBER">4</XMTok>
+            </XMArg>
+          </XMApp>
+        </XMath>
+      </Math>
+      <text xml:lang="en" fontsize="90%">IPN, IN2P3-CNRS, F-91406 Orsay Cedex, France.</text>
+    </p>
+  </para>
+  <para xml:id="p7">
+    <p>
+      <Math mode="inline" xml:id="p7.m1" tex="{}^{5}">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMArg rule="Superscript">
+              <XMTok meaning="5" role="NUMBER">5</XMTok>
+            </XMArg>
+          </XMApp>
+        </XMath>
+      </Math>
+      <text xml:lang="en" fontsize="90%">LPC, IN2P3-CNRS, ISMRA et Université, F-14050 Caen Cedex,
+France.</text>
+    </p>
+  </para>
+  <para xml:id="p8">
+    <p>
+      <Math mode="inline" xml:id="p8.m1" tex="{}^{6}">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMArg rule="Superscript">
+              <XMTok meaning="6" role="NUMBER">6</XMTok>
+            </XMArg>
+          </XMApp>
+        </XMath>
+      </Math>
+      <text xml:lang="en" fontsize="90%">DAPNIA/SPhN, CEA/Saclay, F-91191 Gif sur Yvette Cedex, France.</text>
+    </p>
+  </para>
+  <para xml:id="p9">
+    <p>
+      <Math mode="inline" xml:id="p9.m1" tex="{}^{7}">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMArg rule="Superscript">
+              <XMTok meaning="7" role="NUMBER">7</XMTok>
+            </XMArg>
+          </XMApp>
+        </XMath>
+      </Math>
+      <text fontsize="90%" xml:lang="en">IPN, IN2P3-CNRS et Université, F-69622 Villeurbanne Cedex,
+France.</text>
+    </p>
+  </para>
+  <para xml:id="p10">
+    <p>
+      <Math mode="inline" xml:id="p10.m1" tex="{}^{8}">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3" color="#000000">
+            <XMArg rule="Superscript">
+              <XMTok meaning="8" role="NUMBER">8</XMTok>
+            </XMArg>
+          </XMApp>
+        </XMath>
+      </Math>
+      <text fontsize="90%" color="#000000" xml:lang="en">NIPNE, RO-76900 Bucharest-M&#259;gurele, Romania.</text>
+    </p>
+  </para>
+  <para xml:id="p11">
+    <p>
+      <Math mode="inline" xml:id="p11.m1" tex="{}^{9}">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMArg rule="Superscript">
+              <XMTok meaning="9" role="NUMBER">9</XMTok>
+            </XMArg>
+          </XMApp>
+        </XMath>
+      </Math>
+      <text fontsize="90%" xml:lang="en">DSFSezione INFN, Università di Napoli &#8216;&#8216;Federico II&#8217;&#8217;, I-80126
+Napoli, Italy.</text>
+    </p>
+  </para>
+  <para xml:id="p12">
+    <break/>
+  </para>
+  <section refnum="1" xml:id="S1" xml:lang="en">
+    <title><tag close=" ">1</tag>Introduction </title>
+    <para xml:id="S1.p1">
+      <p>The microscopic description of hot nuclear matter is fundamental to the understanding
+of energetic heavy ion collisions. Many of the theoretical models developed
+so far suffer from a shortage of observables to directly test the properties
+of nuclear matter early after the reaction. An example is the time scale of
+the reaction. By the very nature, experimenters observe only the signals reaching
+the detectors at infinite time. Subsequently only asymptotic properties of particles
+leaving the reaction zone are monitored. This shortcoming is partly bypassed
+in studies using interferometry of light particles <cite>[<bibref bibrefs="Koonin" separator="," show="Refnum" yyseparator=","/>]</cite>-<cite>[<bibref bibrefs="Review_Corinne" separator="," show="Refnum" yyseparator=","/>]</cite>.
+It has been shown that the two-body correlation function is not only sensitive
+to emission time and source size, but also to charge and slope parameter of
+the source <cite>[<bibref bibrefs="Martin_3Body" separator="," show="Refnum" yyseparator=","/>]</cite> which affect the velocity distribution of the
+particles and thus the relative distance between them.</p>
+    </para>
+    <para xml:id="S1.p2">
+      <p>It is quite obvious that a 4<Math mode="inline" xml:id="S1.p2.m1" tex="\pi"><XMath><XMTok name="pi" role="UNKNOWN" font="italic">&#960;</XMTok></XMath></Math> detector array<cite>[<bibref bibrefs="Miniball" separator="," show="Refnum" yyseparator=","/>]</cite><cite>[<bibref bibrefs="Fopi" separator="," show="Refnum" yyseparator=","/>]</cite>
+can be superior to a finite angle hodoscope, as used in many previous investigations,
+provided the granularity (angular resolution), energy threshold, energy resolution
+and the particle identification are of sufficient quality. A good 4<Math mode="inline" xml:id="S1.p2.m2" tex="\pi"><XMath><XMTok name="pi" role="UNKNOWN" font="italic">&#960;</XMTok></XMath></Math>
+setup allows minimally biased event selection avoiding many possible distortions.</p>
+    </para>
+    <para xml:id="S1.p3">
+      <p><text color="#000000">At GANIL,</text> <text color="#000000">the
+system Xe on Sn has been extensively investigated at 50 AMeV using the 4<Math mode="inline" xml:id="S1.p3.m1" tex="\pi"><XMath><XMTok name="pi" role="UNKNOWN" font="italic">&#960;</XMTok></XMath></Math>
+multidetector INDRA <cite>[<bibref bibrefs="Marie_Xe+Sn2" separator="," show="Refnum" yyseparator=","/>]</cite>, <cite>[<bibref bibrefs="Marie_xe_sn" separator="," show="Refnum" yyseparator=","/>]</cite>, <cite>[<bibref bibrefs="Lukasik" separator="," show="Refnum" yyseparator=","/>]</cite>.
+Here experimental data are further analyzed by means of correlation functions
+aiming at the correlation properties of light particles <cite>[<bibref bibrefs="DGourio_Thesis" separator="," show="Refnum" yyseparator=","/>]</cite>.
+They allow to perform event by event the following tasks : (i) determine an
+&#8217;experimental&#8217; impact parameter, (ii) select and characterize the emission sources,
+and (iii) build the correlation functions. Instead of imposing a spatially fixed
+particle correlator, we now can use a corr</text>elator, which fully exploits the
+event topology. This correlator continuously adapts to the kinematical configuration
+of every single collision. So each emission process can be characterized individually<text font="bold">.</text></p>
+    </para>
+    <para xml:id="S1.p4">
+      <p>This study focuses on two-proton (p-p), two-deuteron (d-d) and proton-deuteron
+(p-d) correlation functions for the system <Math mode="inline" xml:id="S1.p4.m1" tex="{}^{129}Xe+^{Nat}Sn"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="2"><XMArg rule="Superscript"><XMTok meaning="129" role="NUMBER">129</XMTok></XMArg></XMApp><XMTok role="UNKNOWN" font="italic">X</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok meaning="plus" role="ADDOP">+</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="2"><XMArg rule="Superscript"><XMTok role="UNKNOWN" font="italic">N</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok></XMArg></XMApp><XMTok role="UNKNOWN" font="italic">S</XMTok><XMTok role="UNKNOWN" font="italic">n</XMTok></XMath></Math> at 50 AMeV
+<text color="#000000">which aims at providing time scales for the emission of the
+light charged particles. This should shed light on the type of processes, in
+particular if the reaction is</text> <text color="#000000">dominated
+by preequilibrium emission</text> occurring at the early stage of the reaction <text color="#000000">(typically
+with times between 0 and 100 fm/c) or by thermal emission from the projectile
+and target like fragments (typically with times of a few hundreds fm/c).</text> <text color="#000000">With
+the knowledge on the chronology pattern, the emission time of deuterons might
+give a hint to the mechanism for the production of this lowly bound particle
+in hot nuclear matter. For this purpose the design of the INDRA detector is
+well-suited <cite>[<bibref bibrefs="Marie_xe_sn" separator="," show="Refnum" yyseparator=","/>]</cite>. A large range of excitation energies</text> (up to
+12 AMeV) is covered and the light <text color="#000000">charged</text> particle multiplicity
+which can be measured is adequate for our selection criteria.</p>
+    </para>
+    <para xml:id="S1.p5">
+      <p>With a conventional reaction picture in mind, and supported by recent studies
+showing that a sizeable fraction of fragments are emitted in the mid-rapidity
+region <cite>[<bibref bibrefs="Lukasik" separator="," show="Refnum" yyseparator=","/>]</cite>, only thermalized particles are expected in the forward
+hemisphere of the momentum space of the projectile-like source. Such an assumption
+has for example important consequences for the estimation of the excitation
+energy and the slope parameter of the projectile source <cite>[<bibref bibrefs="Caloriccurve" separator="," show="Refnum" yyseparator=","/>]</cite>,
+<cite>[<bibref bibrefs="DissipativeCollision" separator="," show="Refnum" yyseparator=","/>]</cite>. Conversely semiclassical calculations of heavy
+ion reactions in this energy domain have shown that the projectile-like and
+the prompt emissions from <text color="#000000">the interacting zone</text> present a
+large overlap in their rapidity distributions <cite>[<bibref bibrefs="LV_Eudes" separator="," show="Refnum" yyseparator=","/>]</cite>. We have constructed
+our correlation functions with particles selected in this forward region to
+find out if the thermalized component is really the single contribution.</p>
+    </para>
+    <para xml:id="S1.p6">
+      <p>The extraction of the emission time was performed with a quantum model whose
+interesting feature is to take into account the Coulomb effect of the source
+charge by analytically solving the three-body problem <cite>[<bibref bibrefs="FSI1" separator="," show="Refnum" yyseparator=","/>]</cite>, <cite>[<bibref bibrefs="FSI2" separator="," show="Refnum" yyseparator=","/>]</cite>.</p>
+    </para>
+  </section>
+  <section refnum="2" xml:id="S2" xml:lang="en">
+    <title><tag close=" ">2</tag>INDRA setup and light <text color="#000000">charged</text> particle resolutions </title>
+    <para xml:id="S2.p1">
+      <p>The experiment was performed at the GANIL facility where the INDRA detector
+has been installed with a target of 350 <Math mode="inline" xml:id="S2.p1.m1" tex="\mu g/cm^{2}"><XMath><XMTok name="mu" role="UNKNOWN" font="italic">&#956;</XMTok><XMTok role="UNKNOWN" font="italic">g</XMTok><XMTok mathstyle="inline" meaning="divide" role="MULOP">/</XMTok><XMTok role="UNKNOWN" font="italic">c</XMTok><XMTok role="UNKNOWN" font="italic">m</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="2"><XMArg rule="Superscript"><XMTok meaning="2" role="NUMBER">2</XMTok></XMArg></XMApp></XMath></Math>. The beam intensity
+was limited to 0.4 nA <text color="#000000">to avoid a saturation of the data acquisition
+software.</text></p>
+    </para>
+    <para xml:id="S2.p2">
+      <p>INDRA <cite>[<bibref bibrefs="Indra" separator="," show="Refnum" yyseparator=","/>]</cite> has been designed to maximize the detection efficiency of
+charged particles at intermediate energy. It reaches a total detection efficiency
+<text color="#000000">of</text> 90%. The fine granularity chosen is
+such that double counts stay below 5%. INDRA consists of an array of 336 modules
+reparted on 17 rings centered along the beam axis. Each module is a telescope
+composed of an ionization chamber (ChIo) filled with <Math mode="inline" xml:id="S2.p2.m1" tex="C_{3}F_{8}"><XMath><XMTok role="UNKNOWN" font="italic">C</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="2"><XMArg rule="Subscript"><XMTok meaning="3" role="NUMBER">3</XMTok></XMArg></XMApp><XMTok role="UNKNOWN" font="italic">F</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="2"><XMArg rule="Subscript"><XMTok meaning="8" role="NUMBER">8</XMTok></XMArg></XMApp></XMath></Math> gas followed
+by a Cesium Iodide (CsI) scintillator. For forward angles below 45 degrees,
+the resolution is further improved by insertion of a 300 <Math mode="inline" xml:id="S2.p2.m2" tex="\mu m"><XMath><XMTok name="mu" role="UNKNOWN" font="italic">&#956;</XMTok><XMTok role="UNKNOWN" font="italic">m</XMTok></XMath></Math> silicon
+(Si) wafer between the ChIo and the CsI. With <Math mode="inline" xml:id="S2.p2.m3" tex="\Delta E-E"><XMath><XMTok name="Delta" role="UNKNOWN">&#916;</XMTok><XMTok role="UNKNOWN" font="italic">E</XMTok><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok role="UNKNOWN" font="italic">E</XMTok></XMath></Math> methods in the
+telescope, the charge identification goes up to Z=54. Isotopic resolution (PID)
+is obtained for Z=1,2 (and up to Z=5 for ring 2 to 8) by pulse shape analysis
+of the CsI light output. Lowest energy threshold for the identification of protons
+and deuterons is 6 <text color="#000000">MeV</text> using the matrix
+[CsI(fast) + Si] versus [CsI(slow)].</p>
+    </para>
+    <para xml:id="S2.p3">
+      <p>In particular p-p correlation functions require the resolution of very small
+relative momenta, less than 20 MeV/c. A minimum relative momentum of 10 MeV/c
+can be reached for forward angles under <Math mode="inline" xml:id="S2.p3.m1" tex="20^{o}"><XMath><XMTok meaning="20" role="NUMBER">20</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="2"><XMArg rule="Superscript"><XMTok role="UNKNOWN" font="italic">o</XMTok></XMArg></XMApp></XMath></Math>. <text color="#000000">For
+the determination of the particle coordinates, the angle from the target to
+the middle of the detector has been used instead of a random distribution over
+the spatial extension.</text> The energy resolution of light particles is between
+100 keV and 200 keV depending on the module. With exception of INDRA&#8217;s first
+ring (<Math mode="inline" xml:id="S2.p3.m2" tex="\Delta\Theta=2^{o}-3^{o}"><XMath><XMTok name="Delta" role="UNKNOWN">&#916;</XMTok><XMTok name="Theta" role="UNKNOWN">&#920;</XMTok><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok meaning="2" role="NUMBER">2</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="2"><XMArg rule="Superscript"><XMTok role="UNKNOWN" font="italic">o</XMTok></XMArg></XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="3" role="NUMBER">3</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="2"><XMArg rule="Superscript"><XMTok role="UNKNOWN" font="italic">o</XMTok></XMArg></XMApp></XMath></Math>) which consists of plastic phoswich
+detectors (NE102 and NE115) for standing higher particle rates in this region,
+the light isotope separation could be performed on the overall domain.</p>
+    </para>
+    <para xml:id="S2.p4">
+      <p>Fig. 1 shows the isotope resolution summed up for rings 2 to 9 (<Math mode="inline" xml:id="S2.p4.m1" tex="3^{o}&lt;\theta&lt;45^{o}"><XMath><XMTok meaning="3" role="NUMBER">3</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="2"><XMArg rule="Superscript"><XMTok role="UNKNOWN" font="italic">o</XMTok></XMArg></XMApp><XMTok meaning="less-than" role="RELOP">&lt;</XMTok><XMTok name="theta" role="UNKNOWN" font="italic">&#952;</XMTok><XMTok meaning="less-than" role="RELOP">&lt;</XMTok><XMTok meaning="45" role="NUMBER">45</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="2"><XMArg rule="Superscript"><XMTok role="UNKNOWN" font="italic">o</XMTok></XMArg></XMApp></XMath></Math>).
+The insert shows it separately for rings 2, 5 and 9. The projectile-like fragments
+at small angles come out at larger energy. To avoid saturation there, the photomultiplier
+gains steadily increase from ring 2 to ring 17 <text color="#000000">by
+about an overall factor of 10.</text> Subsequently ring 2 has less PID resolution,
+seen in the insert to Fig. 1. However the angular resolution of the first rings
+is superior and therefore they contribute important information to the correlation
+function at small relative momentum.</p>
+    </para>
+    <para xml:id="S2.p5">
+      <p>The p-p correlation function of Fig. 2 shows the data from the forward hemisphere
+of the projectile source (FHPS, see section 3) without impact parameter selection.
+It can be continuously constructed from 10 MeV/c up to 250 MeV/c relative
+momenta due to the 4<Math mode="inline" xml:id="S2.p5.m1" tex="\pi"><XMath><XMTok name="pi" role="UNKNOWN" font="italic">&#960;</XMTok></XMath></Math> coverage and the good angular resolution (yet
+the forward source selection slightly increases the minimal relative momentum).
+The structure in the correlation function at 20 MeV/c is due to the attractive
+s-wave p-p interaction <cite>[<bibref bibrefs="Koonin" separator="," show="Refnum" yyseparator=","/>]</cite>. There is a Coulomb suppression at very
+small relative momentum and possibly in the range between 50-75 MeV/c. The normalization
+has been applied to the data points between 100 and 120 MeV/c which is above
+any remaining two-body effects and below any kinematical effects at higher momentum.
+A normalization at lower relative momentum would have introduced a misinterpretation
+of the correlation effect.</p>
+    </para>
+  </section>
+  <section refnum="3" xml:id="S3" labels="LABEL:FHPS" xml:lang="en">
+    <title><tag close=" ">3</tag>Event sorting and source selection</title>
+    <para xml:id="S3.p1">
+      <p>We take in our analysis events in which the total longitudinal momentum of detected
+ejectiles is above 80% of the initial momentum. We refrain from further cuts,
+for instance the totally detected charge <Math mode="inline" xml:id="S3.p1.m1" tex="Z_{tot}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="2"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok></XMArg></XMApp></XMath></Math>, to conserve a representative
+impact parameter distribution. For most of the events the target like ejectile
+is lost due to <text color="#000000">the velocity thresholds.</text> <text color="#000000">This
+missing fragment has been kinematically reconstructed and taken into account
+in the calculation of the momentum tensor and thrust variable.</text> This <text color="#000000">event
+class g</text>ives an unbiased starting point for the analysis of light particle correlations.</p>
+    </para>
+    <para xml:id="S3.p2">
+      <p>The calculation of the impact parameter is based on the total transverse energy
+of the light charged particles (Z<Math mode="inline" xml:id="S3.p2.m1" tex="\leq"><XMath><XMTok meaning="less-than-or-equals" name="leq" role="RELOP">&#8804;</XMTok></XMath></Math>2) <text color="#000000">whose experimental
+detection</text> is quite independent of the reaction mechanism. <text color="#000000">Furthermore
+a recent analysis of the correlation between the total multiplicity versus the
+transverse energy (<Math mode="inline" xml:id="S3.p2.m2" tex="E_{T}"><XMath><XMTok role="UNKNOWN" font="italic">E</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok></XMArg></XMApp></XMath></Math>) for that system has demonstrated the validity
+of <Math mode="inline" xml:id="S3.p2.m3" tex="E_{T}"><XMath><XMTok role="UNKNOWN" font="italic">E</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok></XMArg></XMApp></XMath></Math> <cite>[<bibref bibrefs="Lukasik" separator="," show="Refnum" yyseparator=","/>]</cite>.</text></p>
+    </para>
+    <para xml:id="S3.p3">
+      <p>In order to observe impact parameter dependent properties while maintaining
+sufficient statistics, we have defined three <Math mode="inline" xml:id="S3.p3.m1" tex="E_{T}"><XMath><XMTok role="UNKNOWN" font="italic">E</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="2"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok></XMArg></XMApp></XMath></Math> bins for which the
+correlation function is constructed. The &#8216;&#8216;peripheral&#8217;&#8217;, &#8216;&#8216;intermediate"
+and &#8216;&#8216;central&#8217;&#8217; events have a <Math mode="inline" xml:id="S3.p3.m2" tex="E_{T}"><XMath><XMTok role="UNKNOWN" font="italic">E</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="2"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok></XMArg></XMApp></XMath></Math> range between 0-280 MeV, 280-420
+MeV and above 420 MeV corresponding to reduced impact parameters in [1-0.65],
+[0.65-0.35] and smaller than 0.35 respectively.</p>
+    </para>
+    <para xml:id="S3.p4">
+      <p>INDRA allows to build event by event a momentum tensor <cite>[<bibref bibrefs="Ellipsoide" separator="," show="Refnum" yyseparator=","/>]</cite> <text color="#000000">defined
+in the center of mass</text> by :</p>
+    </para>
+    <para xml:id="S3.p5">
+      <equation xml:id="S3.Ex1">
+        <Math mode="display" xml:id="S3.Ex1.m1" tex="Q_{ij}=\sum^{M}_{k=1}\frac{1}{p}p_{i}(k)p_{j}(k)">
+          <XMath>
+            <XMTok role="UNKNOWN" font="italic">Q</XMTok>
+            <XMApp role="POSTSUBSCRIPT" scriptpos="2">
+              <XMArg rule="Subscript">
+                <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                <XMTok role="UNKNOWN" font="italic">j</XMTok>
+              </XMArg>
+            </XMApp>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok mathstyle="display" meaning="sum" role="SUMOP" scriptpos="mid">&#8721;</XMTok>
+            <XMApp role="POSTSUPERSCRIPT" scriptpos="2">
+              <XMArg rule="Superscript">
+                <XMTok role="UNKNOWN" font="italic">M</XMTok>
+              </XMArg>
+            </XMApp>
+            <XMApp role="POSTSUBSCRIPT" scriptpos="2">
+              <XMArg rule="Subscript">
+                <XMTok role="UNKNOWN" font="italic">k</XMTok>
+                <XMTok meaning="equals" role="RELOP">=</XMTok>
+                <XMTok meaning="1" role="NUMBER">1</XMTok>
+              </XMArg>
+            </XMApp>
+            <XMApp>
+              <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+              <XMArg>
+                <XMTok meaning="1" role="NUMBER">1</XMTok>
+              </XMArg>
+              <XMArg>
+                <XMTok role="UNKNOWN" font="italic">p</XMTok>
+              </XMArg>
+            </XMApp>
+            <XMTok role="UNKNOWN" font="italic">p</XMTok>
+            <XMApp role="POSTSUBSCRIPT" scriptpos="2">
+              <XMArg rule="Subscript">
+                <XMTok role="UNKNOWN" font="italic">i</XMTok>
+              </XMArg>
+            </XMApp>
+            <XMTok role="OPEN" stretchy="false">(</XMTok>
+            <XMTok role="UNKNOWN" font="italic">k</XMTok>
+            <XMTok role="CLOSE" stretchy="false">)</XMTok>
+            <XMTok role="UNKNOWN" font="italic">p</XMTok>
+            <XMApp role="POSTSUBSCRIPT" scriptpos="2">
+              <XMArg rule="Subscript">
+                <XMTok role="UNKNOWN" font="italic">j</XMTok>
+              </XMArg>
+            </XMApp>
+            <XMTok role="OPEN" stretchy="false">(</XMTok>
+            <XMTok role="UNKNOWN" font="italic">k</XMTok>
+            <XMTok role="CLOSE" stretchy="false">)</XMTok>
+          </XMath>
+        </Math>
+      </equation>
+      <p>where M is the multiplicity of fragments with a charge Z greater than 2, p
+is the momentum of the k&#8217;th particle in M and <Math mode="inline" xml:id="S3.p5.m1" tex="p_{i}"><XMath><XMTok role="UNKNOWN" font="italic">p</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="2"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">i</XMTok></XMArg></XMApp></XMath></Math>, <Math mode="inline" xml:id="S3.p5.m2" tex="p_{j}"><XMath><XMTok role="UNKNOWN" font="italic">p</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="2"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">j</XMTok></XMArg></XMApp></XMath></Math> two
+of the Cartesian momentum components. The <text color="#000000">eigenvectors</text> of
+this tensor establish a reference frame. The main axis (eigenvector of the largest
+eigenvalue) gives the average direction of nuclear matter emission. The eigenvectors
+associated to the two largest eigenvalues define a reaction plane. The FHPS
+selections and the calculations have been performed with regards to this new
+reference system. Fig. 3 shows the transverse versus the parallel velocity of
+the protons when <Math mode="inline" xml:id="S3.p5.m3" tex="E_{T}"><XMath><XMTok role="UNKNOWN" font="italic">E</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="2"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok></XMArg></XMApp></XMath></Math> is smaller than 40 MeV. Since this selection implies
+only very peripheral events, a clearer separation of the sources is exhibited.</p>
+    </para>
+    <para xml:id="S3.p6">
+      <p>The next task consists of recognizing the fragments emitted either from the
+target-like or from the projectile-like source. The thrust variable defined
+by</p>
+      <equation xml:id="S3.Ex2">
+        <Math mode="display" xml:id="S3.Ex2.m1" tex="T=\max_{c_{1},c_{2}}\frac{\mid\sum_{i\in c_{1}}\overrightarrow{P_{i}}\mid+\mid%&#10;\sum_{j\in c_{2}}\overrightarrow{P_{j}}\mid}{\sum^{M}_{k=1}|\overrightarrow{P_%&#10;{k}}\mid}">
+          <XMath>
+            <XMTok role="UNKNOWN" font="italic">T</XMTok>
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok meaning="maximum" role="OPFUNCTION" scriptpos="mid">max</XMTok>
+            <XMApp role="POSTSUBSCRIPT" scriptpos="2">
+              <XMArg rule="Subscript">
+                <XMTok role="UNKNOWN" font="italic">c</XMTok>
+                <XMApp role="POSTSUBSCRIPT" scriptpos="3">
+                  <XMArg rule="Subscript">
+                    <XMTok meaning="1" role="NUMBER">1</XMTok>
+                  </XMArg>
+                </XMApp>
+                <XMTok role="PUNCT">,</XMTok>
+                <XMTok role="UNKNOWN" font="italic">c</XMTok>
+                <XMApp role="POSTSUBSCRIPT" scriptpos="3">
+                  <XMArg rule="Subscript">
+                    <XMTok meaning="2" role="NUMBER">2</XMTok>
+                  </XMArg>
+                </XMApp>
+              </XMArg>
+            </XMApp>
+            <XMApp>
+              <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+              <XMArg>
+                <XMTok name="mid" role="VERTBAR">&#8739;</XMTok>
+                <XMTok mathstyle="text" meaning="sum" role="SUMOP" scriptpos="post">&#8721;</XMTok>
+                <XMApp role="POSTSUBSCRIPT" scriptpos="3">
+                  <XMArg rule="Subscript">
+                    <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                    <XMTok meaning="element-of" name="in" role="RELOP">&#8712;</XMTok>
+                    <XMTok role="UNKNOWN" font="italic">c</XMTok>
+                    <XMApp role="POSTSUBSCRIPT" scriptpos="4">
+                      <XMArg rule="Subscript">
+                        <XMTok meaning="1" role="NUMBER">1</XMTok>
+                      </XMArg>
+                    </XMApp>
+                  </XMArg>
+                </XMApp>
+                <XMApp>
+                  <XMTok name="overrightarrow" role="OVERACCENT">&#8594;</XMTok>
+                  <XMArg>
+                    <XMTok role="UNKNOWN" font="italic">P</XMTok>
+                    <XMApp role="POSTSUBSCRIPT" scriptpos="4">
+                      <XMArg rule="Subscript">
+                        <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                      </XMArg>
+                    </XMApp>
+                  </XMArg>
+                </XMApp>
+                <XMTok name="mid" role="VERTBAR">&#8739;</XMTok>
+                <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                <XMTok name="mid" role="VERTBAR">&#8739;</XMTok>
+                <XMTok mathstyle="text" meaning="sum" role="SUMOP" scriptpos="post">&#8721;</XMTok>
+                <XMApp role="POSTSUBSCRIPT" scriptpos="3">
+                  <XMArg rule="Subscript">
+                    <XMTok role="UNKNOWN" font="italic">j</XMTok>
+                    <XMTok meaning="element-of" name="in" role="RELOP">&#8712;</XMTok>
+                    <XMTok role="UNKNOWN" font="italic">c</XMTok>
+                    <XMApp role="POSTSUBSCRIPT" scriptpos="4">
+                      <XMArg rule="Subscript">
+                        <XMTok meaning="2" role="NUMBER">2</XMTok>
+                      </XMArg>
+                    </XMApp>
+                  </XMArg>
+                </XMApp>
+                <XMApp>
+                  <XMTok name="overrightarrow" role="OVERACCENT">&#8594;</XMTok>
+                  <XMArg>
+                    <XMTok role="UNKNOWN" font="italic">P</XMTok>
+                    <XMApp role="POSTSUBSCRIPT" scriptpos="4">
+                      <XMArg rule="Subscript">
+                        <XMTok role="UNKNOWN" font="italic">j</XMTok>
+                      </XMArg>
+                    </XMApp>
+                  </XMArg>
+                </XMApp>
+                <XMTok name="mid" role="VERTBAR">&#8739;</XMTok>
+              </XMArg>
+              <XMArg>
+                <XMTok mathstyle="text" meaning="sum" role="SUMOP" scriptpos="post">&#8721;</XMTok>
+                <XMApp role="POSTSUPERSCRIPT" scriptpos="3">
+                  <XMArg rule="Superscript">
+                    <XMTok role="UNKNOWN" font="italic">M</XMTok>
+                  </XMArg>
+                </XMApp>
+                <XMApp role="POSTSUBSCRIPT" scriptpos="3">
+                  <XMArg rule="Subscript">
+                    <XMTok role="UNKNOWN" font="italic">k</XMTok>
+                    <XMTok meaning="equals" role="RELOP">=</XMTok>
+                    <XMTok meaning="1" role="NUMBER">1</XMTok>
+                  </XMArg>
+                </XMApp>
+                <XMTok role="VERTBAR" stretchy="false">|</XMTok>
+                <XMApp>
+                  <XMTok name="overrightarrow" role="OVERACCENT">&#8594;</XMTok>
+                  <XMArg>
+                    <XMTok role="UNKNOWN" font="italic">P</XMTok>
+                    <XMApp role="POSTSUBSCRIPT" scriptpos="4">
+                      <XMArg rule="Subscript">
+                        <XMTok role="UNKNOWN" font="italic">k</XMTok>
+                      </XMArg>
+                    </XMApp>
+                  </XMArg>
+                </XMApp>
+                <XMTok name="mid" role="VERTBAR">&#8739;</XMTok>
+              </XMArg>
+            </XMApp>
+          </XMath>
+        </Math>
+      </equation>
+    </para>
+    <para xml:id="S3.p7">
+      <p>divides up the fragments in two groups <Math mode="inline" xml:id="S3.p7.m1" tex="c_{1}"><XMath><XMTok role="UNKNOWN" font="italic">c</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="2"><XMArg rule="Subscript"><XMTok meaning="1" role="NUMBER">1</XMTok></XMArg></XMApp></XMath></Math> and <Math mode="inline" xml:id="S3.p7.m2" tex="c_{2}"><XMath><XMTok role="UNKNOWN" font="italic">c</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="2"><XMArg rule="Subscript"><XMTok meaning="2" role="NUMBER">2</XMTok></XMArg></XMApp></XMath></Math> corresponding
+to the two emitting sources. The velocity of each of them is determined by a
+kinematic reconstruction within these two ensembles <cite>[<bibref bibrefs="Metivier_Thrust" separator="," show="Refnum" yyseparator=","/>]</cite>.
+As an example, the average velocity of the projectile-like source is drawn with
+a vertical bold line in Fig. 3.</p>
+    </para>
+    <para xml:id="S3.p8">
+      <p>To disentangle the projectile-like source emission from mid-rapidity contributions,
+we have taken particles with a parallel velocity larger than the projectile
+source velocity. This region (FHPS) is on the right of the bold
+line in Fig. 3. <text color="#000000">In the following, this sample of particles
+is used as the base for the extraction of the slope parameter in the energy
+spectra as well as for the construction of the correlation functions. We remind
+the reader here that our correlator works dynamically within the reference frame,
+a fact being imperative in order to optimize the FHPS selection.</text></p>
+    </para>
+  </section>
+  <section refnum="4" xml:id="S4" xml:lang="en">
+    <title><tag close=" ">4</tag>Source parameters : disentangle size and time</title>
+    <subsection refnum="4.1" xml:id="S4.SS1">
+      <title><tag close=" ">4.1</tag><text font="italic">Size</text> </title>
+      <para xml:id="S4.SS1.p1">
+        <p>The shape and the height of the correlation function is given by the strength
+of the interactions which themselves depend on the average distance between
+the two particles detected in coincidence. This distance depends on the average
+emission time and on the spatial source extension. The double parametrization
+can be circumvented only for two extreme cases: at high energy the emission
+time is set to zero while at low energy the emission time is very long and consequently
+the source size is negligible <cite>[<bibref bibrefs="Fixed_source_size" separator="," show="Refnum" yyseparator=","/>]</cite>. In our energy domain,
+both parameters are relevant. Using the complete detection by INDRA of all charged
+products we alternatively can determine the source size directly.</p>
+      </para>
+      <para xml:id="S4.SS1.p2">
+        <p><text color="#000000">For this estimation, ejectiles are grouped according to (<Math mode="inline" xml:id="S4.SS1.p2.m1" tex="Z\leq Z_{L}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMTok meaning="less-than-or-equals" name="leq" role="RELOP">&#8804;</XMTok><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">L</XMTok></XMArg></XMApp></XMath></Math>)
+and (<Math mode="inline" xml:id="S4.SS1.p2.m2" tex="Z&gt;Z_{L}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMTok meaning="greater-than" role="RELOP">&gt;</XMTok><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">L</XMTok></XMArg></XMApp></XMath></Math>) where <Math mode="inline" xml:id="S4.SS1.p2.m3" tex="Z_{L}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">L</XMTok></XMArg></XMApp></XMath></Math> is an adjusting parameter. In the first
+group only the particles faster than the projectile-like source velocity are
+included (particles from the FHPS) and the sum of their charges is multiplied
+by 2 taking into account the isotropical projectile-like emission. This sum
+is <Math mode="inline" xml:id="S4.SS1.p2.m4" tex="Z_{P}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">P</XMTok></XMArg></XMApp></XMath></Math> in which the additional mid-rapidity contribution mainly composed
+of light charges is suppressed. The second group contains only the particles
+faster than the center of mass velocity, the sum of their charges is <Math mode="inline" xml:id="S4.SS1.p2.m5" tex="Z_{F}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">F</XMTok></XMArg></XMApp></XMath></Math>.
+This separate treatment of the heaviest particles (second group) takes into
+account an asymmetry of emission in the projectile-like reference frame (for
+example only one big remnant, or two fission fragments). The total charge of
+the source is <Math mode="inline" xml:id="S4.SS1.p2.m6" tex="Z_{Total}=Z_{P}+Z_{F}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">l</XMTok></XMArg></XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">P</XMTok></XMArg></XMApp><XMTok meaning="plus" role="ADDOP">+</XMTok><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">F</XMTok></XMArg></XMApp></XMath></Math>. To test the quality of this procedure,
+the calculation of <Math mode="inline" xml:id="S4.SS1.p2.m7" tex="Z_{Total}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">l</XMTok></XMArg></XMApp></XMath></Math> has been performed for different values
+of the parameter <Math mode="inline" xml:id="S4.SS1.p2.m8" tex="Z_{L}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">L</XMTok></XMArg></XMApp></XMath></Math>(2, 4, 8, 10). Fig. 4 shows that <Math mode="inline" xml:id="S4.SS1.p2.m9" tex="Z_{Total}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">l</XMTok></XMArg></XMApp></XMath></Math>
+only varies by less than 6% with <Math mode="inline" xml:id="S4.SS1.p2.m10" tex="Z_{L}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">L</XMTok></XMArg></XMApp></XMath></Math>. For later calculation of <Math mode="inline" xml:id="S4.SS1.p2.m11" tex="Z_{Total}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">l</XMTok></XMArg></XMApp></XMath></Math>
+we chose <Math mode="inline" xml:id="S4.SS1.p2.m12" tex="Z_{L}=4"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">L</XMTok></XMArg></XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok meaning="4" role="NUMBER">4</XMTok></XMath></Math>.</text></p>
+      </para>
+      <para xml:id="S4.SS1.p3">
+        <p><text color="#000000">For each of the three impact parameter bins we have also defined
+<Math mode="inline" xml:id="S4.SS1.p3.m1" tex="Z_{Max}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">M</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">x</XMTok></XMArg></XMApp></XMath></Math> as the largest fragment being faster than the center of mass.
+<Math mode="inline" xml:id="S4.SS1.p3.m2" tex="Z_{Max}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">M</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">x</XMTok></XMArg></XMApp></XMath></Math> decreases with the centrality as expected in the geometrical,
+simple picture of the collision also shown in Fig. 4. <Math mode="inline" xml:id="S4.SS1.p3.m3" tex="Z_{Total}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">l</XMTok></XMArg></XMApp></XMath></Math> unexpectedly
+remains constant. </text></p>
+      </para>
+      <para xml:id="S4.SS1.p4">
+        <p><text color="#000000">To estimate the source size, we make two assumptions about
+the projectile-like source. First, the <Math mode="inline" xml:id="S4.SS1.p4.m1" tex="A_{Total}/Z_{Total}"><XMath><XMTok role="UNKNOWN" font="italic">A</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">l</XMTok></XMArg></XMApp><XMTok mathstyle="inline" meaning="divide" role="MULOP">/</XMTok><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">l</XMTok></XMArg></XMApp></XMath></Math> ratio is fixed
+to the one from the valley of nuclear stability. Secondly, with this value of
+<Math mode="inline" xml:id="S4.SS1.p4.m2" tex="A_{Total}"><XMath><XMTok role="UNKNOWN" font="italic">A</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">l</XMTok></XMArg></XMApp></XMath></Math> we determine the source radius r by assuming a normal nuclear
+density <Math mode="inline" xml:id="S4.SS1.p4.m3" tex="\rho_{0}"><XMath><XMTok name="rho" role="UNKNOWN" font="italic">&#961;</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok meaning="0" role="NUMBER">0</XMTok></XMArg></XMApp></XMath></Math> and by simply applying <Math mode="inline" xml:id="S4.SS1.p4.m4" tex="r=r_{0}.A^{1/3}_{Total}"><XMath><XMTok role="UNKNOWN" font="italic">r</XMTok><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok role="UNKNOWN" font="italic">r</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok meaning="0" role="NUMBER">0</XMTok></XMArg></XMApp><XMTok role="PERIOD">.</XMTok><XMTok role="UNKNOWN" font="italic">A</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="1" role="NUMBER">1</XMTok><XMTok mathstyle="inline" meaning="divide" role="MULOP">/</XMTok><XMTok meaning="3" role="NUMBER">3</XMTok></XMArg></XMApp><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">l</XMTok></XMArg></XMApp></XMath></Math>
+with <Math mode="inline" xml:id="S4.SS1.p4.m5" tex="r_{0}=1.2"><XMath><XMTok role="UNKNOWN" font="italic">r</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok meaning="0" role="NUMBER">0</XMTok></XMArg></XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok meaning="1.2" role="NUMBER">1.2</XMTok></XMath></Math> fm. The central &#8217;single source&#8217; events which have a radial
+flow of 2 AMeV <cite>[<bibref bibrefs="Radial_flow_3" separator="," show="Refnum" yyseparator=","/>]</cite> have a very small cross section. This implies
+that a density different from <Math mode="inline" xml:id="S4.SS1.p4.m6" tex="\rho_{0}"><XMath><XMTok name="rho" role="UNKNOWN" font="italic">&#961;</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok meaning="0" role="NUMBER">0</XMTok></XMArg></XMApp></XMath></Math> does not make sense for our calculation
+even in the central impact parameter bin. The extracted source sizes are given
+in Table 1. The errors are derivated from the <Math mode="inline" xml:id="S4.SS1.p4.m7" tex="Z_{Total}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">l</XMTok></XMArg></XMApp></XMath></Math> distribution
+widths.</text></p>
+      </para>
+    </subsection>
+    <subsection refnum="4.2" xml:id="S4.SS2">
+      <title>
+        <tag close=" ">4.2</tag>
+        <text font="italic">Slope parameter</text>
+      </title>
+      <para xml:id="S4.SS2.p1">
+        <p><text color="#000000">We have extracted the</text> <text font="italic" color="#000000">slope parameter</text>
+<text color="#000000">from the experimental energy spectra using the formula for
+surface emission. As for the source size estimation, we have selected only the
+protons and the deuterons located in the FHPS region. Their kinetic energy is
+given in the projectile-like source reference frame. As example for the peripheral
+collisions, Fig. 5 shows the energy spectra restricted to ring 2, 4 and 6 where
+the double slope is the most clearly visible. The low energy one originates
+from the projectile-like thermal emission, the other at higher energy, presumably
+from a preequilibrium emission. We observe that the importance of high energy
+particles decreases with the radial angle as if this emission were concentrated
+along the beam axis, and as expected in a Fermi-jet picture <cite>[<bibref bibrefs="Fermi-jet" separator="," show="Refnum" yyseparator=","/>]</cite>.
+The slope parameters averaged over all the rings included in FHPS are given
+in Table 1.</text> <text color="#000000">For the quantum calculation code</text> <text color="#000000">presented
+below we have used a weighted average value of the double slopes. </text></p>
+      </para>
+    </subsection>
+  </section>
+  <section refnum="5" xml:id="S5" xml:lang="en">
+    <title><tag close=" ">5</tag>Description of the quantum model</title>
+    <para xml:id="S5.p1">
+      <p>The extraction of the emission time has been performed by using the three-body
+quantum model developed by R. Lednicky <cite>[<bibref bibrefs="FSI1" separator="," show="Refnum" yyseparator=","/>]</cite>, <cite>[<bibref bibrefs="FSI2" separator="," show="Refnum" yyseparator=","/>]</cite>. This code
+calculates the quantum statistics for identical particles and the final state
+interaction by taking into account the nuclear and the Coulomb potentials. The
+Coulomb repulsion on the particle pair due to the emitting projectile-like source
+is also included <cite>[<bibref bibrefs="Martin_3Body" separator="," show="Refnum" yyseparator=","/>]</cite>. The three-body problem is analytically
+solved by making an adiabatic assumption : the relative motion between the two
+particles has to be much slower than their velocity in the source reference
+frame. <text color="#000000">Due to a sizeable angle between neighboring
+detectors, the small relative momentum region can only be populated by pairs
+of particles with almost equal velocity.</text> Thus the adiabatic assumption <text color="#000000">is
+fulfilled in the region of the signal.</text></p>
+    </para>
+    <para xml:id="S5.p2">
+      <p>The introduction of the emitter Coulomb effect in the quantum calculation is
+a new feature brought by this model. We feel that this type of description is
+required to correctly reproduce the experimental data because the presence of
+the remnant source charge is intrinsic to the model. In so far it may surpass
+models where the Coulomb influence of the emitter is only treated as a correction
+<cite>[<bibref bibrefs="Gamov_factor" separator="," show="Refnum" yyseparator=","/>]</cite>. <text color="#000000">Limits of this model are certainly related
+to the static source description <cite>[<bibref bibrefs="Optimized_Source" separator="," show="Refnum" yyseparator=","/>]</cite> which does not take
+into account the correlation between momentum and position, nor the dynamical
+emission. </text></p>
+    </para>
+    <para xml:id="S5.p3">
+      <p><text color="#000000">The particle pairs are generated by a static surface emitter
+describing the projectile-like source with size and slope parameter (see Table
+1). The choice of a surface emission instead of a volume one is justified on
+grounds of the dominance of binary processes <cite>[<bibref bibrefs="Metivier_Thrust" separator="," show="Refnum" yyseparator=","/>]</cite>, <cite>[<bibref bibrefs="Binary_Dominance" separator="," show="Refnum" yyseparator=","/>]</cite>
+meaning a big fragment at the speed of the projectile remains in the exit channel.
+Combined with the fact that no radial flow is observed (see 4.1), the picture
+of a surface emission of particles seems to be the most appropriate.</text> The time
+distribution for particle emission follows an exponential decay law with average
+emission times to be determined from comparison with the data. The energy distribution
+is taken from the experimental slope parameter. The distributions have been
+filtered according to the geometrical granularity, including also double counts.
+In addition, energy and particle identification thresholds as well as the source
+selection criteria (FHPS) have been folded in.</p>
+    </para>
+  </section>
+  <section refnum="6" xml:id="S6" xml:lang="en">
+    <title><tag close=" ">6</tag>Analysis of the light particle correlation functions</title>
+    <para xml:id="S6.p1">
+      <p>The experimental correlation function is defined by the yield of true coincidences
+as a function of the two particle relative momentum divided by the so-called
+false coincidences obtained by the technique of event mixing <cite>[<bibref bibrefs="Mixing" separator="," show="Refnum" yyseparator=","/>]</cite>.
+It consists of taking two particles from two different events which assures
+a full decorrelation and has the advantage to use the same sample of events
+for true and false coincidences. Possible distortions coming from our FHPS selection
+are then largely eliminated. In general, event mixing introduces an additional
+term in the relative momentum due to different source velocities. This influence
+which otherwise would disturb the correlation function is reduced by the impact
+parameter selection.</p>
+    </para>
+    <subsection refnum="6.1" xml:id="S6.SS1">
+      <title><tag close=" ">6.1</tag>The Proton-Proton correlation function</title>
+      <para xml:id="S6.SS1.p1">
+        <p>The p-p correlation functions for the three intervals in impact parameter are
+represented in Fig. 6. The statistics of 2.3 millions of reconstructed
+events give a reasonable correlation function above 10 MeV/c relative momentum.
+In all three event classes, the resonance at 20 MeV/c is clearly visible and
+well described by a time value of <Math mode="inline" xml:id="S6.SS1.p1.m1" tex="\tau"><XMath><XMTok name="tau" role="UNKNOWN" font="italic">&#964;</XMTok></XMath></Math>=80 fm/c <text color="#000000">with
+a surface emission model.</text> A time variation of 25% changes the height of the
+resonance by a factor of two. This demonstrates the high sensitivity of the
+correlation function on the emission time parameter. <text color="#000000">The fact
+that the time estimation strongly depends on the emission description has also
+been investigated : a simulation using volume break-up, closer to the scenario
+of a preequilibrium emission, leads to shorter times in the range of 25 fm/c.</text></p>
+      </para>
+      <para xml:id="S6.SS1.p2">
+        <p><text color="#000000">The undershoot in the shape of the calculated correlation
+function visible at 50 MeV/c is induced by the Coulomb repulsion between the
+two particles. The additional boost due to the repelling charge of the third
+body (emitting source) shifts the Coulomb suppression, which is usually located
+at small relative momentum, to higher values. In a pure two body calculation
+this undershoot almost disappears.</text></p>
+      </para>
+      <para xml:id="S6.SS1.p3">
+        <p><text color="#000000">The experimental data also show this behavior at 50 MeV/c</text>
+<text color="#000000">for the central events contributing
+to a very good agreement with the calculation. On the contrary the experimental
+correlation function for the peripheral events does not show this anticorrelation
+feature. It is not fully reproduced by the calculation based still on a surface
+emission. This might indicate the presence of a preequilibrium component, for
+which no coherent Coulomb influence of a source is expected and for which a
+volume break-up simulation would be more appropriate. A recent QMD calculation
+for the system Xe+Sn at 50 AMeV <cite>[<bibref bibrefs="Time_Scale_Nebauer" separator="," show="Refnum" yyseparator=","/>]</cite> predicts the compression
+to be maximal at 50 fm/c after the beginning of the collision compatible with
+the total time of spatial overlap (<Math mode="inline" xml:id="S6.SS1.p3.m1" tex="\simeq"><XMath><XMTok meaning="similar-to-or-equals" name="simeq" role="RELOP">&#8771;</XMTok></XMath></Math> 40 fm/c). The end of fragment
+interaction occurs in this model at 120 fm/c considered as the end of the reaction.
+Taking this time scale into account, our measured times in between 25 and 80
+fm/c are compatible with a preequilibrium emission. It is confirmed by the disappearance
+of the Coulomb undershoot at 50 MeV/c in the case of the peripheral collisions.
+The appearance of the double slope in the energy spectra supports this interpretation.</text></p>
+      </para>
+      <para xml:id="S6.SS1.p4">
+        <p>One must ask here, how the emission time alters for a given error in source
+size. To test this we have reduced the charge from Z=46 to Z=36, <text color="#000000">simply</text>
+assuming all the Z=1 particles do not belong to the projectile-like emission.
+The result for the emission time is then 100 fm/c instead of 80 fm/c which still
+stays short enough to be compatible with our conclusion saying, these light
+particles characterize a prompt process of pre-equilibrium emission which covers
+a large domain of rapidity. <text color="#000000">By lack of statistics resulting
+from our source and impact selections, the method of simultaneous determination
+of the source size and the emission time from parallel and transverse correlation
+functions <cite>[<bibref bibrefs="pp_psi_lisa" separator="," show="Refnum" yyseparator=","/>]</cite> could not be tested here.</text></p>
+      </para>
+    </subsection>
+    <subsection refnum="6.2" xml:id="S6.SS2">
+      <title><tag close=" ">6.2</tag>The Deuteron-Deuteron correlation function</title>
+      <para xml:id="S6.SS2.p1">
+        <p>The d-d correlation function has been constructed on the same base of events
+as p-p. <text color="#000000">The normalization has been applied
+to the data points between 150 and 200 MeV/c. Again the three impact parameter
+classes have been separately analyzed and</text> the results are shown on Fig. 7.
+We immediately observe the anticorrelation effect in the d-d correlation function
+for small relative momenta. Despite the fact that data do not go below 30 MeV/c
+the fit of the quantum model gives the following results : for peripheral reactions
+the emission time is as least 200 fm/c, for semi-central reactions it is 100
+fm/c and for central it is 25 fm/c. This behavior can be interpreted as an increasing
+contribution of out-of-equilibrium emission.</p>
+      </para>
+      <para xml:id="S6.SS2.p2">
+        <p>Yet the creation of barely bound particles is not the prefered mechanism of
+hot nuclear matter to dissipate energy. <text color="#000000">A second scenario
+could be imagined, assuming the deuteron creation happens only at a certain
+low density <cite>[<bibref bibrefs="Low_density_for_deuteron" separator="," show="Refnum" yyseparator=","/>]</cite>. Then the extracted emission time
+would give a direct hint on when this state of the nuclear matter is reached
+during the reaction process. However the double slope of the deuteron energy
+spectra seems to favor the</text> out-of-equilibrium emission. In the picture of the
+coalescence model <cite>[<bibref bibrefs="Coalescnence_Deuteron" separator="," show="Refnum" yyseparator=","/>]</cite>, the deuteron formation is directly
+connected to the proton creation. Consequently it is not surprising to find
+also two components in the deuteron energy spectra.</p>
+      </para>
+      <para xml:id="S6.SS2.p3">
+        <p>In conclusion the process of deuteron production remains an open question. Still
+we tend to favor the preequilibrium emission over the other explanations. Unfortunately<text color="#000000">,
+the present sample of data is insu</text>fficient to disentangle more.</p>
+      </para>
+    </subsection>
+    <subsection refnum="6.3" xml:id="S6.SS3">
+      <title><tag close=" ">6.3</tag>The Proton-Deuteron correlation function and the emission chronology</title>
+      <para xml:id="S6.SS3.p1">
+        <p>The correlation function of non-identical particles can give model independent
+information about their mean order of emission simply making velocity selections
+<cite>[<bibref bibrefs="Order_lednicky" separator="," show="Refnum" yyseparator=","/>]</cite>, <cite>[<bibref bibrefs="Order_gelderlos" separator="," show="Refnum" yyseparator=","/>]</cite>, <cite>[<bibref bibrefs="Order_Soff" separator="," show="Refnum" yyseparator=","/>]</cite>. We have
+applied this method to the p-d correlation function for particles emitted in
+the FHPS region. The principle is to compare two functions. The first, ( <Math mode="inline" xml:id="S6.SS3.p1.m1" tex="1+R^{+}"><XMath><XMTok meaning="1" role="NUMBER">1</XMTok><XMTok meaning="plus" role="ADDOP">+</XMTok><XMTok role="UNKNOWN" font="italic">R</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="2"><XMArg rule="Superscript"><XMTok meaning="plus" role="ADDOP">+</XMTok></XMArg></XMApp></XMath></Math>),
+is constructed with pairs where the proton is faster than the deuteron in the
+projectile-like source reference frame. The second function, ( <Math mode="inline" xml:id="S6.SS3.p1.m2" tex="1+R^{-}"><XMath><XMTok meaning="1" role="NUMBER">1</XMTok><XMTok meaning="plus" role="ADDOP">+</XMTok><XMTok role="UNKNOWN" font="italic">R</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="2"><XMArg rule="Superscript"><XMTok meaning="minus" role="ADDOP">-</XMTok></XMArg></XMApp></XMath></Math>),
+corresponds to the reverse situation . When the first emitted particle is slower
+than the second, the average distance will be reduced and the Coulomb suppression
+effect enhanced, and vice versa. The comparison of the two functions gives the
+mean order of emission as it is shown in Fig. 8 for the peripheral collisions.
+The Coulomb suppression is more pronounced in <Math mode="inline" xml:id="S6.SS3.p1.m3" tex="1+R^{+}"><XMath><XMTok meaning="1" role="NUMBER">1</XMTok><XMTok meaning="plus" role="ADDOP">+</XMTok><XMTok role="UNKNOWN" font="italic">R</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="2"><XMArg rule="Superscript"><XMTok meaning="plus" role="ADDOP">+</XMTok></XMArg></XMApp></XMath></Math>, which the ratio
+clearly demonstrates. This means that the deuteron is on average emitted earlier
+than the proton, namely <Math mode="inline" xml:id="S6.SS3.p1.m4" tex="\tau_{deuteron}&lt;\tau_{proton}"><XMath><XMTok name="tau" role="UNKNOWN" font="italic">&#964;</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="2"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">d</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">u</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">r</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">n</XMTok></XMArg></XMApp><XMTok meaning="less-than" role="RELOP">&lt;</XMTok><XMTok name="tau" role="UNKNOWN" font="italic">&#964;</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="2"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">r</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">n</XMTok></XMArg></XMApp></XMath></Math>. The same time
+sequence is observed for the two other impact parameter selections. <text color="#000000">It
+is important to note that</text> this result is only validated between 0-120 MeV/c
+relative momentum where the anticorrelation effect leaves a measurable signal.</p>
+      </para>
+      <para xml:id="S6.SS3.p2">
+        <p>The chronology of emission in p-d spectra of peripheral collision <text color="#000000">can
+be considerated</text> as surprising since we just learned from previous paragraphs
+that the mean emission time is 80 fm/c for p-p and 200 fm/c for d-d. This apparent
+contradiction can be resolved by postulating that the protons which contribute
+to p-p are not identical with those contributing to p-d. Indeed the proton energy
+spectra show a fast and a slow component (Fig. 5)<text color="#000000">. Furthermore,</text>
+from the <text color="#000000">energy slopes of Fig. 9, we infer that the protons
+of p-p in the relative momentum range of 0-50 MeV/c have a higher mean kinetic
+energy (12.9 MeV) than the one of p-d in the same range (9.9 MeV). Subsequently
+it is clear that the p-p correlation function is more influenced by the preequilibrium
+protons. The extracted times between 25 and 80 fm/c must be seen as an upper
+limit reflecting the mixing of a fast and a slow component. In the p-d correlation
+function the situation is different : the coincidences of &#8217;&#8217;early&#8217;&#8217; protons
+with the deuterons are shifted to higher relative momentum value since the speed
+differs more than for thermal proton-deuteron pairs. Moreover, the functions
+<Math mode="inline" xml:id="S6.SS3.p2.m1" tex="1+R^{+}"><XMath><XMTok meaning="1" role="NUMBER">1</XMTok><XMTok meaning="plus" role="ADDOP">+</XMTok><XMTok role="UNKNOWN" font="italic">R</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="plus" role="ADDOP">+</XMTok></XMArg></XMApp></XMath></Math> and <Math mode="inline" xml:id="S6.SS3.p2.m2" tex="1+R^{-}"><XMath><XMTok meaning="1" role="NUMBER">1</XMTok><XMTok meaning="plus" role="ADDOP">+</XMTok><XMTok role="UNKNOWN" font="italic">R</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="3"><XMArg rule="Superscript"><XMTok meaning="minus" role="ADDOP">-</XMTok></XMArg></XMApp></XMath></Math> are built in the projectile-like source frame.
+So protons from the interacting zone which feed both correlation functions are
+per definition faster. Consequently they put only little weight to the emission
+time order determination. The p-d correlation function informs rather about
+the thermal protons </text></p>
+      </para>
+      <para xml:id="S6.SS3.p3">
+        <p><text color="#000000">Taking the deuteron emission time extracted from d-d, <Math mode="inline" xml:id="S6.SS3.p3.m1" tex="\tau="><XMath><XMTok name="tau" role="UNKNOWN" font="italic">&#964;</XMTok><XMTok meaning="equals" role="RELOP">=</XMTok></XMath></Math>
+310, 110 and 25 fm/c for the peripheral, intermediate and central events respectively,
+we have deduced the corresponding time for the protons (Fig. 10) and obtained
+400 fm/c for central collisions. Unfortunately n</text>o satisfying agreement can
+be found between the quantum model and the p-d data for peripheral and int<text color="#000000">ermediate
+reactions, possibly due to the different proton contributions, one acting at
+low the other at high relative momentum. In addition, the description of the
+source without dynamical features might prevent a better agreement. Therefore
+the extracted parameters do not retain the meaning of a physical time.</text></p>
+      </para>
+      <para xml:id="S6.SS3.p4">
+        <p>Although both components of protons simultaneously play a role in the correlation
+function, we can deduce a chronology pattern of the light particle emission.
+The fast protons from the interacting zone come first, then the deuterons and
+still later the protons thermally emitted by the projectile-like source. It
+is possible to better separate the two proton components by making a cut on
+the parallel velocity as Fig. 11 shows. The clear enhancement of the p-p resonance
+at 20 MeV/c and the disappearance of the Coulomb suppression at 50 MeV/c reveal
+the enlarged part of fast protons not feeling <text color="#000000">the charge of
+an emitter. The importance of differentiating between short-lived and long-lived
+emission components and subsequent space-momentum correlations has also been
+discussed by using source imaging methods</text> <cite><text font="bold" color="#000000">[</text><bibref bibrefs="Optimized_Source" separator="," show="Refnum" yyseparator=","/><text font="bold" color="#000000">]</text></cite><text font="bold" color="#000000">.</text>
+<text color="#000000">Furthermore, making the plausible hypothesis that fastest
+particles are emitted earlier than the slowest ones because the available energy
+is greater at the beginning of the reaction <cite>[<bibref bibrefs="He3_He4_Time" separator="," show="Refnum" yyseparator=","/>]</cite>, we can extrapolate
+from the slope parameter pattern an equivalent chronology :</text> <text color="#000000" font="bold"></text></p>
+        <equation xml:id="S6.Ex3">
+          <Math mode="display" xml:id="S6.Ex3.m1" tex="T_{Proton\,2}&gt;T_{Deuteron\,2},\&gt;T_{Deuteron\,1}&gt;T_{Proton\,1}">
+            <XMath>
+              <XMTok role="UNKNOWN" font="italic" color="#000000">T</XMTok>
+              <XMApp role="POSTSUBSCRIPT" scriptpos="4" color="#000000">
+                <XMArg rule="Subscript">
+                  <XMTok role="UNKNOWN" font="italic">P</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">r</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">o</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">t</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">o</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">n</XMTok>
+                  <XMTok meaning="2" role="NUMBER">&#8201;2</XMTok>
+                </XMArg>
+              </XMApp>
+              <XMTok meaning="greater-than" role="RELOP" color="#000000">&gt;</XMTok>
+              <XMTok role="UNKNOWN" font="italic" color="#000000">T</XMTok>
+              <XMApp role="POSTSUBSCRIPT" scriptpos="4" color="#000000">
+                <XMArg rule="Subscript">
+                  <XMTok role="UNKNOWN" font="italic">D</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">u</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">t</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">r</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">o</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">n</XMTok>
+                  <XMTok meaning="2" role="NUMBER">&#8201;2</XMTok>
+                </XMArg>
+              </XMApp>
+              <XMTok role="PUNCT" color="#000000">,</XMTok>
+              <XMHint name="medspace" width="2.2pt plus 1.1pt minus 2.2pt"/>
+              <XMTok role="UNKNOWN" color="#000000" font="italic">T</XMTok>
+              <XMApp role="POSTSUBSCRIPT" scriptpos="4" color="#000000">
+                <XMArg rule="Subscript">
+                  <XMTok role="UNKNOWN" font="italic">D</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">u</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">t</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">r</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">o</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">n</XMTok>
+                  <XMTok meaning="1" role="NUMBER">&#8201;1</XMTok>
+                </XMArg>
+              </XMApp>
+              <XMTok meaning="greater-than" role="RELOP" color="#000000">&gt;</XMTok>
+              <XMTok role="UNKNOWN" font="italic" color="#000000">T</XMTok>
+              <XMApp role="POSTSUBSCRIPT" scriptpos="4" color="#000000">
+                <XMArg rule="Subscript">
+                  <XMTok role="UNKNOWN" font="italic">P</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">r</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">o</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">t</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">o</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">n</XMTok>
+                  <XMTok meaning="1" role="NUMBER">&#8201;1</XMTok>
+                </XMArg>
+              </XMApp>
+            </XMath>
+          </Math>
+        </equation>
+      </para>
+    </subsection>
+  </section>
+  <section refnum="7" xml:id="S7" xml:lang="en">
+    <title><tag close=" ">7</tag>Conclusion</title>
+    <para xml:id="S7.p1">
+      <p>We have taken the large data set for collisions of Xe on Sn at 50 AMeV which
+INDRA has accumulated at GANIL to examine correlations of protons and deuterons.
+Such studies have many attractive aspects in view of the complete detection
+of all collision residues by a 4<Math mode="inline" xml:id="S7.p1.m1" tex="\pi"><XMath><XMTok name="pi" role="UNKNOWN" font="italic">&#960;</XMTok></XMath></Math> detector. Foremost to name is the
+unique possibility to well determine the emitting source in particular for symmetric
+systems at intermediate energy. In addition each event can be individually characterized
+in its own frame of reference, due to full charge, angular and energy coverage
+of INDRA.</p>
+    </para>
+    <para xml:id="S7.p2">
+      <p>The time scale as well as the chronology of emission of light projectile-like
+particles could be determined from two particles correlation functions interpreted
+by a full three body quantum code. Total charge measurements as a function of
+impact parameter indicate possible out-of-equilibrium emission of protons from
+the forward hemisphere of the projectile source. The observation that the slope
+parameter of the energy spectra exhibits two components points to a similar
+conclusion. Strong confirmation of these findings stems from the very short
+emission time extracted from p-p correlation functions. While this process is
+expected to dominate in central collisions our study unveils that it also contributes
+to the forward zone of binary peripheral collisions. We explained in the text
+how both proton components are not equally shared in p-p and p-d correlation
+functions. So the whole emission chronology pattern remains self-consistent.
+It is also in good agreement with the measurement of slope parameters. The short
+time scale in p-p reveals the presence of fast hot protons from an out-of-equilibrium
+process. Protons emitted later than the deuterons correspond to the really equilibrated
+production from the projectile-like source. The light particle emission chronology
+including the deuteron formation via the <Math mode="inline" xml:id="S7.p2.m1" tex="NNN\rightarrow dN"><XMath><XMTok role="UNKNOWN" font="italic">N</XMTok><XMTok role="UNKNOWN" font="italic">N</XMTok><XMTok role="UNKNOWN" font="italic">N</XMTok><XMTok name="rightarrow" role="ARROW">&#8594;</XMTok><XMTok role="UNKNOWN" font="italic">d</XMTok><XMTok role="UNKNOWN" font="italic">N</XMTok></XMath></Math> process has
+been calculated in the Boltzmann-Uehling-Uhlenbeck (BUU) approach <cite>[<bibref bibrefs="Order_BUU" separator="," show="Refnum" yyseparator=","/>]</cite>.
+The theoretical results although for lighter systems are in excellent agreement
+with the present experimental study.</p>
+    </para>
+    <para xml:id="S7.p3">
+      <p>We would have liked to look into the hydrogenic correlation function in more
+detail by finer selecting impact parameter intervals. Furthermore, the inclusion
+of tritons could have given valuable additional information. This task cannot
+yet be performed on the same footing as with protons and deuterons due to a
+serious shortage of data statistics.</p>
+    </para>
+    <para xml:id="S7.p4">
+      <p>We therefore suggest to perform a high statistics experiment especially dedicated
+to light particle correlations. INDRA parameters, optimized toward this goal,
+could contribute important and still better information on the dynamics of light
+particle emission.</p>
+    </para>
+  </section>
+  <section refnum="8" xml:id="S8" xml:lang="en">
+    <title class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering"><tag close=" ">8</tag>Acknowledgments</title>
+    <para xml:id="S8.p1" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <p>The authors whish to thank H.Orth for his careful reading of the manuscript,
+R.Lednicky for discussions and providing his code. D.G acknowledges the support
+of the ALADIN group at GSI.</p>
+    </para>
+    <pagination role="newpage" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering"/>
+    <para xml:id="S8.p2" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <tabular vattach="middle">
+        <thead>
+          <tr>
+            <td border="l r t" colspan="2" thead="true"/>
+            <td align="center" border="l r t" colspan="2" thead="true">T <Math mode="inline" xml:id="S8.p2.m1" tex="{}_{Proton}"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="10"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">P</XMTok><XMTok role="UNKNOWN" font="italic">r</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">n</XMTok></XMArg></XMApp></XMath></Math><text font="bold" fontsize="80%"> (MeV)</text></td>
+            <td align="center" border="l r t" colspan="2" thead="true">T <Math mode="inline" xml:id="S8.p2.m2" tex="{}_{Deuteron}"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="10"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">D</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">u</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">r</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">n</XMTok></XMArg></XMApp></XMath></Math><text font="bold" fontsize="80%">(MeV)</text></td>
+          </tr>
+          <tr>
+            <td align="center" border="l r t" thead="true">
+              <text fontsize="80%" font="bold">Centrality</text>
+            </td>
+            <td align="center" border="r t" thead="true">
+              <text fontsize="80%" font="bold">Radius (fm)</text>
+            </td>
+            <td align="center" border="r t" thead="true">
+              <text fontsize="80%" font="bold">T<Math mode="inline" xml:id="S8.p2.m3" tex="{}_{1}"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="9"><XMArg rule="Subscript"><XMTok meaning="1" role="NUMBER" fontsize="125%" font="medium">1</XMTok></XMArg></XMApp></XMath></Math></text>
+            </td>
+            <td align="center" border="r t" thead="true">
+              <text fontsize="80%" font="bold">T<Math mode="inline" xml:id="S8.p2.m4" tex="{}_{2}"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="9"><XMArg rule="Subscript"><XMTok meaning="2" role="NUMBER" font="medium" fontsize="125%">2</XMTok></XMArg></XMApp></XMath></Math></text>
+            </td>
+            <td align="center" border="r t" thead="true">
+              <text fontsize="80%" font="bold">T<Math mode="inline" xml:id="S8.p2.m5" tex="{}_{1}"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="9"><XMArg rule="Subscript"><XMTok meaning="1" role="NUMBER" font="medium" fontsize="125%">1</XMTok></XMArg></XMApp></XMath></Math></text>
+            </td>
+            <td align="center" border="r t" thead="true">
+              <text fontsize="80%" font="bold">T<Math mode="inline" xml:id="S8.p2.m6" tex="{}_{2}"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="9"><XMArg rule="Subscript"><XMTok meaning="2" role="NUMBER" fontsize="125%" font="medium">2</XMTok></XMArg></XMApp></XMath></Math></text>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center" border="l r tt">
+              <text fontsize="80%" font="bold">Peripheral</text>
+            </td>
+            <td align="center" border="r tt">
+              <text font="bold" fontsize="80%">5.9<Math mode="inline" xml:id="S8.p2.m7" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" fontsize="125%" font="medium">±</XMTok></XMath></Math>0.3</text>
+            </td>
+            <td align="center" border="r tt">
+              <text font="bold" fontsize="80%">3.7<Math mode="inline" xml:id="S8.p2.m8" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" font="medium" fontsize="125%">±</XMTok></XMath></Math>0.1</text>
+            </td>
+            <td align="center" border="r tt">
+              <text fontsize="80%" font="bold">9.5<Math mode="inline" xml:id="S8.p2.m9" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" fontsize="125%" font="medium">±</XMTok></XMath></Math>0.1</text>
+            </td>
+            <td align="center" border="r tt">
+              <text fontsize="80%" font="bold">4.1<Math mode="inline" xml:id="S8.p2.m10" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" font="medium" fontsize="125%">±</XMTok></XMath></Math>0.1</text>
+            </td>
+            <td align="center" border="r tt">
+              <text font="bold" fontsize="80%">8.9<Math mode="inline" xml:id="S8.p2.m11" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" fontsize="125%" font="medium">±</XMTok></XMath></Math>0.1</text>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" border="l r t">
+              <text font="bold" fontsize="80%">Intermediate</text>
+            </td>
+            <td align="center" border="r t">
+              <text fontsize="80%" font="bold">5.9<Math mode="inline" xml:id="S8.p2.m12" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" fontsize="125%" font="medium">±</XMTok></XMath></Math>0.4</text>
+            </td>
+            <td align="center" border="r t">
+              <text font="bold" fontsize="80%">4.8<Math mode="inline" xml:id="S8.p2.m13" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" fontsize="125%" font="medium">±</XMTok></XMath></Math>0.1</text>
+            </td>
+            <td align="center" border="r t">
+              <text font="bold" fontsize="80%">11.3<Math mode="inline" xml:id="S8.p2.m14" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" fontsize="125%" font="medium">±</XMTok></XMath></Math>0.1</text>
+            </td>
+            <td align="center" border="r t">
+              <text font="bold" fontsize="80%">6.0<Math mode="inline" xml:id="S8.p2.m15" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" font="medium" fontsize="125%">±</XMTok></XMath></Math>0.1</text>
+            </td>
+            <td align="center" border="r t">
+              <text font="bold" fontsize="80%">10.7<Math mode="inline" xml:id="S8.p2.m16" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" fontsize="125%" font="medium">±</XMTok></XMath></Math>0.1</text>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" border="b l r t">
+              <text fontsize="80%" font="bold">Central</text>
+            </td>
+            <td align="center" border="b r t">
+              <text fontsize="80%" font="bold">5.9<Math mode="inline" xml:id="S8.p2.m17" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" fontsize="125%" font="medium">±</XMTok></XMath></Math>0.5</text>
+            </td>
+            <td align="center" border="b r t">
+              <text fontsize="80%" font="bold">5.2<Math mode="inline" xml:id="S8.p2.m18" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" fontsize="125%" font="medium">±</XMTok></XMath></Math>0.1</text>
+            </td>
+            <td align="center" border="b r t">
+              <text font="bold" fontsize="80%">12.8<Math mode="inline" xml:id="S8.p2.m19" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" font="medium" fontsize="125%">±</XMTok></XMath></Math>0.1</text>
+            </td>
+            <td align="center" border="b r t">
+              <text fontsize="80%" font="bold">11.3<Math mode="inline" xml:id="S8.p2.m20" tex="\pm"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP" fontsize="125%" font="medium">±</XMTok></XMath></Math>0.1</text>
+            </td>
+            <td align="center" border="b r t">
+              <text fontsize="80%" font="bold">*)</text>
+            </td>
+          </tr>
+        </tbody>
+      </tabular>
+    </para>
+    <para xml:id="S8.p3" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <p>Table <text font="bold">1</text> : Parameters of the projectile-like source. The radius has
+been calculated from the total reconstructed charge of the source, by assuming
+a A/Z ratio in the valley of nuclear stability and a normal nuclear density.
+The slope parameter has been extracted from the energy spectra in the source
+reference frame.</p>
+    </para>
+    <para xml:id="S8.p4" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <p>*) Only one slope could be extracted.</p>
+    </para>
+    <para xml:id="S8.p5" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <graphics graphic="ident01.eps" xml:id="S8.p5.g1"/>
+    </para>
+    <para xml:id="S8.p6" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <p>Fig. 1 : Light isotopes resolution (Z=1) of the 8 first rings and in the insert
+for the rings 2, 5 and 9 separately.</p>
+    </para>
+    <para xml:id="S8.p7" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <graphics graphic="pp_ls02.eps" xml:id="S8.p7.g1"/>
+    </para>
+    <para xml:id="S8.p8" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <p>Fig. 2 : Two-proton correlation function for the FHPS selection.</p>
+    </para>
+    <para xml:id="S8.p9" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <graphics graphic="lorentz03.eps" xml:id="S8.p9.g1"/>
+    </para>
+    <para xml:id="S8.p10" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <p>Fig. 3 : Invariant velocity plot of the protons in the center of mass for a
+total light particles transverse energy smaller than 40 MeV which corresponds
+to a normalized impact parameter larger than 0.9. The average value of the reconstructed
+forward source is represented by a vertical line at <Math mode="inline" xml:id="S8.p10.m1" tex="V_{//}=0.155c"><XMath><XMTok role="UNKNOWN" font="italic">V</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="2"><XMArg rule="Subscript"><XMTok mathstyle="inline" meaning="divide" role="MULOP">/</XMTok><XMTok mathstyle="inline" meaning="divide" role="MULOP">/</XMTok></XMArg></XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok meaning="0.155" role="NUMBER">0.155</XMTok><XMTok role="UNKNOWN" font="italic">c</XMTok></XMath></Math>. This
+line position is in accordance to the middle of the Coulomb circle. The FHPS
+is defined by the particles in each event which are faster than the reconstructed
+forward source velocity.</p>
+    </para>
+    <para xml:id="S8.p11" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <graphics graphic="charge04.eps" xml:id="S8.p11.g1"/>
+    </para>
+    <para xml:id="S8.p12" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <p><text color="#000000">Fig. 4 : The reconstructed total charge of the projectile-like
+<Math mode="inline" xml:id="S8.p12.m1" tex="Z_{Total}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">l</XMTok></XMArg></XMApp></XMath></Math> for three centrality bins and for different calculations. The
+meaning of the parameter <Math mode="inline" xml:id="S8.p12.m2" tex="Z_{L}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">L</XMTok></XMArg></XMApp></XMath></Math> is given in the text. The <Math mode="inline" xml:id="S8.p12.m3" tex="Z_{Total}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">l</XMTok></XMArg></XMApp></XMath></Math>
+dependance on <Math mode="inline" xml:id="S8.p12.m4" tex="Z_{L}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">L</XMTok></XMArg></XMApp></XMath></Math>is less than 10% which places confidence in this
+estimation. The largest fragment <Math mode="inline" xml:id="S8.p12.m5" tex="Z_{Max}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">M</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">x</XMTok></XMArg></XMApp></XMath></Math> (open stars) gets smaller with
+centrality as expected in a geometrical picture. This is not the case of <Math mode="inline" xml:id="S8.p12.m6" tex="Z_{Total}"><XMath><XMTok role="UNKNOWN" font="italic">Z</XMTok><XMApp role="POSTSUBSCRIPT" scriptpos="3"><XMArg rule="Subscript"><XMTok role="UNKNOWN" font="italic">T</XMTok><XMTok role="UNKNOWN" font="italic">o</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">l</XMTok></XMArg></XMApp></XMath></Math>
+which remains constant.</text></p>
+    </para>
+    <para xml:id="S8.p13" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <graphics graphic="energy05.eps" xml:id="S8.p13.g1"/>
+    </para>
+    <para xml:id="S8.p14" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <p>Fig. 5 : The energy spectra of the protons (top) and deuterons (bottom) for
+the ring 2, 4 and 6 in the case of the peripheral collisions. The shapes clearly
+exhibit two components, better separated in the case of the protons. For comparison
+reasons the relative scale is the same for all panels.</p>
+    </para>
+    <para xml:id="S8.p15" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <graphics graphic="pp_fit06.eps" xml:id="S8.p15.g1"/>
+    </para>
+    <para xml:id="S8.p16" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <p>Fig. 6 : The experimental p-p correlation functions (black circles) of the projectile-like
+source for the three impact parameter intervals. Each case has been calculated
+with different emission times using the source parameters of Table 1. A time
+of 80 fm/c was found to be the best for all impact parameter bins. The resonance
+of the calculated function decreases with the centrality because the slope parameter
+of the emitter increases.</p>
+    </para>
+    <para xml:id="S8.p17" class="ltx_centering ltx_centering ltx_centering ltx_centering ltx_centering">
+      <graphics graphic="dd_fit07.eps" xml:id="S8.p17.g1"/>
+    </para>
+    <para xml:id="S8.p18" class="ltx_centering ltx_centering ltx_centering ltx_centering">
+      <p>Fig. 7 : The experimental d-d correlation functions of the projectile-like
+source for the three impact parameter bins (black circles). Each case has been
+calculated with different emission times using the source parameters of Table
+1. There is only a weak dependence on the long emission time parameter for the
+peripheral reactions.</p>
+    </para>
+    <para xml:id="S8.p19" class="ltx_centering ltx_centering ltx_centering ltx_centering">
+      <graphics graphic="pd_psi08.eps" xml:id="S8.p19.g1"/>
+    </para>
+    <para xml:id="S8.p20" class="ltx_centering ltx_centering ltx_centering">
+      <p>Fig. 8 : The experimental proton-deuteron correlation
+functions of the projectile-like source for the peripheral collisions grouped
+into two velocity bins (left and middle panel). <Math mode="inline" xml:id="S8.p20.m1" tex="1+R^{+}"><XMath><XMTok meaning="1" role="NUMBER">1</XMTok><XMTok meaning="plus" role="ADDOP">+</XMTok><XMTok role="UNKNOWN" font="italic">R</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="2"><XMArg rule="Superscript"><XMTok meaning="plus" role="ADDOP">+</XMTok></XMArg></XMApp></XMath></Math> contains all
+the pairs of particles where the proton was faster than the deuteron. <Math mode="inline" xml:id="S8.p20.m2" tex="1+R^{-}"><XMath><XMTok meaning="1" role="NUMBER">1</XMTok><XMTok meaning="plus" role="ADDOP">+</XMTok><XMTok role="UNKNOWN" font="italic">R</XMTok><XMApp role="POSTSUPERSCRIPT" scriptpos="2"><XMArg rule="Superscript"><XMTok meaning="minus" role="ADDOP">-</XMTok></XMArg></XMApp></XMath></Math>
+is the reverse situation. The ratio of both functions (right panel) which is
+smaller than unity indicates that the deuteron is on the average emitted earlier
+than the proton.</p>
+    </para>
+    <para xml:id="S8.p21" class="ltx_centering ltx_centering ltx_centering">
+      <graphics graphic="pp_pd10.eps" xml:id="S8.p21.g1"/>
+    </para>
+    <para xml:id="S8.p22" class="ltx_centering ltx_centering">
+      <p>Fig.9 : The kinetic energy of the protons in the projectile-like source frame
+which contribute to p-p (open circle) or to p-d (black circle) with a relative
+momentum selection smaller than 50 MeV/c for peripheral collisions. For p-p
+the average energy and the slope parameter are higher than for p-d.</p>
+    </para>
+    <para xml:id="S8.p23" class="ltx_centering ltx_centering">
+      <graphics graphic="pd_fit09.eps" xml:id="S8.p23.g1"/>
+    </para>
+    <para xml:id="S8.p24" class="ltx_centering">
+      <p>Fig.10 : The experimental proton-deuteron correlation functions of the projectile-like
+source for the three impact parameter selections (black circles). The calculation
+(lines) fails to reproduce the data for the peripheral and the intermediate
+collisions which may reveal the double contribution of fast and slow protons
+in the interference pattern.</p>
+    </para>
+    <para xml:id="S8.p25" class="ltx_centering">
+      <graphics graphic="pp_high11.eps" xml:id="S8.p25.g1"/>
+    </para>
+    <para xml:id="S8.p26">
+      <p>Fig. 11 : The experimental proton-proton correlation functions for all impact
+parameters with increasing selection on their longitudinal velocity in the projectile-like
+reference frame. The higher resonance indicates a faster emission time.</p>
+    </para>
+    <pagination role="newpage"/>
+  </section>
+  <bibliography xml:id="bib" xml:lang="en">
+    <title>References</title>
+    <biblist>
+      <bibitem key="Koonin" xml:id="bib.bib1">
+        <bibtag role="refnum">1</bibtag>
+        <bibblock>S. Koonin, Phys. Lett. 70B (1977) 43.
+</bibblock>
+      </bibitem>
+      <bibitem key="Review_DA" xml:id="bib.bib2">
+        <bibtag role="refnum">2</bibtag>
+        <bibblock>D. Ardouin, Int. Journ. Mod. Phys. E, Vol. 6, N.2 (1997) 3.
+</bibblock>
+      </bibitem>
+      <bibitem key="Review_Kunde" xml:id="bib.bib3">
+        <bibtag role="refnum">3</bibtag>
+        <bibblock>G.J. Kunde et al., Phys. Rev. Lett. 70 (1993) 2545.
+</bibblock>
+      </bibitem>
+      <bibitem key="Review_Lisa" xml:id="bib.bib4">
+        <bibtag role="refnum">4</bibtag>
+        <bibblock>M.A. Lisa et al., Phys. Rev. Lett. 71 (1993) 2863.
+</bibblock>
+      </bibitem>
+      <bibitem key="Review_Quebert" xml:id="bib.bib5">
+        <bibtag role="refnum">5</bibtag>
+        <bibblock>J. Quebert, Ann. de Physique 17 (1992) 99.
+</bibblock>
+      </bibitem>
+      <bibitem key="Review_Bauer" xml:id="bib.bib6">
+        <bibtag role="refnum">6</bibtag>
+        <bibblock>W. Bauer et al., Annu. Rev. Nucl. Part. Sci. 42 (1992) 77.
+</bibblock>
+      </bibitem>
+      <bibitem key="Review_Gong" xml:id="bib.bib7">
+        <bibtag role="refnum">7</bibtag>
+        <bibblock>W.G. Gong et al., Phys. Rev. C43 (1991) 781.
+</bibblock>
+      </bibitem>
+      <bibitem key="Review_Boal" xml:id="bib.bib8">
+        <bibtag role="refnum">8</bibtag>
+        <bibblock>D. Boal et al., Rev. Mod. Phys. 62 (1990) 553.
+</bibblock>
+      </bibitem>
+      <bibitem key="Review_Pocho" xml:id="bib.bib9">
+        <bibtag role="refnum">9</bibtag>
+        <bibblock>J. Pochodzalla et al., Phys. Rev. C35 (1987) 1695.
+</bibblock>
+      </bibitem>
+      <bibitem key="Review_Corinne" xml:id="bib.bib10">
+        <bibtag role="refnum">10</bibtag>
+        <bibblock>CORINNE I, Int. Workshop. on Particle Correlations and Interferometry. in Nucl
+Collisions, Nantes, France (1990). Ed. D. Ardouin (World Scientific) and references
+therein ; CORINNE II, Int. Work.shop on Multiparticle Correlation and Nucl.
+React. Collisions, Nantes, France (1994). Ed. J. Aichelin, D. Ardouin (World
+Scientific) and references therein.
+</bibblock>
+      </bibitem>
+      <bibitem key="Martin_3Body" xml:id="bib.bib11">
+        <bibtag role="refnum">11</bibtag>
+        <bibblock>L. Martin et al., Nucl. Phys. A604 (1996) 69.
+</bibblock>
+      </bibitem>
+      <bibitem key="Miniball" xml:id="bib.bib12">
+        <bibtag role="refnum">12</bibtag>
+        <bibblock>R.T. De Souza et al., Nucl. Instr. Meth. A295 (1990) 109.
+</bibblock>
+      </bibitem>
+      <bibitem key="Fopi" xml:id="bib.bib13">
+        <bibtag role="refnum">13</bibtag>
+        <bibblock>A. Gobbi et al., Nucl. Instr. Meth. A324 (1993) 156.
+</bibblock>
+      </bibitem>
+      <bibitem key="Marie_Xe+Sn2" xml:id="bib.bib14">
+        <bibtag role="refnum">14</bibtag>
+        <bibblock>N. Marie et al., Phys. Rev. C58 (1998) 256-269
+</bibblock>
+      </bibitem>
+      <bibitem key="Marie_xe_sn" xml:id="bib.bib15">
+        <bibtag role="refnum">15</bibtag>
+        <bibblock>N. Marie et al., Phys. Lett. B391 (1997) 15.
+</bibblock>
+      </bibitem>
+      <bibitem key="Lukasik" xml:id="bib.bib16">
+        <bibtag role="refnum">16</bibtag>
+        <bibblock>J. Lukasik et al., Phys. Rev. C55 (1997) 1906.
+</bibblock>
+      </bibitem>
+      <bibitem key="DGourio_Thesis" xml:id="bib.bib17">
+        <bibtag role="refnum">17</bibtag>
+        <bibblock>D. Gourio, Thesis of University, Nantes France (1996) unpublished.
+</bibblock>
+      </bibitem>
+      <bibitem key="Caloriccurve" xml:id="bib.bib18">
+        <bibtag role="refnum">18</bibtag>
+        <bibblock>Y.G. Ma et al., Phys. Lett. B390 (1997) 41.
+</bibblock>
+      </bibitem>
+      <bibitem key="DissipativeCollision" xml:id="bib.bib19">
+        <bibtag role="refnum">19</bibtag>
+        <bibblock>J. Peter et al., Nucl. Phys. A593 (1995) 95.
+</bibblock>
+      </bibitem>
+      <bibitem key="LV_Eudes" xml:id="bib.bib20">
+        <bibtag role="refnum">20</bibtag>
+        <bibblock>P. Eudes et al., Phys. Rev. C56 (1997) 2003.
+</bibblock>
+      </bibitem>
+      <bibitem key="FSI1" xml:id="bib.bib21">
+        <bibtag role="refnum">21</bibtag>
+        <bibblock>R. Lednicky and V.L. Lyuboshitz, Sov. Jour. Nucl. Phys. 35 (1982) 770.
+</bibblock>
+      </bibitem>
+      <bibitem key="FSI2" xml:id="bib.bib22">
+        <bibtag role="refnum">22</bibtag>
+        <bibblock>R. Lednicky et al., submitted to Nucl. Phys. A.
+</bibblock>
+      </bibitem>
+      <bibitem key="Indra" xml:id="bib.bib23">
+        <bibtag role="refnum">23</bibtag>
+        <bibblock>J. Pouthas et al., Nucl. Instr. and Meth. A357 (1995) 95.
+</bibblock>
+      </bibitem>
+      <bibitem key="Ellipsoide" xml:id="bib.bib24">
+        <bibtag role="refnum">24</bibtag>
+        <bibblock>J.D Bjorken and S. J. Brodsky, Phys Rev D1 (1970) 1416 ; S. Brandt et al., Phys.
+Lett. 35 (1977) 1609.
+</bibblock>
+      </bibitem>
+      <bibitem key="Metivier_Thrust" xml:id="bib.bib25">
+        <bibtag role="refnum">25</bibtag>
+        <bibblock>V. Metivier et al., XXXIII Int. Wint. Meet. on Nucl. Phys., Bormio, Italy (1995).;
+V. Metivier et al. subm. to Nucl. Phys. A.
+</bibblock>
+      </bibitem>
+      <bibitem key="Fixed_source_size" xml:id="bib.bib26">
+        <bibtag role="refnum">26</bibtag>
+        <bibblock>J. Alexander et al., Phys. Rev. C48 (1993) 2874.
+</bibblock>
+      </bibitem>
+      <bibitem key="Radial_flow_3" xml:id="bib.bib27">
+        <bibtag role="refnum">27</bibtag>
+        <bibblock>R. Bougault et al., XXXV Int. Wint. Meet. on Nucl. Phys., Bormio, Italy (1997).
+</bibblock>
+      </bibitem>
+      <bibitem key="Fermi-jet" xml:id="bib.bib28">
+        <bibtag role="refnum">28</bibtag>
+        <bibblock>H. Fuchs and K. Mohing, Rep. Prog. Phys. 57 (1994) 231 and references therein.
+</bibblock>
+      </bibitem>
+      <bibitem key="He3_He4_Time" xml:id="bib.bib29">
+        <bibtag role="refnum">29</bibtag>
+        <bibblock>R. Bougault et al., XXVII Int. Work. on Gross Properties of Nuclei and Nuclear
+Excitations, Hirschegg, Austria (1999).
+</bibblock>
+      </bibitem>
+      <bibitem key="Binary_Dominance" xml:id="bib.bib30">
+        <bibtag role="refnum">30</bibtag>
+        <bibblock>B. Tamain et al., Heavy-Ion Dynamics and Hot Nuclei. Ed. G. Nebbia and M.N.
+Namboodiri (World Scientific).
+</bibblock>
+      </bibitem>
+      <bibitem key="Gamov_factor" xml:id="bib.bib31">
+        <bibtag role="refnum">31</bibtag>
+        <bibblock>Y.M. Sinyukov et al., Physics Letters B432 (1998) 248.
+</bibblock>
+      </bibitem>
+      <bibitem key="Optimized_Source" xml:id="bib.bib32">
+        <bibtag role="refnum">32</bibtag>
+        <bibblock>D. Brown and P. Danielewicz, Phys. Lett. B 398 (1997) 252 ; D. Brown
+and P. Danielewicz, Phys. Rev. C57 (1998) 2474
+</bibblock>
+      </bibitem>
+      <bibitem key="Mixing" xml:id="bib.bib33">
+        <bibtag role="refnum">33</bibtag>
+        <bibblock>D. Drijard et al. Nucl. Instr. and Meth. 225 (1984) 367.
+</bibblock>
+      </bibitem>
+      <bibitem key="Time_Scale_Nebauer" xml:id="bib.bib34">
+        <bibtag role="refnum">34</bibtag>
+        <bibblock>R. Nebauer and J. Aichelin, Nucl. Phys. A650 (1999) 65 ; R. Nebauer et al.,
+to be published in Nucl. Phys. A.
+</bibblock>
+      </bibitem>
+      <bibitem key="pp_psi_lisa" xml:id="bib.bib35">
+        <bibtag role="refnum">35</bibtag>
+        <bibblock>M.A. Lisa et al., Phys. Rev. Lett. 70 (1993) 3709.
+</bibblock>
+      </bibitem>
+      <bibitem key="Low_density_for_deuteron" xml:id="bib.bib36">
+        <bibtag role="refnum">36</bibtag>
+        <bibblock>M. Baldo et al., Phys. Rev. C52 (1995) 975.
+</bibblock>
+      </bibitem>
+      <bibitem key="Coalescnence_Deuteron" xml:id="bib.bib37">
+        <bibtag role="refnum">37</bibtag>
+        <bibblock>S.T. Bulter et al., Phys. Rev. Lett. 7 (1961) 69; A. Schwarzschild et al., Phys.
+Rev. 129 (1963) 836.
+</bibblock>
+      </bibitem>
+      <bibitem key="Order_lednicky" xml:id="bib.bib38">
+        <bibtag role="refnum">38</bibtag>
+        <bibblock>R. Lednicky et al., Phys. Lett. B 373 (1996) 30.
+</bibblock>
+      </bibitem>
+      <bibitem key="Order_gelderlos" xml:id="bib.bib39">
+        <bibtag role="refnum">39</bibtag>
+        <bibblock>C.J. Gelderlos et al., Phys. Rev. C52 (1995) 2834.
+</bibblock>
+      </bibitem>
+      <bibitem key="Order_Soff" xml:id="bib.bib40">
+        <bibtag role="refnum">40</bibtag>
+        <bibblock>S. Soff et al., Phys. Lett. B449 (1999) 191.; P. Sapienza, Nucl. Phys. A630
+(1998) 215
+</bibblock>
+      </bibitem>
+      <bibitem key="Order_BUU" xml:id="bib.bib41">
+        <bibtag role="refnum">41</bibtag>
+        <bibblock>W.G. Gong et al., Phys. Rev. C47 (1993) 429.
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+</document>

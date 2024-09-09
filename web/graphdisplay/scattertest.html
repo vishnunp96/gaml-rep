@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NumericalAtlas</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<!--<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+	<link rel="stylesheet" href="testscatter.css">
+</head>
+<body marginwidth="0" marginheight="0">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1>Numerical Atlas</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-8">
+				<div class="d3"></div>
+			</div>
+			<div class="col-4">
+				Second column, first row.
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				First column, second row.
+			</div>
+			<div class="col-6">
+				Second column, second row.
+			</div>
+		</div>
+	</div>
+
+
+    <script>
+
+        // Create data
+        //function randomData(samples) {
+        //    var data = [],
+        //        random = d3.randomNormal();
+        //        
+        //    for (i = 0; i < samples; i++) {
+        //        data.push({
+        //            x: random(),
+        //            y: random()
+        //        });
+        //    }
+        //    return data;
+        //}
+
+        //var data = randomData(300);
+
+/*
+		var data = new Array();
+		var parseDate = d3.timeParse("%Y-%m-%d")
+		d3.json("h_0_web_data.json").then(function(d){
+			for(i in d) {
+				d[i].date = parseDate(d[i].date);
+				data.push(d[i]);
+			}
+		});
+		console.log(data);
+*/
+
+
+        var margin = { top: 20, right: 20, bottom: 30, left: 30 };
+		var element = d3.select(".d3").node();
+		var totalWidth = element.getBoundingClientRect().width,
+			totalHeight = totalWidth; // 480
+        var width = totalWidth - margin.left - margin.right,
+			height = totalHeight - margin.top - margin.bottom;
+
+        var tooltip = d3.select(".d3").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        var x = d3.scaleTime()          
+              .range([0, width])
+              .nice();
+
+        var y = d3.scaleLinear()
+            .range([height, 0])
+			.nice();
+
+        var xAxis = d3.axisBottom(x).ticks(12),
+            yAxis = d3.axisLeft(y).ticks(12 * height / width);
+
+        var brush = d3.brush().extent([[0, 0], [width, height]]).on("end", brushended),
+            idleTimeout,
+            idleDelay = 350;
+     
+        var svg = d3.select(".d3").append("svg")
+                    .attr("width", width + margin.left + margin.right)
+                    .attr("height", height + margin.top + margin.bottom)
+                    .append("g")
+                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var clip = svg.append("defs").append("svg:clipPath")
+            .attr("id", "clip")
+            .append("svg:rect")
+            .attr("width", width )
+            .attr("height", height )
+            .attr("x", 0) 
+            .attr("y", 0); 
+
+        var scatter = svg.append("g")
+             .attr("id", "scatterplot")
+             .attr("clip-path", "url(#clip)");
+
+
+        function brushended() {
+            var s = d3.event.selection;
+            if (!s) {
+                if (!idleTimeout) return idleTimeout = setTimeout(idled, idleDelay);
+				var data = scatter.selectAll(".dot").data(); 
+                x.domain(d3.extent(data, function (d) { return d.date; })).nice();
+                y.domain(d3.extent(data, function (d) { return d.value; })).nice();
+            } else {
+                x.domain([s[0][0], s[1][0]].map(x.invert, x));
+                y.domain([s[1][1], s[0][1]].map(y.invert, y));
+                scatter.select(".brush").call(brush.move, null);
+            }
+            zoom();
+        }
+
+        function idled() {
+            idleTimeout = null;
+        }
+
+        function zoom() {
+            var t = scatter.transition().duration(750);
+            svg.select("#axis--x").transition(t).call(xAxis);
+            svg.select("#axis--y").transition(t).call(yAxis);
+            scatter.selectAll("circle").transition(t)
+				.attr("cx", function (d) { return x(d.date); })
+				.attr("cy", function (d) { return y(d.value); });
+        }
+
+		d3.json("h_0_web_data.json")
+			.then(function (data) {
+				var parseDate = d3.timeParse("%Y-%m-%d")
+				for(i in data) {
+					data[i].date = parseDate(data[i].date);
+				}
+
+				x.domain(d3.extent(data, function (d) { return d.date; })).nice();
+				y.domain(d3.extent(data, function (d) { return d.value; })).nice();
+
+				console.log(x.domain())
+				console.log(y.domain())
+					
+				scatter.selectAll(".dot")
+					.data(data)
+				  .enter().append("circle")
+					.attr("class", "dot")
+					.attr("r", 4)
+					.attr("cx", function (d) { return x(d.date); })
+					.attr("cy", function (d) { return y(d.value); })
+					.attr("opacity", 0.5)
+					.style("fill", "#4292c6");
+
+				
+				// x axis
+				svg.append("g")
+				   .attr("class", "x axis")
+				   .attr('id', "axis--x")
+				   .attr("transform", "translate(0," + height + ")")
+				   .call(xAxis);
+
+				svg.append("text")
+					.style("text-anchor", "end")
+					.attr("x", width)
+					.attr("y", height - 8)
+					.text("Date");
+
+				// y axis
+				svg.append("g")
+					.attr("class", "y axis")
+					.attr('id', "axis--y")
+					.call(yAxis);
+
+				svg.append("text")
+					.attr("transform", "rotate(-90)")
+					.attr("y", 6)
+					.attr("dy", "1em")
+					.style("text-anchor", "end")
+					.text("Extracted Value");
+
+				scatter.append("g")
+					.attr("class", "brush")
+					.call(brush);
+			});
+
+    </script>
+</body>

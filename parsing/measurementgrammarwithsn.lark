@@ -1,0 +1,64 @@
+measurement : value units? bracketed? junk?
+
+// These should be aliased
+value : _LEFTBRACE value _RIGHTBRACE
+		| centralvalue uncertainty*
+		| range
+		| value? magnitude
+
+centralvalue : number
+range : number _HYPHEN number
+
+uncertainty : _PM number
+		| _PM number bracketed -> named_uncertainty
+		| _PM number undercomment -> named_uncertainty
+		| _PM? upper lower -> upperlower_uncertainty
+		| _PM? lower upper -> upperlower_uncertainty
+		| _PM? upper lower bracketed -> named_upperlower_uncertainty
+		| _PM? lower upper bracketed -> named_upperlower_uncertainty
+
+_PM.2 : "\pm"
+
+units : (unit|inverseunit)+
+
+magnitude : _TIMES? TEN upper
+
+inverseunit : _PER unit
+unit : UNIT upper?
+
+_PER.2 : "/" | "per"
+
+upper : _CARAT number
+lower : _UNDERSCORE number
+
+_CARAT.2 : "^"
+_UNDERSCORE.2 : "_"
+
+undercomment : _UNDERSCORE OTHER
+
+bracketed : BRACKETED
+BRACKETED.2 : _LEFTBRACE /[^\(\)]+/ _RIGHTBRACE
+_LEFTBRACE : "("
+_RIGHTBRACE : ")"
+
+SIGN.2 : "+" | _HYPHEN
+_HYPHEN.2 : "\u002D" | "\u2013" | "\u2014" | "\u2212"
+
+number : SIGN? (NUMBER | TEN)
+TEN.1 : "10"
+NUMBER.2 : /[0-9\.]+/
+
+UNIT.2 : (UNITPREFIX? UNITNAME) | /\%/
+UNITNAME.2 : <UNITNAMES>
+UNITPREFIX.2 : <UNITPREFIXES>
+
+_TIMES.2 : "\times"
+
+LATEX.1 : /\\[A-Za-z]+/
+%ignore LATEX
+
+junk : OTHER+
+OTHER.0 : /[^\s]+/
+
+%import common.WS
+%ignore WS

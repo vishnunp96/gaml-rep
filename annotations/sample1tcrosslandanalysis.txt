@@ -1,0 +1,892 @@
+ANNOTATION: "T _ { s } > 10 ^ { 9 } yr"
+UNKNOWN: "T _ { s }", UNKNOWN: "10 ^ { 9 } yr", Divider: " > "
+ANNOTATION: "N _ { H } \leq 10 ^ { 23 } \textnormal { cm } ^ { -2 }"
+UNKNOWN: "N _ { H }", UNKNOWN: "10 ^ { 23 } \textnormal { cm } ^ { -2 }", Divider: " \leq "
+ANNOTATION: "f _ { D } \equiv ( D/H ) _ { P } / ( D/H ) _ { ISM } \leq 1.4 \pm 0.1"
+Parameter: "f _ { D } \equiv ( D/H ) _ { P } / ( D/H ) _ { ISM }", Constraint: "1.4 \pm 0.1", Divider: " \leq "
+ANNOTATION: "convective overshoot > 0.35"
+Parameter: "convective overshoot", Constraint: "0.35", Divider: " > "
+ANNOTATION: "L _ { [ CII ] } < 3 \times 10 ^ { 5 } L _ { \odot }"
+Parameter: "L _ { [ CII ] }", Constraint: "3 \times 10 ^ { 5 } L _ { \odot }", Divider: " < "
+ANNOTATION: "1.3 \leq M _ { p } \leq 2.3 M _ { \oplus }"
+Constraint: "1.3", Parameter: "M _ { p }", Divider: " \leq "
+Parameter: "M _ { p }", Constraint: "2.3 M _ { \oplus }", Divider: " \leq "
+ANNOTATION: "1.3 \leq M _ { p } \leq 2.3 M _ { \oplus }"
+Constraint: "1.3", Parameter: "M _ { p }", Divider: " \leq "
+Parameter: "M _ { p }", Constraint: "2.3 M _ { \oplus }", Divider: " \leq "
+ANNOTATION: "{ { { { { { { { 0.02 h { Mpc } ^ { -1 } \mathrel { \mathchoice { \lower 0.86 pt \vbox { \halign { \cr } $% \displaystyle \hfil < $ \cr$ \displaystyle \hfil \sim$ } } } { \lower 0.86 pt \vbox { \halign { % \cr } $ \textstyle \hfil < $ \cr$ \textstyle \hfil \sim$ } } } { \lower 0.86 pt \vbox { \halign { % \cr } $ \scriptstyle \hfil < $ \cr$ \scriptstyle \hfil \sim$ } } } { \lower 0.86 pt \vbox { % \halign { \cr } $ \scriptscriptstyle \hfil < $ \cr$ \scriptscriptstyle \hfil \sim$ } } } } k% \mathrel { \mathchoice { \lower 0.86 pt \vbox { \halign { \cr } $ \displaystyle \hfil < $ \cr$% \displaystyle \hfil \sim$ } } } { \lower 0.86 pt \vbox { \halign { \cr } $ \textstyle \hfil < $% \cr$ \textstyle \hfil \sim$ } } } { \lower 0.86 pt \vbox { \halign { \cr } $ \scriptstyle \hfil < % $ \cr$ \scriptstyle \hfil \sim$ } } } { \lower 0.86 pt \vbox { \halign { \cr } $% \scriptscriptstyle \hfil < $ \cr$ \scriptscriptstyle \hfil \sim$ } } } } 0.49 h { Mpc% } ^ { -1 }"
+ANNOTATION: "\tau _ { c } \leq 0.5"
+Parameter: "\tau _ { c }", Constraint: "0.5", Divider: " \leq "
+ANNOTATION: "\Omega _ { m } \leq 0.62"
+Parameter: "\Omega _ { m }", Constraint: "0.62", Divider: " \leq "
+ANNOTATION: "\omega \leq - 0.2"
+UNKNOWN: "\omega", UNKNOWN: "- 0.2", Divider: " \leq "
+ANNOTATION: "\Omega _ { m } \leq 0.17"
+Parameter: "\Omega _ { m }", Constraint: "0.17", Divider: " \leq "
+ANNOTATION: "\omega \leq - 0.65"
+UNKNOWN: "\omega", UNKNOWN: "- 0.65", Divider: " \leq "
+ANNOTATION: "r > 0.4"
+Parameter: "r", Constraint: "0.4", Divider: " > "
+ANNOTATION: "r > 0.4"
+Parameter: "r", Constraint: "0.4", Divider: " > "
+ANNOTATION: "610 < \ell < 2000"
+Constraint: "610", Parameter: "\ell", Divider: " < "
+Parameter: "\ell", Constraint: "2000", Divider: " < "
+ANNOTATION: "\Omega _ { m } < 0.34"
+Parameter: "\Omega _ { m }", Constraint: "0.34", Divider: " < "
+ANNOTATION: "\Omega _ { 0 } < 0.5"
+Parameter: "\Omega _ { 0 }", Constraint: "0.5", Divider: " < "
+ANNOTATION: "P ( \Omega _ { \Lambda } > 0 ) > 0.99"
+Parameter: "P ( \Omega _ { \Lambda }", Constraint: "0 )", Divider: " > "
+UNKNOWN: "0 )", UNKNOWN: "0.99", Divider: " > "
+ANNOTATION: "0.18 \leq \Omega _ { m } \leq 0.50"
+Constraint: "0.18", Parameter: "\Omega _ { m }", Divider: " \leq "
+Parameter: "\Omega _ { m }", Constraint: "0.50", Divider: " \leq "
+ANNOTATION: "\Gamma > 7 \times 10 ^ { -13 } s ^ { -1 }"
+Parameter: "\Gamma", Constraint: "7 \times 10 ^ { -13 } s ^ { -1 }", Divider: " > "
+ANNOTATION: "\epsilon < 0.07"
+Parameter: "\epsilon", Constraint: "0.07", Divider: " < "
+ANNOTATION: "\Omega _ { M } \leq 0.45 and \Omega _ { M } \leq 0.37"
+Parameter: "\Omega _ { M }", Constraint: "0.45 and \Omega _ { M }", Divider: " \leq "
+UNKNOWN: "0.45 and \Omega _ { M }", UNKNOWN: "0.37", Divider: " \leq "
+ANNOTATION: "\Omega _ { \Lambda } \geq 0.42"
+Parameter: "\Omega _ { \Lambda }", Constraint: "0.42", Divider: " \geq "
+ANNOTATION: "\Omega _ { \Lambda } \geq 0.5"
+Parameter: "\Omega _ { \Lambda }", Constraint: "0.5", Divider: " \geq "
+ANNOTATION: "\Omega _ { M } \leq 0.45"
+Parameter: "\Omega _ { M }", Constraint: "0.45", Divider: " \leq "
+ANNOTATION: "\Omega _ { M } \leq 0.37"
+Parameter: "\Omega _ { M }", Constraint: "0.37", Divider: " \leq "
+ANNOTATION: "\Omega _ { M } \geq 0.40"
+Parameter: "\Omega _ { M }", Constraint: "0.40", Divider: " \geq "
+ANNOTATION: "1.0 < \Delta m _ { 15 } < 1.6"
+Constraint: "1.0", Parameter: "\Delta m _ { 15 }", Divider: " < "
+Parameter: "\Delta m _ { 15 }", Constraint: "1.6", Divider: " < "
+ANNOTATION: "R < 3000 \hbox { $ $km$ $s$ { } ^ { -1 } $ }"
+Parameter: "R", Constraint: "3000 \hbox { $ $km$ $s$ { } ^ { -1 } $ }", Divider: " < "
+ANNOTATION: "0.85 \leq \Omega \leq 1.25"
+Constraint: "0.85", Parameter: "\Omega", Divider: " \leq "
+Parameter: "\Omega", Constraint: "1.25", Divider: " \leq "
+ANNOTATION: "0.85 \leq \Omega \leq 1.25"
+Constraint: "0.85", Parameter: "\Omega", Divider: " \leq "
+Parameter: "\Omega", Constraint: "1.25", Divider: " \leq "
+ANNOTATION: "\Omega _ { o } \raise - 2.0 pt \hbox { \hbox to 0.0 pt { \hbox { $ \sim$ } } \raise 5.0 pt \hbox { $% < $ } } 0.4"
+UNKNOWN: "\Omega _ { o } \raise - 2.0 pt \hbox { \hbox to 0.0 pt { \hbox { $ \sim$ } } \raise 5.0 pt \hbox { $%", UNKNOWN: "$ } } 0.4", Divider: " < "
+ANNOTATION: "H _ { 0 } < 80 km s ^ { -1 } Mpc ^ { -1 }"
+Parameter: "H _ { 0 }", Constraint: "80 km s ^ { -1 } Mpc ^ { -1 }", Divider: " < "
+ANNOTATION: "\Omega < 0.4"
+Parameter: "\Omega", Constraint: "0.4", Divider: " < "
+ANNOTATION: "H _ { 0 } < 80 km s ^ { -1 } Mpc ^ { -1 }"
+Parameter: "H _ { 0 }", Constraint: "80 km s ^ { -1 } Mpc ^ { -1 }", Divider: " < "
+ANNOTATION: "t _ { 0 } > 11.5 Gyr"
+Parameter: "t _ { 0 }", Constraint: "11.5 Gyr", Divider: " > "
+
+=============== (1/25)
+ARXIV: astro-ph0302435
+Paths:
+/home/tom/Documents/data/annotators/cpedersen/sample1/astro-ph0302435.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph0302435.ann
+
+######### 1.0
+
+=============== (2/25)
+ARXIV: astro-ph9804188
+Paths:
+/home/tom/Documents/data/annotators/adeshpande/sample1/astro-ph9804188.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph9804188.ann
+
+######### 1.0
+
+=============== (3/25)
+ARXIV: astro-ph9904118
+Paths:
+/home/tom/Documents/data/annotators/adeshpande/sample1/astro-ph9904118.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph9904118.ann
+
+######### 1.0
+
+=============== (4/25)
+ARXIV: astro-ph9910340
+Paths:
+/home/tom/Documents/data/annotators/cpedersen/sample1/astro-ph9910340.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph9910340.ann
+
+-----------
+ParameterName 15 34	peculiar velocities (tcrossland)
+SINGLETON
+-----------
+ParameterName 662 681	peculiar velocities (tcrossland)
+SINGLETON
+######### 0.8823529411764706
+
+=============== (5/25)
+ARXIV: 1405.0739
+Paths:
+/home/tom/Documents/data/annotators/adeshpande/sample1/1405.0739.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/1405.0739.ann
+
+-----------
+ObjectName 174 183	NGCÂ 2244 (tcrossland)
+SINGLETON
+-----------
+ObjectName 191 205	Rosette Nebula (tcrossland)
+SINGLETON
+-----------
+Constraint 1167 1194	convective overshoot > 0.35 (tcrossland)
+SINGLETON
+-----------
+ParameterName 1342 1370	internal structure constants (tcrossland)
+SINGLETON
+-----------
+ParameterName 1373 1390	tidal Love number (tcrossland)
+SINGLETON
+-----------
+ParameterName 1580 1627	relativistic contribution to the apsidal motion (adeshpande)
+!! 0.30: ParameterName 1613 1627	apsidal motion (tcrossland)
+Overlap count => agree: 0, disagree: 1
+-----------
+Constraint 1642 1646	4 \% (adeshpande)
+SINGLETON
+######### 0.7647058823529411
+
+=============== (6/25)
+ARXIV: astro-ph0111575
+Paths:
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph0111575.ann
+/home/tom/Documents/data/annotators/tkimpson/sample1/astro-ph0111575.ann
+
+-----------
+ParameterName 796 833	galaxy-matter correlation coefficient (tcrossland)
+!! 0.97: ParameterName 796 832	galaxy-matter correlation coefficien (tkimpson)
+Overlap count => agree: 0, disagree: 1
+-----------
+MeasuredValue 922 935	0.47 \pm 0.16 (tcrossland)
+SINGLETON
+######### 0.7
+
+=============== (7/25)
+ARXIV: 0905.0695
+Paths:
+/home/tom/Documents/data/annotators/aalmannaei/sample1/0905.0695.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/0905.0695.ann
+
+-----------
+ObjectName 241 252	240 Cepheid (aalmannaei)
+SINGLETON
+-----------
+Definition 1790 1816	w = P / ( \rho c ^ { 2 } ) (aalmannaei)
+!! 0.04: ParameterSymbol 1790 1791	w (tcrossland)
+!! 0.85: Definition 1794 1816	P / ( \rho c ^ { 2 } ) (tcrossland)
+Overlap count => agree: 0, disagree: 2
+-----------
+ParameterSymbol 2172 2179	w ( z ) (tcrossland)
+!! 0.14: ParameterSymbol 2172 2173	w (aalmannaei)
+Overlap count => agree: 0, disagree: 1
+######### 0.6875
+
+=============== (8/25)
+ARXIV: 0805.4289
+Paths:
+/home/tom/Documents/data/annotators/cpedersen/sample1/0805.4289.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/0805.4289.ann
+
+-----------
+ParameterName 404 409	field (tcrossland)
+SINGLETON
+-----------
+ParameterName 699 704	field (tcrossland)
+SINGLETON
+-----------
+Constraint 1033 1058	T _ { s } > 10 ^ { 9 } yr (tcrossland)
+!! 0.36: ParameterSymbol 1033 1042	T _ { s } (cpedersen)
+!! 0.52: Constraint 1045 1058	10 ^ { 9 } yr (cpedersen)
+Overlap count => agree: 0, disagree: 2
+-----------
+ParameterName 1272 1307	mass ratio of the binary components (tcrossland)
+!! 0.29: ParameterName 1272 1282	mass ratio (cpedersen)
+Overlap count => agree: 0, disagree: 1
+-----------
+ParameterName 1350 1355	field (tcrossland)
+SINGLETON
+######### 0.68
+
+=============== (9/25)
+ARXIV: astro-ph9901087
+Paths:
+/home/tom/Documents/data/annotators/dpiras/sample1/astro-ph9901087.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph9901087.ann
+
+-----------
+ObjectName 35 46	Local Group (dpiras)
+SINGLETON
+-----------
+ObjectName 2112 2123	Local Group (dpiras)
+SINGLETON
+######### 0.6666666666666666
+
+=============== (10/25)
+ARXIV: 1403.0724
+Paths:
+/home/tom/Documents/data/annotators/cliewcain/sample1/1403.0724.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/1403.0724.ann
+
+-----------
+Details 101 111	z \sim 0.3 (tcrossland)
+!! 0.10: ParameterSymbol 101 102	z (cliewcain)
+Overlap count => agree: 0, disagree: 1
+-----------
+ObjectName 508 523	CO ( 1-0 ) line (tcrossland)
+SINGLETON
+-----------
+MeasuredValue 709 758	9.6 , 4.3 and 5.1 \times 10 ^ { 9 } M _ { \odot } (cliewcain)
+!! 0.06: MeasuredValue 709 712	9.6 (tcrossland)
+!! 0.06: MeasuredValue 715 718	4.3 (tcrossland)
+!! 0.71: MeasuredValue 723 758	5.1 \times 10 ^ { 9 } M _ { \odot } (tcrossland)
+Overlap count => agree: 0, disagree: 3
+-----------
+Details 817 831	z \sim 0.3-1.0 (tcrossland)
+!! 0.07: ParameterSymbol 817 818	z (cliewcain)
+Overlap count => agree: 0, disagree: 1
+######### 0.6538461538461539
+
+=============== (11/25)
+ARXIV: 0802.2358
+Paths:
+/home/tom/Documents/data/annotators/cpedersen/sample1/0802.2358.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/0802.2358.ann
+
+-----------
+ParameterName 136 151	shift parameter (tcrossland)
+SINGLETON
+-----------
+ParameterName 162 176	acoustic scale (tcrossland)
+SINGLETON
+-----------
+MeasuredValue 395 406	0.47 - 0.51 (tcrossland)
+!! 0.36: Constraint 395 399	0.47 (cpedersen)
+!! 0.36: Constraint 402 406	0.51 (cpedersen)
+Overlap count => agree: 0, disagree: 2
+-----------
+MeasuredValue 566 577	0.49 - 0.68 (tcrossland)
+!! 0.36: Constraint 566 570	0.49 (cpedersen)
+!! 0.36: Constraint 573 577	0.68 (cpedersen)
+Overlap count => agree: 0, disagree: 2
+######### 0.6363636363636364
+
+=============== (12/25)
+ARXIV: astro-ph0205387
+Paths:
+/home/tom/Documents/data/annotators/aalmannaei/sample1/astro-ph0205387.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph0205387.ann
+
+-----------
+ParameterSymbol 727 731	\ell (tcrossland)
+SINGLETON
+-----------
+MeasuredValue 988 1030	1.00 _ { -0.12 } ^ { +0.11 } ( 1- \sigma ) (aalmannaei)
+!! 0.67: MeasuredValue 988 1016	1.00 _ { -0.12 } ^ { +0.11 } (tcrossland)
+!! 0.21: ConfidenceLimit 1019 1028	1- \sigma (tcrossland)
+Overlap count => agree: 0, disagree: 2
+-----------
+ParameterName 1127 1156	densities in cold dark matter (aalmannaei)
+SINGLETON
+-----------
+ParameterName 1223 1230	baryons (aalmannaei)
+SINGLETON
+-----------
+Details 1348 1425	\Omega _ { cdm } h ^ { 2 } value is sharpened to 0.10 _ { -0.03 } ^ { +0.04 } (aalmannaei)
+!! 0.34: ParameterSymbol 1348 1374	\Omega _ { cdm } h ^ { 2 } (tcrossland)
+!! 0.36: MeasuredValue 1397 1425	0.10 _ { -0.03 } ^ { +0.04 } (tcrossland)
+Overlap count => agree: 0, disagree: 2
+-----------
+ParameterName 2163 2185	vacuum energy estimate (aalmannaei)
+!! 0.59: ParameterName 2163 2176	vacuum energy (tcrossland)
+Overlap count => agree: 0, disagree: 1
+-----------
+ParameterSymbol 2595 2599	\ell (tcrossland)
+SINGLETON
+######### 0.5806451612903226
+
+=============== (13/25)
+ARXIV: 1603.02277
+Paths:
+/home/tom/Documents/data/annotators/cliewcain/sample1/1603.02277.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/1603.02277.ann
+
+-----------
+Details 285 290	z > 6 (tcrossland)
+!! 0.20: ParameterSymbol 285 286	z (cliewcain)
+Overlap count => agree: 0, disagree: 1
+-----------
+Details 487 496	z = 6.029 (tcrossland)
+!! 0.11: ParameterSymbol 487 488	z (cliewcain)
+Overlap count => agree: 0, disagree: 1
+-----------
+Details 501 510	z = 6.703 (tcrossland)
+!! 0.11: ParameterSymbol 501 502	z (cliewcain)
+Overlap count => agree: 0, disagree: 1
+-----------
+ParameterSymbol 555 562	[ SFR ] (tcrossland)
+!! 0.43: ParameterSymbol 557 560	SFR (cliewcain)
+Overlap count => agree: 0, disagree: 1
+-----------
+ParameterSymbol 772 773	z (cliewcain)
+SINGLETON
+-----------
+Constraint 883 934	L _ { [ CII ] } < 3 \times 10 ^ { 5 } L _ { \odot } (tcrossland)
+!! 0.29: ParameterSymbol 883 898	L _ { [ CII ] } (cliewcain)
+!! 0.65: MeasuredValue 901 934	3 \times 10 ^ { 5 } L _ { \odot } (cliewcain)
+Overlap count => agree: 0, disagree: 2
+-----------
+ParameterSymbol 968 988	SFR- L _ { [ CII ] } (cliewcain)
+!! 0.75: ParameterSymbol 973 988	L _ { [ CII ] } (tcrossland)
+Overlap count => agree: 0, disagree: 1
+-----------
+Details 1077 1082	z > 6 (tcrossland)
+!! 0.20: ParameterSymbol 1077 1078	z (cliewcain)
+Overlap count => agree: 0, disagree: 1
+######### 0.5714285714285714
+
+=============== (14/25)
+ARXIV: 1005.1955
+Paths:
+/home/tom/Documents/data/annotators/cpedersen/sample1/1005.1955.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/1005.1955.ann
+
+-----------
+ObjectName 573 587	megamaser disk (tcrossland)
+SINGLETON
+-----------
+ObjectName 663 677	megamaser disk (tcrossland)
+SINGLETON
+-----------
+ParameterName 1337 1367	mass of the central black hole (cpedersen)
+!! 0.13: ParameterName 1337 1341	mass (tcrossland)
+!! 0.60: ObjectName 1349 1367	central black hole (tcrossland)
+Overlap count => agree: 0, disagree: 2
+-----------
+MeasuredValue 1374 1420	1.09 \times 10 ^ { 7 } M _ { \odot } \pm 14 \% (tcrossland)
+!! 0.78: MeasuredValue 1374 1410	1.09 \times 10 ^ { 7 } M _ { \odot } (cpedersen)
+!! 0.11: ConfidenceLimit 1415 1420	14 \% (cpedersen)
+Overlap count => agree: 0, disagree: 2
+######### 0.5
+
+=============== (15/25)
+ARXIV: 1205.2706
+Paths:
+/home/tom/Documents/data/annotators/dpiras/sample1/1205.2706.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/1205.2706.ann
+
+-----------
+ParameterName 652 681	total number of SN explosions (dpiras)
+SINGLETON
+-----------
+ParameterName 1237 1267	total SN explosions are SNe Ia (dpiras)
+SINGLETON
+-----------
+ParameterName 1278 1346	total number of SN explosions required to create the observed metals (tcrossland)
+!! 0.43: ParameterName 1278 1307	total number of SN explosions (dpiras)
+Overlap count => agree: 0, disagree: 1
+-----------
+Constraint 1366 1401	( 1.06 \pm 0.34 ) \times 10 ^ { 9 } (tcrossland)
+!! 0.94: Constraint 1368 1401	1.06 \pm 0.34 ) \times 10 ^ { 9 } (dpiras)
+Overlap count => agree: 0, disagree: 1
+-----------
+ParameterName 1885 1907	star-to-gas mass ratio (tcrossland)
+SINGLETON
+######### 0.5
+
+=============== (16/25)
+ARXIV: astro-ph0603260
+Paths:
+/home/tom/Documents/data/annotators/cliewcain/sample1/astro-ph0603260.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph0603260.ann
+
+-----------
+ParameterName 361 372	temperature (cliewcain)
+SINGLETON
+-----------
+ParameterName 453 464	temperature (cliewcain)
+SINGLETON
+-----------
+ParameterName 824 829	slope (tcrossland)
+SINGLETON
+-----------
+MeasuredValue 839 844	3 / 2 (tcrossland)
+SINGLETON
+-----------
+Details 927 988	spatially-flat \Lambda CDM universe with \Omega _ { m } = 0.3 (tcrossland)
+!! 0.23: ParameterSymbol 968 982	\Omega _ { m } (cliewcain)
+!! 0.05: MeasuredValue 985 988	0.3 (cliewcain)
+Overlap count => agree: 0, disagree: 2
+######### 0.5
+
+=============== (17/25)
+ARXIV: astro-ph9911445
+Paths:
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph9911445.ann
+/home/tom/Documents/data/annotators/msharma/sample1/astro-ph9911445.ann
+
+-----------
+ParameterName 444 452	redshift (msharma)
+SINGLETON
+-----------
+ObjectName 453 463	supernovae (msharma)
+SINGLETON
+-----------
+ParameterName 502 527	fractional matter density (msharma)
+SINGLETON
+-----------
+ParameterName 536 557	cosmological constant (msharma)
+SINGLETON
+######### 0.5
+
+=============== (18/25)
+ARXIV: astro-ph0208394
+Paths:
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph0208394.ann
+/home/tom/Documents/data/annotators/msharma/sample1/astro-ph0208394.ann
+
+-----------
+ParameterName 38 117	normalization of the power spectrum of mass fluctuations in the nearby universe (tcrossland)
+!! 0.22: ParameterName 77 94	mass fluctuations (msharma)
+!! 0.19: Details 102 117	nearby universe (msharma)
+Overlap count => agree: 0, disagree: 2
+-----------
+ParameterName 158 183	mean local matter density (tcrossland)
+!! 0.56: ParameterName 169 183	matter density (msharma)
+!! 0.40: Details 158 168	mean local (msharma)
+Overlap count => agree: 0, disagree: 2
+-----------
+MeasuredValue 546 608	( 0.508 \pm 0.019 ) \Omega _ { m } ^ { - ( 0.253 \pm 0.024 ) } (tcrossland)
+!! 0.23: ParameterSymbol 566 580	\Omega _ { m } (msharma)
+Overlap count => agree: 0, disagree: 1
+-----------
+Constraint 616 637	\Omega _ { m } < 0.34 (tcrossland)
+!! 0.67: ParameterSymbol 616 630	\Omega _ { m } (msharma)
+!! 0.29: MeasuredValue 631 637	< 0.34 (msharma)
+Overlap count => agree: 0, disagree: 2
+-----------
+ParameterName 895 925	baryon density of the universe (tcrossland)
+SINGLETON
+-----------
+ParameterName 934 949	Hubble constant (tcrossland)
+SINGLETON
+######### 0.43478260869565216
+
+=============== (19/25)
+ARXIV: 0707.2004
+Paths:
+/home/tom/Documents/data/annotators/aalmannaei/sample1/0707.2004.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/0707.2004.ann
+
+-----------
+ParameterName 33 114	distribution of the interstellar matter in the environs of the H ii region Gum 31 (aalmannaei)
+!! 0.07: ObjectName 108 114	Gum 31 (tcrossland)
+!! 0.14: ObjectName 96 107	H ii region (tcrossland)
+Overlap count => agree: 0, disagree: 2
+-----------
+ObjectName 179 192	Carina region (tcrossland)
+SINGLETON
+-----------
+MeasuredValue 593 613	33 \pm 3 cm ^ { -3 } (tcrossland)
+!! 0.10: MeasuredValue 593 595	33 (aalmannaei)
+!! 0.65: SeparatedUncertainty 600 613	3 cm ^ { -3 } (aalmannaei)
+Overlap count => agree: 0, disagree: 2
+-----------
+MeasuredValue 637 684	( 3.3 \pm 1.1 ) \times 10 ^ { 3 } M _ { \odot } (tcrossland)
+!! 0.06: MeasuredValue 639 642	3.3 (aalmannaei)
+!! 0.79: SeparatedUncertainty 647 684	1.1 ) \times 10 ^ { 3 } M _ { \odot } (aalmannaei)
+Overlap count => agree: 0, disagree: 2
+-----------
+ObjectName 770 779	H i shell (tcrossland)
+SINGLETON
+-----------
+ObjectName 796 807	H ii region (tcrossland)
+SINGLETON
+-----------
+MeasuredValue 831 846	10.0 \pm 1.7 pc (tcrossland)
+!! 0.27: MeasuredValue 831 835	10.0 (aalmannaei)
+!! 0.40: SeparatedUncertainty 840 846	1.7 pc (aalmannaei)
+Overlap count => agree: 0, disagree: 2
+-----------
+ParameterName 850 856	radius (tcrossland)
+SINGLETON
+-----------
+MeasuredValue 881 907	1500 \pm 500 M _ { \odot } (tcrossland)
+!! 0.15: MeasuredValue 881 885	1500 (aalmannaei)
+!! 0.65: SeparatedUncertainty 890 907	500 M _ { \odot } (aalmannaei)
+Overlap count => agree: 0, disagree: 2
+-----------
+MeasuredValue 989 1036	( 1.5 \pm 0.5 ) \times 10 ^ { 5 } M _ { \odot } (tcrossland)
+!! 0.06: MeasuredValue 991 994	1.5 (aalmannaei)
+!! 0.79: SeparatedUncertainty 999 1036	0.5 ) \times 10 ^ { 5 } M _ { \odot } (aalmannaei)
+Overlap count => agree: 0, disagree: 2
+-----------
+ParameterName 1236 1251	ambient density (tcrossland)
+SINGLETON
+-----------
+ObjectName 1284 1295	H ii region (tcrossland)
+SINGLETON
+-----------
+ObjectName 1314 1325	H ii region (tcrossland)
+SINGLETON
+-----------
+ObjectName 1636 1647	H ii region (tcrossland)
+SINGLETON
+-----------
+ObjectName 2162 2173	H ii region (tcrossland)
+SINGLETON
+######### 0.358974358974359
+
+=============== (20/25)
+ARXIV: astro-ph0510643
+Paths:
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph0510643.ann
+/home/tom/Documents/data/annotators/msharma/sample1/astro-ph0510643.ann
+
+-----------
+ObjectName 17 32	galaxy clusters (msharma)
+SINGLETON
+-----------
+ParameterName 50 54	mass (msharma)
+SINGLETON
+-----------
+ObjectName 107 119	Galaxy Group (msharma)
+SINGLETON
+-----------
+ParameterName 171 215	amplitude of the matter fluctuation spectrum (msharma)
+SINGLETON
+-----------
+ParameterName 256 276	density fluctuations (msharma)
+SINGLETON
+-----------
+Details 639 731	0.18 \leq \Omega _ { m } \leq 0.50 , assuming that \Omega _ { m } + \Omega _ { \Lambda } = 1 (msharma)
+!! 0.37: Constraint 639 673	0.18 \leq \Omega _ { m } \leq 0.50 (tcrossland)
+!! 0.45: Details 690 731	\Omega _ { m } + \Omega _ { \Lambda } = 1 (tcrossland)
+Overlap count => agree: 0, disagree: 2
+-----------
+Details 772 793	\Omega _ { m } = 0.25 (msharma)
+!! 0.67: ParameterSymbol 772 786	\Omega _ { m } (tcrossland)
+!! 0.19: MeasuredValue 789 793	0.25 (tcrossland)
+Overlap count => agree: 0, disagree: 2
+-----------
+ObjectName 1067 1080	galaxy groups (msharma)
+SINGLETON
+-----------
+ParameterName 1104 1129	b _ { J } band luminosity (msharma)
+SINGLETON
+-----------
+ParameterName 1188 1206	halo mass function (msharma)
+!! 0.22: ObjectName 1188 1192	halo (tcrossland)
+Overlap count => agree: 0, disagree: 1
+-----------
+ParameterName 1265 1289	halo mass-to-light ratio (msharma)
+!! 0.17: ObjectName 1265 1269	halo (tcrossland)
+!! 0.79: ParameterName 1270 1289	mass-to-light ratio (tcrossland)
+Overlap count => agree: 0, disagree: 2
+-----------
+ParameterName 1323 1332	halo mass (msharma)
+!! 0.44: ObjectName 1323 1327	halo (tcrossland)
+Overlap count => agree: 0, disagree: 1
+-----------
+Details 1419 1554	in the b _ { J } band at a total group luminosity of L _ { b _ { J } } \approx 5 \times 10 ^ { 9 } { \it h } ^ { -2 } { L _ { \odot } } (msharma)
+!! 0.10: Details 1426 1440	b _ { J } band (tcrossland)
+!! 0.13: ParameterSymbol 1472 1489	L _ { b _ { J } } (tcrossland)
+!! 0.16: ParameterName 1446 1468	total group luminosity (tcrossland)
+!! 0.41: MeasuredValue 1498 1554	5 \times 10 ^ { 9 } { \it h } ^ { -2 } { L _ { \odot } } (tcrossland)
+Overlap count => agree: 0, disagree: 4
+-----------
+ParameterName 1639 1653	rotation speed (msharma)
+SINGLETON
+######### 0.3
+
+=============== (21/25)
+ARXIV: 0906.1808
+Paths:
+/home/tom/Documents/data/annotators/tcrossland/sample1/0906.1808.ann
+/home/tom/Documents/data/annotators/tkimpson/sample1/0906.1808.ann
+
+-----------
+ParameterName 29 46	projected offsets (tcrossland)
+SINGLETON
+-----------
+ParameterName 293 309	projected offset (tcrossland)
+SINGLETON
+-----------
+ParameterName 318 370	logarithmic slope of the cluster gas density profile (tcrossland)
+SINGLETON
+-----------
+ParameterName 1120 1136	projected offset (tcrossland)
+SINGLETON
+-----------
+MeasuredValue 1243 1276	0.106 \pm 0.005 ( \sigma = 0.03 ) (tcrossland)
+!! 0.45: MeasuredValue 1243 1258	0.106 \pm 0.005 (tkimpson)
+!! 0.39: ConfidenceLimit 1261 1274	\sigma = 0.03 (tkimpson)
+Overlap count => agree: 0, disagree: 2
+-----------
+MeasuredValue 1289 1322	0.145 \pm 0.009 ( \sigma = 0.04 ) (tcrossland)
+!! 0.45: MeasuredValue 1289 1304	0.145 \pm 0.009 (tkimpson)
+!! 0.39: ConfidenceLimit 1307 1320	\sigma = 0.04 (tkimpson)
+Overlap count => agree: 0, disagree: 2
+-----------
+ParameterName 1401 1411	total mass (tcrossland)
+SINGLETON
+######### 0.21428571428571427
+
+=============== (22/25)
+ARXIV: astro-ph0401195
+Paths:
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph0401195.ann
+/home/tom/Documents/data/annotators/tkimpson/sample1/astro-ph0401195.ann
+
+-----------
+ObjectName 40 51	Local Group (tcrossland)
+SINGLETON
+-----------
+ObjectName 54 56	LG (tcrossland)
+SINGLETON
+-----------
+ParameterName 59 71	acceleration (tcrossland)
+SINGLETON
+-----------
+ObjectName 184 186	LG (tcrossland)
+SINGLETON
+-----------
+ParameterName 187 199	acceleration (tcrossland)
+SINGLETON
+-----------
+ParameterName 204 212	velocity (tcrossland)
+SINGLETON
+-----------
+ParameterName 315 333	coherence function (tcrossland)
+SINGLETON
+-----------
+ParameterName 400 407	gravity (tcrossland)
+SINGLETON
+-----------
+ParameterName 412 420	velocity (tcrossland)
+SINGLETON
+-----------
+ParameterName 452 510	ratio of velocity power spectrum to gravity power spectrum (tcrossland)
+SINGLETON
+-----------
+ObjectName 546 548	LG (tcrossland)
+SINGLETON
+-----------
+ParameterName 549 561	acceleration (tcrossland)
+SINGLETON
+-----------
+ParameterName 654 672	coherence function (tcrossland)
+SINGLETON
+-----------
+ParameterName 798 808	wavevector (tcrossland)
+SINGLETON
+-----------
+ObjectName 991 993	LG (tcrossland)
+SINGLETON
+-----------
+ParameterName 994 1002	velocity (tcrossland)
+SINGLETON
+-----------
+ParameterName 1007 1014	gravity (tcrossland)
+SINGLETON
+-----------
+ObjectName 1067 1069	LG (tcrossland)
+SINGLETON
+-----------
+ParameterName 1070 1078	velocity (tcrossland)
+SINGLETON
+-----------
+ObjectName 1130 1132	LG (tcrossland)
+SINGLETON
+-----------
+ParameterName 1133 1145	acceleration (tcrossland)
+SINGLETON
+-----------
+ParameterName 1332 1350	coherence function (tcrossland)
+SINGLETON
+-----------
+ParameterName 1420 1427	gravity (tcrossland)
+SINGLETON
+-----------
+ParameterName 1432 1440	velocity (tcrossland)
+SINGLETON
+######### 0.1724137931034483
+
+=============== (23/25)
+ARXIV: astro-ph0601207
+Paths:
+/home/tom/Documents/data/annotators/dpiras/sample1/astro-ph0601207.ann EMPTY
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph0601207.ann
+
+-----------
+ParameterName 353 380	X-ray–to–optical flux ratio (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 381 409	\log f _ { X } / f _ { opt } (tcrossland)
+SINGLETON
+-----------
+ParameterName 935 940	slope (tcrossland)
+SINGLETON
+-----------
+MeasuredValue 944 958	-1.46 \pm 0.13 (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 1289 1307	\log L _ { \star } (tcrossland)
+SINGLETON
+-----------
+MeasuredValue 1310 1354	41.02 _ { -0.12 } ^ { +0.14 } erg s ^ { -1 } (tcrossland)
+SINGLETON
+-----------
+ParameterName 1361 1366	slope (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 1370 1376	\alpha (tcrossland)
+SINGLETON
+-----------
+MeasuredValue 1379 1393	-1.76 \pm 0.10 (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 1580 1589	L _ { X } (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 1637 1643	\alpha (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 1896 1905	L _ { X } (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 1961 1970	L _ { X } (tcrossland)
+SINGLETON
+-----------
+ParameterName 2042 2051	L _ { K } (tcrossland)
+SINGLETON
+######### 0
+
+=============== (24/25)
+ARXIV: astro-ph9604151
+Paths:
+/home/tom/Documents/data/annotators/adeshpande/sample1/astro-ph9604151.ann
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph9604151.ann EMPTY
+
+-----------
+ParameterSymbol 559 573	\sigma _ { J } (adeshpande)
+SINGLETON
+-----------
+ParameterSymbol 594 608	\sigma _ { K } (adeshpande)
+SINGLETON
+-----------
+ParameterSymbol 1029 1043	\sigma _ { J } (adeshpande)
+SINGLETON
+-----------
+Constraint 1049 1053	0.35 (adeshpande)
+SINGLETON
+-----------
+ParameterSymbol 1058 1072	\sigma _ { K } (adeshpande)
+SINGLETON
+-----------
+Constraint 1078 1082	0.45 (adeshpande)
+SINGLETON
+-----------
+ParameterName 1312 1340	Sun-Galactic center distance (adeshpande)
+SINGLETON
+-----------
+ParameterSymbol 1341 1350	R _ { 0 } (adeshpande)
+SINGLETON
+-----------
+ParameterName 1369 1383	\Theta _ { 0 } (adeshpande)
+SINGLETON
+-----------
+ParameterSymbol 1557 1566	R _ { 0 } (adeshpande)
+SINGLETON
+-----------
+ParameterName 1571 1585	\Theta _ { 0 } (adeshpande)
+SINGLETON
+-----------
+MeasuredValue 1700 1713	0.08 \pm 0.03 (adeshpande)
+SINGLETON
+-----------
+ParameterName 1882 1897	Hubble Constant (adeshpande)
+SINGLETON
+-----------
+ParameterSymbol 1909 1918	H _ { 0 } (adeshpande)
+SINGLETON
+-----------
+MeasuredValue 1921 1939	66 \pm 12 km/s/Mpc (adeshpande)
+SINGLETON
+######### 0
+
+=============== (25/25)
+ARXIV: astro-ph9801256
+Paths:
+/home/tom/Documents/data/annotators/cliewcain/sample1/astro-ph9801256.ann EMPTY
+/home/tom/Documents/data/annotators/tcrossland/sample1/astro-ph9801256.ann
+
+-----------
+ParameterName 45 60	Hubble constant (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 61 70	H _ { 0 } (tcrossland)
+SINGLETON
+-----------
+ObjectName 133 147	Pisces-Perseus (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 735 744	H _ { 0 } (tcrossland)
+SINGLETON
+-----------
+ConfidenceLimit 752 756	95 % (tcrossland)
+SINGLETON
+-----------
+ParameterName 854 869	Hubble constant (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 870 879	H _ { 0 } (tcrossland)
+SINGLETON
+-----------
+MeasuredValue 882 937	65 \pm 2 ^ { +20 } _ { -14 } km s ^ { -1 } Mpc ^ { -1 } (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 1121 1130	H _ { 0 } (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 1358 1367	H _ { 0 } (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 1475 1484	H _ { 0 } (tcrossland)
+SINGLETON
+-----------
+ObjectName 1537 1551	Pisces-Perseus (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 1614 1623	H _ { 0 } (tcrossland)
+SINGLETON
+-----------
+ObjectName 1712 1726	Pisces-Perseus (tcrossland)
+SINGLETON
+-----------
+ParameterSymbol 1785 1794	H _ { 0 } (tcrossland)
+SINGLETON
+-----------
+ParameterName 1946 1971	coherent streaming motion (tcrossland)
+SINGLETON
+-----------
+ObjectName 1979 1993	Pisces-Perseus (tcrossland)
+SINGLETON
+-----------
+ObjectName 1994 1999	ridge (tcrossland)
+SINGLETON
+-----------
+MeasuredValue 2010 2029	- 200 km s ^ { -1 } (tcrossland)
+SINGLETON
+######### 0
+Total papers checked: 25
+Average similarity: 0.5322
+cpedersen, tcrossland: 0.740
+adeshpande, tcrossland: 0.691
+tcrossland, tkimpson: 0.362
+aalmannaei, tcrossland: 0.542
+dpiras, tcrossland: 0.389
+cliewcain, tcrossland: 0.431
+msharma, tcrossland: 0.412

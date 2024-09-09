@@ -1,0 +1,95 @@
+\def\@aabuffer{}
+
+\def\author#1{\expandafter\def\expandafter\@aabuffer\expandafter
+{\@aabuffer\large#1\relax \par\vspace*{2ex}}}
+
+\def\address#1{\expandafter\def\expandafter\@aabuffer\expandafter
+{\@aabuffer\small#1\relax \par\vspace{.5ex}}}
+
+\def\maketitle{
+	\begin{center}
+	\vspace*{15ex}
+	{\Large\bf \@title \par}        
+	\vspace*{4ex}
+	\@aabuffer\relax
+	\end{center}
+\par
+\gdef\@aabuffer{}}
+
+\def\abstract#1{
+\begin{center}
+{\begin{minipage}{130truemm}
+                 \footnotesize\vspace*{3ex}
+                 \parindent0pt{\bf Abstract. }#1\par
+                 \end{minipage}}
+\end{center}
+                 \vspace*{0.5ex}\par}
+
+\fussy
+\flushbottom
+\frenchspacing
+\parindent15pt
+\oddsidemargin0mm         
+\evensidemargin0mm
+\topmargin15mm           
+\headheight3mm           
+\headsep4mm           
+\footskip10mm           
+\footheight4mm
+\textheight190.0truemm
+\textwidth130.0truemm
+
+\def\section{\@startsection{section}{1}{\z@}{-3.5ex plus -1ex minus 
+    -.2ex}{2.3ex plus .2ex}{\large\bf }}
+\def\subsection{\@startsection{subsection}{2}{\z@}{-3.25ex plus -1ex minus 
+   -.2ex}{1.5ex plus .2ex}{\bf }}
+
+\pagestyle{plain}
+
+\renewenvironment{thebibliography}[1]
+	{\begin{list}{\llap[\arabic{enumi}]}
+	{\usecounter{enumi}\setlength{\parsep}{0pt}
+	 \setlength{\itemsep}{0pt} \settowidth
+	{\labelwidth}{#1}\footnotesize\sloppy}}{\end{list}}
+
+\topsep0mm\parsep0mm\itemsep0mm
+
+\newcounter{arabiclistc}
+\newenvironment{arabiclist}
+	{\setcounter{arabiclistc}{0}
+	 \begin{list}{\arabic{arabiclistc}}
+	{\usecounter{arabiclistc}
+	 \setlength{\parsep}{0pt}
+	 \setlength{\itemsep}{0pt}}}{\end{list}}
+
+\setcounter{secnumdepth}{2}
+
+\def\baselinestretch{1.0}
+\ifx\selectfont\undefined
+\@normalsize\else\let\glb@currsize=\relax\selectfont
+\fi
+
+\ifx\selectfont\undefined
+\def\@singlespacing{%
+\def\baselinestretch{1}\ifx\@currsize\normalsize\@normalsize\else\@currsize\fi%
+}
+\else
+\def\@singlespacing{\def\baselinestretch{1}\let\glb@currsize=\relax\selectfont}
+\fi
+
+\def\figurename{Fig.}
+\def\tablename{Tab.}
+\long\def\@makecaption#1#2{
+   \vskip 10pt 
+   \setbox\@tempboxa\hbox{\footnotesize\bf #1.\rm~#2}
+   \ifdim \wd\@tempboxa >\hsize   
+       \leftskip 0pt plus 1fil 
+       \rightskip 0pt plus -1fil 
+       \parfillskip 0pt plus 2fil 
+       \footnotesize #1. #2\par   
+     \else                        
+       \hbox to\hsize{\hfil\box\@tempboxa\hfil}  
+   \fi}
+
+\def\references{\leftskip15pt\parindent-15pt\footnotesize}
+

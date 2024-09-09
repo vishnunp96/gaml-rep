@@ -1,0 +1,216 @@
+import torch
+import torch.nn as nn
+import torch.nn.utils.rnn as rnn
+import torch.nn.functional as F
+import torch.optim as optim
+
+from sklearn.preprocessing import LabelEncoder,LabelBinarizer
+from sklearn.utils.class_weight import compute_class_weight
+from copy import deepcopy
+
+from gaml.annotations.brattowindow import StandoffLabels
+from gaml.annotations.datasets import RelationSplitSpansIndexesDataset
+from gaml.utilities.torchutils import predict_from_dataloader
+
+from gaml.annotations.models.base import BaseANNRelationModule
+
+# Define model
+class IndexSplitSpansRelationModel(BaseANNRelationModule):
+	def __init__(self, window_pad, hidden, output_labels, entity_labels, allowed_relations, token_indexes, fallback_index, embedding=None, embedding_dim=None, num_embeddings=None):
+		super(IndexSplitSpansRelationModel,self).__init__()
+
+		self.window_pad = window_pad
+		self.hidden = hidden
+		self.token_indexes = token_indexes
+		self.fallback_index = fallback_index
+
+		self.labels = LabelEncoder().fit(output_labels)
+		self.output_num = len(self.labels.classes_)
+
+		self.entity_labels = LabelBinarizer().fit(entity_labels)
+		self.entity_classes_num = len(self.entity_labels.classes_)
+
+		self.allowed_relations = allowed_relations
+
+		if embedding is not None:
+			self.embedding = nn.Embedding.from_pretrained(embedding, freeze=True)
+		else:
+			assert embedding_dim is not None and num_embeddings is not None
+			self.embedding = nn.Embedding(num_embeddings, embedding_dim)
+
+		self.projection = nn.Parameter(0.01*torch.diag(torch.randn(self.embedding.embedding_dim)) + 0.001*torch.randn(self.embedding.embedding_dim, self.embedding.embedding_dim))
+
+		self.pool = nn.LSTM(self.embedding.embedding_dim, 64, bidirectional=True, batch_first=True)
+		self.dense1 = nn.Linear(64*2*5 + self.entity_classes_num*2, self.hidden)
+		self.output_dense = nn.Linear(self.hidden, self.output_num)
+
+	def forward(self, x):
+
+		def process_span(s):
+			idxs,lengths = rnn.pad_packed_sequence(s, padding_value=0, batch_first=True) # batch_size * sequence_length
+			s = self.embedding(idxs) # batch_size * sequence_length * embedding_dim
+			s = torch.matmul(s, self.projection) # Perform projection # batch_size * sequence_length * embedding_dim
+			s = rnn.pack_padded_sequence(s, lengths, batch_first=True, enforce_sorted=False)
+			s = F.relu(self.pool(s)[1][0].permute(1,2,0).reshape(-1, 64*2))
+			return s
+
+		x = tuple(process_span(i) for i in x[:-1])+(x[-1],)
+		x = torch.cat(x,1)
+
+		x = F.relu(self.dense1(x))
+		x = self.output_dense(x)
+		return x
+
+	def make_dataset(self, ann_list):
+		return RelationSplitSpansIndexesDataset(ann_list, self.token_indexes, self.fallback_index, self.labels, self.entity_labels, self.allowed_relations, self.window_pad, cuda=next(self.output_dense.parameters()).is_cuda)
+
+	def compute_class_weight(self, class_weight, dataset):
+		return compute_class_weight(class_weight, self.labels.classes_, dataset.y_labels)
+
+	def make_loss_func(self, criterion, ignore_index=999):
+		return criterion
+
+	def make_metric(self, func):
+		def metric(output, target):
+			output = output.cpu().detach().numpy().argmax(1)
+			target = target.cpu().detach().numpy()
+			return func(output, target)
+		return metric
+
+	def predict(self, anns, batch_size=1, inplace=True):
+		if not inplace:
+			anns = deepcopy(anns)
+		relation_dataset = self.make_dataset([StandoffLabels(a) for p,i,a in anns])
+		relations = predict_from_dataloader(
+				self,
+				relation_dataset.dataloader(batch_size=batch_size, shuffle=False),
+				activation=lambda i: F.softmax(i,dim=1)
+			)
+		relations = self.labels.inverse_transform(relations.argmax(1))
+
+		for pred_label,(ann,start,end) in zip(relations, relation_dataset.origins):
+			if pred_label != 'none':
+				ann.standoff.relation(pred_label, start, end)
+
+		return anns
+
+	def state_dict(self, destination=None, prefix='', keep_vars=False):
+		_state_dict = super(IndexSplitSpansRelationModel, self).state_dict(destination=destination,prefix=prefix,keep_vars=keep_vars)
+		_state_dict['embedding_dim'] = self.embedding.embedding_dim
+		_state_dict['num_embeddings'] = self.embedding.num_embeddings
+		_state_dict['window_pad'] = self.window_pad
+		_state_dict['hidden'] = self.hidden
+		_state_dict['output_labels'] = list(self.labels.classes_)
+		_state_dict['entity_labels'] = list(self.entity_labels.classes_)
+		_state_dict['allowed_relations'] = self.allowed_relations
+		_state_dict['token_indexes'] = self.token_indexes
+		_state_dict['fallback_index'] = self.fallback_index
+		return _state_dict
+
+	def load_from_state_dict(_state_dict):
+		''' Load model from state_dict with arbitrary shape. '''
+		model = IndexSplitSpansRelationModel(
+				_state_dict.pop('window_pad'),
+				_state_dict.pop('hidden'),
+				_state_dict.pop('output_labels'),
+				_state_dict.pop('entity_labels'),
+				_state_dict.pop('allowed_relations'),
+				_state_dict.pop('token_indexes'),
+				_state_dict.pop('fallback_index'),
+				embedding_dim=_state_dict.pop('embedding_dim'),
+				num_embeddings=_state_dict.pop('num_embeddings')
+			)
+		model.load_state_dict(_state_dict)
+		return model
+
+
+if __name__ == '__main__':
+
+	from gaml.utilities import StopWatch
+	stopwatch = StopWatch(memory=True)
+
+	from gaml.utilities.torchutils import save_figs # predict_from_dataloader
+
+	import matplotlib.pyplot as plt
+	plt.switch_backend('agg')
+
+	from gaml.utilities.argparseactions import ArgumentParser,IterFilesAction,FileAction,DirectoryAction
+	from gaml.annotations.bratutils import StandoffConfigAction
+	from gaml.utilities.mlutils import split_data
+	import os
+
+	from gaml.annotations.wordembeddings import WordEmbeddings
+	from gaml.annotations.annmlutils import open_anns
+
+	import sklearn.metrics
+
+	from gaml.annotations.models.training import perform_training,evaluate_relations
+
+	parser = ArgumentParser(description='Train Keras ANN to predict relations in astrophysical text.')
+	parser.add_argument('ann',action=IterFilesAction,recursive=True,suffix='.ann',help='Annotation file or directory containing files (searched recursively).')
+	parser.add_argument('embeddings',action=FileAction, mustexist=True,help='Word embeddings file.')
+	parser.add_argument('modeldir',action=DirectoryAction,mustexist=False,mkdirs=True,help='Directory to use when saving outputs.')
+	parser.add_argument('config',action=StandoffConfigAction,help='Standoff config file for these annotations.')
+	parser.add_argument('-w','--class-weight',action='store_const',const='balanced',help='Flag to indicate that the loss function should be class-balanced for training. Should be used for this model.')
+	parser.add_argument('--train-fractions',action='store_true',help='Flag to indicate that training should be conducted with different fractions of the training dataset.')
+	args = parser.parse_args()
+
+	torch.manual_seed(42)
+
+	modelname = os.path.basename(args.modeldir)
+
+	# Read in data
+	types = ['MeasuredValue','Constraint','ParameterSymbol','ParameterName','ConfidenceLimit','ObjectName','Confidence','Measurement','Name','Property']
+	#types = None
+	anns = open_anns(args.ann,types=types,use_labelled=True)
+	embeddings = WordEmbeddings.open(args.embeddings)
+
+	stopwatch.tick('Opened all files',report=True)
+
+	# Make test/train split
+	# Training set for parameters, dev set for hyper-parameters, test set for evaluation metrics
+	ann_train,ann_dev,ann_test = split_data(anns, (0.6,0.2,0.2), random_state=42)
+
+	# Model parameters
+	window_pad = 5
+	output_labels = list(set(r.type for a in anns for r in a.relations))+['none']
+	entity_labels = list(set(e.type for a in anns for e in a.entities))
+
+	# Training parameters
+	batch_size = 128
+	epochs = 30
+
+	# Generating functions
+	def make_model():
+		return IndexSplitSpansRelationModel(window_pad, 32, output_labels, entity_labels, args.config.relations, embeddings.indexes, embeddings.fallback_index, embedding=torch.from_numpy(embeddings.values)).float().cuda()
+	def make_opt(model):
+		return optim.Adam(model.parameters(), lr=0.001, weight_decay=0.01)
+	def make_loss_func(model, train_dataset):
+		class_weights = model.compute_class_weight(args.class_weight, train_dataset)
+		criterion = nn.CrossEntropyLoss(weight=torch.tensor(class_weights).float().cuda() if args.class_weight else None)
+		return model.make_loss_func(criterion)
+	def make_metrics(model):
+		average = 'macro'
+		f1_score = model.make_metric(lambda o,t: sklearn.metrics.f1_score(t,o,average=average,zero_division=0))
+		precision_score = model.make_metric(lambda o,t: sklearn.metrics.precision_score(t,o,average=average,zero_division=0))
+		recall_score = model.make_metric(lambda o,t: sklearn.metrics.recall_score(t,o,average=average,zero_division=0))
+		return {'f1': f1_score, 'precision': precision_score, 'recall': recall_score}
+
+	model, _, history = perform_training(
+			make_model, (ann_train,ann_dev,ann_test), args.modeldir,
+			make_metrics, make_opt, make_loss_func,
+			batch_size=batch_size, epochs=epochs,
+			patience=25, min_delta=0.0001,
+			modelname=modelname,
+			train_fractions=args.train_fractions,
+			stopwatch=stopwatch)
+
+	### TEST MODEL
+	metrics_dataframe = evaluate_relations(model, ann_test, args.config.relations, batch_size=batch_size)
+	metrics_dataframe.to_csv(os.path.join(args.modeldir,'test_metrics.csv'))
+
+	stopwatch.tick('Finished evaluation',report=True)
+
+	save_figs(history, modelname, args.modeldir)
+
+	stopwatch.report()

@@ -1,0 +1,56 @@
+\((?:[^\)0-9]*\d+[^\)0-9]*)+\)|[A-Z][a-z]+\s+\d+|\d+\s+[A-Z][a-z]+
+
+
+
+
+( e.g. Fuller 1979 )
+
+( e.g. Fuller 1979 , for example )
+
+( Fuller 1979 )
+
+( Fuller et. al. 1979 )
+
+( Fuller , et. al. , 1979 )
+
+( DeVito 2001 )
+
+( Fuller 1979 , DeVito 2001 )
+
+( Freedman et al . 2001 )
+
+( Refsdal 1964 )
+
+Refsdal ( 1964 )
+
+( e.g. , Peebles 1980 )
+
+Kanbur ( 2006a )
+
+2013 Planck
+
+( Melia 2012b )
+
+Postman ( 1992 )
+
+Postman 1992
+
+( e.g . , Tonry et al . 1997 )
+
+( Magira , Jing , & Suto 2000 )
+
+( e.g. , Chokshi & Turner 1992 )
+
+( e.g. , Bryan & Norman 1998 ; Oguri 2007 )
+
+Madore and Freedman ( 1991 )
+
+the Planck Collaboration ( 2014 )
+
+Holzapfel et al . ( 1997b )
+
+( Wiklind & Combes 1995 , 1998 )
+
+( Jungman et al. , 1996b )
+
+( we find this to give a value of 5 )

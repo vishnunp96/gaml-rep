@@ -1,0 +1,115 @@
+T1	ParameterSymbol 902 906	\tau
+T2	ParameterName 876 899	optical depth parameter
+R1	Name Arg1:T2 Arg2:T1	
+T3	ParameterName 1191 1212	cosmological constant
+T4	ConfidenceLimit 1433 1437	68 %
+T5	ParameterSymbol 1459 1483	\Omega _ { b } h ^ { 2 }
+T6	MeasuredValue 1486 1523	0.02267 ^ { +0.00058 } _ { -0.00059 }
+T7	ParameterSymbol 1526 1550	\Omega _ { c } h ^ { 2 }
+T8	MeasuredValue 1553 1570	0.1131 \pm 0.0034
+T9	ParameterSymbol 1573 1593	\Omega _ { \Lambda }
+T10	MeasuredValue 1596 1611	0.726 \pm 0.015
+T11	ParameterSymbol 1614 1623	n _ { s }
+T12	MeasuredValue 1626 1641	0.960 \pm 0.013
+T13	ParameterSymbol 1644 1648	\tau
+T14	MeasuredValue 1651 1666	0.084 \pm 0.016
+T15	ParameterSymbol 1673 1700	\Delta _ { \cal R } ^ { 2 }
+T16	MeasuredValue 1703 1741	( 2.445 \pm 0.096 ) \times 10 ^ { -9 }
+T17	Details 1745 1777	k = 0.002 ~ { } { Mpc ^ { -1 } }
+R2	Measurement Arg1:T5 Arg2:T6	
+R3	Measurement Arg1:T7 Arg2:T8	
+R4	Measurement Arg1:T9 Arg2:T10	
+R5	Measurement Arg1:T11 Arg2:T12	
+R6	Measurement Arg1:T13 Arg2:T14	
+R7	Measurement Arg1:T15 Arg2:T16	
+R8	Condition Arg1:T6 Arg2:T17	
+R9	Condition Arg1:T8 Arg2:T17	
+R10	Condition Arg1:T10 Arg2:T17	
+R11	Condition Arg1:T12 Arg2:T17	
+R12	Condition Arg1:T14 Arg2:T17	
+R13	Condition Arg1:T16 Arg2:T17	
+R14	Confidence Arg1:T16 Arg2:T4	
+R15	Confidence Arg1:T14 Arg2:T4	
+R16	Confidence Arg1:T12 Arg2:T4	
+R17	Confidence Arg1:T10 Arg2:T4	
+R18	Confidence Arg1:T8 Arg2:T4	
+R19	Confidence Arg1:T6 Arg2:T4	
+T18	ParameterSymbol 1803 1817	\sigma _ { 8 }
+T19	MeasuredValue 1820 1835	0.812 \pm 0.026
+T20	ParameterSymbol 1838 1847	H _ { 0 }
+T21	MeasuredValue 1850 1904	70.5 \pm 1.3 { km~ { } s ^ { -1 } ~ { } Mpc ^ { -1 } }
+T22	ParameterSymbol 1907 1921	\Omega _ { b }
+T23	MeasuredValue 1924 1941	0.0456 \pm 0.0015
+T24	ParameterSymbol 1944 1958	\Omega _ { c }
+T25	MeasuredValue 1961 1976	0.228 \pm 0.013
+T26	ParameterSymbol 1979 2003	\Omega _ { m } h ^ { 2 }
+T27	MeasuredValue 2006 2040	0.1358 ^ { +0.0037 } _ { -0.0036 }
+T28	ParameterSymbol 2043 2056	z _ { reion }
+T29	MeasuredValue 2059 2071	10.9 \pm 1.4
+T30	ParameterSymbol 2078 2087	t _ { 0 }
+T31	MeasuredValue 2090 2118	13.72 \pm 0.12 \mbox { Gyr }
+R20	Measurement Arg1:T18 Arg2:T19	
+R21	Measurement Arg1:T20 Arg2:T21	
+R22	Measurement Arg1:T22 Arg2:T23	
+R23	Measurement Arg1:T24 Arg2:T25	
+R24	Measurement Arg1:T26 Arg2:T27	
+R25	Measurement Arg1:T28 Arg2:T29	
+R26	Measurement Arg1:T30 Arg2:T31	
+T32	ParameterName 2142 2164	tensor-to-scalar ratio
+T33	Constraint 2168 2176	r < 0.22
+T34	ConfidenceLimit 2187 2192	95 \%
+T35	ParameterName 2212 2249	evidence for a running spectral index
+T36	ParameterSymbol 2269 2293	dn _ { s } / d \ln { k }
+T37	MeasuredValue 2296 2312	-0.028 \pm 0.020
+T38	ConfidenceLimit 2315 2319	68 %
+R27	Measurement Arg1:T32 Arg2:T33	
+R28	Confidence Arg1:T33 Arg2:T34	
+R29	Name Arg1:T35 Arg2:T36	
+R30	Measurement Arg1:T36 Arg2:T37	
+R31	Confidence Arg1:T37 Arg2:T38	
+T39	ParameterName 2372 2414	( constant ) dark energy equation of state
+T40	ParameterName 2423 2456	spatial curvature of the universe
+T41	Constraint 2459 2479	-0.14 < 1 + w < 0.12
+T42	ConfidenceLimit 2490 2495	95 \%
+T43	Constraint 2508 2541	-0.0179 < \Omega _ { k } < 0.0081
+T44	ConfidenceLimit 2552 2557	95 \%
+R32	Measurement Arg1:T39 Arg2:T41	
+R33	Measurement Arg1:T40 Arg2:T43	
+R34	Confidence Arg1:T43 Arg2:T44	
+R35	Confidence Arg1:T41 Arg2:T42	
+T45	ParameterName 2571 2612	number of relativistic degrees of freedom
+T46	ParameterSymbol 2695 2706	N _ { eff }
+T47	MeasuredValue 2709 2720	4.4 \pm 1.5
+T48	ConfidenceLimit 2723 2727	68 %
+T49	MeasuredValue 2773 2777	3.04
+A1	FromLiterature T49
+A2	AcceptedValue T49
+R36	Name Arg1:T45 Arg2:T46	
+R37	Measurement Arg1:T46 Arg2:T47	
+R38	Confidence Arg1:T47 Arg2:T48	
+R39	Measurement Arg1:T46 Arg2:T49	
+T50	ParameterSymbol 2792 2803	N _ { eff }
+T51	MeasuredValue 2806 2807	0
+A3	Incorrect T51
+T52	ConfidenceLimit 2828 2834	99.5 %
+R40	Measurement Arg1:T50 Arg2:T51	
+R41	Confidence Arg1:T51 Arg2:T52	
+R42	Name Arg1:T45 Arg2:T50	
+T53	ParameterName 2872 2930	physically motivated primordial non-Gaussianity parameters
+T54	Constraint 2935 2968	-9 < f _ { NL } ^ { local } < 111
+T55	ConfidenceLimit 2971 2975	95 %
+T56	Constraint 2985 3020	-151 < f _ { NL } ^ { equil } < 253
+T57	ConfidenceLimit 3023 3027	95 %
+T58	Details 3041 3046	local
+T59	Details 2615 2677	expressed in units of the effective number of neutrino species
+R43	Condition Arg1:T47 Arg2:T59	
+R44	Condition Arg1:T49 Arg2:T59	
+R45	Condition Arg1:T51 Arg2:T59	
+T60	Details 3051 3062	equilateral
+R46	Measurement Arg1:T53 Arg2:T54	
+R47	Confidence Arg1:T54 Arg2:T55	
+R48	Measurement Arg1:T53 Arg2:T56	
+R49	Confidence Arg1:T56 Arg2:T57	
+R50	Condition Arg1:T54 Arg2:T58	
+R51	Condition Arg1:T56 Arg2:T60	
+T61	Constraint 87 95	23 to 94

@@ -1,0 +1,117 @@
+arXiv,ParameterName,Parameter,CentralValue,Uncertainty,Unit,Range,LowerBound,UpperBound,Confidence,NegativeSigma,PositiveSigma,SystematicUncertainty,PercentageUncertainty,RandomUncertainty,NegativeSigmaRandom,PositiveSigmaRandom,NegativeSigmaSystematic,PositiveSigmaSystematic,Details
+709.2195,,H _ { 0 },71,0.04,{ km s } ^ { -1 } Mpc ^ { -1 },,,,1 \sigma,,,,,,,,,,
+709.2535,Hubble constant,H _ { \lower 2.0 pt \hbox { $ \scriptstyle 0 $ } },61.7,,\hbox { km } \hbox% { sec } ^ { -1 } \hbox { Mpc } ^ { -1 },,,,,1.1,1.2,,,,,,,,
+803.0732,,H _ { 0 },70.5,1.3,{ km~ { } s ^ { -1 } ~ { } Mpc ^ { -1 } },,,,,,,,,,,,,,
+905.0695,,H _ { 0 },74.2,3.6,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,4.8 %,,,,,,
+907.166,,H _ { 0 },68.2,2.2,{ km } { s } ^ { -1 } { Mpc } ^ { -1 },,,,,,,,,,,,,,
+909.1807,,H _ { 0 },85,,km s ^ { -1 } Mpc ^ { -1 },,,,68 %,13,14,,,,,,,,
+909.1807,,H _ { 0 },79.3,,km s ^ { -1 } Mpc ^ { -1 },,,,68 %,8.5,6.7,,,,,,,,
+1002.257,Hubble constant,,66,,km s ^ { -1 } Mpc ^ { -1 },,,,,4,6,,,,,,,,"flat Universe with \Omega _ { m } = 0.3 , \Omega _ { \Lambda } = 0.7"
+1002.257,,H _ { 0 },76,,km s ^ { -1 } Mpc ^ { -1 },,,,,3,3,,,,,,,,
+1005.1955,,H _ { 0 },69,11,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,
+astro-ph0004063,,H _ { 0 },58.5,6.3,km s ^ { -1 } Mpc ^ { -1 },,,,90-percent,,,,,,,,,,
+astro-ph0004063,,H _ { 0 },60.9,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,
+astro-ph0004063,,H _ { 0 },58.3,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,
+astro-ph0006170,,h,0.74,,,,0.64,0.86,95 \%,,,,,,,,,,
+astro-ph0006436,,h,,,,,0.6,,,,,,,,,,,,
+astro-ph0006436,,h,,,,,,0.9,,,,,,,,,,,
+astro-ph0007136,Hubble parameter,H _ { 0 },52,,{ km } ~ { } { s ^ { -1 } } ~ { } { Mpc ^ { -1 } },,,,95 \%,8,14,,,,,,,,"\Omega = 0.3 , \Lambda = 0 Universe"
+astro-ph0011478,Hubble Constant,H _ { 0 },73,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,7,,2,,,,,
+astro-ph0102496,Hubble Constant,H _ { 0 },69,,km s ^ { -1 } Mpc ^ { -1 },,,,,16,21,,,,,,,,\Omega _ { M } = 1.0
+astro-ph0102496,,H _ { 0 },84,,km s ^ { -1 } Mpc ^ { -1 },,,,,19,25,,,,,,,,\Omega _ { M } = 0.3 and \Omega _ { \Lambda } = 0.7
+astro-ph0103046,,H _ { 0 },59,,km s ^ { -1 } Mpc ^ { -1 },,,,,7,8,,,,,,,,"a standard CDM model with \Omega _ { M } = 1.0 , \Omega _ { \Lambda } = 0.0"
+astro-ph0103046,,H _ { 0 },65,,km s ^ { -1 } Mpc ^ { -1 },,,,,7,8,,,,,,,,"\Omega _ { M } = 0.3 , \Omega _ { \Lambda } = 0.7"
+astro-ph0111594,,h,0.65,,,,,,,0.27,0.35,,,,,,,,
+astro-ph0201551,,H _ { 0 },44,9,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,\Omega _ { m } = 0.3 flat cosmological model
+astro-ph0205124,,H _ { 0 },71,,{ km s } ^ { - % 1 } { Mpc } ^ { -1 },,,,2 \sigma,,,8,,4,,,,,
+astro-ph0205350,Hubble constant,,60,,km s ^ { -1 } Mpc ^ { -1 },,,,68 %,,,,,,4,4,18,13,"\mbox { $ \Omega _ { M } $ } = 0.3 , \mbox { $ \Omega _ { \Lambda } $ } = 0.7 cosmology"
+astro-ph0205387,Hubble parameter,h,0.69,0.04,,,,,,,,,,,,,,,
+astro-ph0206006,Hubble constants,H _ { 0 },72,8,km/s Mpc,,,,,,,,,,,,,,f _ { b } \mathrel { \raise 1.29 pt \hbox { $ > $ } \mkern - 14.0 mu \lower 2.58 pt \hbox { $ \sim$ } } 0.2 ( 1-sided 68 % confidence )
+astro-ph0206006,,H _ { 0 },65,6,km/s Mpc,,,,95 %,,,,,,,,,,"all available baryons cool and f _ { b } = f _ { b,max }"
+astro-ph0206006,,H _ { 0 },52,6,km/s Mpc,,,,,,,,,,,,,,"If local inventories of cold baryons , f _ { b } \simeq 0.013 / h _ { 70 } , are correct"
+astro-ph0206177,Hubble Constant,H _ { 0 },78,7,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,
+astro-ph0206256,Hubble constant,h,0.665,0.047,,,,,,,,,,,,,,,
+astro-ph0208420,,H _ { 0 },,,km s ^ { -1 } Mpc ^ { -1 },61–65,,,,,,,,,,,,,"\Omega _ { M } , \Omega _ { \Lambda } ) = ( 0.3 , 0.7 )"
+astro-ph0210002,Hubble Constant,H _ { 0 },59,3,km s ^ { -1 } Mpc ^ { -1 },,,,68 %,7,12,,,,,,,,"\Omega _ { m } = 0.3 , \Omega _ { \Lambda } =0.7"
+astro-ph0212497,,h,0.72,,,,,,68 per cent,0.13,0.15,,,,,,,,
+astro-ph0302209,,h,0.72,0.05,,,,,,,,,,,,,,,
+astro-ph0302209,,h,0.71,,,,,,,0.03,0.04,,,,,,,,
+astro-ph0302435,Hubble parameter,H _ { 0 },70,3,~ { } \text { km } ~ { } \text { s } ^ { -1 } \text { Mpc } ^ { -1 },,,,,,,,,,,,,,
+astro-ph0302560,Hubble constant,H _ { 0 },69,12,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,
+astro-ph0306216,Hubble Constant,H _ { 0 },75,,km { s } ^ { -1 } { Mpc } ^ { -1 },,,,68 %,6,7,,,,,,,,"\Omega _ { m } =0.3 , \Omega _ { \Lambda } =0.7"
+astro-ph0306386,Hubble constant,H _ { 0 },68.4,,\hbox { $ { \thinspace km } { \thinspace s } ^ { -1 } $ } { \thinspace Mpc } ^ { -1 },,,,,1.4,2,,,,,,,,
+astro-ph0312263,,H _ { 0 },78,6,\text { km } \text { s } ^ { -1 } \text { Mpc } ^ { -1 },,,,2 \sigma,,,,,,,,,,
+astro-ph0401273,Hubble constant,H _ { 0 },,,km s ^ { -1 } Mpc ^ { -1 },68–74,,,,,,,10 \%,,,,,,
+astro-ph0402466,,h,0.73,,,,,,,0.05,0.09,,,,,,,,
+astro-ph0403688,,H _ { o },71,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,
+astro-ph0405115,,H _ { 0 },70,5,km s ^ { -1 } Mpc ^ { -1 },,,,95 %,,,,,,,,,,the most prominent spiral arms are left unmasked
+astro-ph0405115,,H _ { 0 },61,7,km s ^ { -1 } Mpc ^ { -1 },,,,95 %,,,,,,,,,,the spiral arms are masked out
+astro-ph0405374,Hubble constant,H _ { 0 },69,8,\hbox { $ { \thinspace km } { \thinspace s } ^ { -1 } $ } { \thinspace Mpc } ^ { -1 },,,,,,,,,,,,,,a cosmology with \Omega _ { m } = 0.3 and \Omega _ { \Lambda } = 0.7
+astro-ph0407134,,H _ { 0 },56,23,{ km s ^ { -1 } Mpc ^ { -1 } },,,,,,,,,,,,,,
+astro-ph0407134,,H _ { 0 },49,,\textrm { Km } \textrm { s } ^ { -1 } \textrm { Mpc } ^ { -1 },,,,,11,6,,,,,,,,
+astro-ph0503159,,H _ { 0 },73,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,5,,4,,,,,
+astro-ph0507583,Hubble constant,H _ { 0 },74,2,{ kms } ^ { -1 } { Mpc } ^ { -1 },,,,68 %,,,,,,,,,,flat universe
+astro-ph0512349,Hubble constant,H _ { 0 },76.9,,km s ^ { -1 } Mpc ^ { -1 },,,,68 %,,,,,,3.4,3.9,8,10,"\Omega _ { M } = 0.3 , \Omega _ { \Lambda } =0.7 cosmology"
+astro-ph0512349,,H _ { 0 },73.7,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,3.8,4.6,7.6,9.5,an isothermal \beta model that does not invoke the hydrostatic equilibrium assumption
+astro-ph0512349,,H _ { 0 },77.6,,km s ^ { -1 } Mpc ^ { -1 },,,,68 %,,,,,,4.3,4.8,8.2,10.1,excluding the central 100 kpc from the X-ray data
+astro-ph0603643,Hubble constants,H _ { 0 },74.92,,\mathrm { km } % \mathrm { s } ^ { -1 } \mathrm { Mpc } ^ { -1 },,,,,,,5.06,,2.28,,,,,linear
+astro-ph0603643,Hubble constants,H _ { 0 },74.37,,\mathrm { km } % \mathrm { s } ^ { -1 } \mathrm { Mpc } ^ { -1 },,,,,,,4.92,,2.27,,,,,non-linear LMC PL relation
+astro-ph0609249,,H _ { 0 },74,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,6,,2,,,,,
+astro-ph0609694,Hubble constant,H _ { 0 },70,6,{ km s ^ { -1 } Mpc ^ { -1 } },,,,,,,,,,,,,,
+astro-ph0609694,,H _ { 0 },68,,{ km s ^ { -1 } Mpc ^ { -1 } },,,,,,,8,,6,,,,,
+astro-ph0611934,,H _ { 0 },74,,km s ^ { -1 } Mpc ^ { -1 },,,,1 \sigma,3.5,4,,,,,,,,
+astro-ph9506090,Hubble constant,,,,km s ^ { -1 } Mpc ^ { -1 },42–110,,,68 %,,,,,,,,,,
+astro-ph9604143,Hubble constant,H _ { 0 },65,6,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,3,,,,,
+astro-ph9604151,Hubble Constant,H _ { 0 },66,12,km/s/Mpc,,,,,,,,,,,,,,
+astro-ph9610162,,H _ { 0 },64,13,km/s/Mpc,,,,95 %,,,,,,,,,,\Omega = 1
+astro-ph9611216,,H _ { 0 },51,,km s ^ { -1 } Mpc ^ { -1 },,,,,13,14,,,,,,,,
+astro-ph9612072,,H _ { \circ },69,5,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,
+astro-ph9702152,,H _ { \circ },67,8,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,dispersion averaged along the slit
+astro-ph9702152,Hubble constant,\mbox { H$ { } _ { \circ } $ },62,7,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,
+astro-ph9702224,Hubble constant,H _ { 0 },60,,{ kms } ^ { -1 } { Mpc } ^ { -1 },,,,,23,40,,,,,,,,( q _ { 0 } = \frac { 1 } { 2 } )
+astro-ph9702224,,H _ { 0 },78,,{ kms } ^ { -1 } { Mpc } ^ { -1 },,,,,28,54,,,,,,,,Using the ASCA determined thermal structure and keeping the emission weighted average temperature the same as in the isothermal case
+astro-ph9702224,,H _ { 0 },78,,{ kms } ^ { -1 } { Mpc } ^ { -1 },,,,,40,60,,,,,,,,"Including additional uncertainties due to cluster asphericity , peculiar velocity , IC gas clumping , and astrophysical confusion"
+astro-ph9703123,,H _ { 0 },54,14,{ km s ^ { -1 } Mpc ^ { -1 } },,,,,,,,,,,,,,
+astro-ph9801183,,H _ { 0 },,,\tenrm km s ^ { -1 } Mpc ^ { -1 },42 - 61,,,,,,,16,,,,,,
+astro-ph9801183,,H _ { 0 },47,,\tenrm km s ^ { -1 } Mpc ^ { -1 },,,,,15,23,,,,,,,,"smooth , isothermal gas distribution"
+astro-ph9801256,Hubble constant,H _ { 0 },65,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,2,,,14,20,
+astro-ph9803207,,H _ { 0 },44,4,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,the lens galaxy contains dark matter and has a flat rotation curve
+astro-ph9803207,,H _ { 0 },65,5,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,constant mass-to-light ratio
+astro-ph9805024,,H _ { \circ },62,6,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,
+astro-ph9805080,Hubble constant,H _ { 0 },61,,km s ^ { -1 } Mpc ^ { -1 },,,,2- \sigma,15,13,,,,,,,,
+astro-ph9807326,Hubble constant,H _ { 0 },87,11,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,
+astro-ph9811278,Hubble constant,H _ { 0 } \left ( \cos i / 0.7 \right ) ^ { 1 / 2 },42,9,{ km s } ^ { -1 } { Mpc } ^ { -1 },,,,,,,,,,,,,,
+astro-ph9812157,Hubble Constant,,70,,km/s/Mpc,,,,,,,7,,18,,,,,
+astro-ph9812157,,H _ { o },73,,km/s/Mpc,,,,,,,7,,16,,,,,
+astro-ph9812157,,H _ { o },76,,km/s/Mpc,,,,,,,8,,3,,,,,
+astro-ph9812157,,H _ { o },72,,km/s/Mpc,,,,,,,6,,3,,,,,
+astro-ph9812157,,H _ { o },67,,km/s/Mpc,,,,,,,7,,6,,,,,
+astro-ph9812157,,H _ { o },72,,km/s/Mpc,,,,,,,7,,5,,,,,
+astro-ph9902317,Hubble parameter,H _ { 0 },65,,,,,,,9,15,,,,,,,,\Omega _ { M } = 1
+astro-ph9902317,Hubble parameter,H _ { 0 },76,,,,,,,10,18,,,,,,,,\Omega _ { M } = 0.3
+astro-ph9903472,,h,0.54,,,,,,one sigma,,,,,,,,,,
+astro-ph9903472,,h,,,,,0.48,,68 per cent,,,,,,,,,,
+astro-ph9903472,,h,,,,,,0.59,68 per cent,,,,,,,,,,
+astro-ph9904168,,H _ { 0 },77,,km s ^ { -1 } Mpc ^ { -1 },,,,1- \sigma,15,19,,,,,,,,Einstein-de-Sitter universe
+astro-ph9904347,,H _ { 0 },62,5,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,
+astro-ph9904389,,H _ { 0 },60,2,{ km } { ~ { } s } ^ { -1 } { ~ { } Mpc } ^ { -1 },,,,,,,,,,,,,,
+astro-ph9907062,Hubble constant,H _ { 0 },77,7,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,
+astro-ph9907257,Hubble constant,H _ { 0 },59,,km s ^ { -1 } Mpc ^ { -1 },,,,95 %,,,15,,,7,8,,,"( \Omega _ { M } , \Omega _ { \Lambda } ) = ( 1 , 0 )"
+astro-ph9907258,,H _ { 0 },59,,km s ^ { -1 } Mpc ^ { -1 },,,,2– \sigma,6,7,15,,,,,,,\Omega _ { m } = 1 and \Omega _ { \Lambda } = 0.0
+astro-ph9907258,,H _ { 0 },,,km s ^ { -1 } Mpc ^ { -1 },65 - 63,,,2– \sigma,6,7,15,,,,,,,\Omega _ { m } = 0.3 and \Omega _ { \Lambda } = 0.0–0.7
+astro-ph9907258,,H _ { 0 } ^ { GL },69,7,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,flat universe with \Omega _ { m } = 1
+astro-ph9907258,,H _ { 0 } ^ { GL },74,8,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,\Omega _ { m } = 0.3 and \Omega _ { \Lambda } =0.0–0.7
+astro-ph9907258,,H _ { 0 } ^ { GL },64,11,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,flat universe with \Omega _ { m } = 1
+astro-ph9907258,,H _ { 0 } ^ { GL },68,13,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,\Omega _ { m } = 0.3 and \Omega _ { \Lambda } =0.0–0.7
+astro-ph9907405,Hubble constant,H _ { 0 },65,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,1,,,,,
+astro-ph9907405,,H _ { 0 },65,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,1,,,,,
+astro-ph9907405,,H _ { 0 },65,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,1,,,,,\Omega _ { m } = 0.3
+astro-ph9907405,,H _ { 0 },65,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,1,,,,,
+astro-ph9908149,Hubble constant,H _ { \circ },68,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,5,,2,,,,,
+astro-ph9909260,,H _ { 0 },71,6,km s ^ { -1 } ~ { } { Mpc } ^ { -1 },,,,67 %,,,,,,,,,,
+astro-ph9909260,Hubble Constant,,68,6,km s ^ { -1 } ~ { } { Mpc } ^ { -1 },,,,,,,,,,,,,,
+astro-ph9910340,,H _ { 0 },74,4,km s ^ { -1 } Mpc,,,,,,,,,,,,,,
+astro-ph9911052,Hubble Constant,H _ { 0 },77,,km s ^ { -1 } Mpc ^ { -1 },,,,95 %,,,,,8,,,,,
+astro-ph9912071,,H _ { \circ },57,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,\mbox { $ \Omega _ { M } $ } = 0.3 universe
+astro-ph9912071,,H _ { \circ },52,,km s ^ { -1 } Mpc ^ { -1 },,,,,,,,,,,,,,a flat \mbox { $ \Omega _ { M } $ } = 1 universe
+astro-ph9912071,Hubble constant,,63,,km s ^ { -1 } Mpc ^ { -1 },,,,68 %,,,,,,9,12,21,21,

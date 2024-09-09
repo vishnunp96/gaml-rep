@@ -1,0 +1,1016 @@
+{
+    "H_{0}": [
+        {
+            "value": 100.0,
+            "mention": "...ed for a $H_{0}=100$ km s ${}...",
+            "identifier": "astro-ph/0001495",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...suming a $H_{0}=100$ km s ${}...",
+            "identifier": "astro-ph/0001495",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 10.0,
+            "mention": "...}$ , and $H_{0}$ should be respectively adjusted upward , downward , and upward by 10 \u2019 s of pe...",
+            "identifier": "astro-ph/0001471",
+            "date": "2000-01-26 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...ay value $H_{0}$ of the Hubble constant as $h\\equiv H_{0}/(100~{}$ km $~...",
+            "identifier": "hep-ph/0001309",
+            "date": "2000-01-29 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...$h\\equiv H_{0}/100$ ${\\rm km...",
+            "identifier": "astro-ph/0001088",
+            "date": "2000-01-06 00:00:00"
+        },
+        {
+            "value": 0.0,
+            "mention": "...ation of $H_{0}$ , which shift it in opposite directions : First , if a significant fraction of the volume is filled with relativistic plasma , then the true $H_{0}$ is greater than the one derived under the assumption that $\\Phi_{\\rm gh}=0$ ....",
+            "identifier": "astro-ph/0001429",
+            "date": "2000-01-25 00:00:00"
+        },
+        {
+            "value": 3.0,
+            "mention": "...$\\rho_{c}=3H_{0}^{2}/8\\pi...",
+            "identifier": "hep-ph/0001019",
+            "date": "2000-01-03 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...we take $H_{0}$ = 75 km s ${}^...",
+            "identifier": "astro-ph/0001051",
+            "date": "2000-01-05 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...ing ${\\rm H_{0}}=50~{}{\\rm km...",
+            "identifier": "astro-ph/0001402",
+            "date": "2000-01-23 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...ume ${\\rm H_{0}}=70~{}{\\rm km...",
+            "identifier": "astro-ph/0001402",
+            "date": "2000-01-23 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...er $n\\sim H_{0}^{-1}/50\\,{\\rm Mpc...",
+            "identifier": "astro-ph/0001233",
+            "date": "2000-01-13 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...0$ , and $H_{0}=$ 100 km/s/Mpc...",
+            "identifier": "astro-ph/0001309",
+            "date": "2000-01-18 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...We use $H_{0}\\equiv 50\\,h_{50}\\,...",
+            "identifier": "astro-ph/0001162",
+            "date": "2000-01-10 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...d we use $H_{0}=100\\,h\\,{\\rm...",
+            "identifier": "astro-ph/0001182",
+            "date": "2000-01-11 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...eter and $H_{0}=100h$ km s ${...",
+            "identifier": "astro-ph/0001010",
+            "date": "2000-01-03 00:00:00"
+        },
+        {
+            "value": 3.0,
+            "mention": "...\\rho_{0}/(3H_{0}^{2})$ and...",
+            "identifier": "astro-ph/0001393",
+            "date": "2000-01-22 00:00:00"
+        },
+        {
+            "value": 3.0,
+            "mention": "...G\\rho_{0}=3H_{0}^{2}\\Omega...",
+            "identifier": "astro-ph/0001393",
+            "date": "2000-01-22 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...$h\\equiv H_{0}/100$ km s ${}...",
+            "identifier": "astro-ph/0001393",
+            "date": "2000-01-22 00:00:00"
+        },
+        {
+            "value": 8.0,
+            "mention": "...8 in Paper II , $A(d,q_{0})$ , which is needed for solving the development angle , is no longer an explicit function of $H_{0}$ ....",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 57.0,
+            "mention": "...adopting $H_{0}=57\\mathrm{\\...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 60.0,
+            "mention": "...ates for $H_{0}$ have converged to $\\sim 60\\mathrm{\\...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 57.0,
+            "mention": "...0.5$ and $H_{0}=57\\mathrm{\\...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 21.0,
+            "mention": "...because $H_{0}$ was fixed from external considerations the distance to centre of LSC became to be $R_{\\mathrm{Virgo}}=21\\mathrm{\\...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...based on $H_{0}=75\\mathrm{\\...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...ng about $H_{0}=50\\mathrm{\\...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 60.0,
+            "mention": "...law for $H_{0}=60\\mathrm{\\...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...law for $H_{0}=50\\mathrm{\\...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 10.0,
+            "mention": "...7.5\\times 10^{14}M_{\\sun}R_{\\mathrm{Virgo}}/16.8\\mathrm{\\ Mpc}$ , $H_{0}T_{0}=C(q_...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 3.0,
+            "mention": "...(q_{0})=2/3$ for $q_{0}=0.5$ ) and $H_{0}R_{\\mathrm...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...based on $H_{0}=70\\mathrm{\\...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 65.0,
+            "mention": "...assumed $H_{0}=65\\mathrm{\\...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 60.0,
+            "mention": "...ced that $H_{0}=60\\mathrm{\\...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...nding to $H_{0}=50\\mathrm{\\...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 37.0,
+            "mention": "...sample of 37 bright ellipticals studied by van der Marel ( 1991 ) , we first calculate the total absolute magnitude of NGC 2320 in B using his choice for $H_{0}$ , and fi...",
+            "identifier": "astro-ph/0001506",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...aper are $H_{0}=50$ km s ${}...",
+            "identifier": "astro-ph/0001174",
+            "date": "2000-01-11 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "..., we use $H_{0}=100~{}h~{}{\\r...",
+            "identifier": "astro-ph/0001166",
+            "date": "2000-01-10 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...We use $H_{0}=100\\,h$...",
+            "identifier": "astro-ph/0001269",
+            "date": "2000-01-14 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...ogy of ( $H_{0}$ , ${\\Omega}_{m}$ , ${\\Omega}_{k}$ , ${\\Omega}_{\\Lambda}$ ) = ( 50 km s ${}^...",
+            "identifier": "astro-ph/0001488",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...arameter $H_{0}=h\\times 100$ kms ${}^...",
+            "identifier": "astro-ph/0001403",
+            "date": "2000-01-23 00:00:00"
+        },
+        {
+            "value": 0.0,
+            "mention": "...Here , $H_{0}=H(z=0)$ is the...",
+            "identifier": "gr-qc/0001066",
+            "date": "2000-01-21 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...( here $h=H_{0}/100$ km s ${}...",
+            "identifier": "gr-qc/0001066",
+            "date": "2000-01-21 00:00:00"
+        },
+        {
+            "value": 0.0,
+            "mention": "..._{\\Lambda,0}$ contains the term $-3H_{0}\\dot{F}_{0...",
+            "identifier": "gr-qc/0001066",
+            "date": "2000-01-21 00:00:00"
+        },
+        {
+            "value": 10.0,
+            "mention": "...is $R^{2}H_{0}^{2}\\sim 10^{-5}$ ....",
+            "identifier": "gr-qc/0001066",
+            "date": "2000-01-21 00:00:00"
+        },
+        {
+            "value": 1.0,
+            "mention": "...\\Phi}_{0}/H_{0}$ , whereas $\\dot{G}_{\\rm eff}/G_{\\rm eff}\\simeq\\lambda\\,H_{0}\\,[1-(d^{2}F/d...",
+            "identifier": "gr-qc/0001066",
+            "date": "2000-01-21 00:00:00"
+        },
+        {
+            "value": 2.0,
+            "mention": "...}\\lesssim|2\\dot{G}_{\\rm eff}/H_{0}G_{\\rm eff...",
+            "identifier": "gr-qc/0001066",
+            "date": "2000-01-21 00:00:00"
+        },
+        {
+            "value": 6.0,
+            "mention": "...}\\lesssim 6F_{0}H_{0}^{2}$ ....",
+            "identifier": "gr-qc/0001066",
+            "date": "2000-01-21 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...e assume $H_{0}=50$ km s ${}...",
+            "identifier": "astro-ph/0001119",
+            "date": "2000-01-07 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "..., for $h=H_{0}/(100\\,{\\rm km}...",
+            "identifier": "astro-ph/0001191",
+            "date": "2000-01-11 00:00:00"
+        },
+        {
+            "value": 3.0,
+            "mention": "...ic field $H_{0}$ in the range $(3\\div 10)\\t...",
+            "identifier": "astro-ph/0001377",
+            "date": "2000-01-21 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...We adopt $H_{0}=75\\,$ kms ${...",
+            "identifier": "astro-ph/0001413",
+            "date": "2000-01-24 00:00:00"
+        },
+        {
+            "value": 65.0,
+            "mention": "...ogy with $H_{0}=65$ km s ${}...",
+            "identifier": "astro-ph/0001008",
+            "date": "2000-01-03 00:00:00"
+        },
+        {
+            "value": 65.0,
+            "mention": "...38 Mpc ( $H_{0}$ = 65 km s ${}^...",
+            "identifier": "astro-ph/0001008",
+            "date": "2000-01-03 00:00:00"
+        },
+        {
+            "value": 65.0,
+            "mention": "...11 Mpc ( $H_{0}$ = 65 km s ${}^...",
+            "identifier": "astro-ph/0001008",
+            "date": "2000-01-03 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...0.5$ and $H_{0}=50$ km s ${}...",
+            "identifier": "astro-ph/0001289",
+            "date": "2000-01-17 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...We adopt $H_{0}=50$ km s ${}...",
+            "identifier": "astro-ph/0001030",
+            "date": "2000-01-04 00:00:00"
+        },
+        {
+            "value": 65.0,
+            "mention": "...\u00eetre are $H_{0}=65\\,\\mathrm{...",
+            "identifier": "astro-ph/0001398",
+            "date": "2000-01-22 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...mates of $H_{0}=70~{}{\\rm km...",
+            "identifier": "astro-ph/0001154",
+            "date": "2000-01-10 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...91 ) and $H_{0}=70$ $\\,{\\rm...",
+            "identifier": "astro-ph/0001154",
+            "date": "2000-01-10 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...pc , for $H_{0}=75$ km s ${}...",
+            "identifier": "astro-ph/0001277",
+            "date": "2000-01-15 00:00:00"
+        },
+        {
+            "value": 1.0,
+            "mention": "...pothesis $H_{0}$ that an object with feature vector $\\vec{x}$ belongs to class $\\Omega_{i}$ at significance level $1-\\beta$ ,...",
+            "identifier": "astro-ph/0001378",
+            "date": "2000-01-21 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...en to be $H_{0}=50$ km ${\\rm...",
+            "identifier": "astro-ph/0001067",
+            "date": "2000-01-05 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...dopted , $H_{0}=50$ km ${\\rm...",
+            "identifier": "astro-ph/0001067",
+            "date": "2000-01-05 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...kpc for $H_{0}=75~{}kms^{-1...",
+            "identifier": "astro-ph/0001290",
+            "date": "2000-01-17 00:00:00"
+        },
+        {
+            "value": 3.0,
+            "mention": "...M^{4}\\sim 3H_{0}^{2}m_{Pl}...",
+            "identifier": "astro-ph/0001354",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 3.0,
+            "mention": "...}\\lesssim 3H_{0}=5\\times 1...",
+            "identifier": "astro-ph/0001354",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 1.0,
+            "mention": "...(0,z_{S})(1+z_{S}))^{3}(cH_{0}^{-1})^{-3...",
+            "identifier": "astro-ph/0001354",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...assuming $H_{0}=75\\>\\mbox{km...",
+            "identifier": "astro-ph/0001520",
+            "date": "2000-01-30 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...-19$ for $H_{0}=75\\>\\mbox{km...",
+            "identifier": "astro-ph/0001520",
+            "date": "2000-01-30 00:00:00"
+        },
+        {
+            "value": 4.0,
+            "mention": "...a(\\chi)=3/4ac^{-2}H_{0}^{2}\\Omega...",
+            "identifier": "astro-ph/0001240",
+            "date": "2000-01-13 00:00:00"
+        },
+        {
+            "value": 357.0,
+            "mention": "...estimate $H_{0}$ : B 0218+357 ( Biggs e...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 1998.0,
+            "mention": "...1998 ) ; preliminary $H_{0}$ estimate...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 61.0,
+            "mention": "...es yield $H_{0}=61_{-15}^{+1...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 77.0,
+            "mention": "...es yield $H_{0}=77_{-24}^{+2...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 5.0,
+            "mention": "...In \u00a75 we present new models that match all data , including the arcs , and discuss their implications for the properties of the lens galaxy and cluster and for $H_{0}$ ....",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 6.0,
+            "mention": "...In \u00a76 we summarize our results and discuss prospects for further improving the constraints on this lens system and on $H_{0}$ ....",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 1.0,
+            "mention": "...value of $H_{0}$ depends weakly on the other cosmological parameters ; we quote results assuming $\\Omega_{0}=1$ and $\\La...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 1.0,
+            "mention": "...implies $H_{0}\\propto(1-\\kappa_{c...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...we write $H_{0}=100\\,h\\,\\hbox...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 80.0,
+            "mention": "...btaining $H_{0}\\lesssim 80$ km s ${}...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...where $h=H_{0}/(100\\,\\hbox{km...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 1.0,
+            "mention": "...es of $h/(1-\\kappa_{clus})$ can be translated into actual estimates for $H_{0}$ using th...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...eter ( $h=H_{0}/100$ km/sec )...",
+            "identifier": "astro-ph/0001061",
+            "date": "2000-01-05 00:00:00"
+        },
+        {
+            "value": 3.0,
+            "mention": "...(M,z_{c})=3H_{0}^{2}\\Omega...",
+            "identifier": "astro-ph/0001366",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...$ , with $H_{0}=70$ km s ${}...",
+            "identifier": "astro-ph/0001468",
+            "date": "2000-01-26 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "..., assume $H_{0}=100h$ km/s/Mp...",
+            "identifier": "astro-ph/0001356",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 3.0,
+            "mention": "...rm cr}(0)=3H_{0}^{2}/(8\\pi...",
+            "identifier": "astro-ph/0001522",
+            "date": "2000-01-31 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...( $H_{0}=75~{}{\\rm{km...",
+            "identifier": "astro-ph/0001514",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...a=0$ and $H_{0}=50$ km s ${}...",
+            "identifier": "astro-ph/0001369",
+            "date": "2000-01-21 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...$\\mathrm{H_{0}}=75\\,\\mathrm{...",
+            "identifier": "astro-ph/0001424",
+            "date": "2000-01-25 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...$\\mathrm{H_{0}}=75\\,\\mathrm{...",
+            "identifier": "astro-ph/0001424",
+            "date": "2000-01-25 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...$\\mathrm{H_{0}}=75\\,\\mathrm{...",
+            "identifier": "astro-ph/0001424",
+            "date": "2000-01-25 00:00:00"
+        },
+        {
+            "value": 3.0,
+            "mention": "...density $3H_{0}^{2}/8\\pi...",
+            "identifier": "astro-ph/0001303",
+            "date": "2000-01-18 00:00:00"
+        },
+        {
+            "value": 60.0,
+            "mention": "....04$ and $H_{0}=60$ km/s/Mpc...",
+            "identifier": "astro-ph/0001207",
+            "date": "2000-01-12 00:00:00"
+        },
+        {
+            "value": 60.0,
+            "mention": "....03$ and $H_{0}=60$ km/s/Mpc...",
+            "identifier": "astro-ph/0001207",
+            "date": "2000-01-12 00:00:00"
+        },
+        {
+            "value": 65.0,
+            "mention": "...region , $H_{0}=65kms^{-1}Mp...",
+            "identifier": "astro-ph/0001032",
+            "date": "2000-01-04 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...ne ( for $H_{0}=75\\;\\mbox{\\r...",
+            "identifier": "astro-ph/0001296",
+            "date": "2000-01-17 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...e assume $H_{0}=50$ km s ${}...",
+            "identifier": "astro-ph/0001107",
+            "date": "2000-01-07 00:00:00"
+        },
+        {
+            "value": 1.0,
+            "mention": "...ore , $z=(1-3H_{0}t/2)^{-2/3...",
+            "identifier": "astro-ph/0001364",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...e assume $H_{0}=70$ km s ${}...",
+            "identifier": "astro-ph/0001521",
+            "date": "2000-01-31 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...$h\\equiv H_{0}/100\\;{\\rm{km\\...",
+            "identifier": "astro-ph/0001089",
+            "date": "2000-01-06 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...rameters $H_{0}=70$...",
+            "identifier": "astro-ph/0001299",
+            "date": "2000-01-17 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...pted for $H_{0}=70$ km s ${}...",
+            "identifier": "astro-ph/0001299",
+            "date": "2000-01-17 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...}$ kpc ; $H_{0}=70\\ h_{70}$...",
+            "identifier": "astro-ph/0001143",
+            "date": "2000-01-10 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...assuming $H_{0}=50$ km s ${}...",
+            "identifier": "astro-ph/0001143",
+            "date": "2000-01-10 00:00:00"
+        },
+        {
+            "value": 0.0,
+            "mention": "...f $H$ as $H_{0}=H(z=0)=100\\,h$...",
+            "identifier": "astro-ph/0001003",
+            "date": "2000-01-01 00:00:00"
+        },
+        {
+            "value": 60.0,
+            "mention": "...For $H_{0}=60\\ km\\ s^{-...",
+            "identifier": "astro-ph/0001357",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 60.0,
+            "mention": "...we adopt $H_{0}=60$ km s ${}...",
+            "identifier": "astro-ph/0001357",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 8.0,
+            "mention": "...}=\\rho_{0}8\\pi G/3H_{0}^{2}$ , $\\...",
+            "identifier": "astro-ph/0001357",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 65.0,
+            "mention": "...del with $H_{0}=65\\ km\\ s^{-...",
+            "identifier": "astro-ph/0001357",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...0$ , and $H_{0}=75h_{75}$ km...",
+            "identifier": "astro-ph/0001022",
+            "date": "2000-01-03 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...ed to be $H_{0}=50$ km s ${}...",
+            "identifier": "astro-ph/0001349",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 67.0,
+            "mention": "...-0.38$ ( $H_{0}=67$ Km s ${}...",
+            "identifier": "astro-ph/0001043",
+            "date": "2000-01-04 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...$h\\equiv H_{0}/100\\;{\\rm km}...",
+            "identifier": "astro-ph/0001099",
+            "date": "2000-01-06 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...ogy with $H_{0}=50~{}h_{50}$...",
+            "identifier": "astro-ph/0001394",
+            "date": "2000-01-21 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...( using $H_{0}=50$ km s ${}...",
+            "identifier": "astro-ph/0001201",
+            "date": "2000-01-11 00:00:00"
+        }
+    ],
+    "Hubble constant": [
+        {
+            "value": 100.0,
+            "mention": "...e present Hubble constant in units of $100{\\rm\\,km\\,...",
+            "identifier": "astro-ph/0001249",
+            "date": "2000-01-14 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...}$ is the Hubble constant in units of 70 km s ${}^...",
+            "identifier": "astro-ph/0001318",
+            "date": "2000-01-18 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "....65,$ the Hubble constant in unities of 100 kms ${}^{...",
+            "identifier": "astro-ph/0001219",
+            "date": "2000-01-12 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...h$ is the Hubble constant in units of 100 km/s/Mpc...",
+            "identifier": "astro-ph/0001440",
+            "date": "2000-01-25 00:00:00"
+        },
+        {
+            "value": 60.0,
+            "mention": "...t for the Hubble constant $H_{0}>$ 60 km s ${}^...",
+            "identifier": "astro-ph/0001162",
+            "date": "2000-01-10 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...The Hubble constant was set at 50 km s ${}^...",
+            "identifier": "astro-ph/0001276",
+            "date": "2000-01-15 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...h$ is the Hubble constant in units of 100 kms ${}^{...",
+            "identifier": "astro-ph/0001393",
+            "date": "2000-01-22 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...e present Hubble constant in units of ${\\rm 100km~{}s^{-1...",
+            "identifier": "astro-ph/0001169",
+            "date": "2000-01-11 00:00:00"
+        },
+        {
+            "value": 55.0,
+            "mention": "...nded to a Hubble constant $H_{0}\\approx 55\\mathrm{\\...",
+            "identifier": "astro-ph/0001475",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...assume a Hubble constant H ${}_{0}$ = 100 km s ${}^...",
+            "identifier": "astro-ph/0001256",
+            "date": "2000-01-14 00:00:00"
+        },
+        {
+            "value": 1.0,
+            "mention": "...$N=2$ $U(1)$ -gauged massless supergravities [ ] with an arbitrary number of vector multiplets and any choice of the cubic surface , the \u2018 Hubble constant \u2019 $H_{r}$...",
+            "identifier": "hep-th/0001071",
+            "date": "2000-01-11 00:00:00"
+        },
+        {
+            "value": 1.0,
+            "mention": "...and the Hubble constant by $H_{\\rm o}\\equiv h100$ km/s/Mpc ; unless otherwise indicated , $h=1/2$ and $\\...",
+            "identifier": "astro-ph/0001267",
+            "date": "2000-01-14 00:00:00"
+        },
+        {
+            "value": 65.0,
+            "mention": "..., and the Hubble constant $H_{0}=65$ km s ${}...",
+            "identifier": "astro-ph/0001149",
+            "date": "2000-01-10 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...ly on the Hubble constant , for which we have adopted a value of $70$ $\\,{\\rm...",
+            "identifier": "astro-ph/0001154",
+            "date": "2000-01-10 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...e adopt a Hubble constant of $H_{0}=75$ km s ${}...",
+            "identifier": "astro-ph/0001082",
+            "date": "2000-01-06 00:00:00"
+        },
+        {
+            "value": 60.0,
+            "mention": "...ich yield Hubble constants of $\\sim 60,100$ km s...",
+            "identifier": "astro-ph/0001496",
+            "date": "2000-01-27 00:00:00"
+        },
+        {
+            "value": 65.0,
+            "mention": "...train the Hubble constant to be $H_{0}\\lesssim 65\\eta^{-1/8...",
+            "identifier": "astro-ph/0001298",
+            "date": "2000-01-17 00:00:00"
+        },
+        {
+            "value": 3.0,
+            "mention": "...t , $z$ , Hubble constant , $H_{0}$ , matter density , $\\Omega_{M}$ , and cosmological constant , $\\Omega_{\\Lambda}=\\Lambda/(3H_{0}^{2})...",
+            "identifier": "astro-ph/0001298",
+            "date": "2000-01-17 00:00:00"
+        },
+        {
+            "value": 1999.0,
+            "mention": "...1999 ) concluded that the biggest uncertainty in the Hubble constant , $H_{0}$...",
+            "identifier": "astro-ph/0001470",
+            "date": "2000-01-26 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...ssume the Hubble constant of $H_{0}=50$ km s ${}...",
+            "identifier": "astro-ph/0001050",
+            "date": "2000-01-05 00:00:00"
+        },
+        {
+            "value": 65.0,
+            "mention": "...mensional Hubble constant ( $H_{0}=65~{}{\\rm Km...",
+            "identifier": "astro-ph/0001469",
+            "date": "2000-01-26 00:00:00"
+        },
+        {
+            "value": 25.0,
+            "mention": "...lead to a 25 % uncertainty in the derived value of the Hubble constant , there a...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 561.0,
+            "mention": "...In Q 0957+561 , the lens consists of a brightest cluster galaxy and its parent cluster , and the value of the Hubble constant depends o...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 44.0,
+            "mention": "...s for the Hubble constant ( $H_{0}=44\\pm 4$ km...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 561.0,
+            "mention": "...he Q 0957+561 lens and discuss the implications for lens models and the Hubble constant ....",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 25.0,
+            "mention": "...is a $\\pm 25\\%$ variation in inferred values for the Hubble constant ; this is...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 6.0,
+            "mention": "...y and the Hubble constant ( Figures 6c , 7c , a...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 561.0,
+            "mention": "...se Q 0957+561 to constrain the Hubble constant , we migh...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 25.0,
+            "mention": "...y leave a 25 % uncertainty in the inferred value of the Hubble constant ....",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 1.0,
+            "mention": "...) and the Hubble constant combination $h/(1-\\kappa_{c...",
+            "identifier": "astro-ph/0001500",
+            "date": "2000-01-28 00:00:00"
+        },
+        {
+            "value": 5.0,
+            "mention": "...{*}=-19.7+5\\log h$ , where the Hubble constant has been...",
+            "identifier": "astro-ph/0001141",
+            "date": "2000-01-09 00:00:00"
+        },
+        {
+            "value": 2000.0,
+            "mention": "...2000 ) by estimating the Hubble constant $H_{0}$ f...",
+            "identifier": "astro-ph/0001061",
+            "date": "2000-01-05 00:00:00"
+        },
+        {
+            "value": 10.0,
+            "mention": "..._{c}^{3}/(10GH(z_{c}))$ , where $H$ denotes the Hubble constant , ( e.g ....",
+            "identifier": "astro-ph/0001366",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...s paper a Hubble constant $H_{0}$ = 75 km $\\,$ s...",
+            "identifier": "astro-ph/0001054",
+            "date": "2000-01-05 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...) and the Hubble constant $H_{0}=100h\\ {\\rm km...",
+            "identifier": "astro-ph/0001308",
+            "date": "2000-01-18 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...th with a Hubble constant of 70 km s ${}^...",
+            "identifier": "astro-ph/0001106",
+            "date": "2000-01-07 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...gy with a Hubble constant $H_{0}=100h$ km s ${...",
+            "identifier": "astro-ph/0001522",
+            "date": "2000-01-31 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...( A Hubble constant $H_{0}=50$ km s ${}...",
+            "identifier": "astro-ph/0001235",
+            "date": "2000-01-13 00:00:00"
+        },
+        {
+            "value": 0.0,
+            "mention": "...t past 10,000 km s ${}^{-1}$ to determine the Hubble constant ( see for...",
+            "identifier": "astro-ph/0001248",
+            "date": "2000-01-13 00:00:00"
+        },
+        {
+            "value": 10.0,
+            "mention": "...ining the Hubble constant and the baryonic content of the universe finally converged at a consensus range of values which indicates that at the present epoch the bulk of the universe \u2019 s baryons is in the form of a warm $\\sim$ 10 ${}^{6}$...",
+            "identifier": "astro-ph/0001127",
+            "date": "2000-01-08 00:00:00"
+        },
+        {
+            "value": 1.0,
+            "mention": "...) and the Hubble constant ( $H_{0}$ ) , whilst its position depends on the total density of the universe ( $\\Omega_{0}$ , including the contribution of a cosmological constant ) , and is expected to occur on an angular scale $\\sim 1^{o}$ if $...",
+            "identifier": "astro-ph/0001292",
+            "date": "2000-01-17 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...nd on the Hubble constant ( $h$ in units of 100 km sec ${...",
+            "identifier": "astro-ph/0001045",
+            "date": "2000-01-04 00:00:00"
+        },
+        {
+            "value": 1.0,
+            "mention": "...Omega_{m}=1$ , but only if the Hubble constant is $h=0.5...",
+            "identifier": "astro-ph/0001045",
+            "date": "2000-01-04 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "..., and the Hubble constant in units of 100 km s ${}^...",
+            "identifier": "astro-ph/0001076",
+            "date": "2000-01-06 00:00:00"
+        },
+        {
+            "value": 75.0,
+            "mention": "...out , the Hubble constant is 75 km s ${}^...",
+            "identifier": "astro-ph/0001140",
+            "date": "2000-01-09 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...we use a Hubble constant of $H_{0}=100h$ km s ${...",
+            "identifier": "astro-ph/0001364",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 1.0,
+            "mention": "...)$ is the Hubble constant at redshift $z$ , given by $H(z)=H_{0}(1+z)\\sqrt{1...",
+            "identifier": "astro-ph/0001364",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...h$ is the Hubble constant in units of $100$ km s ${}...",
+            "identifier": "astro-ph/0001521",
+            "date": "2000-01-31 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...assume a Hubble constant $H_{0}=70\\mbox{ km...",
+            "identifier": "astro-ph/0001326",
+            "date": "2000-01-18 00:00:00"
+        },
+        {
+            "value": 70.0,
+            "mention": "...ssume the Hubble constant to be $H_{0}=70\\ h_{70}$...",
+            "identifier": "astro-ph/0001143",
+            "date": "2000-01-10 00:00:00"
+        },
+        {
+            "value": 50.0,
+            "mention": "...es of the Hubble constant put it within the range 50 \u2013 70 km s...",
+            "identifier": "astro-ph/0001357",
+            "date": "2000-01-20 00:00:00"
+        },
+        {
+            "value": 100.0,
+            "mention": "...e adopt a Hubble constant of 100 $h$ km s...",
+            "identifier": "astro-ph/0001071",
+            "date": "2000-01-05 00:00:00"
+        }
+    ],
+    "Hubble Constant": [
+        {
+            "value": 21.0,
+            "mention": "...ct on the Hubble Constant , which is based on Cepheid distances to 21 spiral ga...",
+            "identifier": "astro-ph/0001154",
+            "date": "2000-01-10 00:00:00"
+        }
+    ]
+}

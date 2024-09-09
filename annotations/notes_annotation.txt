@@ -1,0 +1,51 @@
+Doesn't seem like the best idea to have the annotators subdivide long-form names. Too much detail too quickly.
+Perhaps have a second pass of annotation? -> Will probably need a better notion of different forms/syntax (object-property not enough).
+
+How to deal with parameter names inside constraints?
+-> Easy to extract, so don't bother.
+-> But do need to think about how this interfaces with Name/Measurement relations
+
+Do we want people to annotate *all* parameter names and symbols, even those which do not relate to a measurement?
+-> More data?
+
+How do we want to formalise Detail annotations?
+Often very useful information, but so many different kinds of information can fall into this category.
+
+For finding papers:
+	Select papers with measurement patterns (with either units or uncertainty?) in abstract
+	And papers with measurement pattern in section titled Results|Summary|Conclusion
+
+Abstracts aren't going to give us enough data for symbol definitions. How could we narrow this down?
+-> Second pass of annotation? Find instances of parameter symbols in the body of paper, and ask if it's a definition
+
+How do we set up this annotation?
+-> How did Pontus do it for his biomed stuff?
+-> Is mechanical turk set up for this stuff?
+Email UCL CS Finance
+
+How much of an issue is the bad line-splitting in the converted text?
+
+Ask Pontus about a new input to a NN based on origin node in XML tree.
+
+Unconfirmed annotation tag? -> Color to indicate
+
+
+
+
+
+
+
+Need a way to annotate a link to an object. As in, "measured virial mass" needs to be linked to "SJ4321" or something.
+
+Alternatively, need a flag to indicate that measurement is related to a specific sample/catalogue.
+
+
+
+Object->Object Equivalence annotation
+Make it so that a Measurement can be the end point of a Condition
+Sub-Object Relation
+
+
+
+
+rsync -r -m --include='**/sample1/*' --include='*/' --exclude='*' asteria:/var/www/data/annotators . && mv annotators sample1

@@ -1,0 +1,14 @@
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+circle {
+  fill: none;
+  stroke-width: 2.5px;
+}
+
+.d3 {
+    background: #222;
+    overflow:hidden;
+}

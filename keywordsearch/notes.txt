@@ -1,0 +1,50 @@
+# \pm #
+# ^ { +#  } _ { -#  }
+# _ { -#  } ^ { +#  }
+# < ? < #
+? < #
+? > #
+# < ? [Probably not]
+# > ? [Probably not]
+= # [Do we want to ignore this as it is likely not a measurement, but a statement? But we do also want statements...]
+# ( # , #  ) [Upper and lower bounds]
+# \pm # (r) \pm # (s)
+# \pm # ( { random  } , 2 \sigma  ) \pm # ( { systematic  }  )
+#-# [Range]
+# \pm # \pm # ( text  ) [e.g. "random + systematic"]
+# ^ { +#  } _ { -#  } \pm #
+is less than #
+is greater than #
+= ( # \pm #  )
+# \pm # %
+( # \pm #  ) \times 10 ^ { #  }
+# { \pm  } #
+# \pm # ( [statistical|random]  ) \pm # ( systematic  )
+# \pm ^ { #  } _ { #  }
+# \pm # \mathrm { ( random  )  } \pm # \mathrm { ( systematic  )  }
+# \pm # ( { stat .  }  ) \pm # ( { syst .  }  )
+# \pm # \times 10 ^ { #  }
+between #-#
+# \pm # ( statistical  ) [unit] ( \pm # total error  )
+# ^ { +#  } _ { -#  } \times 10 ^ { #  }
+[measurement, errors, and unit] (statistical followed by systematic)
+72 \pm 9 _ { r } \pm 7 _ { s }
+
+
+
+
+Need a way of ignoring {  } ~ \text \hbox \thinspace \textrm \mathrm $ in the middle of these structures
+	Any \text which is not a Greek letter?
+< > could also be \gt \lt \geq \leq
+Anything followed by:
+	( 1- /sigma  )
+	at # % confidence
+	at the # % confidence level
+	( # % C.L.  )
+	( # % C.L. ; \Omega _ { m  } = 0.3  )
+	( # % confidence  )
+	( 1 \sigma , [text]  )
+
+Units use ^ {  } ~ A-Za-z0-9 \text
+Can we make a bracket-aware substitution of \text{ ?  } ?
+Units might have "per" written directly

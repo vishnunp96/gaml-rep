@@ -1,0 +1,2693 @@
+[
+ {
+  "normalised": "57.0 ^ +13.999999999999998 _ -11.0 (95 % statistical) ^ +26.0 _ -15.0 (systematic) km s^-1 Mpc^-1",
+  "value": 57.0,
+  "posunc": 29.5296461204668,
+  "negunc": 18.601075237738275,
+  "arxiv": "astro-ph/0001533",
+  "date": "2000-01-31",
+  "match": "57 ^ { +14 } _ { -11 } ( 95 % statistical ) ^ { +26 } _ { -15 } ( systematic ) km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "74.0 ^ +18.0 _ -15.0 (95 % statistical) \\pm 22.0 (systematic) km s^-1 Mpc^-1",
+  "value": 74.0,
+  "posunc": 28.42534080710379,
+  "negunc": 26.627053911388696,
+  "arxiv": "astro-ph/0001533",
+  "date": "2000-01-31",
+  "match": "74 ^ { +18 } _ { -15 } ( 95 % statistical ) ^ { +22 } _ { -22 } ( systematic ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "73.0 \\pm 4.0 (statistical) \\pm 5.0 (systematic) km s^-1 Mpc^-1",
+  "value": 73.0,
+  "posunc": 6.4031242374328485,
+  "negunc": 6.4031242374328485,
+  "arxiv": "astro-ph/0503159",
+  "date": "2005-03-07",
+  "match": "73 \\pm 4 ( statistical ) \\pm 5 ( systematic ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "55.99999999999999 \\pm 4.0 km s^-1 Mpc^-1",
+  "value": 55.99999999999999,
+  "posunc": 4.0,
+  "negunc": 4.0,
+  "arxiv": "astro-ph/0503242",
+  "date": "2005-03-10",
+  "match": "56 \\pm 4 km / s / Mpc ."
+ },
+ {
+  "normalised": "72.0 \\pm 4.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 4.0,
+  "negunc": 4.0,
+  "arxiv": "astro-ph/0503647",
+  "date": "2005-03-30",
+  "match": "72 \\pm 4 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "71.0 \\pm 6.0 km s^-1 Mpc^-1",
+  "value": 71.0,
+  "posunc": 6.0,
+  "negunc": 6.0,
+  "arxiv": "astro-ph/0011109",
+  "date": "2000-11-04",
+  "match": "71 \\pm 6 km/sec/Mpc for an"
+ },
+ {
+  "normalised": "64.0 \\pm 4.0 km s^-1 Mpc^-1",
+  "value": 64.0,
+  "posunc": 4.0,
+  "negunc": 4.0,
+  "arxiv": "astro-ph/0011109",
+  "date": "2000-11-04",
+  "match": "64 \\pm 4 km/sec/Mpc for a"
+ },
+ {
+  "normalised": "69.0 ^ +13.0 _ -19.0 km s^-1 Mpc^-1",
+  "value": 69.0,
+  "posunc": 13.0,
+  "negunc": 19.0,
+  "arxiv": "astro-ph/0011142",
+  "date": "2000-11-07",
+  "match": "69 ^ { +13 } _ { -19 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "76.0 \\pm 1.3 (1 - \\sigma statistical) \\pm 6.0 (systematic) km s^-1 Mpc^-1",
+  "value": 76.0,
+  "posunc": 6.139218191268331,
+  "negunc": 6.139218191268331,
+  "arxiv": "astro-ph/0011288",
+  "date": "2000-11-15",
+  "match": "76 \\pm 1.3 ( 1- \\sigma statistical ) \\pm 6 ( systematic ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "72.0 \\pm 2.3 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 2.3,
+  "negunc": 2.3,
+  "arxiv": "astro-ph/0011288",
+  "date": "2000-11-15",
+  "match": "72 \\pm 2.3 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "73.0 \\pm 2.0 (r) \\pm 6.999999999999999 (s) km s^-1 Mpc^-1",
+  "value": 73.0,
+  "posunc": 7.280109889280517,
+  "negunc": 7.280109889280517,
+  "arxiv": "astro-ph/0011478",
+  "date": "2000-11-26",
+  "match": "73 \\pm 2 ( r ) \\pm 7 ( s ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "73.0 \\pm 2.0 (r) \\pm 6.999999999999999 (s) km s^-1 Mpc^-1",
+  "value": 73.0,
+  "posunc": 7.280109889280517,
+  "negunc": 7.280109889280517,
+  "arxiv": "astro-ph/0011567",
+  "date": "2000-11-30",
+  "match": "73 \\pm 2 ( r ) \\pm 7 ( s ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "59.00000000000001 ^ +12.0 _ -6.999999999999999 \\pm 3.0 km s^-1 Mpc^-1",
+  "value": 59.00000000000001,
+  "posunc": 12.36931687685298,
+  "negunc": 7.615773105863908,
+  "arxiv": "astro-ph/0210002",
+  "date": "2002-09-30",
+  "match": "59 ^ { +12 } _ { -7 } \\pm 3 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "72.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/0012376",
+  "date": "2000-12-18",
+  "match": "72 \\pm 8 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "79.0 \\pm 4.0 km s^-1 Mpc^-1",
+  "value": 79.0,
+  "posunc": 4.0,
+  "negunc": 4.0,
+  "arxiv": "astro-ph/0012475",
+  "date": "2000-12-22",
+  "match": "79 \\pm 4 km/sec/Mpc"
+ },
+ {
+  "normalised": "76.0 \\pm 6.0 (statistical) \\pm 5.0 (systematic) km s^-1 Mpc^-1",
+  "value": 76.0,
+  "posunc": 7.810249675906654,
+  "negunc": 7.810249675906654,
+  "arxiv": "0802.2509",
+  "date": "2008-02-18",
+  "match": "76 \\pm 6 ( statistical ) \\pm 5 ( systematic ) km/s/Mpc ."
+ },
+ {
+  "normalised": "55.99999999999999 \\pm 23.0 km s^-1 Mpc^-1",
+  "value": 55.99999999999999,
+  "posunc": 23.0,
+  "negunc": 23.0,
+  "arxiv": "astro-ph/0407134",
+  "date": "2004-07-07",
+  "match": "56 { \\pm } 23 { km s ^ { -1 } Mpc ^ { -1 } } ."
+ },
+ {
+  "normalised": "48.0 \\pm 4.0 km s^-1 Mpc^-1",
+  "value": 48.0,
+  "posunc": 4.0,
+  "negunc": 4.0,
+  "arxiv": "astro-ph/0111075",
+  "date": "2001-11-05",
+  "match": "48 \\pm 4 ~ { } \\mathrm { km } ~ { } \\mathrm { s } ^ { -1 } ~ { } \\mathrm { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "62.00000000000001 \\pm 4.0 km s^-1 Mpc^-1",
+  "value": 62.00000000000001,
+  "posunc": 4.0,
+  "negunc": 4.0,
+  "arxiv": "astro-ph/0111075",
+  "date": "2001-11-05",
+  "match": "62 \\pm 4 ~ { } \\mathrm { km } ~ { } \\mathrm { s } ^ { -1 } ~ { } \\mathrm { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "68.0 \\pm 3.0 km s^-1 Mpc^-1",
+  "value": 68.0,
+  "posunc": 3.0,
+  "negunc": 3.0,
+  "arxiv": "astro-ph/0111183",
+  "date": "2001-11-08",
+  "match": "68 \\pm 3 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "74.0 \\pm 2.0 km s^-1 Mpc^-1",
+  "value": 74.0,
+  "posunc": 2.0,
+  "negunc": 2.0,
+  "arxiv": "astro-ph/0111183",
+  "date": "2001-11-08",
+  "match": "74 \\pm 2 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "73.0 \\pm 4.0 \\pm 11.0 km s^-1 Mpc^-1",
+  "value": 73.0,
+  "posunc": 11.704699910719626,
+  "negunc": 11.704699910719626,
+  "arxiv": "astro-ph/0111183",
+  "date": "2001-11-08",
+  "match": "73 \\pm 4 \\pm 11 km s ^ { -1 } Mpc ^ { -1 } from"
+ },
+ {
+  "normalised": "74.0 \\pm 3.0 (r) \\pm 6.0 (s) km s^-1 Mpc^-1",
+  "value": 74.0,
+  "posunc": 6.708203932499369,
+  "negunc": 6.708203932499369,
+  "arxiv": "astro-ph/0608211",
+  "date": "2006-08-10",
+  "match": "74 \\pm 3 _ { r } \\pm 6 _ { s } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "70.8 ^ +2.1 _ -2.0 km s^-1 Mpc^-1",
+  "value": 70.8,
+  "posunc": 2.1,
+  "negunc": 2.0,
+  "arxiv": "astro-ph/0604129",
+  "date": "2006-04-06",
+  "match": "70.8 ^ { +2.1 } _ { -2.0 } \\mathrm { km / s / Mpc }"
+ },
+ {
+  "normalised": "70.0 \\pm 6.0 km s^-1 Mpc^-1",
+  "value": 70.0,
+  "posunc": 6.0,
+  "negunc": 6.0,
+  "arxiv": "astro-ph/0609694",
+  "date": "2006-09-25",
+  "match": "70 \\pm 6 { km s ^ { -1 } Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "68.0 \\pm 6.0 (stat) \\pm 8.0 (syst) km s^-1 Mpc^-1",
+  "value": 68.0,
+  "posunc": 10.0,
+  "negunc": 10.0,
+  "arxiv": "astro-ph/0609694",
+  "date": "2006-09-25",
+  "match": "68 \\pm 6 ( { stat . } ) \\pm 8 ( { syst . } ) { km s ^ { -1 } Mpc ^ { -1 } } ."
+ },
+ {
+  "normalised": "67.0 ^ +13.0 _ -10.0 km s^-1 Mpc^-1",
+  "value": 67.0,
+  "posunc": 13.0,
+  "negunc": 10.0,
+  "arxiv": "0803.4015",
+  "date": "2008-03-27",
+  "match": "67 ^ { +13 } _ { -10 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "62.99999999999999 ^ +6.999999999999999 _ -3.0 km s^-1 Mpc^-1",
+  "value": 62.99999999999999,
+  "posunc": 6.999999999999999,
+  "negunc": 3.0,
+  "arxiv": "0803.4015",
+  "date": "2008-03-27",
+  "match": "63 ^ { +7 } _ { -3 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "85.0 \\pm 5.0 km s^-1 Mpc^-1",
+  "value": 85.0,
+  "posunc": 5.0,
+  "negunc": 5.0,
+  "arxiv": "astro-ph/0005112",
+  "date": "2000-05-05",
+  "match": "85 \\pm 5 { km } { s } ^ { -1 } { { Mpc } } ^ { -1 }"
+ },
+ {
+  "normalised": "71.0 \\pm 6.0 km s^-1 Mpc^-1",
+  "value": 71.0,
+  "posunc": 6.0,
+  "negunc": 6.0,
+  "arxiv": "astro-ph/0005112",
+  "date": "2000-05-05",
+  "match": "71 \\pm 6 { km } { s } ^ { -1 } { { Mpc } } ^ { -1 } ."
+ },
+ {
+  "normalised": "73.0 \\pm 4.0 km s^-1 Mpc^-1",
+  "value": 73.0,
+  "posunc": 4.0,
+  "negunc": 4.0,
+  "arxiv": "astro-ph/0102260",
+  "date": "2001-02-14",
+  "match": "73 \\pm 4 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "85.0 \\pm 10.0 km s^-1 Mpc^-1",
+  "value": 85.0,
+  "posunc": 10.0,
+  "negunc": 10.0,
+  "arxiv": "astro-ph/0102447",
+  "date": "2001-02-26",
+  "match": "85 \\pm 10 kms ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "58.0 \\pm 6.999999999999999 km s^-1 Mpc^-1",
+  "value": 58.0,
+  "posunc": 6.999999999999999,
+  "negunc": 6.999999999999999,
+  "arxiv": "astro-ph/0102447",
+  "date": "2001-02-26",
+  "match": "58 \\pm 7 kms ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "52.0 ^ +24.0 _ -16.0 km s^-1 Mpc^-1",
+  "value": 52.0,
+  "posunc": 24.0,
+  "negunc": 16.0,
+  "arxiv": "astro-ph/0102489",
+  "date": "2001-02-28",
+  "match": "52 ^ { +24 } _ { -16 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "69.0 ^ +21.0 _ -16.0 km s^-1 Mpc^-1",
+  "value": 69.0,
+  "posunc": 21.0,
+  "negunc": 16.0,
+  "arxiv": "astro-ph/0102496",
+  "date": "2001-02-28",
+  "match": "69 ^ { +21 } _ { -16 } ~ { } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "84.0 ^ +25.0 _ -19.0 km s^-1 Mpc^-1",
+  "value": 84.0,
+  "posunc": 25.0,
+  "negunc": 19.0,
+  "arxiv": "astro-ph/0102496",
+  "date": "2001-02-28",
+  "match": "84 ^ { +25 } _ { -19 } ~ { } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "44.0 \\pm 9.0 km s^-1 Mpc^-1",
+  "value": 44.0,
+  "posunc": 9.0,
+  "negunc": 9.0,
+  "arxiv": "astro-ph/0201551",
+  "date": "2002-01-31",
+  "match": "44 \\pm 9 km s ^ { -1 } Mpc ^ { -1 } for an \\Omega _ { m }"
+ },
+ {
+  "normalised": "55.99999999999999 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 55.99999999999999,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/0507381",
+  "date": "2005-07-15",
+  "match": "56 { \\pm } 8 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "65.0 \\pm 9.0 km s^-1 Mpc^-1",
+  "value": 65.0,
+  "posunc": 9.0,
+  "negunc": 9.0,
+  "arxiv": "astro-ph/0507381",
+  "date": "2005-07-15",
+  "match": "65 { \\pm } 9 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "71.0 \\pm 3.4999999999999996 km s^-1 Mpc^-1",
+  "value": 71.0,
+  "posunc": 3.4999999999999996,
+  "negunc": 3.4999999999999996,
+  "arxiv": "astro-ph/0507381",
+  "date": "2005-07-15",
+  "match": "71 { \\pm } 3.5 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "74.0 \\pm 2.0 km s^-1 Mpc^-1",
+  "value": 74.0,
+  "posunc": 2.0,
+  "negunc": 2.0,
+  "arxiv": "astro-ph/0507583",
+  "date": "2005-07-26",
+  "match": "74 \\pm 2 { kms } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "60.0 ^ +9.0 _ -6.999999999999999 (random , 1 \\sigma) \\pm 2.0 (systematic) km s^-1 Mpc^-1",
+  "value": 60.0,
+  "posunc": 9.219544457292887,
+  "negunc": 7.280109889280517,
+  "arxiv": "astro-ph/0409444",
+  "date": "2004-09-17",
+  "match": "60 ^ { +9 } _ { -7 } ( random , 1 \\sigma ) \\pm 2 ( systematic ) km s ^ { -1 } Mpc ^ { -1 } for a"
+ },
+ {
+  "normalised": "62.99999999999999 ^ +9.0 _ -6.999999999999999 (random , 1 \\sigma) \\pm 1.0 (systematic) km s^-1 Mpc^-1",
+  "value": 62.99999999999999,
+  "posunc": 9.055385138137417,
+  "negunc": 7.071067811865475,
+  "arxiv": "astro-ph/0409444",
+  "date": "2004-09-17",
+  "match": "63 ^ { +9 } _ { -7 } ( random , 1 \\sigma ) \\pm 1 ( systematic ) km s ^ { -1 } Mpc ^ { -1 } for a"
+ },
+ {
+  "normalised": "64.0 ^ +9.0 _ -6.999999999999999 (random , 1 \\sigma) \\pm 13.999999999999998 (systematic) km s^-1 Mpc^-1",
+  "value": 64.0,
+  "posunc": 16.643316977093235,
+  "negunc": 15.652475842498527,
+  "arxiv": "astro-ph/0409444",
+  "date": "2004-09-17",
+  "match": "64 ^ { +9 } _ { -7 } ( random , 1 \\sigma ) \\pm 14 ( systematic ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "68.0 \\pm 5.0 \\pm 6.0 km s^-1 Mpc^-1",
+  "value": 68.0,
+  "posunc": 7.810249675906654,
+  "negunc": 7.810249675906654,
+  "arxiv": "astro-ph/0212262",
+  "date": "2002-12-11",
+  "match": "68 \\pm 5 \\pm 6 km s ^ { -1 } /Mpc ."
+ },
+ {
+  "normalised": "71.0 \\pm 4.0 \\pm 6.0 km s^-1 Mpc^-1",
+  "value": 71.0,
+  "posunc": 7.211102550927978,
+  "negunc": 7.211102550927978,
+  "arxiv": "astro-ph/0212262",
+  "date": "2002-12-11",
+  "match": "71 \\pm 4 \\pm 6 km s ^ { -1 } /Mpc ."
+ },
+ {
+  "normalised": "64.0 ^ +96.0 _ -30.0 km s^-1 Mpc^-1",
+  "value": 64.0,
+  "posunc": 96.0,
+  "negunc": 30.0,
+  "arxiv": "astro-ph/0212394",
+  "date": "2002-12-18",
+  "match": "64 ^ { +96 } _ { -30 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "44.0 \\pm 5.0 km s^-1 Mpc^-1",
+  "value": 44.0,
+  "posunc": 5.0,
+  "negunc": 5.0,
+  "arxiv": "0706.1464",
+  "date": "2007-06-11",
+  "match": "44 \\pm 5 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "65.0 \\pm 5.0 km s^-1 Mpc^-1",
+  "value": 65.0,
+  "posunc": 5.0,
+  "negunc": 5.0,
+  "arxiv": "astro-ph/0101352",
+  "date": "2001-01-19",
+  "match": "60-70 km s ^ { -1 } Mpc ^ { -1 } have been"
+ },
+ {
+  "normalised": "58.5 \\pm 6.3 km s^-1 Mpc^-1",
+  "value": 58.5,
+  "posunc": 6.3,
+  "negunc": 6.3,
+  "arxiv": "astro-ph/0004063",
+  "date": "2000-04-05",
+  "match": "58.5 \\pm 6.3 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "58.0 ^ +17.0 _ -15.0 km s^-1 Mpc^-1",
+  "value": 58.0,
+  "posunc": 17.0,
+  "negunc": 15.0,
+  "arxiv": "astro-ph/0112025",
+  "date": "2001-12-03",
+  "match": "58 ^ { +17 } _ { -15 } { km s ^ { -1 } Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "66.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 66.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/0112225",
+  "date": "2001-12-10",
+  "match": "66 \\pm 8 { km } ~ { } { s ^ { -1 } } ~ { } { Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "65.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 65.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/0112225",
+  "date": "2001-12-10",
+  "match": "65 \\pm 8 { km } ~ { } { s ^ { -1 } } ~ { } { Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "69.8 \\pm 2.6 km s^-1 Mpc^-1",
+  "value": 69.8,
+  "posunc": 2.6,
+  "negunc": 2.6,
+  "arxiv": "astro-ph/0408003",
+  "date": "2004-07-30",
+  "match": "69.8 ^ { +2.6 } _ { -2.6 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "67.0 ^ +30.0 _ -18.0 ^ +15.0 _ -6.0 km s^-1 Mpc^-1",
+  "value": 67.0,
+  "posunc": 33.54101966249684,
+  "negunc": 18.973665961010276,
+  "arxiv": "astro-ph/0408005",
+  "date": "2004-07-30",
+  "match": "67 ^ { +30 } _ { -18 } \\mbox { } ^ { +15 } _ { -6 } km s ^ { -1 } Mpc ^ { -1 } for an"
+ },
+ {
+  "normalised": "83.0 \\pm 8.3 km s^-1 Mpc^-1",
+  "value": 83.0,
+  "posunc": 8.3,
+  "negunc": 8.3,
+  "arxiv": "astro-ph/0309680",
+  "date": "2003-09-24",
+  "match": "83.0 \\pm 8.3 km/s/Mpc is"
+ },
+ {
+  "normalised": "72.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/0309739",
+  "date": "2003-09-26",
+  "match": "72 \\pm 8 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "74.0 \\pm 2.0 (random) \\pm 6.0 (systematic) km s^-1 Mpc^-1",
+  "value": 74.0,
+  "posunc": 6.324555320336759,
+  "negunc": 6.324555320336759,
+  "arxiv": "astro-ph/0609249",
+  "date": "2006-09-08",
+  "match": "74 \\pm 2 ( random ) \\pm 6 ( systematic ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "72.0 \\pm 6.0 (total) km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 6.0,
+  "negunc": 6.0,
+  "arxiv": "astro-ph/0603392",
+  "date": "2006-03-15",
+  "match": "72 \\pm 6 ( total ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "74.0 \\pm 4.0 km s^-1 Mpc^-1",
+  "value": 74.0,
+  "posunc": 4.0,
+  "negunc": 4.0,
+  "arxiv": "astro-ph/0508614",
+  "date": "2005-08-29",
+  "match": "74 \\pm 4 kms ^ { -1 } Mpc ^ { -1 } and a 1"
+ },
+ {
+  "normalised": "65.0 \\pm 9.0 km s^-1 Mpc^-1",
+  "value": 65.0,
+  "posunc": 9.0,
+  "negunc": 9.0,
+  "arxiv": "astro-ph/0508614",
+  "date": "2005-08-29",
+  "match": "65 \\pm 9 kms ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "77.0 \\pm 3.0 (random) \\pm 5.0 (systematic) km s^-1 Mpc^-1",
+  "value": 77.0,
+  "posunc": 5.830951894845301,
+  "negunc": 5.830951894845301,
+  "arxiv": "astro-ph/0611231",
+  "date": "2006-11-07",
+  "match": "77 \\pm 3 ( random ) \\pm 5 ( systematic ) km s ^ { -1 } Mpc ^ { -1 } for the PNLF"
+ },
+ {
+  "normalised": "74.0 ^ +4.0 _ -3.4999999999999996 km s^-1 Mpc^-1",
+  "value": 74.0,
+  "posunc": 4.0,
+  "negunc": 3.4999999999999996,
+  "arxiv": "astro-ph/0611934",
+  "date": "2006-11-29",
+  "match": "74 ^ { +4 } _ { -3.5 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "70.0 \\pm 15.0 km s^-1 Mpc^-1",
+  "value": 70.0,
+  "posunc": 15.0,
+  "negunc": 15.0,
+  "arxiv": "astro-ph/0105384",
+  "date": "2001-05-22",
+  "match": "70 \\pm 15 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "55.99999999999999 ^ +12.0 _ -11.0 km s^-1 Mpc^-1",
+  "value": 55.99999999999999,
+  "posunc": 12.0,
+  "negunc": 11.0,
+  "arxiv": "astro-ph/0105411",
+  "date": "2001-05-23",
+  "match": "56 _ { -11 } ^ { +12 } { km s ^ { -1 } Mpc ^ { -1 } } ."
+ },
+ {
+  "normalised": "75.0 ^ +12.0 _ -11.0 km s^-1 Mpc^-1",
+  "value": 75.0,
+  "posunc": 12.0,
+  "negunc": 11.0,
+  "arxiv": "astro-ph/0105490",
+  "date": "2001-05-28",
+  "match": "75 ^ { +12 } _ { -11 } { km s ^ { -1 } Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "71.0 \\pm 0.04 km s^-1 Mpc^-1",
+  "value": 71.0,
+  "posunc": 0.04,
+  "negunc": 0.04,
+  "arxiv": "0709.2195",
+  "date": "2007-09-13",
+  "match": "71 \\pm 0.04 { km s } ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "65.0 \\pm 2.0 (statistical) km s^-1 Mpc^-1",
+  "value": 65.0,
+  "posunc": 2.0,
+  "negunc": 2.0,
+  "arxiv": "astro-ph/0008057",
+  "date": "2000-08-03",
+  "match": "65 \\pm 2 ( statistical ) km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "59.00000000000001 ^ +8.0 _ -6.999999999999999 km s^-1 Mpc^-1",
+  "value": 59.00000000000001,
+  "posunc": 8.0,
+  "negunc": 6.999999999999999,
+  "arxiv": "astro-ph/0103046",
+  "date": "2001-03-02",
+  "match": "59 ^ { +8 } _ { -7 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "65.0 ^ +8.0 _ -6.999999999999999 km s^-1 Mpc^-1",
+  "value": 65.0,
+  "posunc": 8.0,
+  "negunc": 6.999999999999999,
+  "arxiv": "astro-ph/0103046",
+  "date": "2001-03-02",
+  "match": "65 ^ { +8 } _ { -7 } km s ^ { -1 } Mpc ^ { -1 } if \\Omega _ { M }"
+ },
+ {
+  "normalised": "62.99999999999999 \\pm 5.0 km s^-1 Mpc^-1",
+  "value": 62.99999999999999,
+  "posunc": 5.0,
+  "negunc": 5.0,
+  "arxiv": "astro-ph/0606138",
+  "date": "2006-06-06",
+  "match": "63 \\pm 5 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "72.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/0606317",
+  "date": "2006-06-13",
+  "match": "72 \\pm 8 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "51.7 ^ +4.0 _ -3.0 km s^-1 Mpc^-1",
+  "value": 51.7,
+  "posunc": 4.0,
+  "negunc": 3.0,
+  "arxiv": "astro-ph/0606317",
+  "date": "2006-06-13",
+  "match": "51.7 ^ { +4.0 } _ { -3.0 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "76.9 ^ +3.9000000000000004 _ -3.4 ^ +10.0 _ -8.0 km s^-1 Mpc^-1",
+  "value": 76.9,
+  "posunc": 10.733592129385205,
+  "negunc": 8.692525524840292,
+  "arxiv": "astro-ph/0512349",
+  "date": "2005-12-13",
+  "match": "76.9 \\pm ^ { 3.9 } _ { 3.4 } \\pm ^ { 10.0 } _ { 8.0 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "73.7 ^ +4.6 _ -3.8 ^ +9.5 _ -7.6 km s^-1 Mpc^-1",
+  "value": 73.7,
+  "posunc": 10.555093557141026,
+  "negunc": 8.497058314499201,
+  "arxiv": "astro-ph/0512349",
+  "date": "2005-12-13",
+  "match": "73.7 \\pm ^ { 4.6 } _ { 3.8 } \\pm ^ { 9.5 } _ { 7.6 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "77.6 ^ +4.8 _ -4.3 ^ +10.1 _ -8.2 km s^-1 Mpc^-1",
+  "value": 77.6,
+  "posunc": 11.18257573191436,
+  "negunc": 9.259049627256568,
+  "arxiv": "astro-ph/0512349",
+  "date": "2005-12-13",
+  "match": "77.6 \\pm ^ { 4.8 } _ { 4.3 } \\pm ^ { 10.1 } _ { 8.2 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "70.4 \\pm 4.3 km s^-1 Mpc^-1",
+  "value": 70.4,
+  "posunc": 4.3,
+  "negunc": 4.3,
+  "arxiv": "astro-ph/0007022",
+  "date": "2000-07-03",
+  "match": "70.4 \\pm 4.3 km/s/Mpc ."
+ },
+ {
+  "normalised": "52.0 ^ +13.999999999999998 _ -8.0 km s^-1 Mpc^-1",
+  "value": 52.0,
+  "posunc": 13.999999999999998,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/0007136",
+  "date": "2000-07-11",
+  "match": "52 ^ { +14 } _ { -8 } ~ { } { km } ~ { } { s ^ { -1 } } ~ { } { Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "81.0 \\pm 10.0 km s^-1 Mpc^-1",
+  "value": 81.0,
+  "posunc": 10.0,
+  "negunc": 10.0,
+  "arxiv": "astro-ph/0301281",
+  "date": "2003-01-14",
+  "match": "81 \\pm 10 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "60.0 \\pm 2.0 (internal) km s^-1 Mpc^-1",
+  "value": 60.0,
+  "posunc": 2.0,
+  "negunc": 2.0,
+  "arxiv": "astro-ph/0107391",
+  "date": "2001-07-19",
+  "match": "60 \\pm 2 ( internal ) { km } { s } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "58.699999999999996 \\pm 6.3 (internal) km s^-1 Mpc^-1",
+  "value": 58.699999999999996,
+  "posunc": 6.3,
+  "negunc": 6.3,
+  "arxiv": "astro-ph/0107391",
+  "date": "2001-07-19",
+  "match": "58.7 \\pm 6.3 ( internal ) { km } { s } ^ { -1 } { Mpc } ^ { -1 } ."
+ },
+ {
+  "normalised": "85.0 ^ +13.999999999999998 _ -13.0 km s^-1 Mpc^-1",
+  "value": 85.0,
+  "posunc": 13.999999999999998,
+  "negunc": 13.0,
+  "arxiv": "0909.1807",
+  "date": "2009-09-09",
+  "match": "85 ^ { +14 } _ { -13 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "79.3 ^ +6.7 _ -8.5 km s^-1 Mpc^-1",
+  "value": 79.3,
+  "posunc": 6.7,
+  "negunc": 8.5,
+  "arxiv": "0909.1807",
+  "date": "2009-09-09",
+  "match": "79.3 ^ { +6.7 } _ { -8.5 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "74.2 \\pm 3.6 km s^-1 Mpc^-1",
+  "value": 74.2,
+  "posunc": 3.6,
+  "negunc": 3.6,
+  "arxiv": "0905.0695",
+  "date": "2009-05-05",
+  "match": "74.2 \\pm 3.6 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "69.4 \\pm 1.6 km s^-1 Mpc^-1",
+  "value": 69.4,
+  "posunc": 1.6,
+  "negunc": 1.6,
+  "arxiv": "0907.1659",
+  "date": "2009-07-09",
+  "match": "69.4 \\pm 1.6 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "68.2 \\pm 2.2 km s^-1 Mpc^-1",
+  "value": 68.2,
+  "posunc": 2.2,
+  "negunc": 2.2,
+  "arxiv": "0907.1660",
+  "date": "2009-07-10",
+  "match": "68.2 \\pm 2.2 { km } { s } ^ { -1 } { Mpc } ^ { -1 } that is"
+ },
+ {
+  "normalised": "61.5 ^ +8.0 _ -4.0 km s^-1 Mpc^-1",
+  "value": 61.5,
+  "posunc": 8.0,
+  "negunc": 4.0,
+  "arxiv": "0903.1027",
+  "date": "2009-03-05",
+  "match": "61.5 ^ { +8 } _ { -4 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "60.0 \\pm 10.0 km s^-1 Mpc^-1",
+  "value": 60.0,
+  "posunc": 10.0,
+  "negunc": 10.0,
+  "arxiv": "astro-ph/0108462",
+  "date": "2001-08-29",
+  "match": "60 \\pm 10 { ~ { } km~ { } s ^ { -1 } Mpc ^ { -1 } } ."
+ },
+ {
+  "normalised": "72.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/0302337",
+  "date": "2003-02-17",
+  "match": "72 \\pm 8 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "70.0 \\pm 3.0 km s^-1 Mpc^-1",
+  "value": 70.0,
+  "posunc": 3.0,
+  "negunc": 3.0,
+  "arxiv": "astro-ph/0302435",
+  "date": "2003-02-20",
+  "match": "70 \\pm 3 ~ { } \\text { km } ~ { } \\text { s } ^ { -1 } \\text { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "69.0 \\pm 12.0 km s^-1 Mpc^-1",
+  "value": 69.0,
+  "posunc": 12.0,
+  "negunc": 12.0,
+  "arxiv": "astro-ph/0302560",
+  "date": "2003-02-27",
+  "match": "69 \\pm 12 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "72.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/0106466",
+  "date": "2001-06-26",
+  "match": "72 \\pm 8 km/sec/Mpc ."
+ },
+ {
+  "normalised": "71.0 \\pm 3.0 km s^-1 Mpc^-1",
+  "value": 71.0,
+  "posunc": 3.0,
+  "negunc": 3.0,
+  "arxiv": "astro-ph/0401273",
+  "date": "2004-01-14",
+  "match": "68-74 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "65.0 \\pm 6.999999999999999 km s^-1 Mpc^-1",
+  "value": 65.0,
+  "posunc": 6.999999999999999,
+  "negunc": 6.999999999999999,
+  "arxiv": "0806.4245",
+  "date": "2008-06-26",
+  "match": "65 \\pm 7 km/s/Mpc ."
+ },
+ {
+  "normalised": "0.765 ^ +0.035 _ -0.033 km s^-1 Mpc^-1",
+  "value": 0.765,
+  "posunc": 0.035,
+  "negunc": 0.033,
+  "arxiv": "0807.0647",
+  "date": "2008-07-03",
+  "match": "0.765 ^ { +0.035 } _ { -0.033 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "69.0 \\pm 11.0 km s^-1 Mpc^-1",
+  "value": 69.0,
+  "posunc": 11.0,
+  "negunc": 11.0,
+  "arxiv": "1005.1955",
+  "date": "2010-05-11",
+  "match": "69 \\pm 11 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "51.0 \\pm 9.0 km s^-1 Mpc^-1",
+  "value": 51.0,
+  "posunc": 9.0,
+  "negunc": 9.0,
+  "arxiv": "astro-ph/0206084",
+  "date": "2002-06-05",
+  "match": "51 \\pm 9 { km } ~ { } { s ^ { -1 } } ~ { } { Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "78.0 \\pm 6.999999999999999 km s^-1 Mpc^-1",
+  "value": 78.0,
+  "posunc": 6.999999999999999,
+  "negunc": 6.999999999999999,
+  "arxiv": "astro-ph/0206177",
+  "date": "2002-06-11",
+  "match": "78 \\pm 7 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "72.6 \\pm 2.9 (stat) \\pm 2.3 (syst) km s^-1 Mpc^-1",
+  "value": 72.6,
+  "posunc": 3.7013511046643495,
+  "negunc": 3.7013511046643495,
+  "arxiv": "1010.0831",
+  "date": "2010-10-05",
+  "match": "72.6 \\pm 2.9 ( stat ) \\pm 2.3 ( syst ) \\mathrm { km Mpc ^ { -1 } s ^ { -1 } }"
+ },
+ {
+  "normalised": "76.0 \\pm 3.0 km s^-1 Mpc^-1",
+  "value": 76.0,
+  "posunc": 3.0,
+  "negunc": 3.0,
+  "arxiv": "1002.2570",
+  "date": "2010-02-12",
+  "match": "76 _ { -3 } ^ { +3 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "70.6 \\pm 3.1 km s^-1 Mpc^-1",
+  "value": 70.6,
+  "posunc": 3.1,
+  "negunc": 3.1,
+  "arxiv": "0910.2773",
+  "date": "2009-10-15",
+  "match": "70.6 ^ { +3.1 } _ { -3.1 } { km s ^ { -1 } Mpc ^ { -1 } } ."
+ },
+ {
+  "normalised": "69.7 ^ +4.9 _ -5.0 km s^-1 Mpc^-1",
+  "value": 69.7,
+  "posunc": 4.9,
+  "negunc": 5.0,
+  "arxiv": "0910.2773",
+  "date": "2009-10-15",
+  "match": "69.7 ^ { +4.9 } _ { -5.0 } { km s ^ { -1 } Mpc ^ { -1 } } and w"
+ },
+ {
+  "normalised": "62.99999999999999 \\pm 2.0 km s^-1 Mpc^-1",
+  "value": 62.99999999999999,
+  "posunc": 2.0,
+  "negunc": 2.0,
+  "arxiv": "astro-ph/0208420",
+  "date": "2002-08-22",
+  "match": "61-65 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "57.0 \\pm 15.0 km s^-1 Mpc^-1",
+  "value": 57.0,
+  "posunc": 15.0,
+  "negunc": 15.0,
+  "arxiv": "astro-ph/0305259",
+  "date": "2003-05-15",
+  "match": "57 \\pm 15 { km s } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "59.00000000000001 \\pm 11.0 km s^-1 Mpc^-1",
+  "value": 59.00000000000001,
+  "posunc": 11.0,
+  "negunc": 11.0,
+  "arxiv": "astro-ph/0305259",
+  "date": "2003-05-15",
+  "match": "59 \\pm 11 { km s } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "71.2 \\pm 1.4 km s^-1 Mpc^-1",
+  "value": 71.2,
+  "posunc": 1.4,
+  "negunc": 1.4,
+  "arxiv": "1107.4097",
+  "date": "2011-07-20",
+  "match": "71.2 \\pm 1.4 \\mathrm { km } \\mathrm { s ^ { -1 } Mpc ^ { -1 } } ."
+ },
+ {
+  "normalised": "72.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "0910.5775",
+  "date": "2009-10-29",
+  "match": "72 \\pm 8 km s ^ { -1 } Mpc ^ { -1 } and put an end to"
+ },
+ {
+  "normalised": "71.4 ^ +4.4 _ -3.4 km s^-1 Mpc^-1",
+  "value": 71.4,
+  "posunc": 4.4,
+  "negunc": 3.4,
+  "arxiv": "1006.4200",
+  "date": "2010-06-21",
+  "match": "71.4 ^ { +4.4 } _ { -3.4 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "69.1 ^ +1.3 _ -1.5 km s^-1 Mpc^-1",
+  "value": 69.1,
+  "posunc": 1.3,
+  "negunc": 1.5,
+  "arxiv": "1110.2310",
+  "date": "2011-10-11",
+  "match": "69.1 ^ { +1.3 } _ { -1.5 } \\mbox { km } / \\mbox { s } / \\mbox { Mpc }"
+ },
+ {
+  "normalised": "73.8 \\pm 2.4 km s^-1 Mpc^-1",
+  "value": 73.8,
+  "posunc": 2.4,
+  "negunc": 2.4,
+  "arxiv": "1103.2976",
+  "date": "2011-03-15",
+  "match": "73.8 \\pm 2.4 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "67.0 \\pm 3.2 km s^-1 Mpc^-1",
+  "value": 67.0,
+  "posunc": 3.2,
+  "negunc": 3.2,
+  "arxiv": "1106.3366",
+  "date": "2011-06-16",
+  "match": "67 \\pm 3.2 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "70.0 \\pm 5.0 km s^-1 Mpc^-1",
+  "value": 70.0,
+  "posunc": 5.0,
+  "negunc": 5.0,
+  "arxiv": "astro-ph/0405115",
+  "date": "2004-05-06",
+  "match": "70 \\pm 5 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "61.0 \\pm 6.999999999999999 km s^-1 Mpc^-1",
+  "value": 61.0,
+  "posunc": 6.999999999999999,
+  "negunc": 6.999999999999999,
+  "arxiv": "astro-ph/0405115",
+  "date": "2004-05-06",
+  "match": "61 \\pm 7 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "72.0 \\pm 6.999999999999999 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 6.999999999999999,
+  "negunc": 6.999999999999999,
+  "arxiv": "1011.2864",
+  "date": "2010-11-12",
+  "match": "72 \\pm 7 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "75.0 ^ +10.0 _ -6.999999999999999 km s^-1 Mpc^-1",
+  "value": 75.0,
+  "posunc": 10.0,
+  "negunc": 6.999999999999999,
+  "arxiv": "1202.2309",
+  "date": "2012-02-10",
+  "match": "75 ^ { +10 } _ { -7 } km/s/Mpc"
+ },
+ {
+  "normalised": "48.0 \\pm 3.0 km s^-1 Mpc^-1",
+  "value": 48.0,
+  "posunc": 3.0,
+  "negunc": 3.0,
+  "arxiv": "astro-ph/0306040",
+  "date": "2003-06-02",
+  "match": "48 \\pm 3 km s ^ { -1 } Mpc ^ { -1 } for the"
+ },
+ {
+  "normalised": "71.0 \\pm 3.0 km s^-1 Mpc^-1",
+  "value": 71.0,
+  "posunc": 3.0,
+  "negunc": 3.0,
+  "arxiv": "astro-ph/0306040",
+  "date": "2003-06-02",
+  "match": "71 \\pm 3 km s ^ { -1 } Mpc ^ { -1 } is the"
+ },
+ {
+  "normalised": "75.0 ^ +6.999999999999999 _ -6.0 km s^-1 Mpc^-1",
+  "value": 75.0,
+  "posunc": 6.999999999999999,
+  "negunc": 6.0,
+  "arxiv": "astro-ph/0306216",
+  "date": "2003-06-10",
+  "match": "75 ^ { +7 } _ { -6 } km { s } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "75.9 \\pm 3.8 km s^-1 Mpc^-1",
+  "value": 75.9,
+  "posunc": 3.8,
+  "negunc": 3.8,
+  "arxiv": "1202.3832",
+  "date": "2012-02-16",
+  "match": "75.9 \\pm 3.8 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "76.0 ^ +15.0 _ -5.0 km s^-1 Mpc^-1",
+  "value": 76.0,
+  "posunc": 15.0,
+  "negunc": 5.0,
+  "arxiv": "1206.5801",
+  "date": "2012-06-25",
+  "match": "76 ^ { +15 } _ { -5 } { km s ^ { -1 } Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "73.8 \\pm 2.4 km s^-1 Mpc^-1",
+  "value": 73.8,
+  "posunc": 2.4,
+  "negunc": 2.4,
+  "arxiv": "1205.6753",
+  "date": "2012-05-30",
+  "match": "73.8 \\pm 2.4 ~ { } km / s / Mpc"
+ },
+ {
+  "normalised": "68.0 \\pm 2.8 km s^-1 Mpc^-1",
+  "value": 68.0,
+  "posunc": 2.8,
+  "negunc": 2.8,
+  "arxiv": "1205.6753",
+  "date": "2012-05-30",
+  "match": "68 \\pm 2.8 ~ { } km / s / Mpc at 68"
+ },
+ {
+  "normalised": "69.7 \\pm 2.5 km s^-1 Mpc^-1",
+  "value": 69.7,
+  "posunc": 2.5,
+  "negunc": 2.5,
+  "arxiv": "1205.6753",
+  "date": "2012-05-30",
+  "match": "69.7 \\pm 2.5 ~ { } km / s / Mpc at 68"
+ },
+ {
+  "normalised": "74.3 \\pm 3.1 (statistical) \\pm 2.9 (systematic) km s^-1 Mpc^-1",
+  "value": 74.3,
+  "posunc": 4.244997055358225,
+  "negunc": 4.244997055358225,
+  "arxiv": "1203.6222",
+  "date": "2012-03-28",
+  "match": "74.3 \\pm 3.1 ( statistical ) \\pm 2.9 ( systematic ) km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "74.1 \\pm 2.2 km s^-1 Mpc^-1",
+  "value": 74.1,
+  "posunc": 2.2,
+  "negunc": 2.2,
+  "arxiv": "1206.0332",
+  "date": "2012-06-01",
+  "match": "74.1 ^ { +2.2 } _ { -2.2 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "68.0 \\pm 5.5 (or \\pm 1) km s^-1 Mpc^-1",
+  "value": 68.0,
+  "posunc": 5.5,
+  "negunc": 5.5,
+  "arxiv": "1105.5206",
+  "date": "2011-05-26",
+  "match": "68 \\pm 5.5 ( or \\pm 1 ) { km s } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "68.43 ^ +2.84 _ -2.8 km s^-1 Mpc^-1",
+  "value": 68.43,
+  "posunc": 2.84,
+  "negunc": 2.8,
+  "arxiv": "1109.6924",
+  "date": "2011-09-20",
+  "match": "68.43 _ { -2.80 } ^ { +2.84 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "69.18 ^ +0.55 _ -0.54 km s^-1 Mpc^-1",
+  "value": 69.18,
+  "posunc": 0.55,
+  "negunc": 0.54,
+  "arxiv": "1109.6924",
+  "date": "2011-09-20",
+  "match": "69.18 _ { -0.54 } ^ { +0.55 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "68.93 ^ +0.53 _ -0.52 km s^-1 Mpc^-1",
+  "value": 68.93,
+  "posunc": 0.53,
+  "negunc": 0.52,
+  "arxiv": "1109.6924",
+  "date": "2011-09-20",
+  "match": "68.93 _ { -0.52 } ^ { +0.53 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "65.0 \\pm 0.5 (random) \\pm 5.7 (systematic) km s^-1 Mpc^-1",
+  "value": 65.0,
+  "posunc": 5.721887800367987,
+  "negunc": 5.721887800367987,
+  "arxiv": "1210.6040",
+  "date": "2012-10-22",
+  "match": "65.0 \\pm 0.5 ( { random } ) \\pm 5.7 ( { systematic } ) km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "68.0 \\pm 9.0 km s^-1 Mpc^-1",
+  "value": 68.0,
+  "posunc": 9.0,
+  "negunc": 9.0,
+  "arxiv": "1207.7273",
+  "date": "2012-07-31",
+  "match": "68 \\pm 9 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "69.32 \\pm 0.8 km s^-1 Mpc^-1",
+  "value": 69.32,
+  "posunc": 0.8,
+  "negunc": 0.8,
+  "arxiv": "1212.5225",
+  "date": "2012-12-20",
+  "match": "69.32 \\pm 0.80 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "69.8 \\pm 1.2 km s^-1 Mpc^-1",
+  "value": 69.8,
+  "posunc": 1.2,
+  "negunc": 1.2,
+  "arxiv": "1202.0092",
+  "date": "2012-01-31",
+  "match": "69.8 \\pm 1.2 km s ^ { -1 } Mpc ^ { -1 } and a 5.0"
+ },
+ {
+  "normalised": "74.0 ^ +5.0 _ -4.0 km s^-1 Mpc^-1",
+  "value": 74.0,
+  "posunc": 5.0,
+  "negunc": 4.0,
+  "arxiv": "1208.6502",
+  "date": "2012-08-31",
+  "match": "74 ^ { +5 } _ { -4 } km~ { } s ^ { -1 } ~ { } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "75.2 ^ +4.4 _ -4.2 km s^-1 Mpc^-1",
+  "value": 75.2,
+  "posunc": 4.4,
+  "negunc": 4.2,
+  "arxiv": "1208.6010",
+  "date": "2012-08-29",
+  "match": "75.2 ^ { +4.4 } _ { -4.2 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "73.1 ^ +2.4 _ -3.6 km s^-1 Mpc^-1",
+  "value": 73.1,
+  "posunc": 2.4,
+  "negunc": 3.6,
+  "arxiv": "1208.6010",
+  "date": "2012-08-29",
+  "match": "73.1 ^ { +2.4 } _ { -3.6 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "75.2 \\pm 3.0 km s^-1 Mpc^-1",
+  "value": 75.2,
+  "posunc": 3.0,
+  "negunc": 3.0,
+  "arxiv": "1208.3311",
+  "date": "2012-08-16",
+  "match": "75.2 \\pm 3.0 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "62.300000000000004 \\pm 1.3 \\pm 5.0 km s^-1 Mpc^-1",
+  "value": 62.300000000000004,
+  "posunc": 5.166236541235796,
+  "negunc": 5.166236541235796,
+  "arxiv": "1112.0170",
+  "date": "2011-12-01",
+  "match": "62.3 \\pm 1.3 \\pm 5.0 { km s } ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "67.0 \\pm 3.2 km s^-1 Mpc^-1",
+  "value": 67.0,
+  "posunc": 3.2,
+  "negunc": 3.2,
+  "arxiv": "1211.2570",
+  "date": "2012-11-12",
+  "match": "67 \\pm 3.2 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "74.4 \\pm 3.0 km s^-1 Mpc^-1",
+  "value": 74.4,
+  "posunc": 3.0,
+  "negunc": 3.0,
+  "arxiv": "1307.7213",
+  "date": "2013-07-27",
+  "match": "74.4 \\pm 3.0 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "67.0 \\pm 3.2 km s^-1 Mpc^-1",
+  "value": 67.0,
+  "posunc": 3.2,
+  "negunc": 3.2,
+  "arxiv": "1303.3302",
+  "date": "2013-03-13",
+  "match": "67.0 \\pm 3.2 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "72.1 ^ +3.2 _ -2.3 km s^-1 Mpc^-1",
+  "value": 72.1,
+  "posunc": 3.2,
+  "negunc": 2.3,
+  "arxiv": "1304.7119",
+  "date": "2013-04-26",
+  "match": "72.1 ^ { +3.2 } _ { -2.3 } km/s/Mpc"
+ },
+ {
+  "normalised": "71.3 \\pm 2.0 km s^-1 Mpc^-1",
+  "value": 71.3,
+  "posunc": 2.0,
+  "negunc": 2.0,
+  "arxiv": "1308.0188",
+  "date": "2013-08-01",
+  "match": "71.3 \\pm 2.0 { km s ^ { -1 } Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "74.0 \\pm 5.0 km s^-1 Mpc^-1",
+  "value": 74.0,
+  "posunc": 5.0,
+  "negunc": 5.0,
+  "arxiv": "1301.4833",
+  "date": "2013-01-21",
+  "match": "74 \\pm 5 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "69.72 ^ +0.9 _ -0.91 km s^-1 Mpc^-1",
+  "value": 69.72,
+  "posunc": 0.9,
+  "negunc": 0.91,
+  "arxiv": "1211.3741",
+  "date": "2012-11-15",
+  "match": "69.72 ^ { +0.90 } _ { -0.91 } km/s/Mpc"
+ },
+ {
+  "normalised": "73.78 ^ +3.16 _ -3.17 km s^-1 Mpc^-1",
+  "value": 73.78,
+  "posunc": 3.16,
+  "negunc": 3.17,
+  "arxiv": "1211.3741",
+  "date": "2012-11-15",
+  "match": "73.78 ^ { +3.16 } _ { -3.17 } km/s/Mpc"
+ },
+ {
+  "normalised": "62.300000000000004 \\pm 1.3 \\pm 5.0 km s^-1 Mpc^-1",
+  "value": 62.300000000000004,
+  "posunc": 5.166236541235796,
+  "negunc": 5.166236541235796,
+  "arxiv": "1211.4655",
+  "date": "2012-11-19",
+  "match": "62.3 \\pm 1.3 \\pm 5.0 { km s } ^ { -1 } { Mpc } ^ { -1 } ."
+ },
+ {
+  "normalised": "62.89999999999999 \\pm 1.6 km s^-1 Mpc^-1",
+  "value": 62.89999999999999,
+  "posunc": 1.6,
+  "negunc": 1.6,
+  "arxiv": "1211.4655",
+  "date": "2012-11-19",
+  "match": "62.9 \\pm 1.6 { km s } ^ { -1 } { Mpc } ^ { -1 } and shed"
+ },
+ {
+  "normalised": "64.6 \\pm 1.6 \\pm 2.0 km s^-1 Mpc^-1",
+  "value": 64.6,
+  "posunc": 2.5612496949731396,
+  "negunc": 2.5612496949731396,
+  "arxiv": "1211.4655",
+  "date": "2012-11-19",
+  "match": "64.6 \\pm 1.6 \\pm 2.0 { km s } ^ { -1 } { Mpc } ^ { -1 } ."
+ },
+ {
+  "normalised": "63.2 \\pm 2.5 km s^-1 Mpc^-1",
+  "value": 63.2,
+  "posunc": 2.5,
+  "negunc": 2.5,
+  "arxiv": "1304.1802",
+  "date": "2013-04-05",
+  "match": "63.2 \\pm 2.5 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "68.9 \\pm 2.4 km s^-1 Mpc^-1",
+  "value": 68.9,
+  "posunc": 2.4,
+  "negunc": 2.4,
+  "arxiv": "1304.1802",
+  "date": "2013-04-05",
+  "match": "68.9 \\pm 2.4 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "70.6 \\pm 3.3 km s^-1 Mpc^-1",
+  "value": 70.6,
+  "posunc": 3.3,
+  "negunc": 3.3,
+  "arxiv": "1311.3461",
+  "date": "2013-11-14",
+  "match": "70.6 \\pm 3.3 { km } { s } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "72.5 \\pm 2.5 km s^-1 Mpc^-1",
+  "value": 72.5,
+  "posunc": 2.5,
+  "negunc": 2.5,
+  "arxiv": "1311.3461",
+  "date": "2013-11-14",
+  "match": "72.5 \\pm 2.5 { km } { s } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "76.0 \\pm 1.9 km s^-1 Mpc^-1",
+  "value": 76.0,
+  "posunc": 1.9,
+  "negunc": 1.9,
+  "arxiv": "1306.6276",
+  "date": "2013-06-26",
+  "match": "76.0 \\pm 1.9 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "71.0 \\pm 3.0 km s^-1 Mpc^-1",
+  "value": 71.0,
+  "posunc": 3.0,
+  "negunc": 3.0,
+  "arxiv": "1401.7597",
+  "date": "2014-01-29",
+  "match": "71 \\pm 3 ~ { } { \\mathrm { km } } ~ { } { \\mathrm { s } } ^ { -1 } ~ { } { \\mathrm { Mpc } } ^ { -1 } and"
+ },
+ {
+  "normalised": "64.9 \\pm 4.2 km s^-1 Mpc^-1",
+  "value": 64.9,
+  "posunc": 4.2,
+  "negunc": 4.2,
+  "arxiv": "1402.5429",
+  "date": "2014-02-21",
+  "match": "64.9 \\pm 4.2 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "71.8 ^ +4.6 _ -5.6 (stat) ^ +7.2 _ -13.800000000000002 (syst) km s^-1 Mpc^-1",
+  "value": 71.8,
+  "posunc": 8.54400374531753,
+  "negunc": 14.892951352905174,
+  "arxiv": "1305.2163",
+  "date": "2013-05-09",
+  "match": "71.8 _ { -5.6 } ^ { +4.6 } ( { stat } ) _ { -13.8 } ^ { +7.2 } ( { syst } ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "72.0 \\pm 3.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 3.0,
+  "negunc": 3.0,
+  "arxiv": "1307.6031",
+  "date": "2013-07-23",
+  "match": "72.0 \\pm 3.0 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "73.8 \\pm 2.4 km s^-1 Mpc^-1",
+  "value": 73.8,
+  "posunc": 2.4,
+  "negunc": 2.4,
+  "arxiv": "1403.2571",
+  "date": "2014-03-11",
+  "match": "73.8 \\pm 2.4 { km s ^ { -1 } Mpc ^ { -1 } } and"
+ },
+ {
+  "normalised": "70.0 \\pm 0.6 km s^-1 Mpc^-1",
+  "value": 70.0,
+  "posunc": 0.6,
+  "negunc": 0.6,
+  "arxiv": "1401.2939",
+  "date": "2014-01-13",
+  "match": "70.0 \\pm 0.6 { km } { s } ^ { -1 } { Mpc } ^ { -1 } and"
+ },
+ {
+  "normalised": "70.04 \\pm 1.0 km s^-1 Mpc^-1",
+  "value": 70.04,
+  "posunc": 1.0,
+  "negunc": 1.0,
+  "arxiv": "1401.2939",
+  "date": "2014-01-13",
+  "match": "70.04 \\pm 1 { km } { s } ^ { -1 } { Mpc } ^ { -1 } and \\Omega _ { \\Lambda 0 }"
+ },
+ {
+  "normalised": "55.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 55.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/9808157",
+  "date": "1998-08-14",
+  "match": "55 \\pm 8 km \\cdot s ^ { -1 } \\cdot Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "60.0 ^ +40.0 _ -23.0 km s^-1 Mpc^-1",
+  "value": 60.0,
+  "posunc": 40.0,
+  "negunc": 23.0,
+  "arxiv": "astro-ph/9702224",
+  "date": "1997-02-25",
+  "match": "60 ^ { +40 } _ { -23 } { kms } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "78.0 ^ +54.0 _ -27.999999999999996 km s^-1 Mpc^-1",
+  "value": 78.0,
+  "posunc": 54.0,
+  "negunc": 27.999999999999996,
+  "arxiv": "astro-ph/9702224",
+  "date": "1997-02-25",
+  "match": "78 ^ { +54 } _ { -28 } { kms } ^ { -1 } { Mpc } ^ { -1 } ."
+ },
+ {
+  "normalised": "78.0 ^ +60.0 _ -40.0 km s^-1 Mpc^-1",
+  "value": 78.0,
+  "posunc": 60.0,
+  "negunc": 40.0,
+  "arxiv": "astro-ph/9702224",
+  "date": "1997-02-25",
+  "match": "78 ^ { +60 } _ { -40 } { kms } ^ { -1 } { Mpc } ^ { -1 } ."
+ },
+ {
+  "normalised": "54.0 \\pm 13.999999999999998 km s^-1 Mpc^-1",
+  "value": 54.0,
+  "posunc": 13.999999999999998,
+  "negunc": 13.999999999999998,
+  "arxiv": "astro-ph/9703123",
+  "date": "1997-03-19",
+  "match": "54 \\pm 14 { km s ^ { -1 } Mpc ^ { -1 } } ."
+ },
+ {
+  "normalised": "70.0 \\pm 10.0 km s^-1 Mpc^-1",
+  "value": 70.0,
+  "posunc": 10.0,
+  "negunc": 10.0,
+  "arxiv": "astro-ph/9809047",
+  "date": "1998-09-04",
+  "match": "60-80 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "82.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 82.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/9809210",
+  "date": "1998-09-16",
+  "match": "82 \\pm 8 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "52.0 \\pm 13.999999999999998 km s^-1 Mpc^-1",
+  "value": 52.0,
+  "posunc": 13.999999999999998,
+  "negunc": 13.999999999999998,
+  "arxiv": "astro-ph/9704109",
+  "date": "1997-04-11",
+  "match": "52 \\pm 14 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "71.0 \\pm 11.0 km s^-1 Mpc^-1",
+  "value": 71.0,
+  "posunc": 11.0,
+  "negunc": 11.0,
+  "arxiv": "astro-ph/9704121",
+  "date": "1997-04-14",
+  "match": "71 \\pm 11 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "65.0 \\pm 2.0 ^ +20.0 _ -13.999999999999998 km s^-1 Mpc^-1",
+  "value": 65.0,
+  "posunc": 20.09975124224178,
+  "negunc": 14.14213562373095,
+  "arxiv": "astro-ph/9801256",
+  "date": "1998-01-26",
+  "match": "65 \\pm 2 ^ { +20 } _ { -14 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "77.0 \\pm 4.0 \\pm 6.999999999999999 km s^-1 Mpc^-1",
+  "value": 77.0,
+  "posunc": 8.06225774829855,
+  "negunc": 8.06225774829855,
+  "arxiv": "astro-ph/9907062",
+  "date": "1999-07-05",
+  "match": "77 \\pm 4 \\pm 7 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "59.00000000000001 ^ +8.0 _ -6.999999999999999 km s^-1 Mpc^-1",
+  "value": 59.00000000000001,
+  "posunc": 8.0,
+  "negunc": 6.999999999999999,
+  "arxiv": "astro-ph/9907257",
+  "date": "1999-07-19",
+  "match": "59 ^ { +8 } _ { -7 } km s ^ { -1 } Mpc ^ { -1 } at 95 %"
+ },
+ {
+  "normalised": "59.00000000000001 ^ +6.999999999999999 _ -6.0 km s^-1 Mpc^-1",
+  "value": 59.00000000000001,
+  "posunc": 6.999999999999999,
+  "negunc": 6.0,
+  "arxiv": "astro-ph/9907258",
+  "date": "1999-07-19",
+  "match": "59 ^ { +7 } _ { -6 } km s ^ { -1 } Mpc ^ { -1 } for \\Omega _ { m }"
+ },
+ {
+  "normalised": "69.0 \\pm 6.999999999999999 km s^-1 Mpc^-1",
+  "value": 69.0,
+  "posunc": 6.999999999999999,
+  "negunc": 6.999999999999999,
+  "arxiv": "astro-ph/9907258",
+  "date": "1999-07-19",
+  "match": "69 \\pm 7 km s ^ { -1 } Mpc ^ { -1 } for a flat"
+ },
+ {
+  "normalised": "74.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 74.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/9907258",
+  "date": "1999-07-19",
+  "match": "74 \\pm 8 km s ^ { -1 } Mpc ^ { -1 } for \\Omega _ { m }"
+ },
+ {
+  "normalised": "82.0 \\pm 16.0 km s^-1 Mpc^-1",
+  "value": 82.0,
+  "posunc": 16.0,
+  "negunc": 16.0,
+  "arxiv": "astro-ph/9802027",
+  "date": "1998-02-02",
+  "match": "82 \\pm 16 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "66.0 \\pm 6.0 km s^-1 Mpc^-1",
+  "value": 66.0,
+  "posunc": 6.0,
+  "negunc": 6.0,
+  "arxiv": "astro-ph/9908343",
+  "date": "1999-08-31",
+  "match": "66 \\pm 6 kms ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "44.0 \\pm 4.0 km s^-1 Mpc^-1",
+  "value": 44.0,
+  "posunc": 4.0,
+  "negunc": 4.0,
+  "arxiv": "astro-ph/9803207",
+  "date": "1998-03-17",
+  "match": "44 \\pm 4 km s ^ { -1 } Mpc ^ { -1 } if the lens"
+ },
+ {
+  "normalised": "65.0 \\pm 5.0 km s^-1 Mpc^-1",
+  "value": 65.0,
+  "posunc": 5.0,
+  "negunc": 5.0,
+  "arxiv": "astro-ph/9803207",
+  "date": "1998-03-17",
+  "match": "65 \\pm 5 km s ^ { -1 } Mpc ^ { -1 } if it has a"
+ },
+ {
+  "normalised": "72.0 \\pm 4.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 4.0,
+  "negunc": 4.0,
+  "arxiv": "astro-ph/9909117",
+  "date": "1999-09-07",
+  "match": "72 \\pm 4 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "71.0 \\pm 6.0 km s^-1 Mpc^-1",
+  "value": 71.0,
+  "posunc": 6.0,
+  "negunc": 6.0,
+  "arxiv": "astro-ph/9909134",
+  "date": "1999-09-07",
+  "match": "71 \\pm 6 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "78.0 \\pm 5.0 \\pm 9.0 km s^-1 Mpc^-1",
+  "value": 78.0,
+  "posunc": 10.295630140987,
+  "negunc": 10.295630140987,
+  "arxiv": "astro-ph/9909222",
+  "date": "1999-09-13",
+  "match": "78 \\pm 5 \\pm 9 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "71.0 \\pm 6.0 km s^-1 Mpc^-1",
+  "value": 71.0,
+  "posunc": 6.0,
+  "negunc": 6.0,
+  "arxiv": "astro-ph/9909260",
+  "date": "1999-09-15",
+  "match": "71 \\pm 6 km s ^ { -1 } ~ { } { Mpc } ^ { -1 } ~ { } ."
+ },
+ {
+  "normalised": "69.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 69.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/9901335",
+  "date": "1999-01-24",
+  "match": "69 \\pm 8kms ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "77.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 77.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/9911052",
+  "date": "1999-11-04",
+  "match": "77 \\pm 8 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "61.0 \\pm 11.0 km s^-1 Mpc^-1",
+  "value": 61.0,
+  "posunc": 11.0,
+  "negunc": 11.0,
+  "arxiv": "astro-ph/9911231",
+  "date": "1999-11-12",
+  "match": "61 \\pm 11 km sec ^ { -1 } Mpc ^ { -1 } at 68 %"
+ },
+ {
+  "normalised": "67.0 \\pm 5.0 km s^-1 Mpc^-1",
+  "value": 67.0,
+  "posunc": 5.0,
+  "negunc": 5.0,
+  "arxiv": "1405.0306",
+  "date": "2014-05-01",
+  "match": "67 \\pm 5 { km s ^ { -1 } } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "74.4 \\pm 1.4 (stat) \\pm 2.4 (sys) km s^-1 Mpc^-1",
+  "value": 74.4,
+  "posunc": 2.778488797889961,
+  "negunc": 2.778488797889961,
+  "arxiv": "1407.7528",
+  "date": "2014-07-28",
+  "match": "74.4 \\pm 1.4 ( stat ) \\pm 2.4 ( sys ) km s ^ { -1 } Mpc ^ { -1 } with 4 %"
+ },
+ {
+  "normalised": "73.0 \\pm 3.0 (random) km s^-1 Mpc^-1",
+  "value": 73.0,
+  "posunc": 3.0,
+  "negunc": 3.0,
+  "arxiv": "1403.1693",
+  "date": "2014-03-07",
+  "match": "73 \\pm 3 ( random ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "72.0 \\pm 6.0 (random) \\pm 6.999999999999999 (systematic) km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 9.219544457292887,
+  "negunc": 9.219544457292887,
+  "arxiv": "1407.2246",
+  "date": "2014-07-08",
+  "match": "72 \\pm 6 ( random ) \\pm 7 ( systematic ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "68.1 \\pm 5.9 km s^-1 Mpc^-1",
+  "value": 68.1,
+  "posunc": 5.9,
+  "negunc": 5.9,
+  "arxiv": "1404.2920",
+  "date": "2014-04-10",
+  "match": "68.1 \\pm 5.9 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "67.15 \\pm 0.98 km s^-1 Mpc^-1",
+  "value": 67.15,
+  "posunc": 0.98,
+  "negunc": 0.98,
+  "arxiv": "1401.0358",
+  "date": "2014-01-01",
+  "match": "67.15 \\pm 0.98 kms ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "30.0 \\pm 10.0 km s^-1 Mpc^-1",
+  "value": 30.0,
+  "posunc": 10.0,
+  "negunc": 10.0,
+  "arxiv": "1409.3570",
+  "date": "2014-09-11",
+  "match": "20-40 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "75.2 \\pm 3.3 km s^-1 Mpc^-1",
+  "value": 75.2,
+  "posunc": 3.3,
+  "negunc": 3.3,
+  "arxiv": "1408.0729",
+  "date": "2014-08-04",
+  "match": "75.2 \\pm 3.3 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "73.8 \\pm 2.4 km s^-1 Mpc^-1",
+  "value": 73.8,
+  "posunc": 2.4,
+  "negunc": 2.4,
+  "arxiv": "1404.4418",
+  "date": "2014-04-16",
+  "match": "73.8 \\pm 2.4 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "67.3 \\pm 1.2 km s^-1 Mpc^-1",
+  "value": 67.3,
+  "posunc": 1.2,
+  "negunc": 1.2,
+  "arxiv": "1404.4418",
+  "date": "2014-04-16",
+  "match": "67.3 \\pm 1.2 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "74.1 \\pm 2.2 km s^-1 Mpc^-1",
+  "value": 74.1,
+  "posunc": 2.2,
+  "negunc": 2.2,
+  "arxiv": "1404.4418",
+  "date": "2014-04-16",
+  "match": "74.1 \\pm 2.2 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "73.0 ^ +26.0 _ -22.0 km s^-1 Mpc^-1",
+  "value": 73.0,
+  "posunc": 26.0,
+  "negunc": 22.0,
+  "arxiv": "1411.5106",
+  "date": "2014-11-18",
+  "match": "73 ^ { +26 } _ { -22 } km/s/Mpc"
+ },
+ {
+  "normalised": "67.74 \\pm 0.4600000000000001 km s^-1 Mpc^-1",
+  "value": 67.74,
+  "posunc": 0.4600000000000001,
+  "negunc": 0.4600000000000001,
+  "arxiv": "1709.07258",
+  "date": "2017-09-21",
+  "match": "67.74 \\pm 0.46 ~ { } km~ { } s ^ { -1 } ~ { } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "66.98 \\pm 1.18 km s^-1 Mpc^-1",
+  "value": 66.98,
+  "posunc": 1.18,
+  "negunc": 1.18,
+  "arxiv": "1707.06547",
+  "date": "2017-07-20",
+  "match": "66.98 \\pm 1.18 km s ^ { -1 } Mpc ^ { -1 } for the flat \\Lambda \\mathrm { CDM }"
+ },
+ {
+  "normalised": "57.0 \\pm 4.0 km s^-1 Mpc^-1",
+  "value": 57.0,
+  "posunc": 4.0,
+  "negunc": 4.0,
+  "arxiv": "astro-ph/9510071",
+  "date": "1995-10-13",
+  "match": "57 \\pm 4 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "61.0 ^ +13.0 _ -15.0 km s^-1 Mpc^-1",
+  "value": 61.0,
+  "posunc": 13.0,
+  "negunc": 15.0,
+  "arxiv": "astro-ph/9805080",
+  "date": "1998-05-06",
+  "match": "61 ^ { +13 } _ { -15 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "64.0 \\pm 13.0 km s^-1 Mpc^-1",
+  "value": 64.0,
+  "posunc": 13.0,
+  "negunc": 13.0,
+  "arxiv": "astro-ph/9610162",
+  "date": "1996-10-21",
+  "match": "64 \\pm 13 km/s/Mpc"
+ },
+ {
+  "normalised": "104.0 ^ +31.000000000000004 _ -23.0 (1 - \\bar \\kappa _ 30 ^ \\prime \\prime) km s^-1 Mpc^-1",
+  "value": 104.0,
+  "posunc": 31.000000000000004,
+  "negunc": 23.0,
+  "arxiv": "astro-ph/9903274",
+  "date": "1999-03-17",
+  "match": "104 ^ { +31 } _ { -23 } ( 1 - { \\bar { \\kappa } _ { 30 ^ { \\prime \\prime } } } ) { km } { s } ^ { -1 } { Mpc } ^ { -1 } ."
+ },
+ {
+  "normalised": "77.0 ^ +29.0 _ -24.0 km s^-1 Mpc^-1",
+  "value": 77.0,
+  "posunc": 29.0,
+  "negunc": 24.0,
+  "arxiv": "astro-ph/9903274",
+  "date": "1999-03-17",
+  "match": "77 ^ { +29 } _ { -24 } { km } { s } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "51.0 ^ +13.999999999999998 _ -13.0 km s^-1 Mpc^-1",
+  "value": 51.0,
+  "posunc": 13.999999999999998,
+  "negunc": 13.0,
+  "arxiv": "astro-ph/9611216",
+  "date": "1996-11-26",
+  "match": "51 _ { -13 } ^ { +14 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "55.0 \\pm 5.0 km s^-1 Mpc^-1",
+  "value": 55.0,
+  "posunc": 5.0,
+  "negunc": 5.0,
+  "arxiv": "astro-ph/9604006",
+  "date": "1996-04-01",
+  "match": "55 \\pm 5 \\bf km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "65.0 \\pm 3.0 (statistical) km s^-1 Mpc^-1",
+  "value": 65.0,
+  "posunc": 3.0,
+  "negunc": 3.0,
+  "arxiv": "astro-ph/9604143",
+  "date": "1996-04-24",
+  "match": "65 \\pm 3 ( statistical ) km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "66.0 \\pm 12.0 km s^-1 Mpc^-1",
+  "value": 66.0,
+  "posunc": 12.0,
+  "negunc": 12.0,
+  "arxiv": "astro-ph/9604151",
+  "date": "1996-04-25",
+  "match": "66 \\pm 12 km/s/Mpc ."
+ },
+ {
+  "normalised": "57.0 ^ +23.0 _ -16.0 km s^-1 Mpc^-1",
+  "value": 57.0,
+  "posunc": 23.0,
+  "negunc": 16.0,
+  "arxiv": "astro-ph/9904165",
+  "date": "1999-04-13",
+  "match": "57 ^ { +23 } _ { -16 } kms ^ { -1 } Mpc ^ { -1 } for a an \\Omega _ { M }"
+ },
+ {
+  "normalised": "77.0 ^ +19.0 _ -15.0 km s^-1 Mpc^-1",
+  "value": 77.0,
+  "posunc": 19.0,
+  "negunc": 15.0,
+  "arxiv": "astro-ph/9904168",
+  "date": "1999-04-13",
+  "match": "77 ^ { +19 } _ { -15 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "52.0 ^ +5.0 _ -4.0 km s^-1 Mpc^-1",
+  "value": 52.0,
+  "posunc": 5.0,
+  "negunc": 4.0,
+  "arxiv": "astro-ph/9904372",
+  "date": "1999-04-27",
+  "match": "52 ^ { +5 } _ { -4 } \\mathrm { km s ^ { -1 } Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "53.0 ^ +6.0 _ -5.0 km s^-1 Mpc^-1",
+  "value": 53.0,
+  "posunc": 6.0,
+  "negunc": 5.0,
+  "arxiv": "astro-ph/9904372",
+  "date": "1999-04-27",
+  "match": "53 ^ { +6 } _ { -5 } \\mathrm { km s ^ { -1 } Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "82.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 82.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/9708252",
+  "date": "1997-08-27",
+  "match": "82 \\pm 8 { ~ { } km~ { } s ^ { -1 } ~ { } Mpc ^ { -1 } } in the CMB"
+ },
+ {
+  "normalised": "89.0 \\pm 10.0 km s^-1 Mpc^-1",
+  "value": 89.0,
+  "posunc": 10.0,
+  "negunc": 10.0,
+  "arxiv": "astro-ph/9708252",
+  "date": "1997-08-27",
+  "match": "89 \\pm 10 { ~ { } km~ { } s ^ { -1 } ~ { } Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "87.0 \\pm 11.0 km s^-1 Mpc^-1",
+  "value": 87.0,
+  "posunc": 11.0,
+  "negunc": 11.0,
+  "arxiv": "astro-ph/9807326",
+  "date": "1998-07-30",
+  "match": "87 { \\pm } 11 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "57.0 \\pm 6.999999999999999 km s^-1 Mpc^-1",
+  "value": 57.0,
+  "posunc": 6.999999999999999,
+  "negunc": 6.999999999999999,
+  "arxiv": "astro-ph/9709040",
+  "date": "1997-09-04",
+  "match": "57 \\pm 7 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "72.0 \\pm 6.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 6.0,
+  "negunc": 6.0,
+  "arxiv": "astro-ph/9905080",
+  "date": "1999-05-07",
+  "match": "72 \\pm 6 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "73.8 \\pm 2.4 km s^-1 Mpc^-1",
+  "value": 73.8,
+  "posunc": 2.4,
+  "negunc": 2.4,
+  "arxiv": "1510.05545",
+  "date": "2015-10-19",
+  "match": "73.8 \\pm 2.4 \\mathrm { km s } ^ { -1 } \\mathrm { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "67.8 \\pm 0.9 km s^-1 Mpc^-1",
+  "value": 67.8,
+  "posunc": 0.9,
+  "negunc": 0.9,
+  "arxiv": "1510.05545",
+  "date": "2015-10-19",
+  "match": "67.8 \\pm 0.9 \\mathrm { km s } ^ { -1 } \\mathrm { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "68.9 \\pm 0.5 km s^-1 Mpc^-1",
+  "value": 68.9,
+  "posunc": 0.5,
+  "negunc": 0.5,
+  "arxiv": "1510.05545",
+  "date": "2015-10-19",
+  "match": "68.9 \\pm 0.5 \\mathrm { km s } ^ { -1 } \\mathrm { Mpc } ^ { -1 } to 71.2 \\pm 0.7 \\mathrm { km s } ^ { -1 } \\mathrm { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "77.9 \\pm 3.6 km s^-1 Mpc^-1",
+  "value": 77.9,
+  "posunc": 3.6,
+  "negunc": 3.6,
+  "arxiv": "1601.03047",
+  "date": "2016-01-12",
+  "match": "77.9 \\pm 3.6 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "73.24 \\pm 1.74 km s^-1 Mpc^-1",
+  "value": 73.24,
+  "posunc": 1.74,
+  "negunc": 1.74,
+  "arxiv": "1604.01424",
+  "date": "2016-04-05",
+  "match": "73.24 \\pm 1.74 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "86.6 ^ +6.8 _ -6.900000000000001 km s^-1 Mpc^-1",
+  "value": 86.6,
+  "posunc": 6.8,
+  "negunc": 6.900000000000001,
+  "arxiv": "1511.03662",
+  "date": "2015-11-11",
+  "match": "86.6 ^ { +6.8 } _ { -6.9 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "74.5 ^ +8.0 _ -7.800000000000001 km s^-1 Mpc^-1",
+  "value": 74.5,
+  "posunc": 8.0,
+  "negunc": 7.800000000000001,
+  "arxiv": "1511.03662",
+  "date": "2015-11-11",
+  "match": "74.5 ^ { +8.0 } _ { -7.8 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "75.0 \\pm 2.0 km s^-1 Mpc^-1",
+  "value": 75.0,
+  "posunc": 2.0,
+  "negunc": 2.0,
+  "arxiv": "1605.01765",
+  "date": "2016-05-05",
+  "match": "75 \\pm 2 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "64.0 ^ +13.999999999999998 _ -9.0 km s^-1 Mpc^-1",
+  "value": 64.0,
+  "posunc": 13.999999999999998,
+  "negunc": 9.0,
+  "arxiv": "1510.08852",
+  "date": "2015-10-29",
+  "match": "64 _ { -9 } ^ { +14 } \\mathrm { km } \\mathrm { s } ^ { -1 } \\mathrm { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "73.0 \\pm 1.7499999999999998 km s^-1 Mpc^-1",
+  "value": 73.0,
+  "posunc": 1.7499999999999998,
+  "negunc": 1.7499999999999998,
+  "arxiv": "1704.04784",
+  "date": "2017-04-16",
+  "match": "73.00 \\pm 1.75 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "73.0 \\pm 1.7499999999999998 km s^-1 Mpc^-1",
+  "value": 73.0,
+  "posunc": 1.7499999999999998,
+  "negunc": 1.7499999999999998,
+  "arxiv": "1702.04189",
+  "date": "2017-02-14",
+  "match": "73.00 \\pm 1.75 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "69.5 \\pm 2.5 km s^-1 Mpc^-1",
+  "value": 69.5,
+  "posunc": 2.5,
+  "negunc": 2.5,
+  "arxiv": "1709.00646",
+  "date": "2017-09-02",
+  "match": "69.5 \\pm 2.5 \\mathrm { km s ^ { -1 } Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "70.4 \\pm 1.2 km s^-1 Mpc^-1",
+  "value": 70.4,
+  "posunc": 1.2,
+  "negunc": 1.2,
+  "arxiv": "1709.00646",
+  "date": "2017-09-02",
+  "match": "70.4 \\pm 1.2 \\mathrm { km s ^ { -1 } Mpc ^ { -1 } } and \\Omega _ { m }"
+ },
+ {
+  "normalised": "72.8 \\pm 1.6 (statistical) \\pm 2.7 (systematic) km s^-1 Mpc^-1",
+  "value": 72.8,
+  "posunc": 3.1384709652950433,
+  "negunc": 3.1384709652950433,
+  "arxiv": "1707.00715",
+  "date": "2017-07-03",
+  "match": "72.8 \\pm 1.6 ( statistical ) \\pm 2.7 ( systematic ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "71.2 \\pm 2.1 km s^-1 Mpc^-1",
+  "value": 71.2,
+  "posunc": 2.1,
+  "negunc": 2.1,
+  "arxiv": "1707.09353",
+  "date": "2017-07-28",
+  "match": "71.2 \\pm 2.1 \\mbox { km } s ^ { -1 } \\mbox { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "67.6 ^ +7.800000000000001 _ -7.3999999999999995 km s^-1 Mpc^-1",
+  "value": 67.6,
+  "posunc": 7.800000000000001,
+  "negunc": 7.3999999999999995,
+  "arxiv": "1708.08635",
+  "date": "2017-08-29",
+  "match": "67.6 ^ { +7.8 } _ { -7.4 } kms ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "53.0 ^ +10.0 _ -6.999999999999999 km s^-1 Mpc^-1",
+  "value": 53.0,
+  "posunc": 10.0,
+  "negunc": 6.999999999999999,
+  "arxiv": "astro-ph/9705093",
+  "date": "1997-05-13",
+  "match": "53 ^ { +10 } _ { -7 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "69.6 \\pm 2.9 km s^-1 Mpc^-1",
+  "value": 69.6,
+  "posunc": 2.9,
+  "negunc": 2.9,
+  "arxiv": "1607.07825",
+  "date": "2016-07-26",
+  "match": "69.6 \\pm 2.9 km Mpc ^ { -1 } s ^ { -1 }"
+ },
+ {
+  "normalised": "67.6 ^ +0.7 _ -0.6 km s^-1 Mpc^-1",
+  "value": 67.6,
+  "posunc": 0.7,
+  "negunc": 0.6,
+  "arxiv": "1607.03143",
+  "date": "2016-07-11",
+  "match": "67.6 _ { -0.6 } ^ { +0.7 } \\mathrm { km s ^ { -1 } Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "67.3 \\pm 1.0 km s^-1 Mpc^-1",
+  "value": 67.3,
+  "posunc": 1.0,
+  "negunc": 1.0,
+  "arxiv": "1607.03155",
+  "date": "2016-07-11",
+  "match": "67.3 \\pm 1.0 { km } { s } ^ { -1 } { Mpc } ^ { -1 } even for our most"
+ },
+ {
+  "normalised": "67.8 \\pm 1.2 km s^-1 Mpc^-1",
+  "value": 67.8,
+  "posunc": 1.2,
+  "negunc": 1.2,
+  "arxiv": "1607.03155",
+  "date": "2016-07-11",
+  "match": "67.8 \\pm 1.2 { km } { s } ^ { -1 } { Mpc } ^ { -1 } ."
+ },
+ {
+  "normalised": "67.6 \\pm 0.5 km s^-1 Mpc^-1",
+  "value": 67.6,
+  "posunc": 0.5,
+  "negunc": 0.5,
+  "arxiv": "1607.03155",
+  "date": "2016-07-11",
+  "match": "67.6 \\pm 0.5 { km } { s } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "69.6 \\pm 0.7 km s^-1 Mpc^-1",
+  "value": 69.6,
+  "posunc": 0.7,
+  "negunc": 0.7,
+  "arxiv": "1611.00904",
+  "date": "2016-11-03",
+  "match": "69.6 \\pm 0.7 km s ^ { -1 } Mpc ^ { -1 } than the"
+ },
+ {
+  "normalised": "73.24 \\pm 1.74 km s^-1 Mpc^-1",
+  "value": 73.24,
+  "posunc": 1.74,
+  "negunc": 1.74,
+  "arxiv": "1611.00904",
+  "date": "2016-11-03",
+  "match": "73.24 \\pm 1.74 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "73.75 \\pm 2.11 km s^-1 Mpc^-1",
+  "value": 73.75,
+  "posunc": 2.11,
+  "negunc": 2.11,
+  "arxiv": "1611.06088",
+  "date": "2016-11-18",
+  "match": "73.75 \\pm 2.11 \\mathrm { km } \\mathrm { s } ^ { -1 } \\mathrm { Mpc } ^ { -1 } if we use HPs for all data"
+ },
+ {
+  "normalised": "67.81 \\pm 0.9200000000000002 km s^-1 Mpc^-1",
+  "value": 67.81,
+  "posunc": 0.9200000000000002,
+  "negunc": 0.9200000000000002,
+  "arxiv": "1611.06088",
+  "date": "2016-11-18",
+  "match": "67.81 \\pm 0.92 \\mathrm { km } \\mathrm { s } ^ { -1 } \\mathrm { Mpc } ^ { -1 } and"
+ },
+ {
+  "normalised": "73.24 \\pm 1.74 km s^-1 Mpc^-1",
+  "value": 73.24,
+  "posunc": 1.74,
+  "negunc": 1.74,
+  "arxiv": "1608.00534",
+  "date": "2016-08-01",
+  "match": "73.24 \\pm 1.74 { km } { s } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "66.93 \\pm 0.62 km s^-1 Mpc^-1",
+  "value": 66.93,
+  "posunc": 0.62,
+  "negunc": 0.62,
+  "arxiv": "1608.00534",
+  "date": "2016-08-01",
+  "match": "66.93 \\pm 0.62 { km } { s } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "69.21 \\pm 3.72 km s^-1 Mpc^-1",
+  "value": 69.21,
+  "posunc": 3.72,
+  "negunc": 3.72,
+  "arxiv": "1610.01202",
+  "date": "2016-10-01",
+  "match": "69.21 \\pm 3.72 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "71.9 ^ +2.4 _ -3.0 km s^-1 Mpc^-1",
+  "value": 71.9,
+  "posunc": 2.4,
+  "negunc": 3.0,
+  "arxiv": "1607.01790",
+  "date": "2016-07-06",
+  "match": "71.9 ^ { +2.4 } _ { -3.0 } { km s ^ { -1 } Mpc ^ { -1 } } and \\Omega _ { \\Lambda }"
+ },
+ {
+  "normalised": "69.2 ^ +1.4 _ -2.2 km s^-1 Mpc^-1",
+  "value": 69.2,
+  "posunc": 1.4,
+  "negunc": 2.2,
+  "arxiv": "1607.01790",
+  "date": "2016-07-06",
+  "match": "69.2 _ { -2.2 } ^ { +1.4 } { km s ^ { -1 } Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "79.0 ^ +4.4 _ -4.2 km s^-1 Mpc^-1",
+  "value": 79.0,
+  "posunc": 4.4,
+  "negunc": 4.2,
+  "arxiv": "1607.01790",
+  "date": "2016-07-06",
+  "match": "79.0 _ { -4.2 } ^ { +4.4 } { km s ^ { -1 } Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "77.9 ^ +5.0 _ -4.2 km s^-1 Mpc^-1",
+  "value": 77.9,
+  "posunc": 5.0,
+  "negunc": 4.2,
+  "arxiv": "1607.01790",
+  "date": "2016-07-06",
+  "match": "77.9 _ { -4.2 } ^ { +5.0 } { km s ^ { -1 } Mpc ^ { -1 } }"
+ },
+ {
+  "normalised": "66.4 ^ +5.0 _ -4.5 km s^-1 Mpc^-1",
+  "value": 66.4,
+  "posunc": 5.0,
+  "negunc": 4.5,
+  "arxiv": "1612.01974",
+  "date": "2016-12-06",
+  "match": "66.4 ^ { +5.0 } _ { -4.5 } ~ { } { km~ { } s ^ { -1 } } ~ { } Mpc ^ { -1 } ~ { } for the"
+ },
+ {
+  "normalised": "71.66 \\pm 1.8 (random) \\pm 1.88 (systematic) km s^-1 Mpc^-1",
+  "value": 71.66,
+  "posunc": 2.6027677575995902,
+  "negunc": 2.6027677575995902,
+  "arxiv": "1702.01118",
+  "date": "2017-02-03",
+  "match": "71.66 \\pm 1.80 ( random ) \\pm 1.88 ( systematic ) km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "73.72 \\pm 2.03 \\pm 1.94 km s^-1 Mpc^-1",
+  "value": 73.72,
+  "posunc": 2.8079351844371336,
+  "negunc": 2.8079351844371336,
+  "arxiv": "1702.01118",
+  "date": "2017-02-03",
+  "match": "73.72 \\pm 2.03 \\pm 1.94 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "71.17 \\pm 1.66 \\pm 1.87 km s^-1 Mpc^-1",
+  "value": 71.17,
+  "posunc": 2.5004999500099974,
+  "negunc": 2.5004999500099974,
+  "arxiv": "1702.01118",
+  "date": "2017-02-03",
+  "match": "71.17 \\pm 1.66 \\pm 1.87 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "72.5 ^ +2.5 _ -8.0 km s^-1 Mpc^-1",
+  "value": 72.5,
+  "posunc": 2.5,
+  "negunc": 8.0,
+  "arxiv": "1701.01789",
+  "date": "2017-01-06",
+  "match": "72.5 ^ { +2.5 } _ { -8 } km/sec/Mpc with"
+ },
+ {
+  "normalised": "73.0 \\pm 1.8 km s^-1 Mpc^-1",
+  "value": 73.0,
+  "posunc": 1.8,
+  "negunc": 1.8,
+  "arxiv": "1504.04037",
+  "date": "2015-04-15",
+  "match": "73 \\pm 1.8 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "70.6 \\pm 2.6 km s^-1 Mpc^-1",
+  "value": 70.6,
+  "posunc": 2.6,
+  "negunc": 2.6,
+  "arxiv": "1412.6501",
+  "date": "2014-12-19",
+  "match": "70.6 \\pm 2.6 \\mathrm { km s ^ { -1 } Mpc ^ { -1 } } when"
+ },
+ {
+  "normalised": "72.6 ^ +3.8 _ -3.4 km s^-1 Mpc^-1",
+  "value": 72.6,
+  "posunc": 3.8,
+  "negunc": 3.4,
+  "arxiv": "1411.5678",
+  "date": "2014-11-20",
+  "match": "72.6 _ { -3.4 } ^ { +3.8 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "73.9 ^ +10.6 _ -9.5 km s^-1 Mpc^-1",
+  "value": 73.9,
+  "posunc": 10.6,
+  "negunc": 9.5,
+  "arxiv": "1411.5678",
+  "date": "2014-11-20",
+  "match": "73.9 _ { -9.5 } ^ { +10.6 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "69.8 \\pm 2.6 (random) \\pm 3.9000000000000004 (systematic) km s^-1 Mpc^-1",
+  "value": 69.8,
+  "posunc": 4.687216658103186,
+  "negunc": 4.687216658103186,
+  "arxiv": "1506.03089",
+  "date": "2015-06-09",
+  "match": "69.8 \\pm 2.6 ( random ) \\pm 3.9 ( systematic ) km s ^ { -1 } Mpc ^ { -1 } and 72.2 \\pm 3.3"
+ },
+ {
+  "normalised": "67.3 \\pm 1.1 km s^-1 Mpc^-1",
+  "value": 67.3,
+  "posunc": 1.1,
+  "negunc": 1.1,
+  "arxiv": "1411.1074",
+  "date": "2014-11-04",
+  "match": "67.3 \\pm 1.1 { km } { s } ^ { -1 } { Mpc } ^ { -1 }"
+ },
+ {
+  "normalised": "67.2 ^ +4.5 _ -4.0 km s^-1 Mpc^-1",
+  "value": 67.2,
+  "posunc": 4.5,
+  "negunc": 4.0,
+  "arxiv": "1505.07671",
+  "date": "2015-05-28",
+  "match": "67.2 _ { -4.0 } ^ { +4.5 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "94.3 ^ +32.7 _ -35.8 km s^-1 Mpc^-1",
+  "value": 94.3,
+  "posunc": 32.7,
+  "negunc": 35.8,
+  "arxiv": "1505.07671",
+  "date": "2015-05-28",
+  "match": "94.3 _ { -35.8 } ^ { +32.7 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "71.23 \\pm 1.54 km s^-1 Mpc^-1",
+  "value": 71.23,
+  "posunc": 1.54,
+  "negunc": 1.54,
+  "arxiv": "1507.02517",
+  "date": "2015-07-09",
+  "match": "71.23 \\pm 1.54 \\mathrm { km s ^ { -1 } Mpc ^ { -1 } } from"
+ },
+ {
+  "normalised": "69.37 \\pm 1.59 km s^-1 Mpc^-1",
+  "value": 69.37,
+  "posunc": 1.59,
+  "negunc": 1.59,
+  "arxiv": "1507.02517",
+  "date": "2015-07-09",
+  "match": "69.37 \\pm 1.59 \\mathrm { km s ^ { -1 } Mpc ^ { -1 } } that the Omh ^ { 2 }"
+ },
+ {
+  "normalised": "68.5 ^ +6.7 _ -6.1 km s^-1 Mpc^-1",
+  "value": 68.5,
+  "posunc": 6.7,
+  "negunc": 6.1,
+  "arxiv": "astro-ph/0607120",
+  "date": "2006-07-06",
+  "match": "68.5 ^ { +6.7 } _ { -6.1 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "72.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/0702741",
+  "date": "2007-02-28",
+  "match": "72 \\pm 8 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "72.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "0804.0692",
+  "date": "2008-04-04",
+  "match": "72 \\pm 8 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "72.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/0609293",
+  "date": "2006-09-11",
+  "match": "72 \\pm 8 km s ^ { -1 } Mpc ^ { -1 } and 72 \\pm 5 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "72.8 \\pm 8.2 km s^-1 Mpc^-1",
+  "value": 72.8,
+  "posunc": 8.2,
+  "negunc": 8.2,
+  "arxiv": "0708.0140",
+  "date": "2007-08-01",
+  "match": "72.8 \\pm 8.2 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "67.0 \\pm 8.0 (2 \\sigma) km s^-1 Mpc^-1",
+  "value": 67.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/0301334",
+  "date": "2003-01-16",
+  "match": "67 \\pm 8 ( 2 \\sigma ) km~ { } Mpc ^ { -1 } ~ { } sec ^ { -1 }"
+ },
+ {
+  "normalised": "71.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 71.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/0107471",
+  "date": "2001-07-24",
+  "match": "71 \\pm 8 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "71.0 ^ +17.0 _ -23.0 km s^-1 Mpc^-1",
+  "value": 71.0,
+  "posunc": 17.0,
+  "negunc": 23.0,
+  "arxiv": "astro-ph/0010049",
+  "date": "2000-10-02",
+  "match": "71 ^ { +17 } _ { -23 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "73.0 ^ +3.0 _ -4.0 km s^-1 Mpc^-1",
+  "value": 73.0,
+  "posunc": 3.0,
+  "negunc": 4.0,
+  "arxiv": "0903.1027",
+  "date": "2009-03-05",
+  "match": "73 ^ { +3 } _ { -4 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "63.1 \\pm 2.5 km s^-1 Mpc^-1",
+  "value": 63.1,
+  "posunc": 2.5,
+  "negunc": 2.5,
+  "arxiv": "0901.4172",
+  "date": "2009-01-26",
+  "match": "63.1 \\pm 2.5 kms ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "79.0 \\pm 6.0 km s^-1 Mpc^-1",
+  "value": 79.0,
+  "posunc": 6.0,
+  "negunc": 6.0,
+  "arxiv": "1001.1428",
+  "date": "2010-01-09",
+  "match": "73-85 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "73.0 \\pm 2.0 (random) \\pm 4.0 (systematic) km s^-1 Mpc^-1",
+  "value": 73.0,
+  "posunc": 4.47213595499958,
+  "negunc": 4.47213595499958,
+  "arxiv": "1004.1856",
+  "date": "2010-04-11",
+  "match": "73 \\pm 2 ( random ) \\pm 4 ( systematic ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "66.0 ^ +6.0 _ -4.0 km s^-1 Mpc^-1",
+  "value": 66.0,
+  "posunc": 6.0,
+  "negunc": 4.0,
+  "arxiv": "1002.2570",
+  "date": "2010-02-12",
+  "match": "66 _ { -4 } ^ { +6 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "49.0 \\pm 29.0 km s^-1 Mpc^-1",
+  "value": 49.0,
+  "posunc": 29.0,
+  "negunc": 29.0,
+  "arxiv": "astro-ph/9808186",
+  "date": "1998-08-18",
+  "match": "49 \\pm 29 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "72.0 \\pm 6.999999999999999 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 6.999999999999999,
+  "negunc": 6.999999999999999,
+  "arxiv": "astro-ph/9809064",
+  "date": "1998-09-05",
+  "match": "72 \\pm 7 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "68.0 \\pm 2.0 (random) \\pm 5.0 (systematic) km s^-1 Mpc^-1",
+  "value": 68.0,
+  "posunc": 5.385164807134504,
+  "negunc": 5.385164807134504,
+  "arxiv": "astro-ph/9908149",
+  "date": "1999-08-13",
+  "match": "68 \\pm 2 ( { random } ) \\pm 5 ( { systematic } ) km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "69.0 ^ +13.0 _ -19.0 km s^-1 Mpc^-1",
+  "value": 69.0,
+  "posunc": 13.0,
+  "negunc": 19.0,
+  "arxiv": "astro-ph/9811282",
+  "date": "1998-11-18",
+  "match": "69 ^ { +13 } _ { -19 } km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "68.5 \\pm 0.5 km s^-1 Mpc^-1",
+  "value": 68.5,
+  "posunc": 0.5,
+  "negunc": 0.5,
+  "arxiv": "1409.3198",
+  "date": "2014-09-10",
+  "match": "68-69 km s ^ { -1 } Mpc ^ { -1 } for the"
+ },
+ {
+  "normalised": "69.6 \\pm 0.7 km s^-1 Mpc^-1",
+  "value": 69.6,
+  "posunc": 0.7,
+  "negunc": 0.7,
+  "arxiv": "1406.1718",
+  "date": "2014-06-06",
+  "match": "69.6 \\pm 0.7 { km s } ^ { -1 } { Mpc } ^ { -1 } ."
+ },
+ {
+  "normalised": "76.0 \\pm 34.0 km s^-1 Mpc^-1",
+  "value": 76.0,
+  "posunc": 34.0,
+  "negunc": 34.0,
+  "arxiv": "astro-ph/9506090",
+  "date": "1995-06-15",
+  "match": "42-110 km s ^ { -1 } Mpc ^ { -1 }"
+ },
+ {
+  "normalised": "67.0 \\pm 9.0 km s^-1 Mpc^-1",
+  "value": 67.0,
+  "posunc": 9.0,
+  "negunc": 9.0,
+  "arxiv": "astro-ph/9602017",
+  "date": "1996-02-02",
+  "match": "67 \\pm~ { } 9 ~ { } km~ { } s ^ { -1 } Mpc ^ { -1 } and"
+ },
+ {
+  "normalised": "79.0 ^ +23.0 _ -17.0 (68 % CL) km s^-1 Mpc^-1",
+  "value": 79.0,
+  "posunc": 23.0,
+  "negunc": 17.0,
+  "arxiv": "1207.6914",
+  "date": "2012-07-30",
+  "match": "79 ^ { +23 } _ { -17 } ( 68 % CL ) km/s/Mpc ."
+ },
+ {
+  "normalised": "222.00000000000003 \\pm 6.999999999999999 km s^-1 Mpc^-1",
+  "value": 222.00000000000003,
+  "posunc": 6.999999999999999,
+  "negunc": 6.999999999999999,
+  "arxiv": "1406.7695",
+  "date": "2014-06-30",
+  "match": "222 \\pm 7 km/sec/Mpc at z"
+ },
+ {
+  "normalised": "70.1 \\pm 0.34 km s^-1 Mpc^-1",
+  "value": 70.1,
+  "posunc": 0.34,
+  "negunc": 0.34,
+  "arxiv": "1509.04342",
+  "date": "2015-09-14",
+  "match": "70.1 \\pm 0.34 ~ { } { km s ^ { -1 } Mpc ^ { -1 } } is in"
+ },
+ {
+  "normalised": "67.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 67.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/9702152",
+  "date": "1997-02-18",
+  "match": "67 \\pm 8 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "62.00000000000001 \\pm 6.0 km s^-1 Mpc^-1",
+  "value": 62.00000000000001,
+  "posunc": 6.0,
+  "negunc": 6.0,
+  "arxiv": "astro-ph/9805024",
+  "date": "1998-05-04",
+  "match": "62 \\pm 6 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "70.0 \\pm 5.0 km s^-1 Mpc^-1",
+  "value": 70.0,
+  "posunc": 5.0,
+  "negunc": 5.0,
+  "arxiv": "astro-ph/9610116",
+  "date": "1996-10-15",
+  "match": "70 \\pm 5 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "76.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 76.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/9610116",
+  "date": "1996-10-15",
+  "match": "76 \\pm 8 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "67.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 67.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/9610116",
+  "date": "1996-10-15",
+  "match": "67 \\pm 8 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "72.0 ^ +10.0 _ -12.0 km s^-1 Mpc^-1",
+  "value": 72.0,
+  "posunc": 10.0,
+  "negunc": 12.0,
+  "arxiv": "astro-ph/9611140",
+  "date": "1996-11-18",
+  "match": "72 _ { -12 } ^ { +10 } km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "65.0 \\pm 8.0 km s^-1 Mpc^-1",
+  "value": 65.0,
+  "posunc": 8.0,
+  "negunc": 8.0,
+  "arxiv": "astro-ph/9611141",
+  "date": "1996-11-18",
+  "match": "65 \\pm 8 km s ^ { -1 } Mpc ^ { -1 } ."
+ },
+ {
+  "normalised": "69.0 \\pm 5.0 km s^-1 Mpc^-1",
+  "value": 69.0,
+  "posunc": 5.0,
+  "negunc": 5.0,
+  "arxiv": "astro-ph/9612072",
+  "date": "1996-12-06",
+  "match": "69 \\pm 5 km s ^ { -1 } Mpc ^ { -1 } ."
+ }
+]

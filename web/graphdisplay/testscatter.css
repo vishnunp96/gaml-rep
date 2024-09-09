@@ -1,0 +1,21 @@
+rect {
+  /*fill: none;*/
+  pointer-events: all;
+}
+
+circle {
+  fill: none;
+  stroke-width: 2.5px;
+}
+
+.d3 {
+    background: #FFF;
+    overflow: hidden;
+}
+
+.brush .extent {
+	stroke: #fff;
+	fill: #fff;
+	fill-opacity: .125;
+	shape-rendering: crispEdges;
+}

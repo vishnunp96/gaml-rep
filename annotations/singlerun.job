@@ -1,0 +1,11 @@
+#!/bin/bash
+#$ -S /bin/bash
+#$ -o $HOME/logs/$JOB_NAME$JOB_ID.o
+#$ -e $HOME/logs/$JOB_NAME$JOB_ID.e
+#$ -l tmem=8G
+#$ -l h_rt=4:00:00
+#$ -l gpu=1
+
+SIMG="$HOME/testCudaImage2.simg"
+
+singularity exec -B /cluster/project2/gaml/:/mnt --nv "$SIMG" /home/tcrossla/.local/anaconda3/bin/python $*

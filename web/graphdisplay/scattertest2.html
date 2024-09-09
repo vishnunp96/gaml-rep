@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+	div.tooltip {
+		position: absolute;	
+		text-align: center;	
+		width: auto;	
+		height: auto;		
+		padding: 2px;	
+		font: 12px sans-serif;	
+		background: lightsteelblue;	
+		border: 0px;					
+		border-radius: 8px;
+	}
+</style>
+<head>
+	<meta charset="UTF-8">
+	<title>NumericalAtlas</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<link rel="stylesheet" href="testscatter.css">
+</head>
+<body marginwidth="0" marginheight="0">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1>Numerical Atlas</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-8">
+				<div class="d3"></div>
+			</div>
+			<div class="col-4">
+				Second column, first row.
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				First column, second row.
+			</div>
+			<div class="col-6">
+				Second column, second row.
+			</div>
+		</div>
+	</div>
+
+
+    <script>
+
+        var margin = { top: 20, right: 20, bottom: 30, left: 30 };
+		var element = d3.select(".d3").node();
+		var totalWidth = element.getBoundingClientRect().width,
+			totalHeight = totalWidth; // 480
+
+		var histogramDepth = 0.2*totalWidth,
+			histogramMargin = 10;
+
+		// This is the size of the drawing area (scatter plot and histograms)
+		var width = totalWidth - margin.left - margin.right,
+			height = totalHeight - margin.top - margin.bottom;
+
+        var scatterWidth = width - histogramMargin - histogramDepth,
+			scatterHeight = height - histogramMargin - histogramDepth;
+
+		/*
+        var tooltip = d3.select(".d3").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+		*/
+
+		var tooltip = d3.select("body")
+			.append("div")
+			.attr("class", "tooltip")
+			.style("opacity", 0);
+
+        var x = d3.scaleTime()          
+              .range([0, scatterWidth])
+              .nice();
+
+        var y = d3.scaleLinear()
+            .range([scatterHeight, 0])
+			.nice();
+
+        var xAxis = d3.axisBottom(x).ticks(12),
+            yAxis = d3.axisLeft(y).ticks(10 * scatterHeight / scatterWidth);
+
+        var brush = d3.brush().extent([[0, 0], [scatterWidth, scatterHeight]]).on("end", brushended),
+            idleTimeout,
+            idleDelay = 350;
+     
+        var svg = d3.select(".d3").append("svg")
+                    .attr("width", totalWidth)
+                    .attr("height", totalHeight)
+                    .append("g")
+                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var clip = svg.append("defs").append("svg:clipPath")
+            .attr("id", "clip")
+            .append("svg:rect")
+            .attr("width", scatterWidth )
+            .attr("height", scatterHeight )
+            .attr("x", 0) 
+            .attr("y", 0); 
+
+        var scatter = svg.append("g")
+				.attr("id", "scatterplot")
+				.attr("clip-path", "url(#clip)")
+				.attr("transform", "translate(" + 0 + "," + (histogramMargin+histogramDepth) + ")");
+
+        var histX = svg.append("g")
+				.attr("id", "histX");
+			histY = svg.append("g")
+				.attr("id", "histY")
+				.attr("transform", "translate(" + (histogramMargin + histogramDepth) + "," + (scatterWidth + histogramMargin) + ")");
+
+        function brushended() {
+            var s = d3.event.selection;
+            if (!s) {
+                if (!idleTimeout) return idleTimeout = setTimeout(idled, idleDelay);
+				var data = scatter.selectAll(".dot").data(); 
+                x.domain(d3.extent(data, function (d) { return d.date; })).nice();
+                y.domain(d3.extent(data, function (d) { return d.value; })).nice();
+            } else {
+                x.domain([s[0][0], s[1][0]].map(x.invert, x));
+                y.domain([s[1][1], s[0][1]].map(y.invert, y));
+                scatter.select(".brush").call(brush.move, null);
+            }
+            zoom();
+        }
+
+        function idled() {
+            idleTimeout = null;
+        }
+
+        function zoom() {
+            var t = scatter.transition().duration(750);
+            svg.select("#axis--x").transition(t).call(xAxis);
+            svg.select("#axis--y").transition(t).call(yAxis);
+            scatter.selectAll("circle").transition(t)
+				.attr("cx", function (d) { return x(d.date); })
+				.attr("cy", function (d) { return y(d.value); });
+        }
+
+		d3.json("h_0_web_data.json")
+			.then(function (data) {
+				var parseDate = d3.timeParse("%Y-%m-%d")
+				for(i in data) {
+					data[i].date = parseDate(data[i].date);
+				}
+
+				x.domain(d3.extent(data, function (d) { return d.date; })).nice();
+				y.domain(d3.extent(data, function (d) { return d.value; })).nice();
+
+				scatter.append("g")
+					.attr("class", "brush")
+					.call(brush);
+
+				scatter.selectAll(".dot")
+					.data(data)
+					.enter().append("circle")
+						.attr("class", "dot")
+						.attr("r", 4)
+						.attr("cx", function (d) { return x(d.date); })
+						.attr("cy", function (d) { return y(d.value); })
+						.attr("opacity", 0.5)
+						.style("fill", "#4292c6")
+					.on("mouseover", function(d) {
+							tooltip.style("opacity",0)
+								.html('<a href="http://arxiv.org/abs/' + d.arxiv + '" target="_blank"> ' + d.arxiv + "</a><br/>" + Number(d.value).toFixed(2))
+								.style("left", (d3.event.pageX)+"px")
+								.style("top", (d3.event.pageY-tooltip.node().clientHeight)+"px")
+								.style("pointer-events", "none");
+							tooltip.transition()
+								.duration(200)
+								.style("pointer-events","auto")
+								.style("opacity",.9);
+							tooltip.transition()
+								.delay(2500)
+								.duration(750)
+								.style("opacity",0)
+								.style("pointer-events", "none");
+						});
+				
+				// x axis
+				svg.append("g")
+				   .attr("class", "x axis")
+				   .attr('id', "axis--x")
+				   .attr("transform", "translate(0," + (scatterHeight+ histogramMargin + histogramDepth) + ")")
+				   .call(xAxis);
+
+				svg.append("text")
+					.style("text-anchor", "end")
+					.attr("x", scatterWidth)
+					.attr("y", scatterHeight + histogramMargin + histogramDepth - 8)
+					.text("Date");
+
+				// y axis
+				svg.append("g")
+					.attr("class", "y axis")
+					.attr('id', "axis--y")
+					.attr("transform", "translate(0," + (histogramMargin + histogramDepth) + ")")
+					.call(yAxis);
+
+				svg.append("text")
+					.attr("transform", "translate(0," + (histogramMargin + histogramDepth) + ") rotate(-90)")
+					//.attr("transform", "rotate(-90)")
+					.attr("y", 6)
+					.attr("dy", "1em")
+					.style("text-anchor", "end")
+					.text("Extracted Value");
+
+				// X histogram
+				var xHistData = d3.histogram()
+						.domain(x.domain())
+						.thresholds(x.ticks(10))
+						.value(function (d) { return d.date; })(data);
+				console.log(xHistData);
+				var xHistScale = d3.scaleLinear()
+						.domain(d3.extent(xHistData, function (d) { return d.length; }))
+						.range([histogramDepth,0]);
+				var xBar = histX.selectAll(".bar")
+						.data(xHistData)
+						.enter().append("g")
+						.attr("class","bar")
+						.attr("transform", function(d) {
+								console.log("translate(" + x(d.x0) + "," + xHistScale(d.length) + ")");
+								return "translate(" + x(d.x0) + "," + xHistScale(d.length) + ")";
+							});
+				var bWidth = xHistScale(xHistData[0].x1-xHistData[1].x0);
+				xBar.append("rect")
+					.attr("x",1)
+					.attr("width",bWidth)
+					.attr("height", function (d) { return -xHistScale(d.length); })
+					.attr("fill", "steelblue");
+			});
+
+    </script>
+</body>

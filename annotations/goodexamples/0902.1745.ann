@@ -1,0 +1,22 @@
+T1	ObjectName 144 162	SWIFT J1753.5-0127
+T2	ObjectName 167 179	GRO J1655-40
+T3	ParameterName 492 506	spin parameter
+T4	ObjectName 510 528	SWIFT J1753.5-0127
+T5	MeasuredValue 535 563	0.76 ^ { +0.11 } _ { -0.15 }
+R1	Property Arg1:T4 Arg2:T3	
+R2	Measurement Arg1:T3 Arg2:T5	
+T6	ParameterName 570 581	inclination
+R3	Property Arg1:T4 Arg2:T6	
+T7	MeasuredValue 613 641	55 ^ { +2 } _ { -7 } degrees
+R4	Measurement Arg1:T6 Arg2:T7	
+T8	ObjectName 648 660	GRO J1655-40
+T9	ParameterName 742 763	innermost inclination
+T10	MeasuredValue 767 796	30 ^ { +5 } _ { -10 } degrees
+R5	Property Arg1:T8 Arg2:T9	
+R6	Measurement Arg1:T9 Arg2:T10	
+T11	ParameterName 877 881	spin
+R7	Property Arg1:T8 Arg2:T11	
+T13	ObjectName 1014 1022	J1655-40
+T14	Constraint 885 889	0.90
+R8	Measurement Arg1:T11 Arg2:T14	
+A1	LowerBound T14

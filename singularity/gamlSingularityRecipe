@@ -1,0 +1,52 @@
+# vim:set ts=4 sw=4 sts=4:
+
+bootstrap: docker
+from: ubuntu
+#from: nvidia/cuda:8.0-cudnn7-runtime-ubuntu16.04
+# https://hub.docker.com/r/nvidia/cuda/
+
+#%setup
+    #cp -R /home/tom/opendetex $SINGULARITY_ROOTFS/
+
+%post
+    export DEBIAN_FRONTEND=noninteractive
+    echo 'deb http://archive.ubuntu.com/ubuntu xenial universe' >> /etc/apt/sources.list
+
+    #apt-get update
+	#apt-get install -y software-properties-common
+    #add-apt-repository ppa:jonathonf/python-3.6
+
+    apt-get update
+    #apt-get install -y python3 python3-pip python-dev libxml2-dev libxslt1-dev zlib1g-dev default-jre latexml parallel
+    apt-get install -y libxml2-dev libxslt1-dev zlib1g-dev default-jre latexml parallel
+    #python3.6 -m pip -V
+    apt-get clean
+
+	#pip3 install --upgrade pip
+
+    #pip3 install tensorflow==1.3.0
+    #pip3 install whoosh
+	#pip3 install chardet
+    #pip3 install nltk
+
+    #pip3 install lxml
+
+#%post
+#    apt-get install -y make
+#    cd opendetex
+#	echo "In opendetex"
+#	ls
+#    make
+#    make install
+#    cd ..
+
+
+%post
+    apt-get install -y tmux vim git cmake eog
+
+#%post
+    #python3 -c 'import tensorflow'
+    #python3 -c 'import whoosh'
+    #python3 -c 'import chardet'
+    #python3 -c 'import nltk'
+

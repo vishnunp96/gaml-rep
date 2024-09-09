@@ -1,0 +1,26 @@
+[A-Z]+\s*\d+|[0-9]+\.[0-9]+|[a-zA-Z-]+\/[0-9]+|[a-zA-Z-]+[0-9]+
+
+
+the NGC5044 group dis
+
+...ogram PID 60010  The Hubble Constant  , P.I ....
+
+...ram , PID 60010 : The Hubble Constant ( ) ....
+
+...nction of H_{0} for F10026+4949 ....
+
+...nt of the H_{0} uncertainty with NGC 5765b depends...
+
+recession velocity of NGC 5765b , with o...
+
+...s for NGC 7496 give H_{0}\sqrt{\cos...
+
+...t} to NGC 6240 rendering it a LIRG instead of a ULIRG 
+
+...ce to NGC 5128 or the establishment of the Hubble constant , but rat...
+
+...astro-ph/0206006 ] ) we have been exploring 
+...astro-ph/0209304 ] ) use this degeneracy 
+...astro-ph/0206006 ] ) we illustrated how 
+
+...in 2MFGC 13581 makes this source less interesting for 

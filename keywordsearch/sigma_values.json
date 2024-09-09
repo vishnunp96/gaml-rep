@@ -1,0 +1,1879 @@
+{
+    "sigma_{8}": [
+        {
+            "value": 8.0,
+            "value_text": "8",
+            "mention": "..., the age of the universe ; \\sigma_{8} , the amplitude of density fluctuations in the spheres of 8h^{-1}\\,{\\rm Mpc} ....",
+            "identifier": "astro-ph/0402466",
+            "date": "2004-02-19 00:00:00",
+            "origins": [
+                [
+                    0,
+                    1,
+                    "/document/section[2]/subsection[1]/para[4]/p/Math[13]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 2002.0,
+            "value_text": "2002",
+            "mention": "...2002 ) , which provide an independent restriction in the \\Omega_{m} - \\sigma_{8} plane from that implied by X-...",
+            "identifier": "astro-ph/0402466",
+            "date": "2004-02-19 00:00:00",
+            "origins": [
+                [
+                    69,
+                    73,
+                    "/document/section[2]/subsection[3]/para[2]/itemize/item[5]/para/p",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 8.0,
+            "value_text": "8",
+            "mention": "...in the matter density within 8h^{-1} Mpc spheres , \\sigma_{8} , and the IRAS biasing factor...",
+            "identifier": "astro-ph/9903472",
+            "date": "1999-03-31 00:00:00",
+            "origins": [
+                [
+                    0,
+                    1,
+                    "/document/abstract/p/Math[3]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.74,
+            "value_text": "0.74",
+            "mention": "...ga_{\\Lambda}=0.36 , h=0.54 , \\sigma_{8}=0.74 , and b_{\\rm IRAS}=1.08 ....",
+            "identifier": "astro-ph/9903472",
+            "date": "1999-03-31 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/abstract/p/Math[10]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.79,
+            "value_text": "0.79",
+            "mention": "...}}<0.43 , 0.48<h<0.59 , 0.69<\\sigma_{8}<0.79 , and 1.01<b_{\\rm IRAS}<1.16...",
+            "identifier": "astro-ph/9903472",
+            "date": "1999-03-31 00:00:00",
+            "origins": [
+                [
+                    16,
+                    20,
+                    "/document/abstract/p/Math[14]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.0,
+            "value_text": "1",
+            "mention": "...As discussed in Section 1 , the main constraint from cluster abundances is in the \\sigma_{8} , \\Omega_{\\rm{m}} plane , and...",
+            "identifier": "astro-ph/9903472",
+            "date": "1999-03-31 00:00:00",
+            "origins": [
+                [
+                    24,
+                    25,
+                    "/document/section[2]/subsection[1]/para[3]/p",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 8.0,
+            "value_text": "8",
+            "mention": "...um normalisation parameter , \\sigma_{8} , the rms linear fluctuation of matter density in 8h^{-1} Mpc spheres ....",
+            "identifier": "astro-ph/9903472",
+            "date": "1999-03-31 00:00:00",
+            "origins": [
+                [
+                    0,
+                    1,
+                    "/document/section[3]/subsection[1]/para[1]/p/Math[6]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.4,
+            "value_text": "1.4",
+            "mention": "...e marginalisation we use 0.2<\\sigma_{8}<1.4 , 0.3<h<0.9 , 0.1<\\Omega_{\\rm...",
+            "identifier": "astro-ph/9903472",
+            "date": "1999-03-31 00:00:00",
+            "origins": [
+                [
+                    15,
+                    18,
+                    "/document/section[3]/subsection[2]/para[4]/p/Math[1]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.4,
+            "value_text": "0.40",
+            "mention": "...ur value for the combination \\sigma_{8}\\Omega_{\\rm{m}}^{0.6}=0.40 is lower than the one derived...",
+            "identifier": "astro-ph/9903472",
+            "date": "1999-03-31 00:00:00",
+            "origins": [
+                [
+                    32,
+                    36,
+                    "/document/section[5]/para[4]/p/Math[13]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.8,
+            "value_text": "0.8",
+            "mention": "...the peculiar velocity field \\sigma_{8}\\Omega_{\\rm{m}}^{0.6}\\approx 0.8 ( Freudling et al ....",
+            "identifier": "astro-ph/9903472",
+            "date": "1999-03-31 00:00:00",
+            "origins": [
+                [
+                    39,
+                    42,
+                    "/document/section[5]/para[4]/p/Math[14]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.44,
+            "value_text": "0.44",
+            "mention": "...ities by Watkins ( 1997 ) of \\sigma_{8}\\Omega_{\\rm{m}}^{0.6}=0.44^{+0.19}_{-0.13} ....",
+            "identifier": "astro-ph/9903472",
+            "date": "1999-03-31 00:00:00",
+            "origins": [
+                [
+                    32,
+                    36,
+                    "/document/section[5]/para[4]/p/Math[15]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.89,
+            "value_text": "0.89",
+            "mention": "...he amplitude of fluctuations \\sigma_{8}=0.89\\pm 0.05 and matter density \\O...",
+            "identifier": "astro-ph/0302435",
+            "date": "2003-02-20 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/abstract/p/Math[1]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 8.0,
+            "value_text": "8",
+            "mention": "...ude of matter fluctuations on 8h^{-1} Mpc scales assuming linear evolution , \\sigma_{8} , the total matter density ,...",
+            "identifier": "astro-ph/0302435",
+            "date": "2003-02-20 00:00:00",
+            "origins": [
+                [
+                    0,
+                    1,
+                    "/document/para[13]/p/Math[1]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.98,
+            "value_text": "0.98",
+            "mention": "...( ) data suggests a value of \\sigma_{8}^{SZ}=0.98^{+0.12}_{-0.21} ( ) with larg...",
+            "identifier": "astro-ph/0302435",
+            "date": "2003-02-20 00:00:00",
+            "origins": [
+                [
+                    16,
+                    20,
+                    "/document/para[17]/p/Math[5]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.74,
+            "value_text": "0.74",
+            "mention": "...s on 8\\,h^{-1} Mpc scales of \\sigma_{8}=0.74^{+0.12}_{-0.07} , which is co...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/abstract/p/Math[6]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.86,
+            "value_text": "0.86",
+            "mention": "...a negligible neutrino mass ( \\sigma_{8}=0.86^{+0.08}_{-0.07} ) ....",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/abstract/p/Math[7]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.0,
+            "value_text": "0",
+            "mention": "...scale at the present day ( z=0 ) : \\sigma_{8} is the root-mean-square matte...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    217,
+                    218,
+                    "/document/section[1]/para[5]/p",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 8.0,
+            "value_text": "8",
+            "mention": "...neutrino mass , the value of \\sigma_{8} inferred from the XLF observations is only mildly affected , since the length scale probed by clusters is very similar to 8\\,h^{-1} Mpc ....",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    0,
+                    1,
+                    "/document/section[1]/para[6]/p/Math[4]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 8.0,
+            "value_text": "8",
+            "mention": "...itude of mass fluctuations on 8 h^{-1} Mpc scales , \\sigma_{8} , the physical neutrino densi...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    59,
+                    60,
+                    "/document/section[3]/para[1]/p/Math[5]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 68.0,
+            "value_text": "68",
+            "mention": "...htly lower ( and a result on \\sigma_{8} that is slightly higher ) than the tabulated values , although consistent within 68 per cent uncertainties ....",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    81,
+                    83,
+                    "/document/section[3]/para[2]/p/Math[7]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 2.0,
+            "value_text": "2",
+            "mention": "...limits on \\Omega_{\\rm m} and \\sigma_{8} obtained from the CMB+2dF+ f_{\\rm gas} data ....",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    22,
+                    23,
+                    "/document/section[3]/subsection[1]/para[2]/p/Math[2]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 0.86,
+            "value_text": "0.86",
+            "mention": "...CMB+2dF+ f_{\\rm gas} data of \\sigma_{8}=0.86^{+0.08}_{-0.07} ( dashed curv...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[3]/subsection[1]/para[2]/p/Math[6]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 2.0,
+            "value_text": "2",
+            "mention": "...ith a marginalized result on \\sigma_{8} from the CMB+2dF+ f_{\\rm gas} data of \\sigma...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    13,
+                    14,
+                    "/document/section[3]/subsection[1]/para[2]/p/Math[7]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 0.74,
+            "value_text": "0.74",
+            "mention": "...CMB+2dF+ f_{\\rm gas} data of \\sigma_{8}=0.74^{+0.12}_{-0.07}...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[3]/subsection[1]/para[2]/p/Math[9]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 2003.0,
+            "value_text": "2003",
+            "mention": "...A similar degeneracy between \\sigma_{8} and f_{\\nu} is visible in the analysis of pre-WMAP CMB ( and other ) data by Lewis & Bridle 2003 ) ....",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    80,
+                    84,
+                    "/document/section[3]/subsection[1]/para[2]/p/Math[11]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 1.5,
+            "value_text": "1.5",
+            "mention": "...ducing the measured value of \\sigma_{8} by only \\sim 1.5 per cent from the no-neutrino...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    5,
+                    8,
+                    "/document/section[3]/subsection[1]/para[2]/p/Math[13]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 2.0,
+            "value_text": "2",
+            "mention": "...The marginalized results on \\sigma_{8} from the CMB+2dF+ f_{\\rm gas} data are also...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    13,
+                    14,
+                    "/document/section[3]/subsection[1]/para[3]/p/Math[1]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 0.3,
+            "value_text": "0.3",
+            "mention": "...sters , which generally find \\sigma_{8}\\sim 0.65-0.75 for \\Omega_{\\rm m}=0.3 ( e.g . Borgani et al . 2001...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    15,
+                    18,
+                    "/document/section[3]/subsection[1]/para[3]/p/Math[4]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.9,
+            "value_text": "0.9",
+            "mention": "...ve inferred higher values of \\sigma_{8}\\sim 0.9 , for \\Omega_{\\rm m}\\sim 0.3...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    15,
+                    18,
+                    "/document/section[3]/subsection[1]/para[3]/p/Math[5]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.0,
+            "value_text": "1",
+            "mention": "...As was discussed in Section 1 , our result on the neutrino mass density originates primarily from the fact that the XLF provides a robust constraint on \\sigma_{8} for a given value of \\Omega_{...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    28,
+                    29,
+                    "/document/section[4]/para[3]/p",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.0,
+            "value_text": "1",
+            "mention": "...As was discussed in Section 1 , our result on the neutrino mass density originates primarily from the fact that the XLF provides a robust constraint on \\sigma_{8} for a given value of \\Omega_{\\rm m} , while the CMB data predict \\sigma_{8} as a function of the neutrino...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    28,
+                    29,
+                    "/document/section[4]/para[3]/p",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 8.0,
+            "value_text": "8",
+            "mention": "...tions on ( relatively small ) 8\\,h^{-1} Mpc scales , \\sigma_{8} , inferred from the CMB data...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    0,
+                    1,
+                    "/document/section[4]/para[4]/p/Math[1]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 8.0,
+            "value_text": "8",
+            "mention": "...In contrast , the value of \\sigma_{8} inferred from the cluster XLF analysis is relatively insensitive to massive neutrinos , since clusters measure the power on scales similar to 8\\,h^{-1} Mpc ....",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    0,
+                    1,
+                    "/document/section[4]/para[4]/p/Math[6]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.0059,
+            "value_text": "0.0059",
+            "mention": "...For \\Omega_{\\nu}h^{2}=0.0059 , the value of \\sigma_{8} inferred from the XLF study i...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    18,
+                    24,
+                    "/document/section[4]/para[4]/p/Math[8]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 2.1,
+            "value_text": "2.1",
+            "mention": "...crease the inferred value of \\sigma_{8} by a small amount ( \\sim 2.1 per cent for measurements on...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    5,
+                    8,
+                    "/document/section[4]/para[5]/p/Math[2]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.69,
+            "value_text": "0.69",
+            "mention": "...Allen et al . ( 2003 ) find \\sigma_{8}=0.69\\pm 0.04 for \\Omega_{\\rm m}=0....",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/para[7]/p/Math[4]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.69,
+            "value_text": "0.69",
+            "mention": "...ensity function ( pdf ) with \\sigma_{8}=0.69\\pm 0.04 leads to similar resu...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/para[7]/p/Math[6]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.77,
+            "value_text": "0.77",
+            "mention": "...nts with a Gaussian pdf with \\sigma_{8}=0.77\\pm 0.04 ( which corresponds t...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/para[8]/p/Math[1]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.62,
+            "value_text": "0.62",
+            "mention": "...or using a Gaussian pdf with \\sigma_{8}=0.62\\pm 0.04 increases the neutrin...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/para[8]/p/Math[5]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.69,
+            "value_text": "0.69",
+            "mention": "...doubling the uncertainty in \\sigma_{8} using a Gaussian pdf with \\sigma_{8}=0.69\\pm 0.08 still gives m_{\\nu}=0...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/para[9]/p/Math[3]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.69,
+            "value_text": "0.69",
+            "mention": "...8} using a Gaussian pdf with \\sigma_{8}=0.69\\pm 0.08 still gives m_{\\nu}=0...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/para[9]/p/Math[3]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.04,
+            "value_text": "0.04",
+            "mention": "...Only if the uncertainty in \\sigma_{8} is quadrupled from its nominal value of 0.04 does the detection of a non-z...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    40,
+                    44,
+                    "/document/section[4]/para[9]/p/Math[8]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 2.0,
+            "value_text": "2",
+            "mention": "...ith increasing \\tau , the CMB+2dF+ f_{\\rm gas} constraint could also be matched with the XLF constraint on \\sigma_{8} if the value of \\tau...",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    10,
+                    11,
+                    "/document/section[4]/para[10]/p/Math[5]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 0.73,
+            "value_text": "0.73",
+            "mention": "...m gas} data , then we obtain \\sigma_{8}=0.73\\pm 0.07 ....",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/para[10]/p/Math[11]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.7,
+            "value_text": "0.7",
+            "mention": "...er , we obtain w\\sim-0.6 for \\sigma_{8}\\sim 0.7 ....",
+            "identifier": "astro-ph/0306386",
+            "date": "2003-06-19 00:00:00",
+            "origins": [
+                [
+                    15,
+                    18,
+                    "/document/section[4]/para[16]/p/Math[6]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.52,
+            "value_text": "0.52",
+            "mention": "...d an estimate of \\Omega^{0.6}\\sigma_{8}=0.52\\pm 0.06 ....",
+            "identifier": "astro-ph/0609249",
+            "date": "2006-09-08 00:00:00",
+            "origins": [
+                [
+                    23,
+                    27,
+                    "/document/abstract/p/Math[2]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.52,
+            "value_text": "0.52",
+            "mention": "...used to estimate \\Omega^{0.6}\\sigma_{8}=0.52\\pm 0.06 ....",
+            "identifier": "astro-ph/0609249",
+            "date": "2006-09-08 00:00:00",
+            "origins": [
+                [
+                    23,
+                    27,
+                    "/document/section[1]/para[10]/p/Math[1]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 8.0,
+            "value_text": "8",
+            "mention": "...where \\sigma_{8} is as usual the rms fluctuation on scales of 8 Mpc/ h , \\Omega is the mass d...",
+            "identifier": "astro-ph/0609249",
+            "date": "2006-09-08 00:00:00",
+            "origins": [
+                [
+                    25,
+                    26,
+                    "/document/section[5]/subsection[1]/para[2]/p[2]/Math[2]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 0.84,
+            "value_text": "0.84",
+            "mention": "...m 0.006 , h=0.73\\pm 0.03 and \\sigma_{8}=0.84\\pm 0.06 ( ) , implying a valu...",
+            "identifier": "astro-ph/0609249",
+            "date": "2006-09-08 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[5]/subsection[1]/para[2]/p[2]/Math[14]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.52,
+            "value_text": "0.52",
+            "mention": "...alculate a value \\Omega^{0.6}\\sigma_{8}=0.52\\pm 0.06 from this TF measurem...",
+            "identifier": "astro-ph/0609249",
+            "date": "2006-09-08 00:00:00",
+            "origins": [
+                [
+                    23,
+                    27,
+                    "/document/section[5]/subsection[1]/para[5]/p/Math[2]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.46,
+            "value_text": "0.46",
+            "mention": "...0.59 , implying \\Omega^{0.6}\\sigma_{8}=0.46\\pm 0.06 ....",
+            "identifier": "astro-ph/0609249",
+            "date": "2006-09-08 00:00:00",
+            "origins": [
+                [
+                    23,
+                    27,
+                    "/document/section[5]/subsection[1]/para[5]/p/Math[6]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.52,
+            "value_text": "0.52",
+            "mention": "...imate a value of \\Omega^{0.6}\\sigma_{8}=0.52\\pm 0.06 ....",
+            "identifier": "astro-ph/0609249",
+            "date": "2006-09-08 00:00:00",
+            "origins": [
+                [
+                    23,
+                    27,
+                    "/document/section[8]/para[1]/p/Math[1]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.52,
+            "value_text": "0.52",
+            "mention": "...ment to estimate \\Omega^{0.6}\\sigma_{8}=0.52\\pm 0.06 from TF data alone ....",
+            "identifier": "astro-ph/0609249",
+            "date": "2006-09-08 00:00:00",
+            "origins": [
+                [
+                    23,
+                    27,
+                    "/document/section[8]/para[7]/p/Math[6]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.1,
+            "value_text": "1.1",
+            "mention": "...the last determination is at 1.1\\sigma lower of its experimental value followed from SNIa test and \\sigma_{8} constraint established by ( )...",
+            "identifier": "astro-ph/0111594",
+            "date": "2001-11-30 00:00:00",
+            "origins": [
+                [
+                    0,
+                    3,
+                    "/document/section[4]/para[11]/p/Math[6]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.91,
+            "value_text": "0.91",
+            "mention": "...But the value of \\sigma_{8} in our best-fit model , \\sigma_{8}=0.91 , is in the range of current...",
+            "identifier": "astro-ph/0111594",
+            "date": "2001-11-30 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/para[11]/p/Math[10]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.91,
+            "value_text": "0.91",
+            "mention": "..._{8} in our best-fit model , \\sigma_{8}=0.91 , is in the range of current...",
+            "identifier": "astro-ph/0111594",
+            "date": "2001-11-30 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/para[11]/p/Math[10]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.915,
+            "value_text": "0.915",
+            "mention": "...the Sloan Digital Sky Survey \\sigma_{8}^{(SLOAN)}=0.915\\pm 0.06 , ( ) ) , which is no...",
+            "identifier": "astro-ph/0111594",
+            "date": "2001-11-30 00:00:00",
+            "origins": [
+                [
+                    21,
+                    26,
+                    "/document/section[4]/para[11]/p/Math[11]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.58,
+            "value_text": "1.58",
+            "mention": "...Hu ( 1998 ; 1999 ) leads to \\sigma_{8}=1.58 , the corresponding value cal...",
+            "identifier": "astro-ph/0111594",
+            "date": "2001-11-30 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/appendix[1]/para[12]/p/Math[2]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.62,
+            "value_text": "0.62",
+            "mention": "...er model ( right panel ) our \\sigma_{8}=0.62 , while CMBfast gives \\sigma_...",
+            "identifier": "astro-ph/0111594",
+            "date": "2001-11-30 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/appendix[1]/para[12]/p/Math[4]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.64,
+            "value_text": "0.64",
+            "mention": "...}=0.62 , while CMBfast gives \\sigma_{8}=0.64 ....",
+            "identifier": "astro-ph/0111594",
+            "date": "2001-11-30 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/appendix[1]/para[12]/p/Math[5]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.812,
+            "value_text": "0.812",
+            "mention": "...From these we derive : \\sigma_{8}=0.812\\pm 0.026 , H_{0}=70.5\\pm 1.3...",
+            "identifier": "0803.0732",
+            "date": "2008-03-05 00:00:00",
+            "origins": [
+                [
+                    11,
+                    16,
+                    "/document/abstract/p[2]/Math[9]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.9,
+            "value_text": "0.9",
+            "mention": "...} , n_{s}=0.99\\pm 0.04 , and \\sigma_{8}=0.9\\pm 0.1 ....",
+            "identifier": "astro-ph/0302209",
+            "date": "2003-02-11 00:00:00",
+            "origins": [
+                [
+                    11,
+                    14,
+                    "/document/abstract/p[1]/Math[7]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.84,
+            "value_text": "0.84",
+            "mention": "...{}^{-1})= 0.93\\pm 0.03 , and \\sigma_{8}=0.84\\pm 0.04 . WMAP \u2019 s best deter...",
+            "identifier": "astro-ph/0302209",
+            "date": "2003-02-11 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/abstract/p[1]/Math[17]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.69,
+            "value_text": "0.69",
+            "mention": "...selected galaxies ; ( ) find \\sigma_{8}^{IRAS}=0.69\\pm 0.04...",
+            "identifier": "astro-ph/0302209",
+            "date": "2003-02-11 00:00:00",
+            "origins": [
+                [
+                    18,
+                    22,
+                    "/document/section[4]/subsection[2]/subsubsection[2]/para/p/Math[2]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.345,
+            "value_text": "0.345",
+            "mention": "...implying \\sigma_{8}^{mass}\\Omega_{m}^{0.6}=0.345\\pm 0.05 , consistent with our...",
+            "identifier": "astro-ph/0302209",
+            "date": "2003-02-11 00:00:00",
+            "origins": [
+                [
+                    34,
+                    39,
+                    "/document/section[4]/subsection[2]/subsubsection[2]/para/p/Math[3]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.48,
+            "value_text": "0.48",
+            "mention": "...best fit to the WMAP data is \\sigma_{8}\\Omega_{m}^{0.5}=0.48\\pm 0.12 . ( ) recent study of...",
+            "identifier": "astro-ph/0302209",
+            "date": "2003-02-11 00:00:00",
+            "origins": [
+                [
+                    27,
+                    31,
+                    "/document/section[4]/subsection[2]/subsubsection[3]/para[1]/p/Math[1]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.33,
+            "value_text": "0.33",
+            "mention": "...rly SDSS data release yields \\sigma_{8}\\Omega_{m}^{0.5}=0.33\\pm 0.03 ....",
+            "identifier": "astro-ph/0302209",
+            "date": "2003-02-11 00:00:00",
+            "origins": [
+                [
+                    27,
+                    31,
+                    "/document/section[4]/subsection[2]/subsubsection[3]/para[1]/p/Math[3]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.95,
+            "value_text": "0.95",
+            "mention": "...clusters at z=0.5-0.8 yields \\sigma_{8}=0.95\\pm 0.1 for \\Omega_{m}=0.25 ....",
+            "identifier": "astro-ph/0302209",
+            "date": "2003-02-11 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/subsection[2]/subsubsection[3]/para[1]/p/Math[7]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.66,
+            "value_text": "0.66",
+            "mention": "...sample of X-ray clusters are \\sigma_{8}=0.66_{-0.05}^{+0.05}...",
+            "identifier": "astro-ph/0302209",
+            "date": "2003-02-11 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/subsection[2]/subsubsection[3]/para[1]/p/Math[9]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.96,
+            "value_text": "0.96",
+            "mention": "...find very different values : \\sigma_{8}=0.96^{+0.15}_{-0.12} and \\Omega_{m...",
+            "identifier": "astro-ph/0302209",
+            "date": "2003-02-11 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/subsection[2]/subsubsection[3]/para[1]/p/Math[11]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.12,
+            "value_text": "0.12",
+            "mention": "...+0.15}_{-0.12} and \\Omega_{m}=0.12^{+0.06}_{-0.04} . ( ) discuss the wide range of values that different X-ray analyses find for \\sigma_{8} ....",
+            "identifier": "astro-ph/0302209",
+            "date": "2003-02-11 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/subsection[2]/subsubsection[3]/para[1]/p/Math[12]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.711,
+            "value_text": "0.711",
+            "mention": "...ger REFLEX sample , ( ) find \\sigma_{8}=0.711_{-0.031}^{+0.039}\\ {}_{-0.162...",
+            "identifier": "astro-ph/0302209",
+            "date": "2003-02-11 00:00:00",
+            "origins": [
+                [
+                    11,
+                    16,
+                    "/document/section[4]/subsection[2]/subsubsection[3]/para[1]/p/Math[14]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.04,
+            "value_text": "1.04",
+            "mention": "...at \\ell>1500 implies \\sigma_{8}=1.04\\pm 0.12 ( ) , if the signal i...",
+            "identifier": "astro-ph/0302209",
+            "date": "2003-02-11 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/subsection[2]/subsubsection[3]/para[2]/p/Math[2]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.17,
+            "value_text": "1.17",
+            "mention": "..., h=0.74\\,(0.64,0.86) , and \\sigma_{8}=1.17\\,(0.98,1.37) ....",
+            "identifier": "astro-ph/0006170",
+            "date": "2000-06-12 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/abstract/p/Math[9]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.54,
+            "value_text": "0.54",
+            "mention": "...combinations for these data \\sigma_{8}\\Omega_{\\rm m}^{0.6}=0.54\\,(0.40,0.73) , \\Omega_{\\rm m}...",
+            "identifier": "astro-ph/0006170",
+            "date": "2000-06-12 00:00:00",
+            "origins": [
+                [
+                    31,
+                    35,
+                    "/document/abstract/p/Math[10]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 200.0,
+            "value_text": "200",
+            "mention": "...t-fit value of \\sigma_{\\rm v}=200{\\rm kms^{-1}} , resulting in values of \\sigma_{8}\\Omega_{\\rm m}^{0.6} lower by...",
+            "identifier": "astro-ph/0006170",
+            "date": "2000-06-12 00:00:00",
+            "origins": [
+                [
+                    15,
+                    18,
+                    "/document/section[2]/subsection[1]/para[5]/p/Math[3]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.48,
+            "value_text": "0.48",
+            "mention": "...the 95\\% confidence level are 0.48<\\sigma_{8}\\Omega_{\\rm m}^{0.6}<0.86 and...",
+            "identifier": "astro-ph/0006170",
+            "date": "2000-06-12 00:00:00",
+            "origins": [
+                [
+                    0,
+                    4,
+                    "/document/section[2]/subsection[1]/para[6]/p/Math[8]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.65,
+            "value_text": "0.65",
+            "mention": "..._{\\rm v} term the results are 0.65<\\sigma_{8}\\Omega_{\\rm m}^{0.6}<0.89 and...",
+            "identifier": "astro-ph/0006170",
+            "date": "2000-06-12 00:00:00",
+            "origins": [
+                [
+                    0,
+                    4,
+                    "/document/section[2]/subsection[1]/para[6]/p/Math[11]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 2.0,
+            "value_text": "2",
+            "mention": "...In order to relate \\sigma_{8} to the CMB power spectrum normalisation , we first relate \\sigma_{8} to the primordial matter power spectrum amplitude and then use the analytic expression from Efstathiou , Bond & White ( 1992 ) to relate this to the \\ell=2 amplitude of the CMB power sp...",
+            "identifier": "astro-ph/0006170",
+            "date": "2000-06-12 00:00:00",
+            "origins": [
+                [
+                    5,
+                    6,
+                    "/document/section[2]/subsection[2]/para[1]/p/Math[9]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 2.0,
+            "value_text": "2",
+            "mention": "...malisation , we first relate \\sigma_{8} to the primordial matter power spectrum amplitude and then use the analytic expression from Efstathiou , Bond & White ( 1992 ) to relate this to the \\ell=2 amplitude of the CMB power sp...",
+            "identifier": "astro-ph/0006170",
+            "date": "2000-06-12 00:00:00",
+            "origins": [
+                [
+                    5,
+                    6,
+                    "/document/section[2]/subsection[2]/para[1]/p/Math[9]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.0,
+            "value_text": "1",
+            "mention": "...eters ( \\Omega_{\\rm m} , h , \\sigma_{8} ) given all three data sets are given in Table 1 , from which we can derive \\s...",
+            "identifier": "astro-ph/0006170",
+            "date": "2000-06-12 00:00:00",
+            "origins": [
+                [
+                    47,
+                    48,
+                    "/document/section[3]/para[4]/p/Math[3]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 0.54,
+            "value_text": "0.54",
+            "mention": "...1 , from which we can derive \\sigma_{8}\\Omega_{\\rm m}^{0.6}=0.54 , \\Omega_{\\rm m}h=0.21 , Q_{\\...",
+            "identifier": "astro-ph/0006170",
+            "date": "2000-06-12 00:00:00",
+            "origins": [
+                [
+                    31,
+                    35,
+                    "/document/section[3]/para[4]/p/Math[4]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1999.0,
+            "value_text": "1999",
+            "mention": "...1999 ) , but this analysis tends to favor a slightly higher value for \\sigma_{8} ....",
+            "identifier": "astro-ph/0006170",
+            "date": "2000-06-12 00:00:00",
+            "origins": [
+                [
+                    137,
+                    141,
+                    "/document/section[4]/para[2]/p/Math[2]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 0.74,
+            "value_text": "0.74",
+            "mention": "...( 1999 ) constraint , \\sigma_{8}=0.74\\pm 0.1 ( 95\\% confidence ) ob...",
+            "identifier": "astro-ph/0006170",
+            "date": "2000-06-12 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/para[2]/p/Math[5]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 8.0,
+            "value_text": "8",
+            "mention": "...Here \\sigma_{8} is the rms density power on scales corresponding to rich clusters of galaxies ( 8\\,h^{-1}\\,{\\rm Mpc} ) and \\Gam...",
+            "identifier": "astro-ph/0205387",
+            "date": "2002-05-23 00:00:00",
+            "origins": [
+                [
+                    0,
+                    1,
+                    "/document/section[2]/para[4]/p/Math[4]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.47,
+            "value_text": "0.47",
+            "mention": "...ribution for the combination \\sigma_{8}\\Omega_{m}^{0.56} which is a Gaussian ( first error ) smeared by a uniform ( top-hat ) distribution ( second error ) : 0.47^{+.02,+.11}_{-.02,-.08} ....",
+            "identifier": "astro-ph/0205387",
+            "date": "2002-05-23 00:00:00",
+            "origins": [
+                [
+                    0,
+                    4,
+                    "/document/section[2]/para[4]/p/Math[7]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 8.0,
+            "value_text": "8",
+            "mention": "...take this to be specified by \\sigma_{8} , the rms density contrast averaged over spheres of 8\\,h^{-1}\\,{\\rm Mpc} radius ....",
+            "identifier": "astro-ph/0206256",
+            "date": "2002-06-14 00:00:00",
+            "origins": [
+                [
+                    0,
+                    1,
+                    "/document/section[3]/subsection[3]/para[1]/p[1]/Math[2]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.72,
+            "value_text": "0.72",
+            "mention": "...( 2002 ) , a figure of \\sigma_{8}=0.72 is consistent with the relati...",
+            "identifier": "astro-ph/0206256",
+            "date": "2002-06-14 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[3]/subsection[3]/para[2]/p/Math[1]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.9,
+            "value_text": "0.9",
+            "mention": "...ters , but is lower than the \\sigma_{8}\\simeq 0.9 for \\Omega_{m}\\simeq 0.3 pref...",
+            "identifier": "astro-ph/0206256",
+            "date": "2002-06-14 00:00:00",
+            "origins": [
+                [
+                    17,
+                    20,
+                    "/document/section[3]/subsection[3]/para[2]/p/Math[2]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.9,
+            "value_text": "0.9",
+            "mention": "...To achieve \\sigma_{8}=0.9 requires \\tau=0.22 , or reion...",
+            "identifier": "astro-ph/0206256",
+            "date": "2002-06-14 00:00:00",
+            "origins": [
+                [
+                    11,
+                    14,
+                    "/document/section[3]/subsection[3]/para[2]/p/Math[8]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.0,
+            "value_text": "1",
+            "mention": "...signal is claimed to require \\sigma_{8}\\simeq 1 ( Bond et al ....",
+            "identifier": "astro-ph/0206256",
+            "date": "2002-06-14 00:00:00",
+            "origins": [
+                [
+                    17,
+                    18,
+                    "/document/section[3]/subsection[3]/para[2]/p/Math[13]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.0,
+            "value_text": "1",
+            "mention": "...ushes z_{r} to almost 40 for \\sigma_{8}=1 , which starts to become impl...",
+            "identifier": "astro-ph/0206256",
+            "date": "2002-06-14 00:00:00",
+            "origins": [
+                [
+                    11,
+                    12,
+                    "/document/section[3]/subsection[3]/para[3]/p/Math[3]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.77,
+            "value_text": "0.77",
+            "mention": "...ter fluctuation amplitude of \\sigma_{8}=0.77\\pm 0.05 and a scalar spectral...",
+            "identifier": "astro-ph/0507583",
+            "date": "2005-07-26 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/abstract/p/Math[4]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 8.0,
+            "value_text": "8",
+            "mention": "...the more familiar parameter \\sigma_{8} , the rms linear perturbation theory variance in spheres of radius 8~{}h^{-1} Mpc , using the matt...",
+            "identifier": "astro-ph/0507583",
+            "date": "2005-07-26 00:00:00",
+            "origins": [
+                [
+                    0,
+                    1,
+                    "/document/section[2]/subsection[2]/para[4]/p/Math[8]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.678,
+            "value_text": "0.678",
+            "mention": "...The recovered values of \\sigma_{8} range from \\sigma_{8}=0.678_{-0.072}^{+0.073} for the bas...",
+            "identifier": "astro-ph/0507583",
+            "date": "2005-07-26 00:00:00",
+            "origins": [
+                [
+                    11,
+                    16,
+                    "/document/section[4]/subsection[3]/para/p/Math[2]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.678,
+            "value_text": "0.678",
+            "mention": "...ues of \\sigma_{8} range from \\sigma_{8}=0.678_{-0.072}^{+0.073} for the bas...",
+            "identifier": "astro-ph/0507583",
+            "date": "2005-07-26 00:00:00",
+            "origins": [
+                [
+                    11,
+                    16,
+                    "/document/section[4]/subsection[3]/para/p/Math[2]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.817,
+            "value_text": "0.817",
+            "mention": "...s f_{\\nu} parameter space to \\sigma_{8}=0.817_{-0.079}^{+0.077}...",
+            "identifier": "astro-ph/0507583",
+            "date": "2005-07-26 00:00:00",
+            "origins": [
+                [
+                    11,
+                    16,
+                    "/document/section[4]/subsection[3]/para/p/Math[4]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.66,
+            "value_text": "0.66",
+            "mention": "...on of X-ray clusters to find \\sigma_{8}=0.66\\pm{0.16} , in good agreement...",
+            "identifier": "astro-ph/0507583",
+            "date": "2005-07-26 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/subsection[3]/para/p/Math[7]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 5.0,
+            "value_text": "5",
+            "mention": "...ate ; current constraints on \\sigma_{8} are much better than that required to significantly change D_{\\rm damp} , and we consider \\pm 5\\,h^{-1}\\,{\\rm Mpc} to be a co...",
+            "identifier": "0907.1660",
+            "date": "2009-07-10 00:00:00",
+            "origins": [
+                [
+                    4,
+                    5,
+                    "/document/section[8]/subsection[6]/para/p/Math[7]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.0,
+            "value_text": "0",
+            "mention": "...dinates ( e.g . ) , and that \\sigma_{8}({\\rm matter},z=0)=0.8 , so \\sigma_{8}({\\rm mat...",
+            "identifier": "0907.1660",
+            "date": "2009-07-10 00:00:00",
+            "origins": [
+                [
+                    26,
+                    27,
+                    "/document/section[8]/subsection[9]/para[3]/p/Math[7]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.8,
+            "value_text": "0.8",
+            "mention": "...\\sigma_{8}({\\rm matter},z=0)=0.8 , so \\sigma_{8}({\\rm matter},z=0.35)=0.68 ( )...",
+            "identifier": "0907.1660",
+            "date": "2009-07-10 00:00:00",
+            "origins": [
+                [
+                    29,
+                    32,
+                    "/document/section[8]/subsection[9]/para[3]/p/Math[7]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.52,
+            "value_text": "0.52",
+            "mention": "...( 1996 ) for a flat universe \\sigma_{8}=(0.52\\pm 0.08)\\Omega_{m}^{-0.52+0.1...",
+            "identifier": "astro-ph/0006436",
+            "date": "2000-06-30 00:00:00",
+            "origins": [
+                [
+                    12,
+                    16,
+                    "/document/section[3]/subsection[2]/para[1]/p/Math[1]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.0,
+            "value_text": "1",
+            "mention": "...The value of \\sigma_{8} is well converged within 1 \\sigma among different author...",
+            "identifier": "astro-ph/0006436",
+            "date": "2000-06-30 00:00:00",
+            "origins": [
+                [
+                    25,
+                    26,
+                    "/document/section[3]/subsection[2]/para[1]/p/Math[2]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 0.68,
+            "value_text": "0.68",
+            "mention": "...da CDM as n=0.93\\pm 0.10 and \\sigma_{8}=0.68+1.16(0.95-n)\\pm 0.04 ....",
+            "identifier": "astro-ph/0006436",
+            "date": "2000-06-30 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[3]/subsection[6]/para[5]/p/Math[10]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.76,
+            "value_text": "0.76",
+            "mention": "...the following constraints : \\sigma_{8}=0.76\\pm 0.09 , \\Omega_{m}=0.26^{+0...",
+            "identifier": "astro-ph/0212276",
+            "date": "2002-12-12 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/abstract/p/Math[1]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.33,
+            "value_text": "0.33",
+            "mention": "...density can be summarized as \\sigma_{8}\\Omega_{m}^{0.6}=0.33 ....",
+            "identifier": "astro-ph/0212276",
+            "date": "2002-12-12 00:00:00",
+            "origins": [
+                [
+                    27,
+                    31,
+                    "/document/section[2]/subsection[2]/para[1]/p/Math[3]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.18,
+            "value_text": "0.18",
+            "mention": "...high value for the amplitude \\sigma_{8} : the best-fit parameters for the HMF clusters are \\Omega_{m} =0.18 and \\sigma_{8} =0.92 ; simila...",
+            "identifier": "astro-ph/0212276",
+            "date": "2002-12-12 00:00:00",
+            "origins": [
+                [
+                    1,
+                    5,
+                    "/document/section[2]/subsection[2]/para[2]/p/Math[6]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 0.92,
+            "value_text": "0.92",
+            "mention": "...ers are \\Omega_{m} =0.18 and \\sigma_{8} =0.92 ; similar results are obtaine...",
+            "identifier": "astro-ph/0212276",
+            "date": "2002-12-12 00:00:00",
+            "origins": [
+                [
+                    1,
+                    5,
+                    "/document/section[2]/subsection[2]/para[2]/p/Math[7]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 0.7,
+            "value_text": "0.7",
+            "mention": "....3 the relevant amplitude is \\sigma_{8} = 0.7 ....",
+            "identifier": "astro-ph/0212276",
+            "date": "2002-12-12 00:00:00",
+            "origins": [
+                [
+                    2,
+                    5,
+                    "/document/section[2]/subsection[2]/para[2]/p/Math[10]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 0.3,
+            "value_text": "0.3",
+            "mention": "...a lower amplitude value for \\sigma_{8} ( which is , however , degenerate with the optical depth parameter for CMB ) , and a somewhat larger value for the mass density parameter ( \\Omega_{m}\\sim 0.3 for h =0.72 ) , than given by...",
+            "identifier": "astro-ph/0212276",
+            "date": "2002-12-12 00:00:00",
+            "origins": [
+                [
+                    15,
+                    18,
+                    "/document/section[2]/subsection[2]/para[3]/p/Math[2]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.0,
+            "value_text": "1",
+            "mention": "...alysis is presented in Figure 1 , where we plot likelihood contours in the \\Omega_{m}-\\sigma_{8} plane for the two datasets ,...",
+            "identifier": "astro-ph/0212276",
+            "date": "2002-12-12 00:00:00",
+            "origins": [
+                [
+                    55,
+                    56,
+                    "/document/section[3]/para[1]/p",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.76,
+            "value_text": "0.76",
+            "mention": "...{m}=0.26_{-0.07}^{+0.06} and \\sigma_{8}=0.76\\pm 0.09 at 1\\sigma confidence...",
+            "identifier": "astro-ph/0212276",
+            "date": "2002-12-12 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[3]/para[1]/p/Math[9]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.76,
+            "value_text": "0.76",
+            "mention": "...of the matter power spectrum \\sigma_{8}=0.76\\pm 0.09 ; Hubble parameter h=...",
+            "identifier": "astro-ph/0212276",
+            "date": "2002-12-12 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[4]/para/p/Math[6]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.27,
+            "value_text": "0.27",
+            "mention": "...\\Omega_{b}=0.044 , \\Omega_{m}=0.27 , {\\Omega_{\\Lambda}=0.73} , {\\sigma_{8}=0.9} and a UV background ( UV...",
+            "identifier": "astro-ph/0403688",
+            "date": "2004-03-30 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/abstract/p/Math[42]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 3.0,
+            "value_text": "3",
+            "mention": "...the 1D flux analogues of the 3D mass \\sigma_{8} values , ( , Eqn 9.18 , Fig 9...",
+            "identifier": "astro-ph/0403688",
+            "date": "2004-03-30 00:00:00",
+            "origins": [
+                [
+                    40,
+                    41,
+                    "/document/section[9]/subsection[3]/para[1]/p[2]/Math[2]",
+                    "tail"
+                ]
+            ]
+        },
+        {
+            "value": 0.9,
+            "value_text": "0.9",
+            "mention": "...7 at z=1.9 with DA=0.118 and \\sigma_{8}=0.9 , for the low density IGM alo...",
+            "identifier": "astro-ph/0403688",
+            "date": "2004-03-30 00:00:00",
+            "origins": [
+                [
+                    11,
+                    14,
+                    "/document/section[9]/subsection[3]/para[5]/p/Math[4]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.01,
+            "value_text": "0.010",
+            "mention": "...red to give the DA8s=0.118\\pm 0.010 for the Kast IGM only as a function of \\sigma_{8} ....",
+            "identifier": "astro-ph/0403688",
+            "date": "2004-03-30 00:00:00",
+            "origins": [
+                [
+                    14,
+                    19,
+                    "/document/section[12]/para[13]/p[2]/Math[4]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 5.0,
+            "value_text": "5",
+            "mention": "...ors that we quote in rows 3 \u2013 5 of Table , for \\gamma_{912} , \\sigma_{8} and \\Omega_{b} are from the D...",
+            "identifier": "astro-ph/0403688",
+            "date": "2004-03-30 00:00:00",
+            "origins": [
+                [
+                    37,
+                    38,
+                    "/document/section[12]/para[15]/p",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.0417,
+            "value_text": "0.0417",
+            "mention": "...For example , if the \\sigma_{8} and \\gamma_{912} values had insignificant errors , the \\Omega_{b} =0.0417\\pm 0.0022 from our DA measure...",
+            "identifier": "astro-ph/0403688",
+            "date": "2004-03-30 00:00:00",
+            "origins": [
+                [
+                    1,
+                    7,
+                    "/document/section[12]/para[15]/p/Math[7]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.23,
+            "value_text": "0.23",
+            "mention": "...\\Omega_{b}=0.044 , \\Omega_{m}=0.23 and {\\Omega_{\\Lambda}=0.73} , {\\sigma_{8}=0.9} and a UV background with...",
+            "identifier": "astro-ph/0403688",
+            "date": "2004-03-30 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/section[15]/subsection[3]/para[1]/p/Math[6]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.9,
+            "value_text": "0.9",
+            "mention": "...mega_{b} =0.0444\\pm 0.0018 , \\sigma_{8}=0.9\\pm 0.1 and DA =0.118\\pm 0.010...",
+            "identifier": "astro-ph/0403688",
+            "date": "2004-03-30 00:00:00",
+            "origins": [
+                [
+                    11,
+                    14,
+                    "/document/section[15]/subsection[3]/para[2]/p/Math[7]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 10.0,
+            "value_text": "10",
+            "mention": "...ma_{912}=(1.44\\pm 0.36)\\times 10^{-12} s {}^{-1} , where the error includes the contributions from the errors in \\Omega_{b} , \\sigma_{8} and DA , but not \\Omega_{m} o...",
+            "identifier": "astro-ph/0403688",
+            "date": "2004-03-30 00:00:00",
+            "origins": [
+                [
+                    34,
+                    36,
+                    "/document/section[15]/subsection[3]/para[2]/p/Math[9]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 0.9,
+            "value_text": "0.9",
+            "mention": "...When we use \\sigma_{8}=0.9\\pm 0.1 , \\Gamma=1.329\\pm 0.13...",
+            "identifier": "astro-ph/0403688",
+            "date": "2004-03-30 00:00:00",
+            "origins": [
+                [
+                    11,
+                    14,
+                    "/document/section[15]/subsection[3]/para[3]/p/Math[2]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 1.17,
+            "value_text": "1.17",
+            "mention": "...{s}=1.07^{+0.06}_{-0.06} and \\sigma_{8}=1.17^{+0.25}_{-0.20} ....",
+            "identifier": "astro-ph/0212497",
+            "date": "2002-12-20 00:00:00",
+            "origins": [
+                [
+                    11,
+                    15,
+                    "/document/abstract/p/Math[6]",
+                    "text"
+                ]
+            ]
+        },
+        {
+            "value": 8.0,
+            "value_text": "8",
+            "mention": "...resent day rms fluctuation in 8 h^{-1}\\,\\rm Mpc spheres as predicted by linear theory \\sigma_{8} , and the optical depth to th...",
+            "identifier": "astro-ph/0212497",
+            "date": "2002-12-20 00:00:00",
+            "origins": [
+                [
+                    63,
+                    64,
+                    "/document/section[2]/subsection[1]/para[3]/p/Math[4]",
+                    "tail"
+                ]
+            ]
+        }
+    ]
+}

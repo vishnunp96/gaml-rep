@@ -1,0 +1,13 @@
+Use = < > \sim to determine if a new measurement
+
+For word2vec for scientific documents:
+	Normalise all digits to a NUMBER token
+
+
+Does the abstract contain the phrase "(?:measurement|statistical|systematic|random)\ error"
+"we\s+\w+\s+(?:a|the)\s+value"
+Is the phrase CL/C.L. used?
+"we\s+measure"
+"(?:these|our)\s+results"
+
+Make a distinction between Measurements (H_0=75\pm2) and Properties (radius of Milky Way is # \pm # => tuple: [Milky Way, Radius, # \pm #])

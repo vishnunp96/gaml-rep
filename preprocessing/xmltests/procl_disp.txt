@@ -1,0 +1,3498 @@
+document {'class': 'ltx_authors_1line'}
+	Text (document): 
+	resource {'src': 'LaTeXML.css', 'type': 'text/css'}
+		Text (resource): None
+		Tail (resource): 
+	resource {'src': 'ltx-article.css', 'type': 'text/css'}
+		Text (resource): None
+		Tail (resource): 
+	title {}
+		Text (title): Statistics of Turbulence from Spectral-Line Data Cubes
+		Tail (title): 
+	creator {'role': 'author'}
+		Text (creator): 
+		personname {}
+			Text (personname): Alex Lazarian
+			Tail (personname): 
+		Tail (creator): 
+	abstract {'name': 'Abstract'}
+		Text (abstract): 
+		p {}
+			Text (p): Emission in spectral lines can provide unique information on interstellar turbulence .
+				Doppler shifts due to supersonic motions contain information on turbulent velocity field which is otherwise difficult to measure .
+				However , the problem of separation of velocity and density fluctuations is far from being trivial .
+				Using atomic hydrogen ( HI ) as a test case , I review techniques applicable to emission line studies with the emphasis on those that can provide information on the underlying
+			text {'font': 'italic'}
+				Text (text): power spectra
+				Tail (text): of velocity and density .
+					I show that recently developed mathematical machinery is promising for the purpose .
+					Its application to HI shows that in cold neutral hydrogen the velocity fluctuations dominate the small scale structures observed in spectral-line data cubes and this result is very important for the interpretation of observational data , including the identification of clouds .
+					Velocity fluctuations are shown to dominate the formation of small scale structures that can be erroneously identified as diffuse clouds .
+					One may argue that the HI data is consistent with the Goldreich-Shridhar picture of magnetohydrodynamic turbulence , but the cascade from the scales of several kpc that this interpretation involves does not fit well in the current paradigm of energy injection .
+					The issue whether magnetic field does make the turbulence anisotropic is still open , but if this is the case , I show that studies of emission lines can provide a reliable way of determining magnetic field direction .
+					I discuss various techniques for studying interstellar turbulence using emission lines , e.g .
+					spectral correlation functions , genus statistics and principal component analysis .
+			Tail (p): 
+		Tail (abstract): 
+	ERROR {'class': 'undefined'}
+		Text (ERROR): \address
+		Tail (ERROR): 
+	para {'id': 'p1'}
+		Text (para): 
+		p {}
+			Text (p): Department of Astronomy , University of Wisconsin , Madison , USA ; email : lazarian @ astro.wisc.edu
+			Tail (p): 
+		Tail (para): 
+	section {'refnum': '1', 'id': 'S1'}
+		Text (section): 
+		title {}
+			Text (title): None
+			tag {'close': ' '}
+				Text (tag): 1
+				Tail (tag): Introduction
+			Tail (title): 
+		para {'id': 'S1.p1'}
+			Text (para): 
+			p {}
+				Text (p): The interstellar medium is turbulent and the turbulence is crucial for understanding of various interstellar processes .
+					Interstellar turbulence occurs in magnetized fluid and magnetic field establishes a connection between ISM phases ( McKee & Ostriker 1977 ) thus making the turbulent cascade much more complex and coupling together cosmic rays and gas .
+					Theoretical understanding of such a multiphase media with the injection of energy at different scales ( Scalo 1987 ) is extremely challenging .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S1.p2'}
+			Text (para): 
+			p {}
+				Text (p): In terms of the topic of the present meeting , turbulence is important both for accelerating cosmic rays and for their diffusion .
+					Indeed , whatever mechanism of cosmic ray acceleration we consider , its understanding requires proper accounting for scattering of cosmic rays by turbulent magnetic field .
+					The same is true for the propagation of cosmic rays .
+					For instance , if it were not for magnetic field lines wandering , the diffusion of cosmic rays perpendicular to the magnetic field direction would be suppressed ( see Jokipii 1999 ) .
+					Moreover , it is becoming clear that particle streaming along magnetic field lines is also substantially influenced by magnetic turbulence .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S1.p3'}
+			Text (para): 
+			p {}
+				Text (p): In view of a broader picture , turbulence is widely believed to be an important element of molecular cloud dynamics and star formation process , although various authors disagree on the degree of its importance ( see discussion in Vazques-Semadeni & Passot 1999 ) .
+					Undoubtedly turbulence is essential for heat transfer in the interstellar medium .
+					It has been recently suggested that turbulence is also a key element to understanding various chemical reactions ( Gredel 1999 ) and of the fundamental problem of MHD , namely , to the problem of fast magnetic reconnection ( Lazarian & Vishniac 1999 ) .
+					This very limited and incomplete list of processes for which turbulence is essential explains the motivation behind the attempts to study interstellar turbulence .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S1.p4'}
+			Text (para): 
+			p {}
+				Text (p): Unfortunately interstellar turbulence remains a mystery in spite of all the attempts to study it .
+					Substantial progress in numerical research ( see Ostriker 1999 , Vazquez-Semadeni & Passot 1999 ) is not adequate to reproduce the flows comparable in complexity and in Reynolds numbers , and the situation will not change in any foreseeable future .
+					Thus only direct observational studies of interstellar turbulence may provide us with the crucial information on this phenomenon .
+					Approaching the problem one would like to know at least the statistics of density , velocity and magnetic field .
+					In this review I briefly discuss what information emission lines can supply us with .
+					I would like to quote Alyssa Goodman , who believes that present day technology made spectral-line mapping of large portions of interstellar media “ a booming cottage industry ” .
+					Attempts to use this wealth of observational data via visual inspection become fruitless and this calls for the introduction of more sophisticated techniques .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S1.p5'}
+			Text (para): 
+			p {}
+				Text (p): Statistical description is a nearly indispensable strategy when dealing with turbulence and a big advantage of statistical techniques is that they extract underlying regularities of the flow and reject incidental details .
+					Attempts to study interstellar turbulence with statistical tools date as far back as the 1950s ( see Horner 1951 , Kampe de Feriet 1955 , Munch 1958 , Wilson et al .
+					1959 ) and various directions of research achieved various degree of success ( see reviews by Kaplan & Pickelner 1970 , Dickman 1985 , Lazarian 1992 , Armstrong , Rickett & Spangler 1995 ) .
+					Studies of turbulence statistics of ionized media were successful ( see Spangler & Gwinn 1990 , Narayan 1992 ) and provided the information of the statistics of plasma density
+				note {'mark': '1', 'role': 'footnote'}
+					Text (note): Incidentally the found spectrum was close to a Kolmogorov one .
+					Tail (note): at scales
+				Math {'mode': 'inline', 'id': 'S1.p5.m1', 'tex': '10^{8}'}
+					Text (Math): $10^{8}$
+					Tail (Math): -
+				Math {'mode': 'inline', 'id': 'S1.p5.m2', 'tex': '10^{15}'}
+					Text (Math): $10^{15}$
+					Tail (Math): cm .
+						This research profited a lot from clear understanding of processes of scintillations and scattering achieved by theorists ( see Goodman & Narayan 1985 , Narayan & Goodman 1989 ) .
+						At the same time the intrinsic limitations of the scincillations technique are due to the limited number of sampling directions and difficulties of getting velocity information .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S1.p6'}
+			Text (para): 
+			p {}
+				Text (p): Deficiencies in the theoretical description have been , to our mind , the major impediments to studies of turbulence using emission lines .
+					For instance , important statistical studies of molecular clouds ( Dickman 1985 , Dickman & Kleiner 1985 , Miesch & Bally 1994 ) have not achieved the success parallel to that in scintillation studies .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S1.p7'}
+			Text (para): 
+			p {}
+				Text (p): Potentially , studies of interstellar turbulence via emission lines can provide statistics of turbulence in various interstellar phases , including neutral gas .
+					More importantly , velocity information allows one to distinguish between static structures and dynamical turbulence .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S1.p8'}
+			Text (para): 
+			p {}
+				Text (p): The difficulty of studying Doppler broadened lines stems from the fact that one has to account for both velocity and density fluctuations .
+					Indeed , at any given velocity the fluctuation of emissivity may arise both from the actual blobs of gas moving at this velocity and from parcels of gas with different spatial positions but accidentally having the same component of velocity along the line of sight .
+					Therefore fluctuations of emissivity at a given velocity would be expected even if the media were completely incompressible .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S1.p9'}
+			Text (para): 
+			p {}
+				Text (p): There exist various ways of dealing with position-position-velocity ( henceforth PPV ) data cubes .
+					One of them is to identify clumps and to describe their statistics ( see Stutzki & Gusten 1990 , Williams , de Geus & Blitz 1994 ) .
+					Another is use a more traditional set of hydrodynamic tools like power spectra , structure functions etc .
+					The two statistics are interrelated ( see Stutzki et al .
+					1998 ) , but in general the relation between various tools is non-trivial .
+					It seems that for answering various questions different statistical tools are more suitable .
+					Therefore it is very encouraging that a number of techniques , including Principal Component Analysis ( see Heyer & Schloerb 1997 ) and Spectral Correlation Functions ( Goodman 1999 , Rosolowsky et al .
+					1999 ) have been recently introduced to the field .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S1.p10'}
+			Text (para): 
+			p {}
+				Text (p): In what follows I depart from a traditional statistical hydrodynamics and describe how the 3D velocity and density power spectra can be extracted from position-position-velocity ( PPV ) data cubes .
+					This choice reflects my subjective preferences and partially motivated by the fact that this approach relates the long-studied 3D density and velocity statistics ( e.g .
+					power spectra ) with the observational data .
+					Even with this limitation the scope the subject is too broad and I shall mostly talk about atomic hydrogen ( HI ) studies , that can be viewed as a test case for the technique .
+					I discuss advantages of using HI as a test case in section 2 , the problem of space-velocity mapping in section 3 and spectra in velocity slices in section 4 .
+					The interpretation of 21 cm Galactic and SMC data is given in section 5 .
+					Possible anisotropies of statistics stemming from magnetic field are dealt with in section 6 , where a new technique for statistical studies of magnetic field is suggested .
+					I consider formation of emissivity enhancements that can be identified as filaments and clouds in section 7 and discuss the generalization of the technique in section 8 .
+					Being aware of the limitations of the traditional hydrodynamic description of turbulence , we describe alternative approaches , i.e .
+					2D Genus statistics , Spectral Correlation Functions and Bispectrum in section 9 .
+					A short discussion of the results is given in section 10 .
+				Tail (p): 
+			Tail (para): 
+		Tail (section): 
+	section {'refnum': '2', 'id': 'S2'}
+		Text (section): 
+		title {}
+			Text (title): None
+			tag {'close': ' '}
+				Text (tag): 2
+				Tail (tag): HI as a Test Case
+			Tail (title): 
+		para {'id': 'S2.p1'}
+			Text (para): 
+			p {}
+				Text (p): Atomic hydrogen is an important component of the interstellar media and many efforts have been devoted to its studies ( see Burton 1992 ) .
+					In terms of turbulence studies it has a number of advantages .
+					For one thing , when dealing with HI one may in most cases disregard self-absorption .
+					There are two major reasons for that : self-absorption is small ( Braun 1997 , Higgs 1999 ) and as shown in Lazarian ( 1995 , henceforth L95 ) , small localized absorption features typical to HI only marginally influence the statistics on the scales larger than their size .
+					For another thing , the pervasive distribution of neutral hydrogen presents a sharp contrast to the localized distribution of molecular species , and this alleviates problems related to averaging .
+					Moreover , atomic hydrogen emissivity is proportional to the first power of atomic density and this simplifies the analysis .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S2.p2'}
+			Text (para): 
+			p {}
+				Text (p): HI has a substantial filling factor (
+				Math {'mode': 'inline', 'id': 'S2.p2.m1', 'tex': '\\sim 20\\%'}
+					Text (Math): $\sim 20\%$
+					Tail (Math): or larger ) in the Galactic disc and therefore its motions should reflect large scale galactic supersonic turbulence .
+						At the same time , its statistics may have connection with the statistics of molecular clouds .
+						An additional advantage of HI is that it can be studied not only within our Galaxy but for the nearby galaxies as well .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S2.p3'}
+			Text (para): 
+			p {}
+				Text (p): Another motivation for studies of HI statistics stems from the recent attempt to describe the structures in the Galactic hydrogen in order to estimate the fluctuations of microwave polarization arising from interstellar dust .
+					This contribution is extremely important in view of present-day efforts in the Cosmic Microwave Background ( CMB ) research ( see Prunet & Lazarian 1999 , Draine & Lazarian 1999 ) .
+					Some of the studies , for instance one by Sethi , Prunet and Bouchet ( 1998 ) , attempts to relate the statistics of density observed in the velocity space and the statistics of polarization fluctuations .
+					If such a relation were possible , it would greatly alleviate the efforts to study polarization of cosmological origin .
+					As an intermediate step in this work , however , one should relate the statistics in emissivity in the PPV space and density of HI in real space .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S2.p4'}
+			Text (para): 
+			p {}
+				Text (p): The timing for developing statistical tools for HI studies is also influenced by the fact that new large data cubes , e.g .
+					the Canadian Galactic Survey data ( see Higgs 1999 ) , should become available soon .
+				Tail (p): 
+			Tail (para): 
+		Tail (section): 
+	section {'refnum': '3', 'id': 'S3'}
+		Text (section): 
+		title {}
+			Text (title): None
+			tag {'close': ' '}
+				Text (tag): 3
+				Tail (tag): Basic equations
+			Tail (title): 
+		subsection {'refnum': '3.1', 'id': 'S3.SS1'}
+			Text (subsection): 
+			title {}
+				Text (title): None
+				tag {'close': ' '}
+					Text (tag): 3.1
+					Tail (tag): Space-Velocity Mapping
+				Tail (title): 
+			para {'id': 'S3.SS1.p1'}
+				Text (para): 
+				p {}
+					Text (p): None
+					text {'font': 'italic'}
+						Text (text): Problem
+						break {}
+							Text (break): None
+							Tail (break): None
+						Tail (text): The notion that the velocity fluctuation can influence emissivity within PPV data cubes is not new .
+							Since the early-seventies Butler Burton on numerous occasions claimed the importance of velocity fluctuations for the interpretation of 21 cm data ( Burton 1970 , 1971 ) .
+							The ambiguities of inferring cloud properties from CO emission lines were discussed by Adler & Roberts ( 1992 ) .
+							Using N-cloud simulations of spiral disks they showed that many spurious effects appear because of velocity blending along line of sight .
+							Recently a number of researchers doing numerics ( Pichardo et al .
+							1999 , Vazques-Semadeni 1999 ) pointed out that pixel-to-pixel correlation between the channel maps and the velocity slices of PPV data cubes tends to be larger with the velocity rather than the density field .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S3.SS1.p2'}
+				Text (para): 
+				p {}
+					Text (p): To describe power spectra of velocity and density fields , i.e .
+						to express the interstellar statistics using the language that was so successful in hygrodynamics ( Monin & Yaglom 1972 ) , one needs to disentangle velocity and denisty contributions to 21 cm emissivity fluctuations .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S3.SS1.p3'}
+				Text (para): 
+				p {}
+					Text (p): None
+					text {'font': 'italic'}
+						Text (text): Approach
+						break {}
+							Text (break): None
+							Tail (break): None
+						Tail (text): A quantitative treatment of the effects of space-velocity mapping is given in Lazarian & Pogosyan ( 1999 , henthforth LP99 ) .
+							There it is assumed that the velocity of a gas element can be presented as a sum of the regular part
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m1', 'tex': '{\\bf v}^{reg}'}
+						Text (Math): ${\bf v}^{reg}$
+						Tail (Math): 
+							which can arise for instance from Galactic rotation , and a random , turbulent , part
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m2', 'tex': '{\\bf u}'}
+						Text (Math): ${\bf u}$
+						Tail (Math): , so that
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m3', 'tex': '{\\bf v}^{obs}={\\bf v}^{reg}+{\\bf u}'}
+						Text (Math): ${\bf v}^{obs}={\bf v}^{reg}+{\bf u}$
+						Tail (Math): .
+							The mapping from real space to PPV coordinates corresponds to a transformation
+					Tail (p): 
+				equationgroup {'class': 'ltx_eqn_eqnarray', 'id': 'A0.EGx1'}
+					Text (equationgroup): 
+					equation {'id': 'S3.Ex1'}
+						Text (equation): 
+						MathFork {}
+							Text (MathFork): 
+							Math {'id': 'S3.Ex1.m4', 'tex': '\\displaystyle{\\bf X_{s}}={\\bf X}'}
+								Text (Math): $\displaystyle{\bf X_{s}}={\bf X}$
+								Tail (Math): 
+							MathBranch {}
+								Text (MathBranch): 
+								tr {}
+									Text (tr): 
+									td {'align': 'right'}
+										Text (td): 
+										Math {'mode': 'inline', 'tex': '\\displaystyle{\\bf X_{s}}', 'id': 'S3.Ex1.m1'}
+											Text (Math): $\displaystyle{\bf X_{s}}$
+											Tail (Math): 
+										Tail (td): 
+									td {'align': 'center'}
+										Text (td): 
+										Math {'mode': 'inline', 'tex': '\\displaystyle=', 'id': 'S3.Ex1.m2'}
+											Text (Math): $\displaystyle=$
+											Tail (Math): 
+										Tail (td): 
+									td {'align': 'left'}
+										Text (td): 
+										Math {'mode': 'inline', 'tex': '\\displaystyle{\\bf X}', 'id': 'S3.Ex1.m3'}
+											Text (Math): $\displaystyle{\bf X}$
+											Tail (Math): 
+										Tail (td): 
+									Tail (tr): 
+								Tail (MathBranch): 
+							Tail (MathFork): 
+						Tail (equation): 
+					equation {'labels': 'LABEL:eq:mapnoz', 'id': 'S3.E1', 'refnum': '1', 'frefnum': '(1)'}
+						Text (equation): 
+						MathFork {}
+							Text (MathFork): 
+							Math {'id': 'S3.E1.m4', 'tex': '\\displaystyle z_{s}=A\\left[f^{-1}z-{\\bf u}({\\bf x})\\cdot{\\bf\\hat{z}}\\right]~{}%\n~{}~{},'}
+								Text (Math): $\displaystyle z_{s}=A\left[f^{-1}z-{\bf u}({\bf x})\cdot{\bf\hat{z}}\right]~{}% ~{}~{},$
+								Tail (Math): 
+							MathBranch {}
+								Text (MathBranch): 
+								tr {}
+									Text (tr): 
+									td {'align': 'right'}
+										Text (td): 
+										Math {'mode': 'inline', 'tex': '\\displaystyle z_{s}', 'id': 'S3.E1.m1'}
+											Text (Math): $\displaystyle z_{s}$
+											Tail (Math): 
+										Tail (td): 
+									td {'align': 'center'}
+										Text (td): 
+										Math {'mode': 'inline', 'tex': '\\displaystyle=', 'id': 'S3.E1.m2'}
+											Text (Math): $\displaystyle=$
+											Tail (Math): 
+										Tail (td): 
+									td {'align': 'left'}
+										Text (td): 
+										Math {'mode': 'inline', 'tex': '\\displaystyle A\\left[f^{-1}z-{\\bf u}({\\bf x})\\cdot{\\bf\\hat{z}}\\right]~{}~{}~{},', 'id': 'S3.E1.m3'}
+											Text (Math): $\displaystyle A\left[f^{-1}z-{\bf u}({\bf x})\cdot{\bf\hat{z}}\right]~{}~{}~{},$
+											Tail (Math): 
+										Tail (td): 
+									Tail (tr): 
+								Tail (MathBranch): 
+							Tail (MathFork): 
+						Tail (equation): 
+					Tail (equationgroup): 
+				p {}
+					Text (p): where henceforth we use large letters to denote vectors in the Position-Position plane ( i.e .
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m4', 'tex': 'xy'}
+						Text (Math): $xy$
+						Tail (Math): -plane ) and use
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m5', 'tex': 'z_{s}'}
+						Text (Math): $z_{s}$
+						Tail (Math): for the velocity coordinate .
+							The parameter
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m6', 'tex': 'A'}
+						Text (Math): $A$
+						Tail (Math): is just a conversion factor which specifies the units of
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m7', 'tex': 'z_{s}'}
+						Text (Math): $z_{s}$
+						Tail (Math): coordinate and it is intuitively clear that this factor should not enter any final expressions for turbulence statistics .
+							On the contrary , the shear parameter
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m8', 'tex': 'f=\\left(\\delta v_{z}^{reg}/\\delta z\\right)^{-1}'}
+						Text (Math): $f=\left(\delta v_{z}^{reg}/\delta z\right)^{-1}$
+						Tail (Math): 
+							is an important characteristic of the mapping and one expects it to influence our final results .
+							For Galactic disc mapping it is convenient to choose
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m9', 'tex': 'A=f'}
+						Text (Math): $A=f$
+						Tail (Math): , while studies of isolated clouds correspond to a zero shear , i.e .
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m10', 'tex': 'f^{-1}\\to 0'}
+						Text (Math): $f^{-1}\to 0$
+						Tail (Math): .
+							As most work on HI has been done so far on Galactic disc HI , to simplify our presentation we use the former choice .
+							With this definition of space-velocity mapping LP99 obtain the power spectrum
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m11', 'tex': 'P_{s}'}
+						Text (Math): $P_{s}$
+						Tail (Math): in the PPV space :
+					Tail (p): 
+				equationgroup {'class': 'ltx_eqn_eqnarray', 'id': 'A0.EGx2'}
+					Text (equationgroup): 
+					equation {'id': 'S3.Ex2'}
+						Text (equation): 
+						MathFork {}
+							Text (MathFork): 
+							Math {'id': 'S3.Ex2.m4', 'tex': '\\displaystyle\\langle\\rho_{s}({\\bf k})\\rho_{s}^{*}({\\bf k^{\\prime}})\\rangle=P_{%\ns}({\\bf k})\\delta({\\bf k-k^{\\prime}})'}
+								Text (Math): $\displaystyle\langle\rho_{s}({\bf k})\rho_{s}^{*}({\bf k^{\prime}})\rangle=P_{% s}({\bf k})\delta({\bf k-k^{\prime}})$
+								Tail (Math): 
+							MathBranch {}
+								Text (MathBranch): 
+								tr {}
+									Text (tr): 
+									td {'align': 'right'}
+										Text (td): 
+										Math {'mode': 'inline', 'tex': '\\displaystyle\\langle\\rho_{s}({\\bf k})\\rho_{s}^{*}({\\bf k^{\\prime}})\\rangle', 'id': 'S3.Ex2.m1'}
+											Text (Math): $\displaystyle\langle\rho_{s}({\bf k})\rho_{s}^{*}({\bf k^{\prime}})\rangle$
+											Tail (Math): 
+										Tail (td): 
+									td {'align': 'center'}
+										Text (td): 
+										Math {'mode': 'inline', 'tex': '\\displaystyle=', 'id': 'S3.Ex2.m2'}
+											Text (Math): $\displaystyle=$
+											Tail (Math): 
+										Tail (td): 
+									td {'align': 'left'}
+										Text (td): 
+										Math {'mode': 'inline', 'tex': '\\displaystyle P_{s}({\\bf k})\\delta({\\bf k-k^{\\prime}})', 'id': 'S3.Ex2.m3'}
+											Text (Math): $\displaystyle P_{s}({\bf k})\delta({\bf k-k^{\prime}})$
+											Tail (Math): 
+										Tail (td): 
+									Tail (tr): 
+								Tail (MathBranch): 
+							Tail (MathFork): 
+						Tail (equation): 
+					equation {'labels': 'LABEL:eq:roman', 'id': 'S3.E2', 'refnum': '2', 'frefnum': '(2)'}
+						Text (equation): 
+						MathFork {}
+							Text (MathFork): 
+							Math {'id': 'S3.E2.m4', 'tex': '\\displaystyle P_{s}({\\bf k})=e^{-f^{2}k_{z}^{2}v_{T}^{2}}\\int d^{3}{\\bf r}\\,e^%\n{i{\\bf k}\\cdot{\\bf r}}\\Xi({\\bf k},{\\bf r}),~{}~{}~{}~{}~{}~{}~{}{\\bf r}={\\bf x%\n}-{\\bf x\\prime}~{}~{},'}
+								Text (Math): $\displaystyle P_{s}({\bf k})=e^{-f^{2}k_{z}^{2}v_{T}^{2}}\int d^{3}{\bf r}\,e^% {i{\bf k}\cdot{\bf r}}\Xi({\bf k},{\bf r}),~{}~{}~{}~{}~{}~{}~{}{\bf r}={\bf x% }-{\bf x\prime}~{}~{},$
+								Tail (Math): 
+							MathBranch {}
+								Text (MathBranch): 
+								tr {}
+									Text (tr): 
+									td {'align': 'right'}
+										Text (td): 
+										Math {'mode': 'inline', 'tex': '\\displaystyle P_{s}({\\bf k})', 'id': 'S3.E2.m1'}
+											Text (Math): $\displaystyle P_{s}({\bf k})$
+											Tail (Math): 
+										Tail (td): 
+									td {'align': 'center'}
+										Text (td): 
+										Math {'mode': 'inline', 'tex': '\\displaystyle=', 'id': 'S3.E2.m2'}
+											Text (Math): $\displaystyle=$
+											Tail (Math): 
+										Tail (td): 
+									td {'align': 'left'}
+										Text (td): 
+										Math {'mode': 'inline', 'tex': '\\displaystyle e^{-f^{2}k_{z}^{2}v_{T}^{2}}\\int d^{3}{\\bf r}\\,e^{i{\\bf k}\\cdot{%\n\\bf r}}\\Xi({\\bf k},{\\bf r}),~{}~{}~{}~{}~{}~{}~{}{\\bf r}={\\bf x}-{\\bf x\\prime}%\n~{}~{},', 'id': 'S3.E2.m3'}
+											Text (Math): $\displaystyle e^{-f^{2}k_{z}^{2}v_{T}^{2}}\int d^{3}{\bf r}\,e^{i{\bf k}\cdot{% \bf r}}\Xi({\bf k},{\bf r}),~{}~{}~{}~{}~{}~{}~{}{\bf r}={\bf x}-{\bf x\prime}% ~{}~{},$
+											Tail (Math): 
+										Tail (td): 
+									Tail (tr): 
+								Tail (MathBranch): 
+							Tail (MathFork): 
+						Tail (equation): 
+					Tail (equationgroup): 
+				p {}
+					Text (p): where the kernel is
+					Tail (p): 
+				equation {'frefnum': '(3)', 'refnum': '3', 'id': 'S3.E3', 'labels': 'LABEL:kernelXi'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S3.E3.m1', 'tex': '\\Xi({\\bf k},{\\bf r})=\\langle e^{ifk_{z}(u_{z}({\\bf x})-u_{z}({\\bf x\\prime}))}%\n\\rho({\\bf x})\\rho({\\bf x\\prime})\\rangle~{}~{}~{}.'}
+						Text (Math): $\Xi({\bf k},{\bf r})=\langle e^{ifk_{z}(u_{z}({\bf x})-u_{z}({\bf x\prime}))}% \rho({\bf x})\rho({\bf x\prime})\rangle~{}~{}~{}.$
+						Tail (Math): 
+					Tail (equation): 
+				p {}
+					Text (p): In derivation of this expression it is explicitly assumed that the turbulence is statistically homogeneous in the real space coordinates and the average denoted by angular brackets
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m12', 'tex': '\\langle....\\rangle'}
+						Text (Math): $\langle....\rangle$
+						Tail (Math): 
+							depends only on the vector separation between points .
+							The density Fourier modes in PPV space
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m13', 'tex': '\\rho_{s}({\\bf k})'}
+						Text (Math): $\rho_{s}({\bf k})$
+						Tail (Math): are uncorrelated
+					note {'mark': '2', 'role': 'footnote'}
+						Text (note): A treatment of turbulence within individual clouds is slightly different ( LP99 ) .
+						Tail (note): 
+							which is reflected in
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m14', 'tex': '\\delta'}
+						Text (Math): $\delta$
+						Tail (Math): function presence in the right-hand side of the first equation in (
+					ref {'labelref': 'LABEL:eq:roman'}
+						Text (ref): None
+						Tail (ref): ) .
+							The factor
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m15', 'tex': 'e^{-f^{2}k_{z}^{2}v_{T}^{2}}'}
+						Text (Math): $e^{-f^{2}k_{z}^{2}v_{T}^{2}}$
+						Tail (Math): , where
+					Math {'mode': 'inline', 'id': 'S3.SS1.p3.m16', 'tex': 'v_{T}'}
+						Text (Math): $v_{T}$
+						Tail (Math): 
+							is a thermal velocity of atoms originates from averaging over thermal distribution and it shows that only supersonic motions are readily available for statistical studies .
+							Note , that expressions similar to (
+					ref {'labelref': 'LABEL:eq:roman'}
+						Text (ref): None
+						Tail (ref): ) and (
+					ref {'labelref': 'LABEL:kernelXi'}
+						Text (ref): None
+						Tail (ref): ) were earlier obtained by Scoccimarro et al .
+							( 1999 ) in the framework of studies of Large Scale Structure of the Universe and this confirms the similarity of the problems studied in the two fields .
+							However , the problem of “ redshift-space ” corrections to the statistics of galaxy distribution ( Kaiser 1987 ) has been addressed either in the linear regime when perturbations are small or when the velocity contribution to the Fourier spectrum can be factorized by a Maxwellian factor ( see Hamilton 1998 ) .
+							The problem that is dealt in turbulence case is much richer as one has to deal with non-linear density fields transformed by coherent velocities .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S3.SS1.p4'}
+				Text (para): 
+				p {}
+					Text (p): Note that velocity and density enter eq .
+						(
+					ref {'labelref': 'LABEL:kernelXi'}
+						Text (ref): None
+						Tail (ref): ) in a different way : velocity is in the exponent and density enters as the product
+					Math {'mode': 'inline', 'id': 'S3.SS1.p4.m1', 'tex': '\\rho({\\bf x})\\rho({\\bf x\\prime})'}
+						Text (Math): $\rho({\bf x})\rho({\bf x\prime})$
+						Tail (Math): .
+							This provides an opportunity to disentangle the two contributions .
+					Tail (p): 
+				Tail (para): 
+			Tail (subsection): 
+		subsection {'refnum': '3.2', 'id': 'S3.SS2'}
+			Text (subsection): 
+			title {}
+				Text (title): None
+				tag {'close': ' '}
+					Text (tag): 3.2
+					Tail (tag): Spectrum in PPV Space
+				Tail (title): 
+			para {'id': 'S3.SS2.p1'}
+				Text (para): 
+				p {}
+					Text (p): LP99 proves that in terms of final results for Lognormal distribution of density fluctuations and Gaussian distribution of velocity fluctuations it is safe to separate velocity and density in the following way
+					Tail (p): 
+				equation {'frefnum': '(4)', 'refnum': '4', 'id': 'S3.E4', 'labels': 'LABEL:sep'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S3.E4.m1', 'tex': '\\langle e^{if\\ldots}\\rho({\\bf x})\\rho({\\bf x\\prime})\\rangle=\\langle e^{if%\n\\ldots}\\rangle\\langle\\rho({\\bf x})\\rho({\\bf x}+{\\bf r})\\rangle~{}~{}~{},'}
+						Text (Math): $\langle e^{if\ldots}\rho({\bf x})\rho({\bf x\prime})\rangle=\langle e^{if% \ldots}\rangle\langle\rho({\bf x})\rho({\bf x}+{\bf r})\rangle~{}~{}~{},$
+						Tail (Math): 
+					Tail (equation): 
+				p {}
+					Text (p): even if density and velocity are strongly correlated .
+						It is interesting to check the degree of uncertainty that the assumption (
+					ref {'labelref': 'LABEL:sep'}
+						Text (ref): None
+						Tail (ref): ) entails using numerically generated density and velocity fields .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S3.SS2.p2'}
+				Text (para): 
+				p {}
+					Text (p): For the sake of simplicity the density correlation function and velocity correlation tensor are considered to be isotropic in Galactic coordinates (
+					Math {'mode': 'inline', 'id': 'S3.SS2.p2.m1', 'tex': 'xyz'}
+						Text (Math): $xyz$
+						Tail (Math): space ) , i.e .
+					Tail (p): 
+				equation {'frefnum': '(5)', 'refnum': '5', 'id': 'S3.E5', 'labels': 'LABEL:xifirst'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S3.E5.m1', 'tex': '\\langle\\rho({\\bf x})\\rho({\\bf x}+{\\bf r})\\rangle=\\xi(r)=\\xi({\\bf r})~{}~{}~{}.'}
+						Text (Math): $\langle\rho({\bf x})\rho({\bf x}+{\bf r})\rangle=\xi(r)=\xi({\bf r})~{}~{}~{}.$
+						Tail (Math): 
+					Tail (equation): 
+				equation {'frefnum': '(6)', 'refnum': '6', 'id': 'S3.E6', 'labels': 'LABEL:struc'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S3.E6.m1', 'tex': '\\langle\\Delta u_{i}\\Delta u_{j}\\rangle=\\left(D_{LL}(r)-D_{NN}(r)\\right){r_{i}r%\n_{j}\\over r^{2}}+D_{NN}(r)\\delta_{ij}~{}~{}~{},'}
+						Text (Math): $\langle\Delta u_{i}\Delta u_{j}\rangle=\left(D_{LL}(r)-D_{NN}(r)\right){r_{i}r% _{j}\over r^{2}}+D_{NN}(r)\delta_{ij}~{}~{}~{},$
+						Tail (Math): 
+					Tail (equation): 
+				p {}
+					Text (p): where
+					Math {'mode': 'inline', 'id': 'S3.SS2.p2.m2', 'tex': 'D_{LL}'}
+						Text (Math): $D_{LL}$
+						Tail (Math): ,
+					Math {'mode': 'inline', 'id': 'S3.SS2.p2.m3', 'tex': 'D_{NN}'}
+						Text (Math): $D_{NN}$
+						Tail (Math): are longitudinal and transverse correlation functions respectively ( Monin & Yaglom 1972 ) , and
+					Math {'mode': 'inline', 'id': 'S3.SS2.p2.m4', 'tex': '\\delta_{ik}'}
+						Text (Math): $\delta_{ik}$
+						Tail (Math): equals 1 for
+					Math {'mode': 'inline', 'id': 'S3.SS2.p2.m5', 'tex': 'i=k'}
+						Text (Math): $i=k$
+						Tail (Math): and zero otherwise .
+							These assumptions are not necessary , as the treatment can be provided for instance for axisymmetric turbulent motions ( see Oughton , Radler & Matthaeus 1997 ) as it is discussed in ( L95 ) .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S3.SS2.p3'}
+				Text (para): 
+				p {}
+					Text (p): The general expression for the 3D spectrum in PPV space is
+					Tail (p): 
+				equation {'frefnum': '(7)', 'refnum': '7', 'id': 'S3.E7', 'labels': 'LABEL:eq:main'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S3.E7.m1', 'tex': 'P_{s}({\\bf k})=e^{-f^{2}k_{z}^{2}v_{T}^{2}/2}\\int d^{3}{\\bf r}\\,e^{i{\\bf k}%\n\\cdot{\\bf r}}\\xi(r)\\exp\\left[-\\frac{1}{2}f^{2}k_{z}^{2}D_{z}({\\bf r})\\right],'}
+						Text (Math): $P_{s}({\bf k})=e^{-f^{2}k_{z}^{2}v_{T}^{2}/2}\int d^{3}{\bf r}\,e^{i{\bf k}% \cdot{\bf r}}\xi(r)\exp\left[-\frac{1}{2}f^{2}k_{z}^{2}D_{z}({\bf r})\right],$
+						Tail (Math): 
+					Tail (equation): 
+				p {}
+					Text (p): where
+					Tail (p): 
+				equation {'frefnum': '(8)', 'refnum': '8', 'id': 'S3.E8', 'labels': 'LABEL:eq:Dz'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S3.E8.m1', 'tex': 'D_{z}({\\bf r})\\equiv\\langle\\Delta u_{i}\\Delta u_{j}\\rangle\\hat{z}_{i}\\hat{z}_{%\nj}=D_{NN}(r)+[D_{LL}(r)-D_{NN}(r)]\\cos^{2}\\theta~{},~{}~{}~{}\\cos\\theta\\equiv{%\n\\bf\\hat{r}\\cdot\\hat{z}}'}
+						Text (Math): $D_{z}({\bf r})\equiv\langle\Delta u_{i}\Delta u_{j}\rangle\hat{z}_{i}\hat{z}_{% j}=D_{NN}(r)+[D_{LL}(r)-D_{NN}(r)]\cos^{2}\theta~{},~{}~{}~{}\cos\theta\equiv{% \bf\hat{r}\cdot\hat{z}}$
+						Tail (Math): 
+					Tail (equation): 
+				p {}
+					Text (p): is the projection of structure tensor to the
+					Math {'mode': 'inline', 'id': 'S3.SS2.p3.m1', 'tex': 'z'}
+						Text (Math): $z$
+						Tail (Math): -axis .
+							Expression (
+					ref {'labelref': 'LABEL:eq:main'}
+						Text (ref): None
+						Tail (ref): ) is quite general and can be used to relate arbitrary velocity and density statistics in galactic coordinates with the HI emissivity in the PPV space .
+					Tail (p): 
+				Tail (para): 
+			Tail (subsection): 
+		Tail (section): 
+	section {'refnum': '4', 'id': 'S4'}
+		Text (section): 
+		title {}
+			Text (title): None
+			tag {'close': ' '}
+				Text (tag): 4
+				Tail (tag): Spectra in Velocity Slices
+			Tail (title): 
+		para {'id': 'S4.p1'}
+			Text (para): 
+			p {}
+				Text (p): Observations of Galactic HI ( Green 1993 ) revealed two dimensional spectrum of intensity fluctuations ( see L95 ) and this spectrum shows power-law behaivior .
+					Similar power laws for Galactic data were obtained by Crovisier & Dickey ( 1983 ) , Kalberla & Mebold ( 1983 ) , Kalberla & Stenholm ( 1983 ) and for Small Magellanic Clouds ( SMC ) by Stanimirovic et al .
+					( 1999 ) .
+					Thus LP99 considered power law statistics , namely , of velocity
+				Math {'mode': 'inline', 'id': 'S4.p1.m1', 'tex': '{\\cal P}_{3v}\\sim k^{\\nu}'}
+					Text (Math): ${\cal P}_{3v}\sim k^{\nu}$
+					Tail (Math): and density
+				Math {'mode': 'inline', 'id': 'S4.p1.m2', 'tex': '{\\cal P}_{3\\rho}\\sim k^{n}'}
+					Text (Math): ${\cal P}_{3\rho}\sim k^{n}$
+					Tail (Math): , where
+				Math {'mode': 'inline', 'id': 'S4.p1.m3', 'tex': '{\\cal P}'}
+					Text (Math): ${\cal P}$
+					Tail (Math): is used to denote spectra in Galactic coordinates .
+						Note , that
+				Math {'mode': 'inline', 'id': 'S4.p1.m4', 'tex': 'n<0'}
+					Text (Math): $n<0$
+					Tail (Math): and
+				Math {'mode': 'inline', 'id': 'S4.p1.m5', 'tex': '\\nu<0'}
+					Text (Math): $\nu<0$
+					Tail (Math): and
+				Math {'mode': 'inline', 'id': 'S4.p1.m6', 'tex': 'D_{z}\\approx Cr^{m}'}
+					Text (Math): $D_{z}\approx Cr^{m}$
+					Tail (Math): , where
+				Math {'mode': 'inline', 'id': 'S4.p1.m7', 'tex': 'm=-\\nu-3'}
+					Text (Math): $m=-\nu-3$
+					Tail (Math): .
+						Power law spectra were also reported for molecular
+				Math {'mode': 'inline', 'id': 'S4.p1.m8', 'tex': '{}^{12}'}
+					Text (Math): ${}^{12}$
+					Tail (Math): CO ( data from Heithausen & Thaddeus 1990 and Falgarone et al .
+						1998 ) and
+				Math {'mode': 'inline', 'id': 'S4.p1.m9', 'tex': '{}^{13}'}
+					Text (Math): ${}^{13}$
+					Tail (Math): CO ( data from Heyer & Schloerb 1997 ) lines and it looks that power law spectra are quite generic for interstellar turbulence ( Armstrong et al .
+						1997 ) .
+						Thus the assumption of a power law statistics does not tangibly constrain the range of applicability of the developed theory
+				note {'mark': '3', 'role': 'footnote'}
+					Text (note): It is rather unnatural to expect that velocity and density spectra not being power laws conspire to produce power law emissivity .
+					Tail (note): .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S4.p2'}
+			Text (para): 
+			p {}
+				Text (p): For power-law spectra of density with
+				Math {'mode': 'inline', 'id': 'S4.p2.m1', 'tex': 'n>-3'}
+					Text (Math): $n>-3$
+					Tail (Math): 
+						the correlation functions are also power-law :
+				Tail (p): 
+			equation {'frefnum': '(9)', 'refnum': '9', 'id': 'S4.E9', 'labels': 'LABEL:eq:xi'}
+				Text (equation): 
+				Math {'mode': 'display', 'id': 'S4.E9.m1', 'tex': '\\xi(r)=\\langle\\rho\\rangle^{2}\\left(1+\\left({r_{0}\\over r}\\right)^{\\gamma}%\n\\right),~{}~{}~{}~{}~{}\\gamma=n+3>0~{}~{}~{}.'}
+					Text (Math): $\xi(r)=\langle\rho\rangle^{2}\left(1+\left({r_{0}\over r}\right)^{\gamma}% \right),~{}~{}~{}~{}~{}\gamma=n+3>0~{}~{}~{}.$
+					Tail (Math): 
+				Tail (equation): 
+			Tail (para): 
+		para {'id': 'S4.p3'}
+			Text (para): 
+			p {}
+				Text (p): Substituting Eq .
+					(
+				ref {'labelref': 'LABEL:eq:xi'}
+					Text (ref): None
+					Tail (ref): ) in (
+				ref {'labelref': 'LABEL:eq:main'}
+					Text (ref): None
+					Tail (ref): ) one can see that
+				Tail (p): 
+			equation {'frefnum': '(10)', 'refnum': '10', 'id': 'S4.E10', 'labels': 'LABEL:eq:split'}
+				Text (equation): 
+				Math {'mode': 'display', 'id': 'S4.E10.m1', 'tex': 'P_{s}(|{\\bf K}|,k_{z})=\\langle\\rho\\rangle^{2}\\left[P_{v}(|{\\bf K}|,k_{z})+P_{%\n\\rho}(|{\\bf K}|,k_{z})\\right]~{}~{}~{},'}
+					Text (Math): $P_{s}(|{\bf K}|,k_{z})=\langle\rho\rangle^{2}\left[P_{v}(|{\bf K}|,k_{z})+P_{% \rho}(|{\bf K}|,k_{z})\right]~{}~{}~{},$
+					Tail (Math): 
+				Tail (equation): 
+			p {}
+				Text (p): where the part
+				Math {'mode': 'inline', 'id': 'S4.p3.m1', 'tex': 'P_{v}'}
+					Text (Math): $P_{v}$
+					Tail (Math): comes from integrating unity in Eq .
+						(
+				ref {'labelref': 'LABEL:eq:xi'}
+					Text (ref): None
+					Tail (ref): ) and the part
+				Math {'mode': 'inline', 'id': 'S4.p3.m2', 'tex': 'P_{\\rho}'}
+					Text (Math): $P_{\rho}$
+					Tail (Math): comes from integration the
+				Math {'mode': 'inline', 'id': 'S4.p3.m3', 'tex': '\\left({r_{0}\\over r}\\right)^{\\gamma}'}
+					Text (Math): $\left({r_{0}\over r}\right)^{\gamma}$
+					Tail (Math): part .
+						As we may see , the
+				Math {'mode': 'inline', 'id': 'S4.p3.m4', 'tex': 'P_{\\rho}'}
+					Text (Math): $P_{\rho}$
+					Tail (Math): part is influenced by both velocity and density fluctuations , while
+				Math {'mode': 'inline', 'id': 'S4.p3.m5', 'tex': 'P_{v}'}
+					Text (Math): $P_{v}$
+					Tail (Math): part arises only from density fluctuations .
+						LP99 show that an expression is similar to (
+				ref {'labelref': 'LABEL:eq:split'}
+					Text (ref): None
+					Tail (ref): ) valid for
+				Math {'mode': 'inline', 'id': 'S4.p3.m6', 'tex': 'n<-3'}
+					Text (Math): $n<-3$
+					Tail (Math): .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S4.p4'}
+			Text (para): 
+			p {}
+				Text (p): The relation between 2D spectrum in velocity slices and the underlying 3D emissivity spectrum in the PPV space is given by
+				Tail (p): 
+			equation {'frefnum': '(11)', 'refnum': '11', 'id': 'S4.E11', 'labels': 'LABEL:eq:slice'}
+				Text (equation): 
+				Math {'mode': 'display', 'id': 'S4.E11.m1', 'tex': 'P_{2}({\\bf K})|_{\\cal L}\\sim{1\\over 2\\pi}\\int_{-\\infty}^{\\infty}dk_{z}P_{s}({%\n\\bf K},k_{z})\\,2\\left[(1-\\cos(k_{z}{\\cal L}))/(k_{z}{\\cal L})^{2}\\right]~{}~{}%\n~{},'}
+					Text (Math): $P_{2}({\bf K})|_{\cal L}\sim{1\over 2\pi}\int_{-\infty}^{\infty}dk_{z}P_{s}({% \bf K},k_{z})\,2\left[(1-\cos(k_{z}{\cal L}))/(k_{z}{\cal L})^{2}\right]~{}~{}% ~{},$
+					Tail (Math): 
+				Tail (equation): 
+			p {}
+				Text (p): where
+				Math {'mode': 'inline', 'id': 'S4.p4.m1', 'tex': '{\\bf K}'}
+					Text (Math): ${\bf K}$
+					Tail (Math): denotes a 2D wavevector defined in the planes perpendicular to the line-of-sight and
+				Math {'mode': 'inline', 'id': 'S4.p4.m2', 'tex': '|_{\\cal L}'}
+					Text (Math): $|_{\cal L}$
+					Tail (Math): reflects the dependence on the slice thickness .
+						Equation (
+				ref {'labelref': 'LABEL:eq:slice'}
+					Text (ref): None
+					Tail (ref): ) represents the one dimensional integral of the three dimensional spectrum with the window function given by the expression in square brackets .
+						It is easy to see that the thinner is the velocity slice
+				Math {'mode': 'inline', 'id': 'S4.p4.m3', 'tex': '{\\cal L}'}
+					Text (Math): ${\cal L}$
+					Tail (Math): , the larger the
+				Math {'mode': 'inline', 'id': 'S4.p4.m4', 'tex': 'k_{z}'}
+					Text (Math): $k_{z}$
+					Tail (Math): range for which the window function is close to unity and therefore more 3D modes contribute to 2D spectrum .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S4.p5'}
+			Text (para): 
+			p {}
+				Text (p): Substituting (
+				ref {'labelref': 'LABEL:eq:split'}
+					Text (ref): None
+					Tail (ref): ) into (
+				ref {'labelref': 'LABEL:eq:slice'}
+					Text (ref): None
+					Tail (ref): ) one can see that the two dimensional spectrum can be presented as a sum
+				Tail (p): 
+			equation {'frefnum': '(12)', 'refnum': '12', 'id': 'S4.E12', 'labels': 'LABEL:2Dspec'}
+				Text (equation): 
+				Math {'mode': 'display', 'id': 'S4.E12.m1', 'tex': 'P_{2}(|{\\bf K}|)=\\langle\\rho\\rangle^{2}\\left[P_{2v}(|{\\bf K}|)+P_{2\\rho}(|{\\bf\nK%\n}|)\\right]~{}~{}~{},'}
+					Text (Math): $P_{2}(|{\bf K}|)=\langle\rho\rangle^{2}\left[P_{2v}(|{\bf K}|)+P_{2\rho}(|{\bf K% }|)\right]~{}~{}~{},$
+					Tail (Math): 
+				Tail (equation): 
+			p {}
+				Text (p): where the expressions for
+				Math {'mode': 'inline', 'id': 'S4.p5.m1', 'tex': 'P_{2v}'}
+					Text (Math): $P_{2v}$
+					Tail (Math): and
+				Math {'mode': 'inline', 'id': 'S4.p5.m2', 'tex': 'P_{2\\rho}'}
+					Text (Math): $P_{2\rho}$
+					Tail (Math): are self-evident .
+						To avoid possible misunderstanding I would like to stress that
+				Math {'mode': 'inline', 'id': 'S4.p5.m3', 'tex': 'P_{2v}'}
+					Text (Math): $P_{2v}$
+					Tail (Math): and
+				Math {'mode': 'inline', 'id': 'S4.p5.m4', 'tex': 'P_{2\\rho}'}
+					Text (Math): $P_{2\rho}$
+					Tail (Math): 
+						are
+				text {'font': 'italic'}
+					Text (text): not
+					Tail (text): 2D velocity and density spectra and , for instance ,
+				Math {'mode': 'inline', 'id': 'S4.p5.m5', 'tex': 'P_{2\\rho}'}
+					Text (Math): $P_{2\rho}$
+					Tail (Math): depends both on velocity and density statistics .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S4.p6'}
+			Text (para): 
+			p {}
+				Text (p): Velocity fluctuations are most important for supersonic turbulence which is the case for cold HI .
+					In this situation the following power-law asymptotics can be obtained ( see Table 1 ) :
+				Tail (p): 
+			equation {'frefnum': '(13)', 'refnum': '13', 'id': 'S4.E13', 'labels': 'LABEL:eq:phystrans1'}
+				Text (equation): 
+				Math {'mode': 'display', 'id': 'S4.E13.m1', 'tex': '{\\rm thin~{}~{}slice}:~{}~{}~{}~{}~{}~{}~{}~{}C|{\\bf K}|^{-m}\\gg\\delta V^{2}'}
+					Text (Math): ${\rm thin~{}~{}slice}:~{}~{}~{}~{}~{}~{}~{}~{}C|{\bf K}|^{-m}\gg\delta V^{2}$
+					Tail (Math): 
+				Tail (equation): 
+			equation {'frefnum': '(14)', 'refnum': '14', 'id': 'S4.E14', 'labels': 'LABEL:eq:phystrans'}
+				Text (equation): 
+				Math {'mode': 'display', 'id': 'S4.E14.m1', 'tex': '{\\rm thick~{}slice}:~{}~{}~{}~{}~{}~{}~{}~{}C|{\\bf K}|^{-m}\\ll\\delta V^{2}'}
+					Text (Math): ${\rm thick~{}slice}:~{}~{}~{}~{}~{}~{}~{}~{}C|{\bf K}|^{-m}\ll\delta V^{2}$
+					Tail (Math): 
+				Tail (equation): 
+			p {}
+				Text (p): In other words , if the velocity dispersion
+				Math {'mode': 'inline', 'id': 'S4.p6.m1', 'tex': 'Cr^{m}'}
+					Text (Math): $Cr^{m}$
+					Tail (Math): on the scale
+				Math {'mode': 'inline', 'id': 'S4.p6.m2', 'tex': '|{\\bf K}|^{-1}'}
+					Text (Math): $|{\bf K}|^{-1}$
+					Tail (Math): 
+						is larger than the squared width of the channel ( in velocity units ) the slice is termed
+				text {'font': 'italic'}
+					Text (text): thin
+					Tail (text): .
+						If the opposite is true the slice is termed
+				text {'font': 'italic'}
+					Text (text): thick
+					Tail (text): .
+				Tail (p): 
+			Tail (para): 
+		table {'frefnum': 'Table\xa01', 'placement': 'h', 'refnum': '1', 'id': 'S4.T1', 'labels': 'LABEL:tab:2Dspk_asymp'}
+			Text (table): 
+				      
+			equation {'id': 'S4.Ex3'}
+				Text (equation): 
+				Math {'mode': 'display', 'id': 'S4.Ex3.m1', 'tex': '\\begin{array}[]{lrr}\\hline\\hline\\\\\n&\\omit\\rm thick~{}~{}slice&\\omit\\rm thin~{}~{}slice\\\\\n\\hline\\\\\nP_{2\\rho}({\\bf K}):&|{\\bf K}|^{n};&|{\\bf K}|^{n+m/2}\\\\\n\\hline\\\\\nP_{2v}({\\bf K}):&|{\\bf K}|^{-3-m/2};&|{\\bf K}|^{-3+m/2}\\\\\n\\hline\\end{array}'}
+					Text (Math): $\begin{array}[]{lrr}\hline\hline\\ &\omit\rm thick~{}~{}slice&\omit\rm thin~{}~{}slice\\ \hline\\ P_{2\rho}({\bf K}):&|{\bf K}|^{n};&|{\bf K}|^{n+m/2}\\ \hline\\ P_{2v}({\bf K}):&|{\bf K}|^{-3-m/2};&|{\bf K}|^{-3+m/2}\\ \hline\end{array}$
+					Tail (Math): 
+				Tail (equation): 
+					      
+			toccaption {}
+				Text (toccaption): None
+				tag {'close': ' '}
+					Text (tag): 1
+					Tail (tag): Asymptotics of the components of 2D spectrum in the
+				text {'font': 'italic'}
+					Text (text): thin
+					Tail (text): 
+						and
+				text {'font': 'italic'}
+					Text (text): thick
+					Tail (text): velocity slices ,
+				Math {'mode': 'inline', 'id': 'S4.T1.m1', 'tex': 'm=-\\nu-3'}
+					Text (Math): $m=-\nu-3$
+					Tail (Math): .
+				Tail (toccaption): 
+					      
+			caption {}
+				Text (caption): None
+				tag {'close': ': '}
+					Text (tag): Table 1
+					Tail (tag): Asymptotics of the components of 2D spectrum in the
+				text {'font': 'italic'}
+					Text (text): thin
+					Tail (text): 
+						and
+				text {'font': 'italic'}
+					Text (text): thick
+					Tail (text): velocity slices ,
+				Math {'mode': 'inline', 'id': 'S4.T1.m2', 'tex': 'm=-\\nu-3'}
+					Text (Math): $m=-\nu-3$
+					Tail (Math): .
+				Tail (caption): 
+					    
+			Tail (table): 
+		para {'id': 'S4.p7'}
+			Text (para): 
+			p {}
+				Text (p): None
+				text {'font': 'italic'}
+					Text (text): Thin Slices
+					break {}
+						Text (break): None
+						Tail (break): None
+					Tail (text): It is easy to see from Table 1 that in thin slices the velocity mapping makes the spectra more shallow ( as
+				Math {'mode': 'inline', 'id': 'S4.p7.m1', 'tex': 'm>0'}
+					Text (Math): $m>0$
+					Tail (Math): ) .
+						This means that velocity creates a lot of small scale structures .
+						It is also evident that if the
+				Math {'mode': 'inline', 'id': 'S4.p7.m2', 'tex': 'n<-3'}
+					Text (Math): $n<-3$
+					Tail (Math): the
+				Math {'mode': 'inline', 'id': 'S4.p7.m3', 'tex': 'P_{2v}'}
+					Text (Math): $P_{2v}$
+					Tail (Math): contribution dominates .
+						In the opposite regime
+				Math {'mode': 'inline', 'id': 'S4.p7.m4', 'tex': 'P_{2\\rho}'}
+					Text (Math): $P_{2\rho}$
+					Tail (Math): contribution is important .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S4.p8'}
+			Text (para): 
+			p {}
+				Text (p): None
+				text {'font': 'italic'}
+					Text (text): Thick Slices
+					break {}
+						Text (break): None
+						Tail (break): None
+					Tail (text): The relative importance of
+				Math {'mode': 'inline', 'id': 'S4.p8.m1', 'tex': 'P_{2v}'}
+					Text (Math): $P_{2v}$
+					Tail (Math): and
+				Math {'mode': 'inline', 'id': 'S4.p8.m2', 'tex': 'P_{2\\rho}'}
+					Text (Math): $P_{2\rho}$
+					Tail (Math): depends on whether
+				Math {'mode': 'inline', 'id': 'S4.p8.m3', 'tex': 'n>-3-m/2'}
+					Text (Math): $n>-3-m/2$
+					Tail (Math): or
+				Math {'mode': 'inline', 'id': 'S4.p8.m4', 'tex': 'n<-3-m/2'}
+					Text (Math): $n<-3-m/2$
+					Tail (Math): .
+						In the former case
+				Math {'mode': 'inline', 'id': 'S4.p8.m5', 'tex': 'P_{2\\rho}'}
+					Text (Math): $P_{2\rho}$
+					Tail (Math): 
+						dominates , while for the latter
+				Math {'mode': 'inline', 'id': 'S4.p8.m6', 'tex': 'P_{2\\rho}'}
+					Text (Math): $P_{2\rho}$
+					Tail (Math): becomes dominant only when the slice is
+				text {'font': 'italic'}
+					Text (text): very thick
+					Tail (text): , i.e .
+						a substantial portion of the line is integrated over .
+						Indeed , it is easy to see that integration over the line-width leaves only density information .
+						In the intermediate situation if the density spectrum is steep , i.e .
+				Math {'mode': 'inline', 'id': 'S4.p8.m7', 'tex': 'n<-3-m/2'}
+					Text (Math): $n<-3-m/2$
+					Tail (Math): 
+				Math {'mode': 'inline', 'id': 'S4.p8.m8', 'tex': 'P_{2v}'}
+					Text (Math): $P_{2v}$
+					Tail (Math): provides most of the contribution to
+				Math {'mode': 'inline', 'id': 'S4.p8.m9', 'tex': 'P_{2}'}
+					Text (Math): $P_{2}$
+					Tail (Math): .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S4.p9'}
+			Text (para): 
+			p {}
+				Text (p): For warm HI the thermal velocity dispersion is comparable with the turbulent one .
+					Thus fluctuations of intensity arise mostly from density inhomogeneities and the analysis in L95 is applicable .
+					The amplidude of fluctuations arising from the warm phase of HI is suppressed due thermal velocity smearing effects .
+					Therefore in the mixture of the warm and cold phase the contribution of the cold phase to the measured spectrum is likely to dominate ( LP99 ) .
+				Tail (p): 
+			Tail (para): 
+		Tail (section): 
+	section {'refnum': '5', 'id': 'S5'}
+		Text (section): 
+		title {}
+			Text (title): None
+			tag {'close': ' '}
+				Text (tag): 5
+				Tail (tag): Statistics of Diffuse HI
+			Tail (title): 
+		subsection {'refnum': '5.1', 'id': 'S5.SS1'}
+			Text (subsection): 
+			title {}
+				Text (title): None
+				tag {'close': ' '}
+					Text (tag): 5.1
+					Tail (tag): Analysis of data
+				Tail (title): 
+			para {'id': 'S5.SS1.p1'}
+				Text (para): 
+				p {}
+					Text (p): One of the most thorough jobs of obtaining 21 cm statistics was done by Green ( 1993 ) .
+						His observations of the HI emission were accomplished with the Synthesis Telescope of the Dominion Radio Astrophysical Observatory ( DRAO ) towards
+					Math {'mode': 'inline', 'id': 'S5.SS1.p1.m1', 'tex': 'l=140^{\\circ},b=0^{\\circ}'}
+						Text (Math): $l=140^{\circ},b=0^{\circ}$
+						Tail (Math): (
+					Math {'mode': 'inline', 'id': 'S5.SS1.p1.m2', 'tex': '03^{h}03^{m}23^{s},+58^{\\circ}06^{\\prime}20^{\\prime}'}
+						Text (Math): $03^{h}03^{m}23^{s},+58^{\circ}06^{\prime}20^{\prime}$
+						Tail (Math): , epoch 1950.0 ) and they revealed a power law spectrum of 2D intensity .
+							This spectrum is proportional to
+					Math {'mode': 'inline', 'id': 'S5.SS1.p1.m3', 'tex': 'P_{2}({\\bf K})|_{\\cal L}'}
+						Text (Math): $P_{2}({\bf K})|_{\cal L}$
+						Tail (Math): 
+							and its interpretation depends on whether the slicing is thick or thin .
+							To answer this question one has to estimate the dispersion of turbulent velocity at the scales under study and compare it to the velocity thickness of the slice ( see eq .
+							(
+					ref {'labelref': 'LABEL:eq:phystrans1'}
+						Text (ref): None
+						Tail (ref): ) and (
+					ref {'labelref': 'LABEL:eq:phystrans'}
+						Text (ref): None
+						Tail (ref): ) .
+							Assuming that velocity variations at the scale
+					Math {'mode': 'inline', 'id': 'S5.SS1.p1.m4', 'tex': '30'}
+						Text (Math): $30$
+						Tail (Math): pc amount to
+					Math {'mode': 'inline', 'id': 'S5.SS1.p1.m5', 'tex': '10'}
+						Text (Math): $10$
+						Tail (Math): km/s and arise from the Kolmogorov turbulence , the structure functions of velocity are
+					Tail (p): 
+				equation {'frefnum': '(15)', 'refnum': '15', 'id': 'S5.E15'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S5.E15.m1', 'tex': 'D_{LL}(r)\\approx 100\\left(\\frac{r}{30{\\rm pc}}\\right)^{2/3}~{}{\\rm km}^{2}{\\rm\ns%\n}^{-2}~{}~{}~{},'}
+						Text (Math): $D_{LL}(r)\approx 100\left(\frac{r}{30{\rm pc}}\right)^{2/3}~{}{\rm km}^{2}{\rm s% }^{-2}~{}~{}~{},$
+						Tail (Math): 
+					Tail (equation): 
+				p {}
+					Text (p): The width of the interferometer channels combined to give a single data point in Green ’ s dataset is
+					Math {'mode': 'inline', 'id': 'S5.SS1.p1.m6', 'tex': '\\delta V=5.94~{}\\mathrm{km/s}'}
+						Text (Math): $\delta V=5.94~{}\mathrm{km/s}$
+						Tail (Math): .
+							The slice thickness in parsec is
+					Math {'mode': 'inline', 'id': 'S5.SS1.p1.m7', 'tex': '{\\cal L}\\approx\\delta Vf'}
+						Text (Math): ${\cal L}\approx\delta Vf$
+						Tail (Math): pc , and varies from
+					Math {'mode': 'inline', 'id': 'S5.SS1.p1.m8', 'tex': '\\approx 600'}
+						Text (Math): $\approx 600$
+						Tail (Math): pc for the closest slices to
+					Math {'mode': 'inline', 'id': 'S5.SS1.p1.m9', 'tex': '\\approx 2200'}
+						Text (Math): $\approx 2200$
+						Tail (Math): pc for the distant ones
+					note {'mark': '4', 'role': 'footnote'}
+						Text (note): Note , that the cut-off due to thermal velocity ( see section 2.1 ) in Warm Neutral Medium ( see a table of idealized phases in Draine & Lazarian ( 1999 ) ) is
+						Math {'mode': 'inline', 'id': 'S5.SS1.p1.m10', 'tex': '\\sim 6'}
+							Text (Math): $\sim 6$
+							Tail (Math): km/s .
+								If the WNM constitutes the dominant fraction of the neutral phase ( Dickey 1995 ) then the velocity resolution above is optimal and no further decrease in
+						Math {'mode': 'inline', 'id': 'S5.SS1.p1.m11', 'tex': '\\delta V'}
+							Text (Math): $\delta V$
+							Tail (Math): 
+								will result in getting new information .
+								However , if close to Galactic plane Cold Neutral Media constitutes a substantial portion of mass , the increase of velocity resolution up to 1 km/s is desirable .
+						Tail (note): .
+							The wavenumber of transition from
+					text {'font': 'italic'}
+						Text (text): thin
+						Tail (text): to
+					text {'font': 'italic'}
+						Text (text): think
+						Tail (text): 
+							slice given by eq .
+							(
+					ref {'labelref': 'LABEL:eq:phystrans'}
+						Text (ref): None
+						Tail (ref): ) is equal
+					Math {'mode': 'inline', 'id': 'S5.SS1.p1.m12', 'tex': '0.16\\,pc^{-1}'}
+						Text (Math): $0.16\,pc^{-1}$
+						Tail (Math): .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S5.SS1.p2'}
+				Text (para): 
+				p {}
+					Text (p): In figure 1 the turbulence scales covered by Green ’ s study are shown .
+						The smallest
+					Math {'mode': 'inline', 'id': 'S5.SS1.p2.m1', 'tex': '|\\bf K|'}
+						Text (Math): $|\bf K|$
+						Tail (Math): span from
+					Math {'mode': 'inline', 'id': 'S5.SS1.p2.m2', 'tex': '\\sim 1/3'}
+						Text (Math): $\sim 1/3$
+						Tail (Math): pc
+					Math {'mode': 'inline', 'id': 'S5.SS1.p2.m3', 'tex': '{}^{-1}'}
+						Text (Math): ${}^{-1}$
+						Tail (Math): for the closest slices to
+					Math {'mode': 'inline', 'id': 'S5.SS1.p2.m4', 'tex': '1/200'}
+						Text (Math): $1/200$
+						Tail (Math): pc
+					Math {'mode': 'inline', 'id': 'S5.SS1.p2.m5', 'tex': '{}^{-1}'}
+						Text (Math): ${}^{-1}$
+						Tail (Math): for the distant ones .
+							It is obvious that most of the measurements correspond to the thin slice regime .
+					Tail (p): 
+				Tail (para): 
+			figure {'frefnum': 'Figure\xa01', 'placement': 'ht', 'refnum': '1', 'id': 'S5.F1', 'labels': 'LABEL:fig:flat_rot'}
+				Text (figure): 
+				p {'class': 'ltx_align_center'}
+					Text (p): 
+					graphics {'graphic': 'flat_rot.eps', 'options': 'file=flat_rot.eps, width=199.169291pt, angle=0', 'id': 'S5.F1.g1'}
+						Text (graphics): None
+						Tail (graphics): 
+					Tail (p): 
+				toccaption {}
+					Text (toccaption): None
+					tag {'close': ' '}
+						Text (tag): 1
+						Tail (tag): The variations of geometric scales with the sampling velocity are shown ( from LP99 ) .
+							The upper curve corresponds to the variations of the correlation scale
+					Math {'mode': 'inline', 'id': 'S5.F1.m1', 'tex': '\\lambda=(f^{2}C)^{1/(2-m)}'}
+						Text (Math): $\lambda=(f^{2}C)^{1/(2-m)}$
+						Tail (Math): 
+							in the velocity space .
+							Physically this is the scale at which the square root of velocity dispersion
+					Math {'mode': 'inline', 'id': 'S5.F1.m2', 'tex': '\\sim(C\\lambda^{m})^{1/2}'}
+						Text (Math): $\sim(C\lambda^{m})^{1/2}$
+						Tail (Math): become equal to the difference of the regular velocities due to Galactic rotation .
+							The middle curve corresponds to the variations of the slice thickness
+					Math {'mode': 'inline', 'id': 'S5.F1.m3', 'tex': 'L'}
+						Text (Math): $L$
+						Tail (Math): .
+							The darkened area in the Figure depicts to the range of the turbulence scales under study in Green ( 1993 ) .
+							The solid curve within the darkened area corresponds to the interferometric measurements with the baseline 21 m. The lower horizontal line denotes value of
+					Math {'mode': 'inline', 'id': 'S5.F1.m4', 'tex': '|{\\bf K}|^{-1}'}
+						Text (Math): $|{\bf K}|^{-1}$
+						Tail (Math): which separates
+					text {'font': 'italic'}
+						Text (text): thin
+						Tail (text): ( above ) and
+					text {'font': 'italic'}
+						Text (text): thick
+						Tail (text): slice regimes ( below ) for cold HI .
+							The contribution of fluctuations from the warm phase is suppressed when the slices are thin for cold HI and thick for warm HI ( LP99 ) .
+					Tail (toccaption): 
+				caption {}
+					Text (caption): None
+					tag {'close': ': '}
+						Text (tag): Figure 1
+						Tail (tag): The variations of geometric scales with the sampling velocity are shown ( from LP99 ) .
+							The upper curve corresponds to the variations of the correlation scale
+					Math {'mode': 'inline', 'id': 'S5.F1.m5', 'tex': '\\lambda=(f^{2}C)^{1/(2-m)}'}
+						Text (Math): $\lambda=(f^{2}C)^{1/(2-m)}$
+						Tail (Math): 
+							in the velocity space .
+							Physically this is the scale at which the square root of velocity dispersion
+					Math {'mode': 'inline', 'id': 'S5.F1.m6', 'tex': '\\sim(C\\lambda^{m})^{1/2}'}
+						Text (Math): $\sim(C\lambda^{m})^{1/2}$
+						Tail (Math): become equal to the difference of the regular velocities due to Galactic rotation .
+							The middle curve corresponds to the variations of the slice thickness
+					Math {'mode': 'inline', 'id': 'S5.F1.m7', 'tex': 'L'}
+						Text (Math): $L$
+						Tail (Math): .
+							The darkened area in the Figure depicts to the range of the turbulence scales under study in Green ( 1993 ) .
+							The solid curve within the darkened area corresponds to the interferometric measurements with the baseline 21 m. The lower horizontal line denotes value of
+					Math {'mode': 'inline', 'id': 'S5.F1.m8', 'tex': '|{\\bf K}|^{-1}'}
+						Text (Math): $|{\bf K}|^{-1}$
+						Tail (Math): which separates
+					text {'font': 'italic'}
+						Text (text): thin
+						Tail (text): ( above ) and
+					text {'font': 'italic'}
+						Text (text): thick
+						Tail (text): slice regimes ( below ) for cold HI .
+							The contribution of fluctuations from the warm phase is suppressed when the slices are thin for cold HI and thick for warm HI ( LP99 ) .
+					Tail (caption): 
+				Tail (figure): 
+			para {'id': 'S5.SS1.p3'}
+				Text (para): 
+				p {}
+					Text (p): As we mentioned earlier , whether
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m1', 'tex': 'P_{2v}'}
+						Text (Math): $P_{2v}$
+						Tail (Math): or
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m2', 'tex': 'P_{2\\rho}'}
+						Text (Math): $P_{2\rho}$
+						Tail (Math): dominates the observed emissivity spectra in the thin slice regime depends on whether
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m3', 'tex': 'n'}
+						Text (Math): $n$
+						Tail (Math): is larger or smaller than
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m4', 'tex': '-3'}
+						Text (Math): $-3$
+						Tail (Math): .
+							If
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m5', 'tex': 'n>-3'}
+						Text (Math): $n>-3$
+						Tail (Math): ,
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m6', 'tex': 'P_{2\\rho}'}
+						Text (Math): $P_{2\rho}$
+						Tail (Math): is dominant and the observations by Green ( 1993 ) reveal the spectrum with index
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m7', 'tex': 'n+m/2'}
+						Text (Math): $n+m/2$
+						Tail (Math): .
+							For
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m8', 'tex': 'm=2/3'}
+						Text (Math): $m=2/3$
+						Tail (Math): the spectrum of emissivity obtained by Green ( 1993 ) , namely the emissivity with the index
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m9', 'tex': '\\sim-2.7'}
+						Text (Math): $\sim-2.7$
+						Tail (Math): , corresponds to
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m10', 'tex': 'n\\sim-3'}
+						Text (Math): $n\sim-3$
+						Tail (Math): .
+							If , however , the density spectrum is steep ( i.e .
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m11', 'tex': 'n<-3'}
+						Text (Math): $n<-3$
+						Tail (Math): ) , the fluctuations of 21 cm intensity observed by Green ( 1993 ) can arise from velocity fluctuations .
+							In this case the spectral index is
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m12', 'tex': '-3+m/2'}
+						Text (Math): $-3+m/2$
+						Tail (Math): .
+							For
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m13', 'tex': 'm=2/3'}
+						Text (Math): $m=2/3$
+						Tail (Math): one gets the slope
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m14', 'tex': '-8/3\\approx-2.7'}
+						Text (Math): $-8/3\approx-2.7$
+						Tail (Math): which is exactly what is observed .
+							The question now is whether nature conspires to create the density spectrum with
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m15', 'tex': 'n\\approx-3'}
+						Text (Math): $n\approx-3$
+						Tail (Math): and thus make the slopes of
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m16', 'tex': 'P_{2v}'}
+						Text (Math): $P_{2v}$
+						Tail (Math): or
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m17', 'tex': 'P_{2\\rho}'}
+						Text (Math): $P_{2\rho}$
+						Tail (Math): identical in thin slices or we observe
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m18', 'tex': 'P_{2\\rho}'}
+						Text (Math): $P_{2\rho}$
+						Tail (Math): , while
+					Math {'mode': 'inline', 'id': 'S5.SS1.p3.m19', 'tex': 'n<-3'}
+						Text (Math): $n<-3$
+						Tail (Math): .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S5.SS1.p4'}
+				Text (para): 
+				p {}
+					Text (p): To answer this question one has to consider thick slices of data .
+						Unfortunately , for thick slices of data one has to account for lines of sight being not parallel .
+						This problem was studied by Lazarian ( 1994 ) for the case of density statistics , but the study has not been generalized so far for the case when both density and velocity contribute to emissivity .
+						Thus external galaxies provide a better case for study thick slices .
+						Data for Small Magellanic Cloud ( SMC ) in Stanimirovic et al .
+						( 1999 ) shows the steepening of the slope from
+					Math {'mode': 'inline', 'id': 'S5.SS1.p4.m1', 'tex': '\\approx-3'}
+						Text (Math): $\approx-3$
+						Tail (Math): for the slices obtained with the maximal velocity resolution to
+					Math {'mode': 'inline', 'id': 'S5.SS1.p4.m2', 'tex': 'n\\approx-3.5'}
+						Text (Math): $n\approx-3.5$
+						Tail (Math): for data integrated over the entire emission line ( Stanimirovic , private communication ) which corresponds to our theoretical predictions for long-wave dominated density spectrum with the index
+					Math {'mode': 'inline', 'id': 'S5.SS1.p4.m3', 'tex': 'n\\approx-3.5'}
+						Text (Math): $n\approx-3.5$
+						Tail (Math): .
+							Thus the set of Green ’ s and Stanimirovic ’ s data is consistent with an interpretation that both velocity and density exhibit spectra close to Kolmogorov .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S5.SS1.p5'}
+				Text (para): 
+				p {}
+					Text (p): A potential difficulty of “ Kolmogorov ” cascade interpretation is that the SMC data show power-law slope up to 4 kpc scale .
+						To explain Doppler broaderning of molecular lines one has to accept that the energy is being injected at large scales .
+						However scales of several kpc look excessive .
+						Injection of energy at such large scales is possible in the form of superbubles , but the details and the very possibility of the cascade in these circumstances is unclear .
+					Tail (p): 
+				Tail (para): 
+			Tail (subsection): 
+		subsection {'refnum': '5.2', 'id': 'S5.SS2'}
+			Text (subsection): 
+			title {}
+				Text (title): None
+				tag {'close': ' '}
+					Text (tag): 5.2
+					Tail (tag): Further tests
+				Tail (title): 
+			para {'id': 'S5.SS2.p1'}
+				Text (para): 
+				p {}
+					Text (p): The “ Kolmogorov ” interpretation above apparently needs further testings .
+						There are various pieces of evidence that could be interpreted in favor of the spectrum of density being shallow , i.e .
+					Math {'mode': 'inline', 'id': 'S5.SS2.p1.m1', 'tex': '\\approx-3'}
+						Text (Math): $\approx-3$
+						Tail (Math): .
+							However , our analysis shows that this interpretation is not substantiated .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S5.SS2.p2'}
+				Text (para): 
+				p {}
+					Text (p): For instance , Braun ( 1999 ) reports a power law index of
+					Math {'mode': 'inline', 'id': 'S5.SS2.p2.m1', 'tex': '-3'}
+						Text (Math): $-3$
+						Tail (Math): for the spectrum of 21 cm emission from structures near the North-East major axis of M31 galaxy .
+							However , he uses not the whole spectral lines , as we do in our treatment but the maximal values of velocity only ( Braun 1999 , private communication ) .
+							The interpretation of this result in terms of the power spectra as discussed in L95 and LP99 is impossible , as the treatment of data is very different .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S5.SS2.p3'}
+				Text (para): 
+				p {}
+					Text (p): Shallow spectrum of Far Infrared emission from dust ( Wall & Waller 1998 , Waller et al 1998 ) does not support the the shallow HI density spectrum either .
+						According to Stanimirovic ( 1999 , private communication ) the shallow spectrum of Far Infrared emission when converted into dust column density provides a steep “ Kolmogorov ” -type spectrum .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S5.SS2.p4'}
+				Text (para): 
+				p {}
+					Text (p): One can argue that a possible hint in favor of HI density being short wave dominated comes from molecular data discussed in Stutzki et al .
+						( 1998 ) .
+						There for both
+					Math {'mode': 'inline', 'id': 'S5.SS2.p4.m1', 'tex': '{}^{12}'}
+						Text (Math): ${}^{12}$
+						Tail (Math): CO ( data from Heithausen & Thaddeus ( 1990 ) and Falgarone et al .
+							( 1998 ) ) and
+					Math {'mode': 'inline', 'id': 'S5.SS2.p4.m2', 'tex': '{}^{13}'}
+						Text (Math): ${}^{13}$
+						Tail (Math): CO ( data from Heyer & Schloerb ( 1997 ) ) transitions the spectrum of intensity was observed to have a power law index
+					Math {'mode': 'inline', 'id': 'S5.SS2.p4.m3', 'tex': '\\sim-2.8'}
+						Text (Math): $\sim-2.8$
+						Tail (Math): .
+							As the data is averaged over velocity , the fluctuations of intensity are due to density fluctuations and the spectrum of density should have the same slope as the spectrum of emissivity ( L95 ) , provided that the transitions are optically thin .
+							The problem is that they are not thin and therefore the analysis above is not applicable .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S5.SS2.p5'}
+				Text (para): 
+				p {}
+					Text (p): Attempting to establish the actual underlying spectrum one may use one dimensional spectrum introduced in LP99
+					Tail (p): 
+				equation {'frefnum': '(16)', 'refnum': '16', 'id': 'S5.E16', 'labels': 'LABEL:16'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S5.E16.m1', 'tex': 'P_{1}(k_{z})=\\int d{\\bf K}P_{s}({\\bf K},k_{z})'}
+						Text (Math): $P_{1}(k_{z})=\int d{\bf K}P_{s}({\bf K},k_{z})$
+						Tail (Math): 
+					Tail (equation): 
+				p {}
+					Text (p): Similar to two dimensional spectrum
+					Math {'mode': 'inline', 'id': 'S5.SS2.p5.m1', 'tex': 'P_{1}'}
+						Text (Math): $P_{1}$
+						Tail (Math): can be presented as a sum of
+					Math {'mode': 'inline', 'id': 'S5.SS2.p5.m2', 'tex': 'P_{1\\rho}'}
+						Text (Math): $P_{1\rho}$
+						Tail (Math): , which scales as
+					Math {'mode': 'inline', 'id': 'S5.SS2.p5.m3', 'tex': 'k_{z}^{2(n+2)/m}'}
+						Text (Math): $k_{z}^{2(n+2)/m}$
+						Tail (Math): and
+					Math {'mode': 'inline', 'id': 'S5.SS2.p5.m4', 'tex': 'P_{1v}'}
+						Text (Math): $P_{1v}$
+						Tail (Math): , which scales as
+					Math {'mode': 'inline', 'id': 'S5.SS2.p5.m5', 'tex': 'k_{z}^{-2/m}'}
+						Text (Math): $k_{z}^{-2/m}$
+						Tail (Math): .
+							Naturally , if
+					Math {'mode': 'inline', 'id': 'S5.SS2.p5.m6', 'tex': 'n<-3'}
+						Text (Math): $n<-3$
+						Tail (Math): 
+					Math {'mode': 'inline', 'id': 'S5.SS2.p5.m7', 'tex': 'P_{1v}'}
+						Text (Math): $P_{1v}$
+						Tail (Math): dominates , while
+					Math {'mode': 'inline', 'id': 'S5.SS2.p5.m8', 'tex': 'P_{1\\rho}'}
+						Text (Math): $P_{1\rho}$
+						Tail (Math): dominates for
+					Math {'mode': 'inline', 'id': 'S5.SS2.p5.m9', 'tex': 'n>-3'}
+						Text (Math): $n>-3$
+						Tail (Math): .
+							The analysis of data using
+					Math {'mode': 'inline', 'id': 'S5.SS2.p5.m10', 'tex': 'P_{1}(k_{z})'}
+						Text (Math): $P_{1}(k_{z})$
+						Tail (Math): has not been done so far .
+					Tail (p): 
+				Tail (para): 
+			Tail (subsection): 
+		Tail (section): 
+	section {'refnum': '6', 'id': 'S6'}
+		Text (section): 
+		title {}
+			Text (title): None
+			tag {'close': ' '}
+				Text (tag): 6
+				Tail (tag): Anisotropies and Magnetic field
+			Tail (title): 
+		subsection {'refnum': '6.1', 'id': 'S6.SS1'}
+			Text (subsection): 
+			title {}
+				Text (title): None
+				tag {'close': ' '}
+					Text (tag): 6.1
+					Tail (tag): Goldreich-Shridhar Turbulence
+				Tail (title): 
+			para {'id': 'S6.SS1.p1'}
+				Text (para): 
+				p {}
+					Text (p): It is natural to expect that dynamically important magnetic field makes interstellar turbulence anisotropic ( Montgomery 1982 , Higton 1984 ) .
+						Indeed , it gets difficult for hydrodynamic motions to bend magnetic fields at small scales if the energy density of the magnetic field and hydrodynamic motions are comparable at large scales .
+						The turbulence in ionized gas has been found to be anisotropic and its Kolmogorov-type spectrum of plasma density fluctuations observed via radio scintillations and scattering ( see Armstrong et al .
+						1995 and references therein ) has been interpreted recently as a consequence of a new type of MHD cascade by Goldreich & Sridhar ( 1995 ) .
+						The Goldreich-Shridhar model of turbulence
+					note {'mark': '5', 'role': 'footnote'}
+						Text (note): A qualitative discussion of the model and the role of reconnection for the cascade can be found in Lazarian & Vishniac ( 1999 ) .
+						Tail (note): differs considerably from the Kraichnan one ( Iroshnikov 1963 , Kraichnan 1964 ) .
+							It accounts for the fact that hydrodynamic motions can easily mix up magnetic field lines in the plane perpendicular to the direction of the mean field ( see discussion in Lazarian & Vishniac 1999 ) .
+							Such motions provide eddies elongated in the field direction and the velocity spectrum close to the Kolmogorov one .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S6.SS1.p2'}
+				Text (para): 
+				p {}
+					Text (p): The Goldreich-Shridhar turbulence is anisotropic with eddies stretched along magnetic field .
+						The wavevector component parallel to magnetic field
+					Math {'mode': 'inline', 'id': 'S6.SS1.p2.m1', 'tex': 'k_{\\|}'}
+						Text (Math): $k_{\|}$
+						Tail (Math): 
+							scales as
+					Math {'mode': 'inline', 'id': 'S6.SS1.p2.m2', 'tex': 'k_{\\bot}^{2/3}'}
+						Text (Math): $k_{\bot}^{2/3}$
+						Tail (Math): , where
+					Math {'mode': 'inline', 'id': 'S6.SS1.p2.m3', 'tex': 'k_{\\bot}'}
+						Text (Math): $k_{\bot}$
+						Tail (Math): is a wavevector component perpendicular to the field .
+							Thus the degree of anisotropy increases with the decrease of scale .
+					Tail (p): 
+				Tail (para): 
+			Tail (subsection): 
+		subsection {'refnum': '6.2', 'id': 'S6.SS2'}
+			Text (subsection): 
+			title {}
+				Text (title): None
+				tag {'close': ' '}
+					Text (tag): 6.2
+					Tail (tag): Anisotropies and magnetic field direction
+				Tail (title): 
+			para {'id': 'S6.SS2.p1'}
+				Text (para): 
+				p {}
+					Text (p): It is both challenging and important to determine the degree of anisotropy for the HI statistics for various parts of the Galaxy .
+						This information can provide an insight to the nature of HI turbulence and may be used as a diagnostic for the interstellar magnetic field .
+						For instance , measurements of the structure functions of HI intensity
+					Tail (p): 
+				equation {'frefnum': '(17)', 'refnum': '17', 'id': 'S6.E17'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S6.E17.m1', 'tex': 'S(\\theta,\\phi)=\\langle(I({\\bf e}_{1})-I({\\bf e}_{2}))^{2}\\rangle'}
+						Text (Math): $S(\theta,\phi)=\langle(I({\bf e}_{1})-I({\bf e}_{2}))^{2}\rangle$
+						Tail (Math): 
+					Tail (equation): 
+				p {}
+					Text (p): as a function of a positional angle
+					Math {'mode': 'inline', 'id': 'S6.SS2.p1.m1', 'tex': '\\phi'}
+						Text (Math): $\phi$
+						Tail (Math): for individual subsets of data should reveal magnetic field direction in various portions of the sky , if the turbulence is anisotropic as we expect it to be .
+							This technique is somewhat analogous to a technique of finding magnetic field direction using the fluctuations of synchrotron radiation ( see Lazarian 1992 ) but its applicability may be much wider .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S6.SS2.p2'}
+				Text (para): 
+				p {}
+					Text (p): So far , the attempts to measure anisotropy in HI are limited to the Green ( 1994 ) study , where no anisotropy was detected .
+						Apparently a better analysis is needed .
+						For the slices with high degree of anisotropy the statistical technique can be improved as suggested in L95 .
+					Tail (p): 
+				Tail (para): 
+			Tail (subsection): 
+		Tail (section): 
+	section {'refnum': '7', 'id': 'S7'}
+		Text (section): 
+		title {}
+			Text (title): None
+			tag {'close': ' '}
+				Text (tag): 7
+				Tail (tag): Structures in PPV space
+			Tail (title): 
+		para {'id': 'S7.p1'}
+			Text (para): 
+			p {}
+				Text (p): PPV data cubes , e.g .
+					HI data cubes , exhibit a lot of small scale emissivity structure
+				note {'mark': '6', 'role': 'footnote'}
+					Text (note): It was noticed by Langer , Wilson & Anderson ( 1993 ) that more structure is seen in PPV space than in the integrated intensity maps .
+					Tail (note): .
+						The question is what part of them is real , i.e .
+						is associated with density enhancements in galactic coordinates and what part of them is produced by velocity fluctuations .
+						A related question is whether the structures we see are produced dynamically , through forces , e.g .
+						self-gravity , acting on the media or they may be produced statistically exhibiting the properties of random field .
+						The second question was partially answered in Lazarian & Pogosyan ( 1997 ) , where it was shown that density fluctuations with Gaussian distribution and power spectra result in filamentary structures .
+						The structures become anisotropic and directed towards the observer when the velocity effects are accounted for
+				note {'mark': '7', 'role': 'footnote'}
+					Text (note): There is a distant analogy between this effect and the “ fingers of God ” effect ( see Peebles 1971 ) in the studies of large scale structure of the Universe .
+					Tail (note): ( see Lazarian 1999 , fig .
+						2 ) .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S7.p2'}
+			Text (para): 
+			p {}
+				Text (p): The issue of density enhancements produced by velocity fluctuations is closely related to the statistics of “ clouds ” observed in PPV space .
+					The results on velocity mapping that we discussed earlier suggest that spectra of fluctuations observed in PPV velocity slices are more shallow than the underlying spectra .
+					This means more power on small scales or , in other words , more small scale structure ( “ clouds ” ) appears in the PPV slices due to velocity fluctuations .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S7.p3'}
+			Text (para): 
+			p {}
+				Text (p): It has been believed for decades that emission cloud surveys ( see Casoli et al .
+					1984 , Sanders et al .
+					1985 , Brand & Wouterloot 1995 ) provide a better handle on the actual spectrum of cloud mass and sizes than the extinction surveys ( see Scalo 1985 ) because the velocity resolution is available .
+					These two sorts of survey present different slopes for clump sizes and the difference can not be accounted through occlusion of small clouds in the extinction surveys by larger ones ( Scalo & Lazarian 1996 ) .
+					In view of the discussion above it looks that extinction survey may be closer to the truth , while a lot of structure detected via analyzing PPV cubes is due to velocity caustics .
+					Paradoxically enough , emission data integrated over the spectral lines may provide a better handle on the distribution of cloud sizes compared to high resolution spectral-line data cubes .
+					Averaging over velocity results in the distortions of the cloud size spectra due to occlusion effects , but these effects can be accounted for using the formulae from Scalo & Lazarian ( 1996 ) .
+				Tail (p): 
+			Tail (para): 
+		Tail (section): 
+	section {'refnum': '8', 'id': 'S8'}
+		Text (section): 
+		title {}
+			Text (title): None
+			tag {'close': ' '}
+				Text (tag): 8
+				Tail (tag): Generalization of the technique
+			Tail (title): 
+		para {'id': 'S8.p1'}
+			Text (para): 
+			p {}
+				Text (p): The formalism was described above in terms of HI power law statistics .
+					It is obvious that it can be modified to deal with arbitrary statistics and with a variety of emission transitions .
+					Here we briefly discuss complications which a generalization of the technique in order to be applicable to molecular clouds and ionized media may encounter .
+				Tail (p): 
+			Tail (para): 
+		subsection {'refnum': '8.1', 'id': 'S8.SS1'}
+			Text (subsection): 
+			title {}
+				Text (title): None
+				tag {'close': ' '}
+					Text (tag): 8.1
+					Tail (tag): Forward and inverse problems
+				Tail (title): 
+			para {'id': 'S8.SS1.p1'}
+				Text (para): 
+				p {}
+					Text (p): A considerable number of researchers believes that self-similar behavior reflected in power law statistics is a characteristic feature of the interstellar turbulence including the molecular cloud turbulence ( see Elmegreen & Falgarone 1996 ) .
+						However , some researchers ( e.g .
+						Williams 1999 ) see departures from a power law , e.g .
+						signatures of a characteristic scale .
+						In those cases , one still can find the underlying density and velocity statistics solving
+					text {'font': 'italic'}
+						Text (text): forward
+						Tail (text): and
+					text {'font': 'italic'}
+						Text (text): inverse
+						Tail (text): problems ( see Lazarian 1999 ) .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S8.SS1.p2'}
+				Text (para): 
+				p {}
+					Text (p): To solve the forward problem one needs to use expressions for the observable statistics , e.g .
+						expressions for 2D and 1D spectra in PPV space ( see eqs (
+					ref {'labelref': 'LABEL:eq:main'}
+						Text (ref): None
+						Tail (ref): ) and (
+					ref {'labelref': 'LABEL:16'}
+						Text (ref): None
+						Tail (ref): ) ) and fit the observable statistics varying the input of the velocity and density statistics .
+							Naturally , the question of uniqueness for such solutions emerge , but with a reasonable choice of input parameters one may hope to avoid ambiguities .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S8.SS1.p3'}
+				Text (para): 
+				p {}
+					Text (p): A different approach involves the inversion of input data .
+						Inversion also requires a model , but for the case of turbulence studies the model can be quite general and usually includes some symmetry assumptions , like the assumption of isotropy or axial symmetry of turbulence statistics ( Lazarian 1994a , L95 ) .
+						For the case of turbulence the inversion has been developed for statistics of density ( L95 , Lazarian 1993 ) and magnetic field ( Lazarian 1992 , Lazarian 1994a ) .
+						A remarkable property of the inversion for turbulence statistics is that it allows analytical solutions , which shows that the inversion is a well posed procedure in the mathematical sense .
+						The procedure for inverting velocity data should be analogous to inverting density & magnetic field statistics , but has not been developed so far .
+						We expect wide application of forward and especially inverse problem technique when the deviations from self-similar behavior become apparent in the data .
+					Tail (p): 
+				Tail (para): 
+			Tail (subsection): 
+		subsection {'refnum': '8.2', 'id': 'S8.SS2'}
+			Text (subsection): 
+			title {}
+				Text (title): None
+				tag {'close': ' '}
+					Text (tag): 8.2
+					Tail (tag): Various Transitions
+				Tail (title): 
+			para {'id': 'S8.SS2.p1'}
+				Text (para): 
+				p {}
+					Text (p): As we discussed earlier , one of the advantages of using HI as a test case is that the emissivity is proportional to the column density .
+						This is true for some optically thin transitions in molecular clouds , but fails when absorption is important .
+						My analysis showed that the absorption is relatively easy to account for if it arises from dust , but much harder to deal with if it is self-adsorption .
+						In the former case most of the analysis above is valid provided that the turbulence scale under study is much smaller than the extinction length .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S8.SS2.p2'}
+				Text (para): 
+				p {}
+					Text (p): Homogeneity of sample is another major concern for studies of turbulence in molecular clouds ( see Houlahan & Scalo 1990 ) .
+						Filtering the data ( see Miesch & Bally 1994 ) , application of wavelets ( see Stutzki et al .
+						1998 ) or both are required .
+						However , it seems that as the resolution of data improves the effects of cloud edges get less important and easier to take care of .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S8.SS2.p3'}
+				Text (para): 
+				p {}
+					Text (p): Some emissivities , e.g .
+						those of H
+					Math {'mode': 'inline', 'id': 'S8.SS2.p3.m1', 'tex': '\\alpha'}
+						Text (Math): $\alpha$
+						Tail (Math): lines are proportional to the squared density of species .
+							However , it is possible to generalize the technique above for those transitions and provide a quantitative treatment of turbulence in ionized emitting media , e.g .
+							of HII regions ( O ’ Dell 1986 , O ’ Dell & Castaneda 1987 ) .
+					Tail (p): 
+				Tail (para): 
+			Tail (subsection): 
+		Tail (section): 
+	section {'refnum': '9', 'id': 'S9'}
+		Text (section): 
+		title {}
+			Text (title): None
+			tag {'close': ' '}
+				Text (tag): 9
+				Tail (tag): Beyond Power Spectra
+			Tail (title): 
+		para {'id': 'S9.p1'}
+			Text (para): 
+			p {}
+				Text (p): The approach that we discussed so far can be characterized as an interpretation of the emissivity spectra
+				note {'mark': '8', 'role': 'footnote'}
+					Text (note): 
+						In fact we do not distinguish between spectra and correlation functions .
+						The two statistics are related via Fourier transform and provide an equivalent description .
+						In some particular circumstances one or the other may be more convenient , however .
+					Tail (note): in terms of the underlying statistics of velocity and density .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S9.p2'}
+			Text (para): 
+			p {}
+				Text (p): The advantage of this approach is that no numerical inversion ( see Lazarian 1999 ) is performed and thus one should not worry about increase of the data noise .
+					The power spectra are widely used in hydrodynamics and therefore there is hope to relate the statistics of interstellar turbulence with something simple and more familiar like Kolmogorov-type cascade .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S9.p3'}
+			Text (para): 
+			p {}
+				Text (p): In spite of all these advantages , the information that this approach can supply us with is limited .
+					Indeed , media clustered by self-gravity and more diffuse media may have the same index of power spectrum , while being very different .
+					In general , statistical measures borrowed from hydrodynamics may not be adequate while dealing with interstellar media .
+					Indeed , we have to address particular questions , e.g .
+					the question the identification of star-forming regions , which are beyond the standard hydrodynamic description .
+					Therefore attempts to introduce new descriptors are worthy of high praise .
+					It may happen that in answering specific questions one has to use particular descriptors .
+				Tail (p): 
+			Tail (para): 
+		subsection {'refnum': '9.1', 'id': 'S9.SS1'}
+			Text (subsection): 
+			title {}
+				Text (title): None
+				tag {'close': ' '}
+					Text (tag): 9.1
+					Tail (tag): Spectral Correlation Function
+				Tail (title): 
+			para {'id': 'S9.SS1.p1'}
+				Text (para): 
+				p {}
+					Text (p): A new tool termed “ spectral correlation function ” or SCF has been recently introduced to the field ( Goodman 1999 , Rosolowsky et al .
+						1999 ) .
+						It compares neighboring spectra with each other .
+						For this purpose the following measure is proposed :
+					Tail (p): 
+				equation {'frefnum': '(18)', 'refnum': '18', 'id': 'S9.E18'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S9.E18.m1', 'tex': 'S(T_{1},T_{0})_{s,l}\\equiv 1-\\left(\\frac{D(T_{1},T_{2})}{s^{2}\\int T_{1}^{2}(v%\n)dv+\\int T_{0}^{2}(v)dv}\\right)~{}~{}~{},'}
+						Text (Math): $S(T_{1},T_{0})_{s,l}\equiv 1-\left(\frac{D(T_{1},T_{2})}{s^{2}\int T_{1}^{2}(v% )dv+\int T_{0}^{2}(v)dv}\right)~{}~{}~{},$
+						Tail (Math): 
+					Tail (equation): 
+				p {}
+					Text (p): where the function
+					Tail (p): 
+				equation {'frefnum': '(19)', 'refnum': '19', 'id': 'S9.E19'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S9.E19.m1', 'tex': 'D(T_{1},T_{2})_{s,l}\\equiv\\left\\{\\int[sT_{1}(v+l)-T_{0}(v)]^{2}dv\\right\\}'}
+						Text (Math): $D(T_{1},T_{2})_{s,l}\equiv\left\{\int[sT_{1}(v+l)-T_{0}(v)]^{2}dv\right\}$
+						Tail (Math): 
+					Tail (equation): 
+				p {}
+					Text (p): and the parameters
+					Math {'mode': 'inline', 'id': 'S9.SS1.p1.m1', 'tex': 's'}
+						Text (Math): $s$
+						Tail (Math): and
+					Math {'mode': 'inline', 'id': 'S9.SS1.p1.m2', 'tex': 'l'}
+						Text (Math): $l$
+						Tail (Math): can be adjusted .
+							One way to choose them is to minimize
+					Math {'mode': 'inline', 'id': 'S9.SS1.p1.m3', 'tex': 'D'}
+						Text (Math): $D$
+						Tail (Math): function .
+							In this case
+					Math {'mode': 'inline', 'id': 'S9.SS1.p1.m4', 'tex': 'S'}
+						Text (Math): $S$
+						Tail (Math): function gets sensitive to similarities in the shape of two profiles .
+							Fixing
+					Math {'mode': 'inline', 'id': 'S9.SS1.p1.m5', 'tex': 'l'}
+						Text (Math): $l$
+						Tail (Math): ,
+					Math {'mode': 'inline', 'id': 'S9.SS1.p1.m6', 'tex': 's'}
+						Text (Math): $s$
+						Tail (Math): or both parameters one can get another 3 function that are also sensitive to similarities in amplitude , velocity offset or to both parameters .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S9.SS1.p2'}
+				Text (para): 
+				p {}
+					Text (p): The purpose of those functions is to distinguish regions with various star forming activity and to compare numerical models with observations .
+						To do this histograms of SCF are compared with histograms of SCF obtained for the randomized spatial positions .
+						This allows to models to be distinguished on the basis of their clustering properties .
+						First results reported by Rosolowsky et al .
+						( 1999 ) are very encouraging .
+						It was possible to find differences for simulations corresponding to magnetized and unmagnetized media and for those data sets for which an earlier analysis by Falgarone et al .
+						( 1994 ) could not find the difference .
+						The mathematical development of this new tool is under way ( Padoan et al .
+						2000 ) and we expect new exciting results to be obtained in the near future .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S9.SS1.p3'}
+				Text (para): 
+				p {}
+					Text (p): A few comments about spectral correlation functions may be relevant .
+						First of all , by its definition it is a very flexible tool .
+						In the analysis of Rosolowsky et al .
+						( 1999 ) the SCF were calculated for the subcubes over which the original data was divided .
+						In this way SCF preserves the spatial information and in some sense is similar to cloud-finding algorithms ( see Stutzki & Gusten 1990 , Williams , de Geus & Blitz 1994 ) .
+						However , one may fix the angular separation between the studied spectra and then the technique will be more similar to the traditional correlation function analysis that is sensitive to turbulence scale rather than to positional information .
+						I believe that this avenue should be explored in future along with other more sophisticated techniques that can be applied to SCF .
+						At first glance , it looks counterproductive to get a whole lot of various correlations using SCF as the input data .
+						However , we must find a way of distinguishing regions with various physical properties and we are still in search for the best descriptors .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S9.SS1.p4'}
+				Text (para): 
+				p {}
+					Text (p): At the moment the distinction between various interstellar regions and the sets of simulated data is made by eye examining the histograms of SCF .
+						With more information available it seems feasible to use wavelets that will emphasize some characteristics of the histograms in order to make the distinction quantitative .
+						Construction these wavelets will be the way of “ teaching ” SCF to extract features that distinguish various sets of data .
+					Tail (p): 
+				Tail (para): 
+			Tail (subsection): 
+		subsection {'refnum': '9.2', 'id': 'S9.SS2'}
+			Text (subsection): 
+			title {}
+				Text (title): None
+				tag {'close': ' '}
+					Text (tag): 9.2
+					Tail (tag): Genus Statistics
+				Tail (title): 
+			para {'id': 'S9.SS2.p1'}
+				Text (para): 
+				p {}
+					Text (p): The topology of ISM is an essential characteristic of the media .
+						Genus analysis has been proved to be a useful tool for characterizing topology of the Universe ( see Gott et al .
+						1989 ) and therefore it is tempting to apply it to the ISM studies .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S9.SS2.p2'}
+				Text (para): 
+				p {}
+					Text (p): The two dimensional genus analysis can be directly related to the media topology .
+						By 2D maps we mean here maps integrated over the emission line , i.e .
+						total intensity maps .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S9.SS2.p3'}
+				Text (para): 
+				p {}
+					Text (p): A two-dimensional genus is ( Melott et al .
+						1989 )
+					Tail (p): 
+				equation {'id': 'S9.Ex4'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S9.Ex4.m1', 'tex': 'G_{2}(\\nu_{t})=({\\rm number~{}of~{}isolated~{}high~{}density~{}regions})-({\\rm\nnumber%\n~{}of~{}isolated~{}low~{}density~{}regions})'}
+						Text (Math): $G_{2}(\nu_{t})=({\rm number~{}of~{}isolated~{}high~{}density~{}regions})-({\rm number% ~{}of~{}isolated~{}low~{}density~{}regions})$
+						Tail (Math): 
+					Tail (equation): 
+				p {}
+					Text (p): where
+					Math {'mode': 'inline', 'id': 'S9.SS2.p3.m1', 'tex': '\\nu_{t}'}
+						Text (Math): $\nu_{t}$
+						Tail (Math): denotes the dependence of genus on the threshold density in units of standard deviations from the mean .
+							It is obvious that if one raises the density threshold from the mean , the low density regions coalesce and the genus becomes more positive .
+							The opposite is true if
+					Math {'mode': 'inline', 'id': 'S9.SS2.p3.m2', 'tex': '\\nu_{t}'}
+						Text (Math): $\nu_{t}$
+						Tail (Math): decreases .
+							Thus for Gaussian fluctuations one expects genus to be antisymmetric about zero , but the actual distributions should be able to reveal “ bubble ” or “ meatball ” topology of various parts of the ISM .
+							Algorithms exist for calculating genus for 2D maps , e.g .
+							microwave background maps ( Colley et al .
+							1996 ) and therefore the application of genus statistics to interstellar maps is straightforward ( and long overdue ) .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S9.SS2.p4'}
+				Text (para): 
+				p {}
+					Text (p): The 3D genus statistics ( see Gott et al .
+						1989 ) in PPV space is less easy to interpret .
+						As we discussed earlier , a lot of structures there are due to velocity caustics and the relation of the structures in galactic coordinates and PPV space is not obvious .
+						However , it seems interesting to apply genus analysis to the PPV space in search for another statistical tool to distinguish various interstellar regions .
+						After all , SCF introduced by Alyssa Goodman do not have a straightforward relation to the known parameters , but are very useful .
+					Tail (p): 
+				Tail (para): 
+			Tail (subsection): 
+		subsection {'refnum': '9.3', 'id': 'S9.SS3'}
+			Text (subsection): 
+			title {}
+				Text (title): None
+				tag {'close': ' '}
+					Text (tag): 9.3
+					Tail (tag): Bispectrum
+				Tail (title): 
+			para {'id': 'S9.SS3.p1'}
+				Text (para): 
+				p {}
+					Text (p): Attempts to use multipoint statistics are a more traditional way to remove the constraints that the use of two point statistics , e.g .
+						power spectra entails .
+						Unfortunately , very high quality data is needed to obtain the multipoint statistics .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S9.SS3.p2'}
+				Text (para): 
+				p {}
+					Text (p): Among multipoint statistics , bispectrum ( see Scoccimarro 1997 ) seems the most promising .
+						This is partially because it has been successfully used in the studies of the Large Scale Structure of the Universe .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S9.SS3.p3'}
+				Text (para): 
+				p {}
+					Text (p): Bispectrum is a Fourier transform of the three point correlation function and if the power spectrum
+					Math {'mode': 'inline', 'id': 'S9.SS3.p3.m1', 'tex': 'P({\\bf k})'}
+						Text (Math): $P({\bf k})$
+						Tail (Math): is defined as
+					Tail (p): 
+				equation {'frefnum': '(20)', 'refnum': '20', 'id': 'S9.E20'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S9.E20.m1', 'tex': '\\langle\\delta\\rho({\\bf k}_{1})\\delta\\rho({\\bf k}_{2})\\rangle=P({\\bf k})\\delta_%\n{D}({\\bf k}_{1}+{\\bf k}_{2})'}
+						Text (Math): $\langle\delta\rho({\bf k}_{1})\delta\rho({\bf k}_{2})\rangle=P({\bf k})\delta_% {D}({\bf k}_{1}+{\bf k}_{2})$
+						Tail (Math): 
+					Tail (equation): 
+				p {}
+					Text (p): where
+					Math {'mode': 'inline', 'id': 'S9.SS3.p3.m2', 'tex': '\\delta_{D}'}
+						Text (Math): $\delta_{D}$
+						Tail (Math): is the Dirac delta function that is zero apart from the case when
+					Math {'mode': 'inline', 'id': 'S9.SS3.p3.m3', 'tex': '{\\bf k}_{1}+{\\bf k}_{2}=0'}
+						Text (Math): ${\bf k}_{1}+{\bf k}_{2}=0$
+						Tail (Math): , the bispectrum
+					Math {'mode': 'inline', 'id': 'S9.SS3.p3.m4', 'tex': 'B_{123}'}
+						Text (Math): $B_{123}$
+						Tail (Math): 
+							is
+					Tail (p): 
+				equation {'frefnum': '(21)', 'refnum': '21', 'id': 'S9.E21'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S9.E21.m1', 'tex': '\\langle\\delta\\rho({\\bf k}_{1})\\delta\\rho({\\bf k}_{2})\\delta\\rho({\\bf k}_{3})%\n\\rangle=B_{123}\\delta_{D}({\\bf k}_{1}+{\\bf k}_{2}+{\\bf k}_{3})'}
+						Text (Math): $\langle\delta\rho({\bf k}_{1})\delta\rho({\bf k}_{2})\delta\rho({\bf k}_{3})% \rangle=B_{123}\delta_{D}({\bf k}_{1}+{\bf k}_{2}+{\bf k}_{3})$
+						Tail (Math): 
+					Tail (equation): 
+				Tail (para): 
+			para {'id': 'S9.SS3.p4'}
+				Text (para): 
+				p {}
+					Text (p): It is advantageous to use “ hierarchical amplitude ” ( Fry & Seldner 1982 ) statistics
+					Tail (p): 
+				equation {'frefnum': '(22)', 'refnum': '22', 'id': 'S9.E22'}
+					Text (equation): 
+					Math {'mode': 'display', 'id': 'S9.E22.m1', 'tex': '\\Phi_{123}\\equiv\\frac{B_{123}}{P({\\bf k}_{1})P({\\bf k}_{2})+P({\\bf k}_{2})P({%\n\\bf k}_{3})+P({\\bf k}_{3})P({\\bf k}_{1})}'}
+						Text (Math): $\Phi_{123}\equiv\frac{B_{123}}{P({\bf k}_{1})P({\bf k}_{2})+P({\bf k}_{2})P({% \bf k}_{3})+P({\bf k}_{3})P({\bf k}_{1})}$
+						Tail (Math): 
+					Tail (equation): 
+				p {}
+					Text (p): which is for power law spectra is a scale independent quantity .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S9.SS3.p5'}
+				Text (para): 
+				p {}
+					Text (p): In the studies of Large Scale Structure the hierarchical amplitudes were calculated for various initial conditions to compare with observations .
+						In interstellar media it is advisable to compare various regions of sky using the tool .
+						Impediments for the use of the technique stem from the increase of noise with the use of multipoint statistics and the problems of averaging along the line of sight .
+						The problems should be addressed in the future .
+					Tail (p): 
+				Tail (para): 
+			Tail (subsection): 
+		subsection {'refnum': '9.4', 'id': 'S9.SS4'}
+			Text (subsection): 
+			title {}
+				Text (title): None
+				tag {'close': ' '}
+					Text (tag): 9.4
+					Tail (tag): Other techniques
+				Tail (title): 
+			para {'id': 'S9.SS4.p1'}
+				Text (para): 
+				p {}
+					Text (p): A wavelet technique ( see Gill & Henriksen 1990 , Langer , Wilson & Anderson 1993 , Rauzy , Lachieze-Rey & Henkiksen 1993 ) is discussed in this volume by Stutzki who proposed a so called
+					Math {'mode': 'inline', 'id': 'S9.SS4.p1.m1', 'tex': '\\Delta'}
+						Text (Math): $\Delta$
+						Tail (Math): - variance technique ( Stutzki et al .
+							1998 ) which is is related to wavelet transforms ( Zielinsky & Stutzki 1999 ) .
+							Wavelets potentially are a versatile tool that can filter out the large scale inhomogeneities of the data and concentrate the analysis on the scales of interest ( see Stutzki , this volume ) .
+					Tail (p): 
+				Tail (para): 
+			para {'id': 'S9.SS4.p2'}
+				Text (para): 
+				p {}
+					Text (p): Another useful statistical tool is the Principal Component Analysis ( PCA ) .
+						This tool was employed to spectral line imaging studies of the interstellar medium by Heyer & Schloerb ( 1997 ) .
+						The goal of the PCA is to determine a set of orthogonal “ axes ”
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m1', 'tex': 'u_{kl}'}
+						Text (Math): $u_{kl}$
+						Tail (Math): for which the the variance of the data is maximized .
+							In the case of the data in
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m2', 'tex': 'n'}
+						Text (Math): $n$
+						Tail (Math): points with
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m3', 'tex': 'p'}
+						Text (Math): $p$
+						Tail (Math): velocity ( spectrometer ) channels for each point the data can be presented as
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m4', 'tex': '\\delta T_{ij}=T_{ij}-\\langle T_{ij}\\rangle_{n}'}
+						Text (Math): $\delta T_{ij}=T_{ij}-\langle T_{ij}\rangle_{n}$
+						Tail (Math): , where
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m5', 'tex': 'T_{ij}'}
+						Text (Math): $T_{ij}$
+						Tail (Math): is the temperature at the channel
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m6', 'tex': 'j'}
+						Text (Math): $j$
+						Tail (Math): at a position
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m7', 'tex': 'i'}
+						Text (Math): $i$
+						Tail (Math): 
+							and
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m8', 'tex': '\\langle...\\rangle_{n}'}
+						Text (Math): $\langle...\rangle_{n}$
+						Tail (Math): denote averaging over positions .
+							Maximazing the variance means maximizing the expression
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m9', 'tex': 'y_{ij}y_{ij}=u_{ik}S_{jk}u_{ij}'}
+						Text (Math): $y_{ij}y_{ij}=u_{ik}S_{jk}u_{ij}$
+						Tail (Math): , where summation over the repeating indexes is implied and
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m10', 'tex': 'S_{ik}=\\langle\\delta T_{ij}\\delta T_{jk}\\rangle_{n}'}
+						Text (Math): $S_{ik}=\langle\delta T_{ij}\delta T_{jk}\rangle_{n}$
+						Tail (Math): .
+							In practice finding of
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m11', 'tex': 'u_{ij}'}
+						Text (Math): $u_{ij}$
+						Tail (Math): amounts to solving a set of eigenvalue equations
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m12', 'tex': 'S_{ik}u_{kj}=\\lambda u_{ij}'}
+						Text (Math): $S_{ik}u_{kj}=\lambda u_{ij}$
+						Tail (Math): .
+							To visualize the variance related to
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m13', 'tex': 'l'}
+						Text (Math): $l$
+						Tail (Math): -th principal component eigenimages are constructed from the projections of
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m14', 'tex': 'T_{ij}'}
+						Text (Math): $T_{ij}$
+						Tail (Math): onto the eigenvector , i.e .
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m15', 'tex': 'l'}
+						Text (Math): $l$
+						Tail (Math): th eigenimage at point
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m16', 'tex': '(r_{i})'}
+						Text (Math): $(r_{i})$
+						Tail (Math): is
+					Math {'mode': 'inline', 'id': 'S9.SS4.p2.m17', 'tex': '\\delta T_{ij}u_{l,j}'}
+						Text (Math): $\delta T_{ij}u_{l,j}$
+						Tail (Math): .
+							Heyer & Schloerb ( 1997 ) showed that using PCA technique it is possible to decompose large-scale spectroscopic images of molecular clouds .
+							Their analysis enabled them to calculate the velocity - scale relations for a number of cloud complexes .
+							In terms of the statistical analysis presented above , PCA provides a means of filtering out large scale features responsible for the largest contribution to the global variance .
+							This makes the sample more homogeneous and suitable for describing using correlation functions and power spectra .
+							The potential of this statistical tool is to be further explored .
+							It is likely that combining the various set of data ( for instance , HI and CO ) more interesting correlations can be obtained via PCA technique .
+					Tail (p): 
+				Tail (para): 
+			Tail (subsection): 
+		Tail (section): 
+	section {'refnum': '10', 'id': 'S10'}
+		Text (section): 
+		title {}
+			Text (title): None
+			tag {'close': ' '}
+				Text (tag): 10
+				Tail (tag): Discussion
+			Tail (title): 
+		para {'id': 'S10.p1'}
+			Text (para): 
+			p {}
+				Text (p): It is not possible to cover all the various interesting approaches that have been tried in order to study interstellar turbulence via emission lines .
+					For instance , we omitted a discussion of 3D correlation functions in PPV space introduced in Perault et al .
+					( 1986 ) .
+					We did not cover studies of turbulence using centroids of velocity ( see Dickman 1985 ) either .
+					One reason for this is that I believe that the statistics of velocity centroids have to be described in terms of underlying velocity and density .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S10.p2'}
+			Text (para): 
+			p {}
+				Text (p): A search for tools to deal with the interstellar turbulence has been intensified recently and this shows that there is deep understanding in the community that the wealth of observational data must be explored and it is essential to compare observations and numerical simulations .
+					I personally believe that the development of theoretical approaches to dealing with data has become at this point not less important than obtaining the data .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S10.p3'}
+			Text (para): 
+			p {}
+				Text (p): Most of the present review I devoted to dealing with power spectra which reflects my personal preferences .
+					Although far from being unambiguous , the power spectra were most intensively studied in hydrodynamics and the MHD theory and therefore they provide a bridge between idealizations that we partially understand and
+				text {'font': 'italic'}
+					Text (text): terra incognita
+					Tail (text): of interstellar turbulence .
+						Whether this approach is useful for a particular phase of the interstellar media is not clear
+				text {'font': 'italic'}
+					Text (text): a priori
+					Tail (text): .
+						We may or may not have any self-similarity indicating a turbulent cascade .
+						However , at least for HI it seems that the approach is promising .
+						Indeed , we managed to relate , although tentatively , the statistics of 21 cm emission with the statistics of Goldreich-Shridhar cascades .
+						The next class of objects to study using the technique should be molecular clouds .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S10.p4'}
+			Text (para): 
+			p {}
+				Text (p): Although studies of molecular clouds are expected to face more problems , some of them mentioned earlier on , it is likely that the underlying 3D statistics will be soon obtained for the optically thin molecular lines .
+					Comparison of this statistics with that in diffuse media should provide an insight to the nature of interstellar turbulent cascade and turbulent support of molecular clouds .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'S10.p5'}
+			Text (para): 
+			p {}
+				Text (p): However , the limitations of the power-spectrum approach make it necessary to use alternative tools such as wavelets , genus statistics , principal component analysis and develop new ones such as spectral correlation function even though the relation between their output and the familiar notions from hydrodynamics is not always clear .
+					In studies of interstellar medium one has to address particular questions , e.g .
+					the question of star formation and therefore appearance of specialized tools is only natural .
+				Tail (p): 
+			Tail (para): 
+		Tail (section): 
+	section {'id': 'Sx1'}
+		Text (section): 
+		title {}
+			Text (title): Summary
+			Tail (title): 
+		para {'id': 'Sx1.p1'}
+			Text (para): 
+			p {}
+				Text (p): 1 .
+					Velocity and density power spectra can be obtained from observed emissivities .
+					Velocity fluctuations make emissivity spectra in velocity slices shallower .
+					This results in much of small scale structure in PPV space that can be erroneously interpreted as interstellar clouds or clumps .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'Sx1.p2'}
+			Text (para): 
+			p {}
+				Text (p): 2 .
+					Turbulence is likely to be anisotropic with magnetic field defining the anisotropy direction .
+					This should allow a new way of studying magnetic field .
+				Tail (p): 
+			Tail (para): 
+		para {'id': 'Sx1.p3'}
+			Text (para): 
+			p {}
+				Text (p): 3 .
+					The available wealth of observational data motivates the development of new tools for data handling .
+				Tail (p): 
+			Tail (para): 
+		Tail (section): 
+	section {'id': 'Sx2'}
+		Text (section): 
+		title {}
+			Text (title): Acknowledgments
+			Tail (title): 
+		para {'id': 'Sx2.p1'}
+			Text (para): 
+			p {}
+				Text (p): This review is partially based on the results that I obtained together with Dmitry Pogosyan .
+					Discussions with Chris McKee , John Scalo , Steve Shore and Enrique Vazquez-Semadeni are acknowledged .
+					I am grateful to Robert Braun and Snezana Stanimirovic for helpful input on data reduction procedures .
+				Tail (p): 
+			Tail (para): 
+		Tail (section): 
+	section {'id': 'Sx3'}
+		Text (section): 
+		title {}
+			Text (title): References
+			Tail (title): 
+		Tail (section): 
+	bibliography {'id': 'bib'}
+		Text (bibliography): 
+		title {}
+			Text (title): References
+			Tail (title): 
+		biblist {}
+			Text (biblist): 
+			bibitem {'id': 'bib.bib1'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 1
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Adler, D. S. & Roberts, W. W. Jr. (1992)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 384
+						Tail (text): , 95
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib2'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 2
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Armstrong, J.M., Rickett, B.J., & Spangler, S.R. (1995)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 443
+						Tail (text): , 209
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib3'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 3
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Brand, P. & Wouterloot, J.G.A. (1995)
+					text {'font': 'italic'}
+						Text (text): Astron. Astrophys.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 303
+						Tail (text): , 851
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib4'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 4
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Braun, R. (1997)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 484
+						Tail (text): , 637
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib5'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 5
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Braun, R. (1999) in
+					text {'font': 'italic'}
+						Text (text): Interstellar Turbulence
+						Tail (text): , eds. Jose Franco & Alberto Carraminana, CUP, p. 12
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib6'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 6
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Burton, W.B. (1970)
+					text {'font': 'italic'}
+						Text (text): A&AS
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 10
+						Tail (text): , 76
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib7'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 7
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Burton, W.B. (1971)
+					text {'font': 'italic'}
+						Text (text): Astron. Astrophys.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 10
+						Tail (text): , 76
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib8'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 8
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Burton, W.B. (1992) in
+					text {'font': 'italic'}
+						Text (text): Galactic Interstellar Medium
+						Tail (text): , eds. Pfenninger D., Bartholdi P., Springer-Verlag, p. 1
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib9'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 9
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Casoli, F., Combes, F., & Gerin, M. (1984)
+					text {'font': 'italic'}
+						Text (text): Astron. Astrophys.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 133
+						Tail (text): , 99
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib10'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 10
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Colley, W.N., Gott, J.R. & Park, C. (1996)
+					text {'font': 'italic'}
+						Text (text): Mon. Not. R. Astron. Soc.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 281
+						Tail (text): , L82
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib11'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 11
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Dickey, J.M., (1995), in
+					text {'font': 'italic'}
+						Text (text): The Physics of the Interstellar Medium and Intergalactic Medium
+						Tail (text): , eds Ferrara A., McKee C.F., Heiles C., Schapiro P.R., ASP Conf. Ser. V80.
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib12'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 12
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Dickman, R.L., (1985), in
+					text {'font': 'italic'}
+						Text (text): Protostars and Planets II
+						Tail (text): , eds Black D.C. and Mathews M.S., Tucson: University of Arizona, 150
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib13'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 13
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Dickman, R.L. & Kleiner, S.C. (1985)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 295
+						Tail (text): , 479
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib14'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 14
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Draine B.T. & Lazarian, A. (1999), in
+					text {'font': 'italic'}
+						Text (text): Sloan Summit on Microwave Foregrounds
+						Tail (text): , ed. A. de Oliveira-Costa and M. Tegmark, in press
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib15'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 15
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Elmegreen, B.G. & Falgarone, E. (1996)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 471
+						Tail (text): , 816
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib16'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 16
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Falgarone, E., J.-L. Puget, & Perault, M. (1992)
+					text {'font': 'italic'}
+						Text (text): Astron. Astrophys.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 257
+						Tail (text): , 715
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib17'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 17
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Falgarone, E. et al. (1998)
+					text {'font': 'italic'}
+						Text (text): Astron. Astrophys.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 331
+						Tail (text): , 669
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib18'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 18
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Falgarone, E., Lis, D. C., Phillips, T. G., Pouquet, A.; Porter, D. H., Woodward, P. R. (1994)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 436
+						Tail (text): , 728
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib19'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 19
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Gautier, T.N., Boulanger, F., Pérault, M. & Puget, J.-L. (1992)
+					text {'font': 'italic'}
+						Text (text): Astron. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 103
+						Tail (text): , 1313
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib20'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 20
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Gill, A.G. & Henriksen, R.N. (1990)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 365
+						Tail (text): , L27
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib21'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 21
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Goldreich, P. & Sridhar, S. (1995)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 438
+						Tail (text): , 763
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib22'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 22
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Goodman, A.A. 1999, http://cfa-www.harvard.edu/ agoodman/scf/SCF/scfmain.html
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib23'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 23
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Goodman, J., & Narayan, R. (1985)
+					text {'font': 'italic'}
+						Text (text): Mon. Not. R. Astron. Soc.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 214
+						Tail (text): , 519
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib24'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 24
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Gott, J.R., Mao, S., & Park, C. (1992)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 385
+						Tail (text): , 26
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib25'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 25
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Gott, J.R., Melott, A.L., & Dickinson, M. (1986)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 306
+						Tail (text): , 341
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib26'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 26
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Gott, J.R., Park, C., Juskiewicz, R., Bies, W.E., Bennett, D.P., Bouchet, F.R., Stebbins, A. (1990)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 352
+						Tail (text): , 1
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib27'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 27
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Gredel, R. (1999) in
+					text {'font': 'italic'}
+						Text (text): Interstellar Turbulence
+						Tail (text): , eds. Jose Franco & Alberto Carraminana, CUP, 140
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib28'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 28
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Green, D.A. (1993)
+					text {'font': 'italic'}
+						Text (text): Mon. Not. R. Astron. Soc.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 262
+						Tail (text): , 328
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib29'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 29
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Green, D.A. (1994)
+					text {'font': 'italic'}
+						Text (text): Ap&SS
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 216
+						Tail (text): , 61
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib30'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 30
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Hamilton, A.J.S. 1998, in
+					text {'font': 'italic'}
+						Text (text): The Evolving Eniverse
+						Tail (text): , ed. D. Hamilton, Dordrecht: Kluwer, p. 185
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib31'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 31
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Heithausen, A., & Thaddeus, P. (1990)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 353
+						Tail (text): , L49
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib32'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 32
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Henriksen, R.N. (1994)
+					text {'font': 'italic'}
+						Text (text): Ap&SS
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 221
+						Tail (text): , 25
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib33'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 33
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Heyer, M.H., & Schloerb, F.P. (1997)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 475
+						Tail (text): , 173
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib34'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 34
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Higgs, L.A. (1999), in
+					text {'font': 'italic'}
+						Text (text): New Perspectives on the Interstellar Medium
+						Tail (text): , ASP 168, p. 15
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib35'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 35
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Higdon, J.C. (1984)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 285
+						Tail (text): , 109
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib36'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 36
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): von Horner, S. (1951)
+					text {'font': 'italic'}
+						Text (text): Zs.F. Ap.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 30
+						Tail (text): , 17
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib37'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 37
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Houlahan, P., Scalo J., (1990)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 72
+						Tail (text): , 133
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib38'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 38
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Iroshnikov, P.S. (1963) ,
+					text {'font': 'bold italic'}
+						Text (text): AZh
+						Tail (text): , 40 742
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib39'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 39
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Kaiser, N. (1987)
+					text {'font': 'italic'}
+						Text (text): Mon. Not. R. Astron. Soc.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 227
+						Tail (text): , 1
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib40'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 40
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Kalberla, P.M.W. & Mebold, U. (1983)
+					text {'font': 'italic'}
+						Text (text): Mitt Astr. Ges.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 58
+						Tail (text): , 101
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib41'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 41
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Kalberla, P.M.W. & Stenholm, L.G. (1983)
+					text {'font': 'italic'}
+						Text (text): Mitt. Astron. Ges.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 60
+						Tail (text): , 397
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib42'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 42
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Kampé de Fériet, J. (1955), in:
+					text {'font': 'italic'}
+						Text (text): Gas Dynamics of Cosmic Clouds
+						Tail (text): , Amsterdam: North-Holland, 134
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib43'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 43
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Kaplan, S.A. & Pickelner, S.B. (1970),
+					text {'font': 'italic'}
+						Text (text): The Interstellar Medium
+						Tail (text): , (Harvard University Press)
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib44'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 44
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Kerr, F.J. & Lynden-Bell, D. (1986)
+					text {'font': 'italic'}
+						Text (text): Mon. Not. R. Astron. Soc.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 221
+						Tail (text): , 1023
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib45'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 45
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Kolmogorov, A. (1941)
+					text {'font': 'italic'}
+						Text (text): Compt. Rend. Acad. Sci. USSR
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 30
+						Tail (text): , 301
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib46'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 46
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Kraichnan, R.H. (1965)
+					text {'font': 'italic'}
+						Text (text): Phys. Fluids
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 8
+						Tail (text): , 1385
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib47'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 47
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Kramer, C., Stutzki, J., Rohrig, R., & Corneliussen, U. 1998
+					text {'font': 'italic'}
+						Text (text): Astron. Astrophys.
+						Tail (text): 329249
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib48'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 48
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Langer, W.D., Wilson, R.W., & Anderson, C.H. (1993)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 408
+						Tail (text): , L45
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib49'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 49
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Langer, W. D., Velusamy, T., Kuiper, T.B.H., Levin, S., & Olsen, E. (1995)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 453
+						Tail (text): , 293
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib50'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 50
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Larson, R. (1992)
+					text {'font': 'italic'}
+						Text (text): Mon. Not. R. Astron. Soc.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 26
+						Tail (text): , 641
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib51'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 51
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Lazarian, A. (1992)
+					text {'font': 'italic'}
+						Text (text): Astron. and Astrophys. Transactions
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 3
+						Tail (text): , 33
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib52'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 52
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Lazarian, A. (1994a)
+					text {'font': 'italic'}
+						Text (text): Plasma Phys. and Contr. Fusion
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 36
+						Tail (text): , 1013
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib53'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 53
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Lazarian, A. (1994b),
+					text {'font': 'italic'}
+						Text (text): PhD Thesis
+						Tail (text): , University of Cambridge
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib54'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 54
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Lazarian, A. (1995)
+					text {'font': 'italic'}
+						Text (text): Astron. Astrophys.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 293
+						Tail (text): , 507 (L95)
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib55'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 55
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Lazarian, A. (1999), in
+					text {'font': 'italic'}
+						Text (text): Interstellar Turbulence
+						Tail (text): , eds. Jose Franco & Alberto Carraminana, CUP, p.95
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib56'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 56
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Lazarian, A. & Pogosyan, D. (1997)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 491
+						Tail (text): , 200
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib57'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 57
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Lazarian, A. & Pogosyan, D. (1999)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): , in press (LP99), astro-ph/9901241
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib58'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 58
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Lazarian, A., & Vishniac, E. (1999)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 517
+						Tail (text): , 700
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib59'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 59
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Liszt, H.S., & Burton, W.B. (1981)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 243
+						Tail (text): , 778
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib60'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 60
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): McKee, C.F. & Ostriker, J.P. (1977)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 218
+						Tail (text): , 148
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib61'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 61
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Melott, A.L., Cohen, A.P., Hamilton, A.J.S., Gott, J.R., Weinberg, D.H. (1989)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 345
+						Tail (text): , 618
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib62'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 62
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Miesch, M.S., & Bally, J. (1994)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 429
+						Tail (text): , 645
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib63'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 63
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Montgomery, D. (1982) Phys. Scripta
+					text {'font': 'bold'}
+						Text (text): 2
+						Tail (text): , 83
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib64'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 64
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Monin, A.S., & Yaglom, A.M. (1975),
+					text {'font': 'italic'}
+						Text (text): Statistical Fluid Mechanics: Mechanics of Turbulence
+						Tail (text): , vol. 2, The MIT Press
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib65'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 65
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Munch, G. (1958)
+					text {'font': 'italic'}
+						Text (text): Rev. Mod. Phys.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 30
+						Tail (text): , 1035
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib66'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 66
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Narayan, R. (1992)
+					text {'font': 'italic'}
+						Text (text): Phil. Trans. Royal Soc.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 341
+						Tail (text): , 151
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib67'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 67
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Narayan, R., & Goodman, J. (1989)
+					text {'font': 'italic'}
+						Text (text): Mon. Not. R. Astron. Soc.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 238
+						Tail (text): , 963
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib68'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 68
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): O’Dell, C.R. (1986)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 304
+						Tail (text): , 767
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib69'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 69
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): O’Dell, C.R., & Castaneda, H.O. (1987)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 317
+						Tail (text): , 686
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib70'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 70
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Ostriker, E. (1999) in
+					text {'font': 'italic'}
+						Text (text): Interstellar Turbulence
+						Tail (text): , eds. Jose Franco & Alberto Carraminana, CUP, p. 240
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib71'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 71
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Oughton,S., Radler, K.H., Matthaeus,W.H. (1997)
+					text {'font': 'italic'}
+						Text (text): Phys. Rev. E
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 56
+						Tail (text): , No.3, 2875
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib72'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 72
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Padoan, P., Rosolowsky, E.W., & Goodman, A.A. (1999)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): , submitted
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib73'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 73
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Perault, M., Falgarone, E. & Puget, J.L. ( 1986)
+					text {'font': 'italic'}
+						Text (text): Astron. Astrophys.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 157
+						Tail (text): , 139
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib74'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 74
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Pichardo, B., Vazquez-Semadeni, E., Gazol, A., Passot, T., Ballesteros-Paredes, J. (1999)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): , submitted
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib75'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 75
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Prunet, S. & Lazarian, A. (1999), in “Sloan Summit on Microwave Foregrounds”, ed. A. de Oliveira-Costa and M. Tegmark
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib76'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 76
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Rauzy, S., Lachieze-Rey, M.,& Henriksen, R.N. (1993)
+					text {'font': 'italic'}
+						Text (text): Astron. Astrophys.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 273
+						Tail (text): , 366
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib77'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 77
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Rosolowsky, E.W., Goodman, A.A., Wilner, D.J., & Williams, J.P. (1999)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): , in press
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib78'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 78
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Sanders, D.B., Scoville, N.Z., & Solomon, P.M. (1985)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 289
+						Tail (text): , 373
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib79'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 79
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Scalo, J.M. (1985), in
+					text {'font': 'italic'}
+						Text (text): Protostars and Planets II
+						Tail (text): , eds Black D.C. and Mathews M.S., Tucson: University of Arizona, 201
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib80'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 80
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Scalo, J.M. (1987), in
+					text {'font': 'italic'}
+						Text (text): Interstellar Processes
+						Tail (text): , eds. D.F. Hollenbach & H.A. Thronson, Reidel, Dordreicht, 349
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib81'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 81
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Scalo, J.M., Lazarian, A. (1996)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 469
+						Tail (text): , 189
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib82'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 82
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Scoccimarro, R. (1997)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 487
+						Tail (text): , 1
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib83'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 83
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Sethi, S.K., Prunet, S., Bouchet, F.R., 1998, astro-ph/9803158.
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib84'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 84
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Shull, J.M. 1987, in
+					text {'font': 'italic'}
+						Text (text): Interstellar Processes
+						Tail (text): , eds Hollenbach D.J. and Thronson H.A., Reidel, Dordrecht, 225
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib85'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 85
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Spangler, S.R., & Gwinn, C.R. (1990)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 353
+						Tail (text): , L29
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib86'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 86
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Stanimirovic, S., Staveley-Smith, L., Dickey, J.M., Sault, R.J., & Snowden, S.L. (1999)
+					text {'font': 'italic'}
+						Text (text): Mon. Not. R. Astron. Soc.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 302
+						Tail (text): , 417
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib87'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 87
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Stenholm, L.G. (1999)
+					text {'font': 'italic'}
+						Text (text): Astron. Astrophys.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 232
+						Tail (text): , 495
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib88'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 88
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Stutzki, J., Bensch, F., Heithausen, A., Ossenkopf, V., & Zielinsky, M. (1998)
+					text {'font': 'italic'}
+						Text (text): Astron. Astrophys.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 336
+						Tail (text): , 697
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib89'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 89
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Stutzki, J., & Gusten, R. (1990)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 356
+						Tail (text): , 513
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib90'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 90
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Verschuur, G.L. (1991a)
+					text {'font': 'italic'}
+						Text (text): Ap & SS
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 185
+						Tail (text): , 137
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib91'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 91
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Verschuur, G.L. (1991b)
+					text {'font': 'italic'}
+						Text (text): Ap &SS
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 185
+						Tail (text): , 305
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib92'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 92
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Verschuur, G.L. (1995)
+					text {'font': 'italic'}
+						Text (text): Ap&SS
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 227
+						Tail (text): , 187
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib93'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 93
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Vazquez-Semadeni, E. (1999), in the Proceedings of ”The Chaotic Universe”, Roma/Pescara, Italy, 1-5 Feb. 1999, eds. V. Gurzadyan and L. Bertone
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib94'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 94
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Vazquez-Semadeni, E., & Passot, T. (1999), in
+					text {'font': 'italic'}
+						Text (text): Interstellar Turbulence
+						Tail (text): , eds. Jose Franco & Alberto Carraminana, CUP, p. 223
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib95'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 95
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Wall, W.F., & Waller, W.H. 1998, in
+					text {'font': 'italic'}
+						Text (text): New Horisons from Multi-Wavelength Sky Surveys
+						Tail (text): , eds. B.J. McLean, D.A. Golombek, Hayes, J.J.E. and H.E. Payne, IAU 179, Kluwer, p. 191
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib96'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 96
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Waller, W.H., Varoxi, F., Boulanger, F., & Digel, S.W. 1998, in
+					text {'font': 'italic'}
+						Text (text): New Horisons from Multi-Wavelength Sky Surveys
+						Tail (text): , eds. B.J. McLean, D.A. Golombek, Hayes, J.J.E. and H.E. Payne, IAU 179, Kluwer, p. 194
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib97'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 97
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Williams, J. (1999) in
+					text {'font': 'italic'}
+						Text (text): Interstellar Turbulence
+						Tail (text): , eds. Jose Franco & Alberto Carraminana, CUP, p. 190
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib98'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 98
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Williams, J., de Gaus, E., & Blitz, L. (1994)
+					text {'font': 'italic'}
+						Text (text): Astrophys. J.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 428
+						Tail (text): , 693
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib99'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 99
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Wilson, O.C., Munch, G., Flather, E.M., & Coffeen, M.F. (1959)
+					text {'font': 'italic'}
+						Text (text): ApJS
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 4
+						Tail (text): , 199
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib100'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 100
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Wiserman, J.J. & Ho, P.T.P. (1996)
+					text {'font': 'italic'}
+						Text (text): Nature
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 382
+						Tail (text): , 139
+					Tail (bibblock): 
+				Tail (bibitem): 
+			bibitem {'id': 'bib.bib101'}
+				Text (bibitem): 
+				bibtag {'role': 'refnum'}
+					Text (bibtag): 101
+					Tail (bibtag): 
+				bibblock {}
+					Text (bibblock): Zielinsky, M. & Stutzki, J. (1999)
+					text {'font': 'italic'}
+						Text (text): Astron. Astrophys.
+						Tail (text): 
+					text {'font': 'bold'}
+						Text (text): 347
+						Tail (text): , 630
+					Tail (bibblock): 
+				Tail (bibitem): 
+			Tail (biblist): 
+		Tail (bibliography): 
+	Tail (document): None

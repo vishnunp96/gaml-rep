@@ -1,0 +1,10 @@
+T1	ObjectName 84 108	\delta Scuti star 44 Tau
+T2	ObjectName 296 302	44 Tau
+T3	ParameterSymbol 376 382	\log g
+T4	MeasuredValue 392 403	3.6 \pm 0.1
+R1	Measurement Arg1:T3 Arg2:T4	
+A1	FromLiterature T4
+T5	ObjectName 779 785	44 Tau
+T6	ObjectName 1289 1295	44 Tau
+T7	ObjectName 1417 1423	44 Tau
+R2	Property Arg1:T2 Arg2:T3	

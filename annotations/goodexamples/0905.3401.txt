@@ -1,0 +1,14 @@
+We present new optical and near-infrared imaging for a sample of 98 spectroscopically-selected galaxy groups at 0.25 < z < 0.55 , most of which have velocity dispersions \sigma < 500 km/s .
+We use psf -matched aperture photometry to measure accurate colours for group members and the surrounding field population .
+The sample is statistically complete above a stellar mass limit of approximately M = 1 \times 10 ^ { 10 } M _ { \odot } .
+The overall colour distribution is bimodal in both the field and group samples ; but at fixed luminosity the fraction of group galaxies populating the red peak is larger , by \sim 20 \pm 7 per cent , than that of the field .
+In particular , group members with early-type morphologies , as identified in Hubble Space Telescope imaging , exhibit a tight red sequence , similar to that seen for more massive clusters .
+Using optical and near-infrared colours , including data from the Spitzer Space Telescope , we show that approximately 20–30 per cent of galaxies on the red sequence may be dust-reddened galaxies with non-negligible star formation and early-spiral morphologies .
+This is true of both the field and group sample , and shows little dependence on near infrared luminosity .
+Thus , the fraction of bright ( ^ { 0.4 } M _ { K } < -22 ) group members with no sign of star formation or AGN activity , as identified by their colours or [ OII ] emission , is 54 \pm 6 per cent .
+Our field sample , which includes galaxies in all environments , contains 35 \pm 3 per cent of such inactive galaxies , consistent with the amount expected if all 
+such galaxies are located in groups and clusters .
+This reinforces our earlier conclusions , that dense environments at z \mathrel { \raise 1.505 pt \hbox { $ \scriptstyle < $ } \kern - 6.0 pt \lower 1.72 pt \hbox { { $% \scriptstyle \sim$ } } } 0.5 are associated with a premature cessation of star formation in some galaxies ; in particular we find no evidence for significantly enhanced star formation in these environments .
+Simple galaxy formation models predict a quenching of star formation in groups that is too efficient , overpopulating the red sequence .
+Attempts to fix this by increasing the timescale of this quenching equally for all group members distorts the colour distribution in a way that is inconsistent with observations .
+

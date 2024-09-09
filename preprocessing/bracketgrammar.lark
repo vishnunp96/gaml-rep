@@ -1,0 +1,25 @@
+text : thing*
+
+bracketed : _LBRACKET thing* _RBRACKET
+
+thing : LATEX | TOKEN | bracketed | function | dollared
+
+function : LATEX bracketed
+
+//LATEX.1 : /\\[A-Za-z]+/
+LATEX.1 : /\\([A-Za-z]+|[\,\.\:\;])/
+
+dollared : _DOLLAR (LATEX|TOKEN|bracketed|function)+ _DOLLAR
+
+_DOLLAR.1 : /(?<!\\)\$/
+//_DOLLAR.1 : "$"
+
+TOKEN.0 : /[^\s\$\{\}\\]+/
+
+_LBRACKET : "{"
+_RBRACKET : "}"
+
+
+%import common.WS
+%ignore WS
+

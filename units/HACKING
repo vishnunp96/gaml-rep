@@ -1,0 +1,41 @@
+<!--
+awk "/^    / { print }" $0 | sh
+exit
+-->
+
+To hack on this module, you should get:
+
+ * Mercurial (hg)
+ * pylint
+ * pytest
+ * tox
+ * epydoc
+ * Unix
+
+To run the tests and doctests:
+
+    py.test --doctest-modules units
+
+To run the tests on all versions of Python that units supports:
+
+    tox
+
+To generate the html documentation, run:
+
+    epydoc units
+
+To check the style of the code, run:
+
+    pylint units
+
+To make this file's HTML version (if you have markdown installed):
+
+    markdown units/HACKING -f units/HACKING.html
+
+To do it all:
+
+<!--
+    exit
+-->
+
+    units/HACKING

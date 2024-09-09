@@ -1,0 +1,154 @@
+symbol: _any_expression
+
+measurement : quantity units? roundbracketed_expression?
+
+units : unit+
+
+quantity : _LEFTROUND quantity _RIGHTROUND uncertainty*
+			| value uncertainty*
+
+value : value standard_form
+		| _LEFTROUND value _RIGHTROUND
+		| number_expression
+		| number_expression (_HYPHEN+ | "to"i) number_expression -> range
+		| standard_form
+
+uncertainty : (raised_num | lowered_num)~2 roundbracketed_expression? -> raised_lowered_uncertainty
+			| _PM number_expression roundbracketed_expression? -> pm_uncertainty
+
+//uncertainty : _PM number_expression
+//		| _PM number_expression roundbracketed_expression -> named_uncertainty
+////		| _PM number undercomment -> named_uncertainty
+//		| _PM? raised_num lowered_num -> upperlower_uncertainty
+//		| _PM? lowered_num raised_num -> upperlower_uncertainty
+//		| _PM? raised_num lowered_num roundbracketed_expression -> named_upperlower_uncertainty
+//		| _PM? lowered_num raised_num roundbracketed_expression -> named_upperlower_uncertainty
+
+raised_num : _CARAT number_expression
+lowered_num : _UNDERSCORE number_expression
+
+number_expression : NUMBER
+			| INF -> infinity
+			| _PLUS number_expression
+			| _HYPHEN number_expression -> negative_number
+			| _LEFTCURLY number_expression _RIGHTCURLY
+
+standard_form : _TIMES? number_expression _CARAT number_expression
+
+unit : raised_expression
+	| lowered_expression
+	| character_expression
+	| _curlybrace_expression
+	| latex_function
+	| _PER unit -> inverted_unit
+
+_any_expression : _full_expression
+			| _fraction_expression
+			| equality_expression
+			| comma_separated_expression
+
+_full_expression : subtraction_expression
+			| addition_expression
+			| sequential_expressions
+			| _expression
+
+_expression : _contained_expression
+			| _closed_expression
+//			|  _closedcontained_expression
+			| raised_expression
+
+// Any expression which is both self contained and closed
+_closedcontained_expression : latex_function | number_expression | character_expression
+// Any expression which is considered to be a single entity by itself (not a composed entity - hint, a raised entity is considered "composed")
+_closed_expression : lowered_expression
+// Any composed entity which is nonetheless closed
+_contained_expression : _curlybrace_expression | _bracketed_expression
+
+// A sequence of two or more expressions
+sequential_expressions : _expression _expression+
+
+comma_separated_expression : _expression (_COMMA _expression)+
+
+equality_expression : _full_expression _EQUALS _full_expression
+
+_fraction_expression : direct_fraction_expression | latex_frac_expression
+direct_fraction_expression : _full_expression _PER _full_expression
+latex_frac_expression : "\\frac" _curlybrace_expression~2
+
+//function_expression : (_closed_expression | _closedcontained_expression) roundbracketed_expression
+function_expression : (_closed_expression | _closedcontained_expression) _LEFTROUND _any_expression _RIGHTROUND
+
+// Second variant deals with form: "H _ { { } _ { 0 } }"
+raised_expression : _expression _CARAT (_contained_expression | _closedcontained_expression)
+					| _expression _CARAT _LEFTCURLY _CARAT (_contained_expression | _closedcontained_expression) _RIGHTCURLY
+lowered_expression : _expression _UNDERSCORE (_contained_expression | _closedcontained_expression)
+					| _expression _UNDERSCORE _LEFTCURLY _UNDERSCORE (_contained_expression | _closedcontained_expression) _RIGHTCURLY
+
+// Should this be "?" instead of "*"?
+//subtraction_expression : _expression? _HYPHEN _expression
+//addition_expression : _expression? _PLUS _expression
+subtraction_expression : (_expression | sequential_expressions)? _HYPHEN (_expression | sequential_expressions)
+addition_expression : (_expression | sequential_expressions)? _PLUS (_expression | sequential_expressions)
+
+_bracketed_expression : roundbracketed_expression
+					| squarebracketed_expression
+					| anglebracketed_expression
+					| piped_expression
+roundbracketed_expression : _LEFTROUND _any_expression _RIGHTROUND
+squarebracketed_expression : _LEFTSQUARE _any_expression _RIGHTSQUARE
+anglebracketed_expression : _LANGLE _any_expression _RANGLE
+piped_expression : _LEFTPIPE _any_expression _RIGHTPIPE
+_curlybrace_expression : _LEFTCURLY _any_expression _RIGHTCURLY
+
+latex_function : LATEX _curlybrace_expression
+
+// Single atomic entities
+character_expression : LATEX | PUNC | CHARS
+//number_expression : NUMBER
+
+_PER.2 : "/" | "per"
+_CARAT.2 : "^"
+_UNDERSCORE.2 : "_"
+
+_TIMES.5 : "\\times"
+INF.5 : "\\infty"
+_PM.5 : "\\pm"
+
+_LEFTROUND.4 : /\\left\s*\(/ | "("
+_RIGHTROUND.4 : /\\right\s*\)/ | ")"
+_LEFTSQUARE.4 : /\\left\s*\[/ | "["
+_RIGHTSQUARE.4 : /\\right\s*\]/ | "]"
+_LEFTCURLY.3 : "{"
+_RIGHTCURLY.3 : "}"
+_LANGLE.5 : "\\langle" | "<"
+_RANGLE.5 : "\\rangle" | ">"
+_LEFTPIPE.5 : "\\left" _PIPE | _PIPE
+_RIGHTPIPE.5 : "\\right" _PIPE | _PIPE
+_PIPE.2 : "|"
+
+NUMBER.2 : /[0-9]+(.[0-9]+)?/
+
+_PLUS.2 : "+"
+_HYPHEN.2 : "\u002D" | "\u2013" | "\u2014" | "\u2212"
+_EQUALS.2 : "="
+
+LATEX.3 : /\\[A-Za-z]+/ | "\\|"
+CHARS.1 : /[A-Za-z]+/ | PERCENT
+PUNC.1 : /[\*%]/
+
+PERCENT.3 : /per\s*cent/
+
+_COMMA : ","
+
+DOLLARSIGN : "$"
+%ignore DOLLARSIGN
+EMPTYCURLY.4 : /\{\s*\}/
+%ignore EMPTYCURLY
+SPACETILDE : /(?<!\\)\~/
+%ignore SPACETILDE
+
+//junk : OTHER+
+//OTHER.0 : /[^\s]+/
+
+%import common.WS
+%ignore WS

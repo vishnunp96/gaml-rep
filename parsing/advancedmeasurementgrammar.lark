@@ -1,0 +1,69 @@
+
+
+
+// Second variant deals with form: "H _ { { } _ { 0 } }"
+raised_expression : _expression _CARAT (_contained_expression | _closedcontained_expression)
+					| _expression _CARAT _LEFTCURLY _CARAT (_contained_expression | _closedcontained_expression) _RIGHTCURLY
+lowered_expression : _expression _UNDERSCORE (_contained_expression | _closedcontained_expression)
+					| _expression _UNDERSCORE _LEFTCURLY _UNDERSCORE (_contained_expression | _closedcontained_expression) _RIGHTCURLY
+
+subtraction_expression : (_expression | sequential_expressions)? _HYPHEN (_expression | sequential_expressions)
+addition_expression : (_expression | sequential_expressions)? _PLUS (_expression | sequential_expressions)
+
+_bracketed_expression : roundbracketed_expression
+					| squarebracketed_expression
+					| anglebracketed_expression
+					| piped_expression
+roundbracketed_expression : _LEFTROUND _any_expression _RIGHTROUND
+squarebracketed_expression : _LEFTSQUARE _any_expression _RIGHTSQUARE
+anglebracketed_expression : _LANGLE _any_expression _RANGLE
+piped_expression : _LEFTPIPE _any_expression _RIGHTPIPE
+_curlybrace_expression : _LEFTCURLY _any_expression _RIGHTCURLY
+
+latex_function : LATEX _curlybrace_expression
+
+// Single atomic entities
+character_expression : LATEX | PUNC | CHARS
+number_expression : NUMBER
+
+_PER.2 : "/"
+_CARAT.2 : "^"
+_UNDERSCORE.2 : "_"
+
+_LEFTROUND.4 : /\\left\s*\(/ | "("
+_RIGHTROUND.4 : /\\right\s*\)/ | ")"
+_LEFTSQUARE.4 : /\\left\s*\[/ | "["
+_RIGHTSQUARE.4 : /\\right\s*\]/ | "]"
+_LEFTCURLY.3 : "{"
+_RIGHTCURLY.3 : "}"
+_LANGLE.5 : "\\langle" | "<"
+_RANGLE.5 : "\\rangle" | ">"
+_LEFTPIPE.5 : "\\left" _PIPE | _PIPE
+_RIGHTPIPE.5 : "\\right" _PIPE | _PIPE
+_PIPE.2 : "|"
+
+NUMBER.2 : /[0-9]+(.[0-9]+)?/
+
+_PLUS.2 : "+"
+_HYPHEN.2 : "\u002D" | "\u2013" | "\u2014" | "\u2212"
+_EQUALS.2 : "="
+
+LATEX.3 : /\\[A-Za-z]+/ | "\\|"
+CHARS.1 : /[A-Za-z]+/
+PUNC.1 : /[\*]/
+
+_COMMA : ","
+
+DOLLARSIGN : "$"
+%ignore DOLLARSIGN
+EMPTYCURLY.4 : /\{\s*\}/
+%ignore EMPTYCURLY
+SPACETILDE : /(?<!\\)\~/
+%ignore SPACETILDE
+
+//junk : OTHER+
+//OTHER.0 : /[^\s]+/
+
+%import common.WS
+%ignore WS
+

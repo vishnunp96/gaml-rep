@@ -1,0 +1,14 @@
+T1	ParameterSymbol 58 67	H _ { 0 }
+T2	ParameterSymbol 178 187	H _ { 0 }
+T3	ParameterSymbol 337 346	H _ { 0 }
+T4	ParameterSymbol 385 399	\Omega _ { M }
+T5	Definition 402 426	1 - \Omega _ { \Lambda }
+R1	Defined Arg1:T4 Arg2:T5	
+T6	ParameterSymbol 635 644	H _ { 0 }
+T7	MeasuredValue 647 689	71 \pm 0.04 { km s } ^ { -1 } Mpc ^ { -1 }
+T8	ConfidenceLimit 692 700	1 \sigma
+R2	Confidence Arg1:T7 Arg2:T8	
+R3	Measurement Arg1:T6 Arg2:T7	
+T9	ParameterSymbol 739 753	\Omega _ { M }
+T10	MeasuredValue 756 769	0.27 \pm 0.03
+R4	Measurement Arg1:T9 Arg2:T10	

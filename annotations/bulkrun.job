@@ -1,0 +1,21 @@
+#!/bin/bash
+#$ -S /bin/bash
+#$ -o $HOME/logs/$JOB_NAME$JOB_ID.$TASK_ID.o
+#$ -e $HOME/logs/$JOB_NAME$JOB_ID.$TASK_ID.e
+#$ -t 1-2980
+#$ -tc 20
+# -t 1-5
+# -tc 5
+#$ -l tmem=8G
+#$ -l h_rt=48:00:00
+# -P gpu
+#$ -l gpu=1
+
+DIRECTORY="/mnt/data/arXivUpdate"
+SIMG="$HOME/testCudaImage2.simg"
+
+SUBDIRECTORY=$(singularity exec -B /cluster/project2/gaml/:/mnt --nv "$SIMG" sed "${SGE_TASK_ID}q;d" $DIRECTORY/index.txt)
+
+echo "Task ID is $SGE_TASK_ID for directory $SUBDIRECTORY"
+
+singularity exec -B /cluster/project2/gaml/:/mnt --nv "$SIMG" /home/tcrossla/.local/anaconda3/bin/python $* -s "$SUBDIRECTORY"
