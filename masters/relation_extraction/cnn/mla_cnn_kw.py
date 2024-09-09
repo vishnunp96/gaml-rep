@@ -169,7 +169,6 @@ class MLACNNKWindowModel(BaseCNNRelationModule):
         self.conv = nn.Conv2d(1, out_channels,
                               (kernel_dim, self.embedding.embedding_dim + 2 * pos_embedding_dim),
                               stride=(10, 10))
-        # todo: how to implement linear bias? batch_size x out_channels x seq_len??
         self.linear_bias = None
 
     def average_entity_embeds(self, entity_idxs):
