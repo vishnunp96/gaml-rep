@@ -1,23 +1,23 @@
+import os.path
+
 if __name__ == "__main__":
 
-	from utilities.argparseactions import ArgumentParser,IterFilesAction
+	from utilities.argparseactions import ArgumentParser,IterFilesAction, FileAction
 	from preprocessing import latexmlpy as latexml
 	from utilities.fileutilities import changeext
 
 	from lxml import etree as let
 
-	import json
 	from utilities.systemutilities import printacross
 
-	parser = ArgumentParser(description='Create .txt and .spans files for LateXML documents.')
-	parser.add_argument('xmlpath',action=IterFilesAction, suffix='.xml', help='Path to xml file or directory to parse.')
+	parser = ArgumentParser(description='Create .txt files for LateXML documents.')
+	parser.add_argument('xmlpath',action=IterFilesAction, recursive=True, suffix='.xml', help='Path to xml file or directory to parse.')
+	parser.add_argument('outdir',action=FileAction, mustexist=False, help='Output location for text files.')
 	parser.add_argument('-e','--element', help='Element tag to take from document. By default, first element instance will be processed. If no elements of this type exist, or flag is unspecified, whole document will be processed. Ignored if force-manual flag set.')
 	parser.add_argument('-n','--elemnumber', default=0, help='Element number (in document order) to take from the list of elements specified. Ignored if --element not given. Defaults to 0. Ignored if force-manual flag set.')
-	group = parser.add_mutually_exclusive_group()
-	group.add_argument('-m','--manual-on-failure',action='store_true',dest='on_fail')
-	group.add_argument('-M','--force-manual',action='store_true',dest='force')
 	args = parser.parse_args()
 
+	numfiles = 0
 	for path in args.xmlpath:
 		root = let.parse(path).getroot()
 
@@ -41,14 +41,15 @@ if __name__ == "__main__":
 					root = i
 					break
 
-		text, spans = latexml.tostring(root)
-
-		txtpath = changeext(path,'.txt')
-		spanpath = changeext(path,'.spans')
-		annpath = changeext(path,'.ann')
+		text, _ = latexml.tostring(root)
+		filename = os.path.basename(path)
+		txtdir = args.outdir
+		txtpath = os.path.join(txtdir, changeext(filename, '.txt'))
 
 		with open(txtpath,'w') as f:
+			print("Writing to --> ", txtpath)
+			if numfiles % 100 == 0:
+				print("Number of files written: ", numfiles, flush=True)
 			f.write(text)
-		with open(spanpath,'w') as f:
-			json.dump(spans, f, indent=2)
-		open(annpath, 'a').close()
+		numfiles += 1
+	print("Number of files written: ", numfiles, flush=True)
