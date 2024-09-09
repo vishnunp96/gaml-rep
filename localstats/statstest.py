@@ -1,4 +1,3 @@
-# todo: rename this folder to local_stats
 from utilities.bratutils import read_ann
 
 if __name__ == '__main__':

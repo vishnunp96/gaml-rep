@@ -167,7 +167,6 @@ if __name__ == '__main__':
 	def parse_tuple(s):
 		return tuple(int(i) for i in s.split('-'))
 
-	# todo: need to change optimum hyperparameters here, add batch
 	parser = ArgumentParser(description='Train Keras ANN to predict entities in astrophysical text.')
 	parser.add_argument('ann',action=IterFilesAction,recursive=True,suffix='.ann',help='Annotation file or directory containing files (searched recursively).')
 	parser.add_argument('embeddings',action=FileAction, mustexist=True,help='Word embeddings file.')
@@ -175,12 +174,15 @@ if __name__ == '__main__':
 	parser.add_argument('-w','--class-weight',action='store_const',const='balanced',help='Flag to indicate that the loss function should be class-balanced for training.')
 	parser.add_argument('--train-fractions',action='store_true',help='Flag to indicate that training should be conducted with different fractions of the training dataset.')
 	parser.add_argument('--eval',action='store_true',help='Flag to indicate that the model in modeldir should be loaded and evaluated, rather than a new model be trained.')
-	parser.add_argument('--hidden',type=int,default=32,help='Number of neurons in hidden layers.')
+	parser.add_argument('--hidden',type=int,default=512,help='Number of neurons in hidden layers.')
 	parser.add_argument('--layers',type=int,default=2,help='Number of layers of LSTM cells.')
-	parser.add_argument('--char-emb',type=int,default=64,help='Length of character embeddings.')
+	parser.add_argument('--char-emb',type=int,default=128,help='Length of character embeddings.')
 	parser.add_argument('--seed', type=int, default=42, help='Random number seed for this training run.')
 	parser.add_argument('--split', type=parse_tuple, default=(0.8,0.1,0.1), help='Data split for train-test-dev as hyphen-separated list, e.g. 60-20-20.')
 	parser.add_argument('--types',action=ListAction, help='Annotation types to consider.')
+	parser.add_argument('-b', '--batch', type=int, default=64,
+						help='Batch size.')
+
 	args = parser.parse_args()
 
 	torch.manual_seed(args.seed)
@@ -208,7 +210,7 @@ if __name__ == '__main__':
 		output_labels = list(set(l for a in anns for t,l in a))
 
 		# Training parameters
-		batch_size = 64
+		batch_size = args.batch
 		epochs = 150
 		patience = 25
 		min_delta = 0.001
