@@ -1,5 +1,9 @@
 import subprocess
 
+def printacross(char='-', length=80):
+	print(char*length)
+
+
 def console(cmd, timeout=None, input=None):
 	## The Pythonic setup may require a .terminate() rather than a .kill()?
 	try:
