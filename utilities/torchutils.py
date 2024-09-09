@@ -99,7 +99,7 @@ class EarlyStopping:
 	def reload_model(self,model):
 		model.load_state_dict(self.checkpoint, strict=False) ## Is this robust?
 
-def train(model, dataloader, epochs, opt, loss_func, val_dataloader=None, metrics={}, patience=None,min_delta=0.0, verbose=False):
+def train(model, dataloader, epochs, opt, loss_func, val_dataloader=None, metrics={}, patience=None,min_delta=0.0, verbose=True):
 	''' loss_func is callable with signature f(output,target) and returns a tensor. Assumed batch_first on all tensors.  '''
 
 	history = defaultdict(list)
@@ -174,7 +174,7 @@ def train(model, dataloader, epochs, opt, loss_func, val_dataloader=None, metric
 	# Training loop
 	for epoch in range(epochs):
 		history['epoch'].append(epoch+1)
-		if verbose > 0: print(f'Epoch {epoch+1}/{epochs}')
+		if verbose > 0: print(f'Epoch {epoch+1}/{epochs}', flush=True)
 
 		## Iterate over data batches
 		epoch_loss = 0.0
