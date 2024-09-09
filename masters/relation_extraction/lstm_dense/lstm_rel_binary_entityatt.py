@@ -10,7 +10,7 @@ from sklearn.utils.class_weight import compute_class_weight
 
 from annotations.models.base import BaseANNRelationModule
 from masters.relation_extraction.datasets.SpecificRelationDataset import SpecificRelationDataset
-from utilities.torchutils import predict_from_dataloader
+
 
 '''
 Still trying with W2V embeddings.
@@ -20,12 +20,12 @@ Only change is that each class is separately trained for.
 '''
 
 # Define model
-class IndexSplitSpansDirectedLabelledRelationModel_Binary(
+class EntityAtt_Binary(
     BaseANNRelationModule):
     def __init__(self, window_pad, hidden, relation_focus, entity_labels,
                  allowed_entity_pairs, token_indexes, fallback_index,
                  embedding=None, embedding_dim=None, num_embeddings=None):
-        super(IndexSplitSpansDirectedLabelledRelationModel_Binary,
+        super(EntityAtt_Binary,
               self).__init__()
 
         self.window_pad = window_pad
@@ -54,12 +54,19 @@ class IndexSplitSpansDirectedLabelledRelationModel_Binary(
             torch.randn(self.embedding.embedding_dim)) + 0.001 * torch.randn(
             self.embedding.embedding_dim, self.embedding.embedding_dim))
 
-        lstm_input_size = self.embedding.embedding_dim + self.entity_classes_num
+        # idea is to pass in entity spans through a separate LSTM, get representation of each entity span
+        # then concatenate this with the token embeddings and pass through another LSTM
+
+        self.entity_pool = nn.LSTM(self.embedding.embedding_dim, self.embedding.embedding_dim,
+                                   bidirectional=False, batch_first=True) # Output embedding_dim
+
+
+        lstm_input_size = self.embedding.embedding_dim + self.entity_classes_num + 2
 
         self.pool = nn.LSTM(lstm_input_size, 64, bidirectional=True,
                             batch_first=True)  # Output 128 (64*2)
 
-        input_features = 64 * 2 * 5 + self.entity_classes_num * 2 + 1
+        input_features = 64 * 2 * 3 + self.entity_classes_num * 2 + 1
         self.dense = []
         for i, h in enumerate(hidden):
             if i == 0:
@@ -70,9 +77,25 @@ class IndexSplitSpansDirectedLabelledRelationModel_Binary(
 
         self.output_dense = nn.Linear(self.hidden[-1], self.output_num)
 
+
     def forward(self, x):
 
-        def process_span(spans):
+        def process_entity_span(spans):
+            e, l = spans
+            idxs, lengths = rnn.pad_packed_sequence(e, padding_value=0,
+                                                    batch_first=True)  # batch_size * sequence_length
+            e = self.embedding(
+                idxs)  # batch_size * sequence_length * embedding_dim
+            e = rnn.pack_padded_sequence(e, lengths, batch_first=True,
+                                         enforce_sorted=False)
+            e = self.entity_pool(e)[1][0].permute(1, 2, 0).reshape(-1, self.embedding.embedding_dim)
+            e = F.relu(e)
+            return e # batch_size * embedding_dim
+
+        e_rep = torch.stack((process_entity_span(x[1]),
+                             process_entity_span(x[3])), dim= 2) # batch_size * embedding_dim*2
+
+        def process_span(spans, e_rep):
             s, l = spans
             idxs, lengths = rnn.pad_packed_sequence(s, padding_value=0,
                                                     batch_first=True)  # batch_size * sequence_length
@@ -80,18 +103,26 @@ class IndexSplitSpansDirectedLabelledRelationModel_Binary(
                 idxs)  # batch_size * sequence_length * embedding_dim
             s = torch.matmul(s,
                              self.projection)  # Perform projection # batch_size * sequence_length * embedding_dim
+            e = torch.matmul(s, e_rep) # batch_size * sequence_length * 2
             l, _ = rnn.pad_packed_sequence(l, padding_value=0,
                                            batch_first=True)  # batch_size * sequence_length * label_encoding
-            s = torch.cat((s, l),
-                          2)  # Concatenate entity labels # batch_size, sequence_length, embedding_dim + label_encoding
+            s = torch.cat((s, l, e),
+                          2)  # Concatenate entnaity labels # batch_size, sequence_length, embedding_dim + label_encoding + e_att
             s = rnn.pack_padded_sequence(s, lengths, batch_first=True,
                                          enforce_sorted=False)
             s = self.pool(s)[1][0].permute(1, 2, 0).reshape(-1, 64 * 2)
             s = F.relu(s)
             return s
 
-        x = tuple(process_span(i) for i in x[:-2]) + tuple(x[-2:])
-        x = torch.cat(x, 1)
+
+        x_list = []
+        x_list.append(process_span(x[0], e_rep))
+        x_list.append(process_span(x[2], e_rep))
+        x_list.append(process_span(x[4], e_rep))
+        x_list.extend(x[-2:])
+
+        # x = tuple(process_span(i) for i in x[:-2]) + tuple(x[-2:])
+        x = torch.cat(x_list, 1)
 
         for linear in self.dense:
             x = F.relu(linear(x))
@@ -134,8 +165,34 @@ class IndexSplitSpansDirectedLabelledRelationModel_Binary(
 
         return predicted_relations, actual_relations
 
+    # def state_dict(self, destination=None, prefix='', keep_vars=False):
+    #     _state_dict = super(IndexSplitSpansDirectedLabelledRelationModel, self).state_dict(destination=destination,prefix=prefix,keep_vars=keep_vars)
+    #     _state_dict['embedding_dim'] = self.embedding.embedding_dim
+    #     _state_dict['num_embeddings'] = self.embedding.num_embeddings
+    #     _state_dict['window_pad'] = self.window_pad
+    #     _state_dict['hidden'] = tuple(self.hidden)
+    #     _state_dict['output_labels'] = list(self.labels.classes_)
+    #     _state_dict['entity_labels'] = list(self.entity_labels.classes_)
+    #     _state_dict['allowed_relations'] = self.allowed_relations
+    #     _state_dict['token_indexes'] = self.token_indexes
+    #     _state_dict['fallback_index'] = self.fallback_index
+    #     return _state_dict
 
-
+    # def load_from_state_dict(_state_dict):
+    #     ''' Load model from state_dict with arbitrary shape. '''
+    #     model = IndexSplitSpansDirectedLabelledRelationModel(
+    #             _state_dict.pop('window_pad'),
+    #             _state_dict.pop('hidden'),
+    #             _state_dict.pop('output_labels'),
+    #             _state_dict.pop('entity_labels'),
+    #             _state_dict.pop('allowed_relations'),
+    #             _state_dict.pop('token_indexes'),
+    #             _state_dict.pop('fallback_index'),
+    #             embedding_dim=_state_dict.pop('embedding_dim'),
+    #             num_embeddings=_state_dict.pop('num_embeddings')
+    #         )
+    #     model.load_state_dict(_state_dict)
+    #     return model
 
 
 if __name__ == '__main__':
@@ -180,6 +237,8 @@ if __name__ == '__main__':
     parser.add_argument('modeldir', action=DirectoryAction, mustexist=False,
                         mkdirs=True,
                         help='Directory to use when saving outputs.')
+    parser.add_argument('config', action=StandoffConfigAction,
+                        help='Standoff config file for these annotations.')
     parser.add_argument('-w', '--class-weight', action='store_const',
                         const='balanced',
                         help='Flag to indicate that the loss function should be class-balanced for training. Should be used for this model.')
@@ -198,12 +257,9 @@ if __name__ == '__main__':
     parser.add_argument('--trial', action='store_const',
                         const='balanced',
                         help='Flag to indicate trial mode.')
-    parser.add_argument('-b', '--batch', type=int, default=64, help='Batch size.')
     parser.add_argument('--relations', action=ListAction,
                         help='Relation types to consider.')
-
-
-
+    parser.add_argument('-b', '--batch', type=int, default=64, help='Batch size.')
     args = parser.parse_args()
 
     torch.manual_seed(args.seed)
@@ -238,24 +294,23 @@ if __name__ == '__main__':
     for relation in relations:
         # Model parameters
         # window_pad = 5
-
-        relation_model_name = f'{modelname}_{relation}'
         output_labels = [relation, 'none']
         entity_labels = list(set(e.type for a in anns for e in a.entities))
+        relation_model_name = f'{modelname}_{relation}_entity_att'
 
         stopwatch.tick(f'Starting {relation} evaluation', report=True)
         print(f'Going to evaluate for relation: {relation}\n\twith entity '
               f'labels: {relation_entity_map[relation]}')
         # Training parameters
         batch_size = args.batch
-        epochs = 200
+        epochs = 100
         if args.trial:
             epochs = 2
 
 
         # Generating functions
         def make_model():
-            return IndexSplitSpansDirectedLabelledRelationModel_Binary(
+            return EntityAtt_Binary(
                 args.window_pad, args.hidden, relation, entity_labels,
                 relation_entity_map[relation], embeddings.indexes,
                 embeddings.fallback_index,
@@ -305,8 +360,8 @@ if __name__ == '__main__':
         class_metrics.to_csv(
             os.path.join(args.modeldir, f'{relation}_class_metrics.csv'))
         all_class_metrics.append(class_metrics)
-        overall_metrics.to_csv(
-            os.path.join(args.modeldir, f'{relation}_overall_metrics.csv'))
+        # overall_metrics.to_csv(
+        #     os.path.join(args.modeldir, f'{relation}_overall_metrics.csv'))
 
         stopwatch.tick(f'Finished {relation} evaluation', report=True)
     pandas.concat(all_class_metrics).to_csv(
