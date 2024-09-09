@@ -14,7 +14,6 @@ from annotations.models.predictionutils import token_labels_to_entities
 from utilities.torchutils import predict_from_dataloader
 
 
-#todo: add CNN base class
 # Define model base class
 class BaseANNModule(nn.Module):
 

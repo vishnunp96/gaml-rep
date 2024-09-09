@@ -268,5 +268,65 @@ def evaluate_attributes(model, ann_test, batch_size=1):
 
 		return class_metrics,overall_metrics
 
-#todo: evaluate cnn relations
-#todo: evaluate relations simple
+
+
+
+def evaluate_cnn_relations(model, ann_test, relation_labels, batch_size=1):
+	with model.evaluation():
+
+		predicted_vectors, predicted_classes, actual_vectors, actual_classes = model.predict(ann_test, batch_size=batch_size)
+		ground_truth = actual_classes
+		predictions = predicted_classes
+
+		confusion = confusion_matrix(ground_truth, predictions, labels=relation_labels)
+		print(confusion)
+		print(confusion.shape)
+		p,r,f,s = precision_recall_fscore_support(ground_truth, predictions, labels=relation_labels, zero_division=0)
+
+		print_len = max(len(c) for c in relation_labels) + 2
+		print(('{0:'+str(print_len)+'} {1:6} {2:6} {3:6} {4:6}').format('TYPE','PREC','REC','F1','Count'))
+		for i,label in enumerate(relation_labels):
+			print(('{0:'+str(print_len)+'} {1:<6.2f} {2:<6.2f} {3:<6.2f} {4:6d}').format(label,p[i],r[i],f[i],s[i]))
+
+		f1micro = f1_score(ground_truth,predictions,labels=relation_labels, average='micro', zero_division=0)
+		f1weighted = f1_score(ground_truth,predictions,labels=relation_labels, average='weighted', zero_division=0)
+		f1macro = f1_score(ground_truth,predictions,labels=relation_labels, average='macro', zero_division=0)
+		print(f'F1 score: {f1micro:.2f} (micro), {f1macro:.2f} (macro), {f1weighted:.2f} (weighted)')
+
+		precision = precision_score(ground_truth,predictions,labels=relation_labels, average='micro', zero_division=0)
+		recall = recall_score(ground_truth,predictions,labels=relation_labels, average='micro', zero_division=0)
+		print(f'Precision score: {precision:.2f}, Recall score: {recall:.2f}')
+
+		overall_metrics = pandas.DataFrame([['f1micro',f1micro],['f1macro',f1macro],['f1weighted',f1weighted],['precision',precision],['recall',recall]],columns=['score','value'])
+		class_metrics = pandas.DataFrame([p,r,f,s],columns=relation_labels,index=pandas.Index(['Precision','Recall','F1','Support'],name='Label')).T
+
+		return class_metrics,overall_metrics
+
+
+def evaluate_relations_simple(model, ann_test, batch_size=1):
+	with model.evaluation():
+		predictions, ground_truth = model.predict(ann_test, batch_size=batch_size)
+		evaluation_types = model.labels.classes_
+		confusion = confusion_matrix(ground_truth, predictions, labels=evaluation_types)
+		print(confusion)
+		print(confusion.shape)
+		p,r,f,s = precision_recall_fscore_support(ground_truth, predictions, labels=evaluation_types, zero_division=0)
+
+		print_len = max(len(c) for c in evaluation_types) + 2
+		print(('{0:'+str(print_len)+'} {1:6} {2:6} {3:6} {4:6}').format('TYPE','PREC','REC','F1','Count'))
+		for i,label in enumerate(evaluation_types):
+			print(('{0:'+str(print_len)+'} {1:<6.2f} {2:<6.2f} {3:<6.2f} {4:6d}').format(label,p[i],r[i],f[i],s[i]))
+
+		f1micro = f1_score(ground_truth,predictions,labels=evaluation_types, average='micro', zero_division=0)
+		f1weighted = f1_score(ground_truth,predictions,labels=evaluation_types, average='weighted', zero_division=0)
+		f1macro = f1_score(ground_truth,predictions,labels=evaluation_types, average='macro', zero_division=0)
+		print(f'F1 score: {f1micro:.2f} (micro), {f1macro:.2f} (macro), {f1weighted:.2f} (weighted)')
+
+		precision = precision_score(ground_truth,predictions,labels=evaluation_types, average='micro', zero_division=0)
+		recall = recall_score(ground_truth,predictions,labels=evaluation_types, average='micro', zero_division=0)
+		print(f'Precision score: {precision:.2f}, Recall score: {recall:.2f}')
+
+		overall_metrics = pandas.DataFrame([['f1micro',f1micro],['f1macro',f1macro],['f1weighted',f1weighted],['precision',precision],['recall',recall]],columns=['score','value'])
+		class_metrics = pandas.DataFrame([p,r,f,s],columns=model.labels.classes_,index=pandas.Index(['Precision','Recall','F1','Support'],name='Label')).T
+
+		return class_metrics,overall_metrics
