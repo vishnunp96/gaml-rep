@@ -1,29 +1,30 @@
-This library requires that LaTeXML be installed and accessible on the system path (may be installed using apt-get install latexml). The gaml directory must also be accessible from the Python installation.
+This repository forks from Tom Crossland's 2021 publication work(https://arxiv.org/abs/2107.00665).
 
-A .tex file may be opened with the following:
+The original contribution to this repository can be found in the folder "masters".
 
-```
-import preprocessing.latexmlpy as latexml
-texfile = 'path/to/tex/file.tex'
-doc = latexml.opentex(texfile, timeout=300)
-```
-The document will now be opened as an lxml ElementTree and the method will return the root of this tree. The parsing attempt will timeout after timeout seconds (default 5 minutes), and if timeout occurs, or the parsing otherwise fails, the method returns None.
+The attempt was to adapt existing models to further performance on the task of both:
+    - Named Entity Recognition
+    - Relation Extraction
+from astrophysics data.
 
-The .tex file should be located in a directory with any .sty and .cls files required for compilation. Note: The file may still parse without these files, but the results will likely include unusual errors.
-
-If the file opens correctly, elements with a given tag may be extracted using:
-
-```
-doc.findall('.//tag')
-```
-
-Tables may be extracted using the following:
-
-```
-from preprocessing.tables import process_table
-for elem in doc.findall('.//table'):
-	table,borders = process_table(elem)
-	print(table)
-	print(borders)
-```
-Table processing is still rudimentary at this time.
+Main contributions were:
+    - Fine-tuning multiple BERT models on available astrophysics articles.
+        - astroBERT/bert-base-cased
+        - fine-tuned on 2,500 texts sentence-split into maximum 256 words, with 16 words overlap. 
+    - Building a TFIDF model on 100,000 articles.
+    - Named Entity Recognition.
+        - BERT model fine-tuned for named entity recognition.
+        - Bi-directional LSTMs using Word2Vec embeddings and character encoding (reproduction of previous work).
+        - Bi-directional LSTMs using BERT embeddings and word-level character encoding.
+            - Numerical flags as additional feature.
+            - Boosting rare tokens within each sentence.
+    - Relation Extraction.
+        - Dense neural network with Bi-LSTM for encoding token windows with Word2Vec embeddings ( reproduction of previous work).
+        - Binary classifiers for each class of relation.
+            - TFIDF as additional feature.
+            - Numerical flags as additional feature.
+        - Dense neural network with Bi-LSTM for encoding token windows with BERT embeddings.
+            - TFIDF as additional feature.
+            - Numerical flags as additional feature.
+            - Boosting rare tokens within each sentence.
+    - Evaluation of models.
